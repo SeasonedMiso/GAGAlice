@@ -866,12 +866,13 @@ ali"like drawings, or food or video games"
 ali"But thanks to everything you showed me, I think I started to get a better idea of why"
 ali"And then I was kind of hoping something would just leap out to me"
 ali"But I don't think life works like that"
-ali"I think instead of waiting for a lightning bolt to strike down and give like divine intervention"
+ali"I think instead of waiting for a lightning bolt to strike down and give some kinda of divine intervention"
 ali"You gotta just like"
 ali"Do whatever seems fun"
 ali"And I kinda can't keep waiting."
 ali"I don't have that sort of time"
-ali"So I'm gunna go with this"
+ali"..."
+ali"So I'm gunna go with this!"
 mc"..."
 show mc slightly sad
 #he's not sad here because of talking to neighbour, but because he's jealous about her attitude
@@ -890,8 +891,91 @@ mc"I'll see what I can do"
 
 #how does mc deal with needing to concur the anxiety to knock.
 label:Day2Neighbour
+"You get back to your place, and lead Alice inside."
+"You place your things on your table and then go out the door you just came from."
+mc"Okay... It's not that scary... It's just talking to a person"
+mc"A person that you have never seen before"
+mc"Who could be a serial killer, or... a mormon or something"
+mc"But probably not!"
+mc"... Hopefully"
+mc"Just gotta knock at that door..."
+mc"Just a little rap-a-tap-tap..."
+mc"FUCK!!!"
+mc"Why is this so hard?!!"
+mc"You know fuck it, I don't think I can"
+play door opening sfx
+?"Uhh, are you okay?"
+mc"AAH! ummm, Yeah, I was just!... Uh, you know... Ummm"
+?"Did you need something? I heard mumbling and feet shuffling outside so?"
+make text very small
+mc"Uhh yeah, so I was kinda of ummm, sent here to ask a favour, but like I don't even know you, or like said my name and I"
+?"Slow down, just take it easy"
+#what to make his name? Maybe like Kellin, or Ryland or something
+?"First off, hi, I'm Kellin. I don't think I've met you before? Do you stay in the dorms?"
+mc"Uhhh... Yeah, next door actually..."
+?"Woah! So your the one that's been here the whole time! I tried to leave a package for you the other day but!"
+mc"Yeah I'm not too great at talking to people... Or waking up" 
+mc"Sorry about that"
+?"No, it's okay, you're probably a really good listener!"
+?"Damn we've been next-door room buddies for like... How long now?"
+mc"Uhhh... Like 2 years"
+?"Woah that long already? Good times..."
+?"By the way, I still don't know your name"
+mc"Oh it's {player name}"
+?"Nice to meet you!"
+?"So what do you need?"
+mc"Uh, I've just heard you playing guitar and listening to music and stuff through the walls and ummm"
+?"OH! I'm so sorry, I must have been blasting it too loud! I'll try be careful from now on!"
+mc"No, uh-"
+?"It's okay you don't have to be polite!"
+?"I'm so sorry, I should have been using headphones to being with"
 
+#Maybe it would be funny if he keeps going on about it to the point of crying but mc isn't able to interject properly
+#i think that's a good dynamic, like he just talks a lot and comes to his own conclusions, and the mc can't correct that
+#But then how do you end the exchange, and move to the next point?
+#I like the idea of him being super ADHD but very like　　マイペース
 
+#He's basically an embodiment of the hyper fixation element of autism, so showing of the positives of it 
+#compared to the anxiety and social awkwardness of mc
+
+mc"No, you're fine, that's not it"
+mc"I was just wondering if uhhh... Damn I guess I don't know you well enough to ask anything"
+?"You don't have to say anything... I know why you're here!"
+
+#Alternative progression: You nervously being trying to ask
+#he ends up getting over the toply worried expecting that you are going to tell him about someone being murdered on the floor or something
+#his assumption about the situation is that something bad MUST have happened, because he's picking up how stressed you are
+
+?"I see right through you... To your soul!"
+mc"!?"
+?"I accept you proposal"
+mc"Huh?"
+?"So if I'm doing guitar... Maybe backing vocals, then what are you going to be doing?"
+?"Don't tell me! You have the vibes of a bassist!"
+?"But if you were, then I would have heard you through the wall"
+?"So you must be a drummer! You must go to like a practice studio right!"
+?"It's so inconvinient to be a drummer living in a communal space right!"
+?"So when is our first practice session? Do you have any songs done yet?"
+mc"I don't uh... Know how to play drums"
+?"You're so humble! That's such a good quality in a band member!"
+mc"No like, literally I've never picked up a drum stick"
+?"Oh so then what do you play?"
+?"Wait don't tell me... Kalimb-"
+mc"I can't play anything"
+?"WOAH, so you're fresh blood! That's so exciting"
+mc"Yeah, I guess you could say that"
+(Damn, he's so nice, but I'm already so exausted from this conversation)
+mc"I know we've never talked before"
+mc"And this is a big ask..."
+mc"but I was wondering if..."
+mc"I could ummm..."
+?"Sure, I'll get it ready"
+mc"I haven't even asked yet!"
+?"What are you talking about? I told you! I get you!"
+?"You don't need to say anything to me! Our brains are connected on the same wavelength!"
+mc"Uhh... yeah... sure..."
+?"Come inside!" 
+mc"...Okay..." 
 
 #neighbour comes to his door
 #you're taken back by his clothing
@@ -903,18 +987,16 @@ label:Day2Neighbour
 #"is this not a good time? I can maybe come back later if you're... busy"
 #"no, I'm fine, I was just [doing something]"
 #he's very unashamed and forthcoming about his interests
-#You nervously being trying to ask
-#he ends up getting over the toply worried expecting that you are going to tell him about someone being murdered on the floor or something
-#his assumption about the situation is that something bad MUST have happened, because he's picking up how stressed you are
+
 
 #when you clear the confusion and finally say that you heard him playing guitar and were wondering if you could borrow it for the weekend
 #his expresion instantly brightens and he's super excited for you to try it
 #YOU WANT TO START GUITAR?? WE SHOULD START A BAND! I know a bassist in my computer science class, we should totally jam sometime
 #you try to play down his expectations because you're just a beginner, 
-#he sees you looking at the band posters, and is excited that you  might be interested
+#he sees you looking at the band posters, and is excited that you might be interested
 
 #show his room as a reskin of mc room, but contrasts it 
-#
+
 
 
 #He asks you what kind of music you're into
