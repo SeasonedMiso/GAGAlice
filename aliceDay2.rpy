@@ -912,6 +912,7 @@ mc"Uhh yeah, so I was kinda of ummm, sent here to ask a favour, but like I don't
 ?"Slow down, just take it easy"
 #what to make his name? Maybe like Kellin, or Ryland or something
 ?"First off, hi, I'm Kellin. I don't think I've met you before? Do you stay in the dorms?"
+#here add that he recognizes you from yesterday
 mc"Uhhh... Yeah, next door actually..."
 ?"Woah! So your the one that's been here the whole time! I tried to leave a package for you the other day but!"
 mc"Yeah I'm not too great at talking to people... Or waking up" 
@@ -976,6 +977,42 @@ mc"I haven't even asked yet!"
 mc"Uhh... yeah... sure..."
 ?"Come inside!" 
 mc"...Okay..." 
+
+mc"Woah this place is really... something"
+?"I guess? Isn't it normal"
+mc"Uh, if this is normal, then I think your reference point is kinda busted"
+?"So this is what you wanted right?"
+?"I have a couple guitars, but this is the only one that's not in a weird tuning right now"
+mc"Tuning? uhh"
+?"Most guitars are tuned in fourths starting from E, with the exception of the major third between the G and B strings"
+?"But recently I've been really into this emo tuning that's tuned to like an A major chord with a D in the bass"
+?"I also have an 8 string over here that's tuned-"
+mc"So guitars have strings... I think? and ummm emo?"
+#maybe do the emo copypasta?
+?"I haven't changed the strings on this one for a while so if this is okay then"
+mc"Are you sure it's okay?"
+?"Yeah, I don't really use it either way..."
+?"Oh you probably want this too"
+?"And this and..."
+fade to black
+transition to your room
+(mc with guitar in soft bag on back and arms fulled with stuff
+ali"Woah, you got it! Thanks but..."
+ali"I thought you were just getting a guitar, what's all that"
+mc"A tuner, an overdrive, compressor and delay pedal, a practice amp-"
+ali"That's-"
+mc"-headphones, a box of picks, 2 instructional dvds-"
+ali"Uh-"
+mc"-3 live dvds, 8 cds..."
+mc"And one vinyl"
+ali"Geez"
+mc"I managed to turn down the record player"
+"I guess we're lucky you have such a supportive neighbour"
+mc"yeah... But I can't help the feeling that maybe I'm doing him a favour by giving him someone new to rant at"
+
+
+
+
 
 #neighbour comes to his door
 #you're taken back by his clothing
