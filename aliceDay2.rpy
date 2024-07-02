@@ -978,6 +978,10 @@ mc"Uhh... yeah... sure..."
 ?"Come inside!" 
 mc"...Okay..." 
 
+<<<<<<< HEAD
+
+
+=======
 mc"Woah this place is really... something"
 ?"I guess? Isn't it normal"
 mc"Uh, if this is normal, then I think your reference point is kinda busted"
@@ -1014,6 +1018,7 @@ mc"yeah... But I can't help the feeling that maybe I'm doing him a favour by giv
 
 
 
+>>>>>>> 90cb0019aa4c8ca58704616aafdb08a28d4f0b4e
 #neighbour comes to his door
 #you're taken back by his clothing
 #you can see inside his room is fulled with colorful posters, chokers, thighghighs, other stuff like that
