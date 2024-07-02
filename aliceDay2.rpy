@@ -977,11 +977,6 @@ mc"I haven't even asked yet!"
 mc"Uhh... yeah... sure..."
 ?"Come inside!" 
 mc"...Okay..." 
-
-<<<<<<< HEAD
-
-
-=======
 mc"Woah this place is really... something"
 ?"I guess? Isn't it normal"
 mc"Uh, if this is normal, then I think your reference point is kinda busted"
@@ -1014,11 +1009,6 @@ mc"I managed to turn down the record player"
 "I guess we're lucky you have such a supportive neighbour"
 mc"yeah... But I can't help the feeling that maybe I'm doing him a favour by giving him someone new to rant at"
 
-
-
-
-
->>>>>>> 90cb0019aa4c8ca58704616aafdb08a28d4f0b4e
 #neighbour comes to his door
 #you're taken back by his clothing
 #you can see inside his room is fulled with colorful posters, chokers, thighghighs, other stuff like that
@@ -1051,6 +1041,7 @@ mc"yeah... But I can't help the feeling that maybe I'm doing him a favour by giv
 #he offers to give you lessons
 #you turn him down, but he loans you : 1 guitar, an amp (has headphone-in), a box of different sorts of picks, 3 live bluerays for his fav bands
 #he apologizes that his spare guitar's strings are super old, but he needs his main gutiar for practice, and it's set to a weird tuning (and it's an 8 string)
+
 label:day2GuitarSetup
 #you waddle over back to your room after exhcanging discord accounts with him
     #where do we show this     
