@@ -809,7 +809,7 @@
                     show mc shout
                     m "UUUUUUUGH- OK!"
                     show mc normal
-                    m"Let's just go to this place I know. It's close. Hardly anyone else goes there, so I can handle it."
+                    m "Let's just go to this place I know. It's close. Hardly anyone else goes there, so I can handle it."
                     show mc worried
                     m "I just hope no one stares at us..."
                     show button vvhappy

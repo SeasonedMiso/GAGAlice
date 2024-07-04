@@ -4,21 +4,21 @@
     #choose mushroom type
 label chooseFly:
     show finn happy 
-    m"This one looks kind of colorful and pretty!"
+    m "This one looks kind of colorful and pretty!"
     show finn sad
     "... I guess"
     "*click click*"
-    m"That was easy to order, it even takes PayPal..."
-    m"Fly amanita... That's like a toadstool right?"
+    m "That was easy to order, it even takes PayPal..."
+    m "Fly amanita... That's like a toadstool right?"
     show finn happy
-    m"Maybe this mushroom will make me grow double my size, and break bricks with my bare-hands"
+    m "Maybe this mushroom will make me grow double my size, and break bricks with my bare-hands"
     "Are you done being stupid?"
     show finn sad
-    m"..."
+    m "..."
     "Aren't red mushrooms like this dangerous? If this kills you, you can only blame yourself for being dumb enough to order it"
     "There was something ominous about that product description too"
-    m"..."
-    m"I mean, it's on the site so it's probably fine... Right?"
+    m "..."
+    m "I mean, it's on the site so it's probably fine... Right?"
     "Let's hope your faith in the meritocracy of capitalism pays off this time"
     #"It's not like you have any 1-UPs" maybe keep the mario theme going? idk
     "Okay, you can crawl back to your bed and keep wasting your life until it's here"
@@ -56,15 +56,15 @@ label chooseFly:
     "He's gone..."
     "When was the last time you even actually talked to someone face to face?"
     "..."
-    m"That was my neighbour..."
-    m"I've heard him listening to loud music before..."
-    m"Sometimes I feel like I should just go over and introduce myself..."
-    m"But then I think of everything that could go wrong."
-    m"Wouldn't it be super weird if I just waltz over?"
-    m"I don't even know if that's something dorm neighbours do... Especially when we've already been here for over a year"
-    m"I think I lost my chance... Besides, he listens to loud guitar music with scary singing sometimes"
-    m"Makes me think he might be super scary too..."
-    m"But his laughing I've heard through the walls sounded kind..."
+    m "That was my neighbour..."
+    m "I've heard him listening to loud music before..."
+    m "Sometimes I feel like I should just go over and introduce myself..."
+    m "But then I think of everything that could go wrong."
+    m "Wouldn't it be super weird if I just waltz over?"
+    m "I don't even know if that's something dorm neighbours do... Especially when we've already been here for over a year"
+    m "I think I lost my chance... Besides, he listens to loud guitar music with scary singing sometimes"
+    m "Makes me think he might be super scary too..."
+    m "But his laughing I've heard through the walls sounded kind..."
     "Are you done yet?"
     #make this more mean
     "You lift your head of from your pillow and turn to get out of bed."
@@ -87,11 +87,11 @@ label chooseFly:
     window show
 
 
-    m"Potency?... Bright... For mushrooms?"
-    m"I don't know if this is right... Like the whole reason I got these is because mushrooms grow in dark places..."
+    m "Potency?... Bright... For mushrooms?"
+    m "I don't know if this is right... Like the whole reason I got these is because mushrooms grow in dark places..."
 
     menu:
-        m"Follow the instructions?"
+        m "Follow the instructions?"
         "Trust my gut.":
             jump deadMush
             #label the scene in button script
@@ -99,13 +99,13 @@ label chooseFly:
         "Just follow the instructions.":
             show mc at center with move
             show mc normal
-            m"I don't know everything, and I think that the people making the product probably know how I'm supposed to use it."
-            m"Let's just do it by the book... or pamphlet... I guess?"
+            m "I don't know everything, and I think that the people making the product probably know how I'm supposed to use it."
+            m "Let's just do it by the book... or pamphlet... I guess?"
         "Now comes the hard part..."
         "..."
         "What are you waiting for? No one else is going to open the curtains for you."
         show mc stressed
-        m"..."
+        m "..."
         hide mc with easeoutbottom
         window hide
         call screen open_window with dissolve

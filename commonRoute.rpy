@@ -89,7 +89,7 @@ label start:
     screen bedroom_day_1:
         imagebutton:
             xanchor 0.5 yanchor 0.5 xpos 0.285 ypos 0.508 idle "pc/pc_hover.png" hover "pc/pc_click.png"
-            action Jump("buy_mushroom")
+            action Jump("buy_mushroom ")
     
     label open_window_day_1:
         $ window_open = True
@@ -148,7 +148,7 @@ label start:
     screen bedroom_look:
         imagebutton:
             xanchor 0.5 yanchor 0.5 xpos 0.284 ypos 0.51 idle "pc/pc_hover.png" hover "pc/pc_click.png"
-            action Jump("buy_mushroom")
+            action Jump("buy_mushroom ")
         imagebutton:
             xanchor 0.5 yanchor 0.5 xpos 0.69 ypos 0.26 hover "mushroom_display/curtain_hover.png" idle "mushroom_display/curtain_select.png"
             action Notify("These stay closed.")

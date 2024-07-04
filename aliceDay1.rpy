@@ -22,7 +22,7 @@ label: ad1Morning
     #TODO: add normal morning thing here
 
 
-    "Everyday, you woke up, made cheap instant coffee, and sprayed the mycelium"
+    "Everyday, you woke up, made cheap instant coffee, and sprayed the mycelium "
     "Today was no exception"
     "You wake up..."
     "Watch Youtube Shorts until your phone dies..."
@@ -30,15 +30,15 @@ label: ad1Morning
     "You prepare your cheap instant coffee, turn back towards your bed, and place your coffee on the bed side table."
     "You shift your attention toward your proto-roommate"
     #fix 
-    "Suddenly you hear a rustling sound from the corner of your room"
+    "Suddenly you hear a rustling sound from the corner of your room "
     #Siloutte animation of her breaking out by herself
     show mc shocked at right with move
     show alice tsun at left 
     #First line is super important so come back later
     #Make it more impactful, pretending to be something you're not
     na"So this is your room? Smaller than I hoped for but I guess this will work."
-    m"..."
-    m"WHAT THE FUCK?!?!"
+    m "..."
+    m "WHAT THE FUCK?!?!"
     na"..."
     "The girl that emerged from your mushroom box unapologetically grabs the spray bottle on the table beside her"
     "She pulls the trigger and a cloud of mist appears in front of her"
@@ -50,10 +50,10 @@ label: ad1Morning
 
     #gets reflexively small and subby
     show mc sad
-    m"I'm sorry..."
+    m "I'm sorry..."
     "..."
     show mc shocked
-    m"WAIT A SEC! WHO-... or...what?... THE HELL ARE YOU?!"
+    m "WAIT A SEC! WHO-... or...what?... THE HELL ARE YOU?!"
     show alice sad
     #I think the word she chooses to use here to address him such as client, parent, guardian, is really important! come back here later
     na"That's tragic... I hoped my client would be like mentally all there or whatever"
@@ -64,20 +64,20 @@ label: ad1Morning
     #na"But I suppose the surreal allure of my visage is beyond your comprehension"
     show alice despair
     na"Actually tragic..."
-    m"You're... the mushroom I bought?"
+    m "You're... the mushroom I bought?"
     na"So you aren't brain damaged?"
     #This is actually good foreshadowing for her toxicity
 
     #na"It seems you have something resmebling sentience... Well Done."
     show mc angry
-    m"THAT'S MY LINE!!!"
-    m"YOU'RE TALKING!"
+    m "THAT'S MY LINE!!!"
+    m "YOU'RE TALKING!"
     show alice neutral
     na"..."
     #na"Seeing as your brain is functioning to _some_ degree, perhaps you could tell me your name?"
     na"Well since your brain is functioning to _some_ level, maybe you could tell me what to call you?"
     show mc awed
-    m"Ummm... My name..."
+    m "Ummm... My name..."
     show alice sad
     na"My bad, I should have picked something easier for you right?"
     #The scene is like: She thinks that maybe you've been poisoned by her already, but she's phrasing it so it's like
@@ -89,9 +89,9 @@ label: ad1Morning
     
     #na"Forgive me, I should have chosen a less challenging display of intelligence."
     show mc angry
-    m"NO!!!"
+    m "NO!!!"
     show mc sad
-    m"Just give me a sec..."
+    m "Just give me a sec..."
     "You weren't mentally prepared to need to talk to someone... "
     show alice neutral
     na"So, what do I call you?"
@@ -107,7 +107,7 @@ label: ad1Morning
             #like aqua from konosuba or uminekoBeatrice
             na"Hold on a second... THAT'S your name?"
             show mc stressed
-            m"No! I just stuttered..."
+            m "No! I just stuttered..."
             na"Okay."
             show alice tsun
             na"Then what is your name then?"
@@ -118,17 +118,17 @@ label: ad1Morning
             "I guess you <b>really</b> can't do anything right."
             "Just go with Finn."
             $playername = "Finn"
-        m"...%(player_name)s."
+        m "...%(player_name)s."
         show alice smug
         if (name_redo):
             na"Are you sure this time?"
             show mc angry
-            m"YES!"
+            m "YES!"
             show alice meanLaugh
             na"Just wanted to make sure..."
         show alice smug
         na"What an cute name... I guess it suits someone like you."
-        m"What's that supposed to mean?!"
+        m "What's that supposed to mean?!"
         show alice meanLaugh
         na"What ever you want."
         "...'
@@ -140,9 +140,9 @@ label: ad1Morning
         #Maybe mc tries to ask her name but she blows him off.
 
 
-        m"So... Getting back on topic... I thought I was supposed to be growing a mushroom?"
+        m "So... Getting back on topic... I thought I was supposed to be growing a mushroom?"
         na"Well, I guess you were able to succeed in {i}something{/i} at least."
-        m"So... You're a mushroom then? Not like a scary alien that's going to lay eggs in my stomach or something?"
+        m "So... You're a mushroom then? Not like a scary alien that's going to lay eggs in my stomach or something?"
         na"What are you talking about?"
         "I didn't think that mushrooms were supposed to talk... or... be animate..."
         na"You seem to REALLY like asking about stupid shit"
@@ -158,7 +158,7 @@ label: ad1Morning
 
         na"..."
         na"So, anyway... Should we start?"
-        m"Ummm... Start...what?"
+        m "Ummm... Start...what?"
 #------------------------------------------
 
         #i kind of picture the boxcutter scene from bakemonogatari here
@@ -185,9 +185,9 @@ label: ad1Morning
         "YOU ARE GOING TO DIE"
         
         show mc stressed
-        m"...!"
+        m "...!"
         "You snap to your senses and push her by her shoulders away from you"
-        m"GET THE FUCK AWAY FROM ME!!"
+        m "GET THE FUCK AWAY FROM ME!!"
         "You're unable to control your emotions, as adrenaline courses through your brain"
         show alice shock
         "You look back up at the girl, whose face is frozen with shock" 
@@ -196,26 +196,26 @@ label: ad1Morning
         na"{size=-10}... you're not supposed to... i'm..."
         "..."
         #choice: apologize, yell at her (be more subtle than that)
-        m"{size=+10} Sorry, I didn't mean to yell... I'm just really..."
+        m "{size=+10} Sorry, I didn't mean to yell... I'm just really..."
         "You trail off after noticing that she contiues to mumble to herself."
         "She's clearly not listening"
         na"{size=-10}... i thought that you... were meant to..."
         "lose.. reason... maybe i'm just not...{size=+10} "
-        m"Hey, I'm trying to apologize but I need you to listen."
-        m"I was kind of freaked out that you got so close all of a sudden and-"
+        m "Hey, I'm trying to apologize but I need you to listen."
+        m "I was kind of freaked out that you got so close all of a sudden and-"
         na"SHUT UP!"
         "She suddenly snaps at you"
         "Her face twists with rage and pain"
         na"What's wrong with you?! Isn't this what you wanted?"
         na"ISN'T THIS WHY YOU RAISED ME?"
-        mc"What are you talking about I-"
+        m "What are you talking about I-"
 
         show alice sad
         "She turns away from you and dashes towards the door."
         #I don't think she would be able to operate a lock, so maybe have a reason from earlier as to why the door is already open
         "You stare blankly at her back, as she fumbles with the lock."
         "..."
-        mc"She's gone..."
+        m "She's gone..."
         "Your line of sight slowly drops towards the floor as you hang your head"
         "You notice several shimmering drops of clear liquid on the wooden flooring."
         #is it even wood in the cg?
@@ -226,15 +226,15 @@ label: ad1Morning
 	#But this time mc is more vocal/aggresive, and it shocks her
     #choice: horrible turn down, passive let her do whatever, let her down nicely
 	na"...So... You don't want me?"      
-        m"?"
+        m "?"
         na"That's not what's supposed to happen..."
         na"I'm supposed to entice anyone to abandon reason."
         na"But you..." 
-        m"I'm trying to tell you I-"
+        m "I'm trying to tell you I-"
         show alice shoutTears
         na"SHUT UP!"
         show mc shocked
-        m"..."
+        m "..."
         show alice crying
         na"..."
         na"{size=-8}What's wrong with me...{size=+8}"
@@ -245,50 +245,50 @@ label: ad1Morning
         #maybe you only learn her name on the rooftop?
         show mc stressed at center
         play music normal
-        m"What the fuck just happened?"
+        m "What the fuck just happened?"
         "Your brain is still lagging behind."
-        m"..."
-        m"So that was the mushroom I've been growing... But it's not a mushroom..."
+        m "..."
+        m "So that was the mushroom I've been growing... But it's not a mushroom..."
         show mc tired
-        m"And it talks..."
+        m "And it talks..."
         show mc stressed
         "Good job, you made a girl cry"
         "You're so good at this whole being useless bit, sometimes I forget it's not on purpose"
         "I bet you don't even know what you did"
-        m"..."
-        m"What the hell is going on..."
+        m "..."
+        m "What the hell is going on..."
         "Why don't you figure it out?"
-        m"... Okay... Ummm..."
-        m"Why don't I look at the site I got it from... There must have been some kind of mistake or something."
+        m "... Okay... Ummm..."
+        m "Why don't I look at the site I got it from... There must have been some kind of mistake or something."
         #show room, new dialogue for blahaj etc
         #click pc
-        m"Okay let's see what this buisness is 'ABOUT'"
-        m"WHAT THE FUCK IS THIS??? IS THIS EVEN LEGAL????"
-        m"So I'm supposed to grow a companion?"
-        m"Even I'm not THAT much of a loser." 
+        m "Okay let's see what this buisness is 'ABOUT'"
+        m "WHAT THE FUCK IS THIS??? IS THIS EVEN LEGAL????"
+        m "So I'm supposed to grow a companion?"
+        m "Even I'm not THAT much of a loser." 
         "Who the hell is selling this kind of thing? And who is buying it?"
-        m"..."
-        m"So let me get this straight... "
-        m"She's a mushroom companion... And her characteristics are... Unparalleled beauty and dominance?"
+        m "..."
+        m "So let me get this straight... "
+        m "She's a mushroom companion... And her characteristics are... Unparalleled beauty and dominance?"
         #maybe change this from dominance to confidence
 
-        m"I mean, I guess she was pretty attractive, but I wasn't really paying attention to that."
-        m"...only has 3 days to live..."
+        m "I mean, I guess she was pretty attractive, but I wasn't really paying attention to that."
+        m "...only has 3 days to live..."
         
         "So? Are you any closer to figuring out what is going on?"
         
-        m"I guess so... I think maybe she was expecting for me to... ummm"
-        m"{i}use{/i} her..."
-        m"But I still don't get why she got mad and ran off"
+        m "I guess so... I think maybe she was expecting for me to... ummm "
+        m "{i}use{/i} her..."
+        m "But I still don't get why she got mad and ran off"
         "You really don't understand women do you?"
         "Or anyone else for that matter"
         "You sit in your gaming chair and stare blankly at the clock on your computer taskbar"
-        m"Wow, that's just a lot to take in"
+        m "Wow, that's just a lot to take in"
         play sound('message_notify.wav')
         show mc shocked
-        m"AAH!"
+        m "AAH!"
         "It's just a dischord message"
-        "Oh it's Rom"
+        "Oh it's Rom "
         "Even if you don't have any friends in the real world, you still know some people online."
         "Even then though, you mostly talk in a small private server"
         "There's about 10 people"
@@ -307,60 +307,60 @@ label: ad1Morning
             "this is one of my few online friends..."
             "Normally if you internally prepared for a few minutes, you might be able to talk for a bit"
             "But right now, you don't have the capacity for that"
-            m"Sorry, kinda busy rn... can you type?"
+            m "Sorry, kinda busy rn... can you type?"
             rb"np i was just bored and your always online so..."
-            m"ouch"
+            m "ouch"
             #anime crying gif from rb
             rb"are u eeping soon? little eep moder?"
-            m"i just got up"
+            m "i just got up"
             rb"o"
             rb"your sleep finally looped back to humanity"
             rb"vampirism cured"
-            m"i guess"
+            m "i guess"
             rb"are you okay, you don't usually respond so short"
-            m"yeah i'm fine... it's just"
-            m"idk"
+            m "yeah i'm fine... it's just"
+            m "idk"
             rb"did something happen?"
             "you think about if you should tell him about what just transpired"
             #here show the time stamp go forward 2 minutes
-            m"you probably won't believe me so..."
+            m "you probably won't believe me so..."
             rb #sends gif
             rb"don't be like that"
-            m"fine"
+            m "fine"
             #attach link to website
-            m"You know I told you I was growing mushrooms... Well this is where I ordered them from and ummm"
-            m"It bloomed today... into a girl"
+            m "You know I told you I was growing mushrooms... Well this is where I ordered them from and ummm "
+            m "It bloomed today... into a girl"
             rb"lmao nice nice"
-            m"and then umm"
-            m"She got all close to me and then ran off crying..."
+            m "and then umm "
+            m "She got all close to me and then ran off crying..."
             rb"wait, did you make this site? I didn't know you could make websites"
             rb"it looks so professional"
             rb"how many hours did it take"
-            m"?"
+            m "?"
             rb"like for a joke it's based"
-            m"I can't code, and it's real."
+            m "I can't code, and it's real."
             rb"wait like real real>"
-            m"yeah"
+            m "yeah"
             rb"emoji upside down smile"
             rb"lmao wtf"
             rb"let me order one real quick"
-            rb"I wonder if I can get it to cosplay Rom"
-        m"What? Is he not listening to me?"
-            m"are you for real?"
+            rb"I wonder if I can get it to cosplay Rom "
+        m "What? Is he not listening to me?"
+            m "are you for real?"
             rb"like was she hot? I've always wanted a girlfriend that can become my waifu"
-            m"I'm being serious, she's like a living being... She talks and moves and everything"
+            m "I'm being serious, she's like a living being... She talks and moves and everything"
             rb"sounds like I don't need my onahole anymore"
-        m"What the fuck?"
-            m"I'm sorry, I think i've gotta go"
+        m "What the fuck?"
+            m "I'm sorry, I think i've gotta go"
             rb"don't have too much fun"
             rb#winky emoji... maybe all of the emojis are his waifu
 
         "You close the window, and turn away from your computer screen."
         show mc stressed
-        m"Am I the weird one?"
-        m"Like... Is that how I'm supposed to act?"
-        m"Is that how guys are supposed to think about girls?"
-        m"Like... Is this sort of buisness just like... normal?"
+        m "Am I the weird one?"
+        m "Like... Is that how I'm supposed to act?"
+        m "Is that how guys are supposed to think about girls?"
+        m "Like... Is this sort of buisness just like... normal?"
         "
         "You're just afraid"
         #too obvious, rewrite to be more subtle
@@ -369,16 +369,16 @@ label: ad1Morning
         "That's how it always has been"
         "And always will be..."
 
-        m"Tch, just remembered something I was trying to forget"
+        m "Tch, just remembered something I was trying to forget"
         "You're unloveable"
         "Even if you tried: you hoesntly think that YOU could play the role of boyfriend to someone" 
         "Nobody would even want to be seen with you"
         "..."
-        m"OH FUCK!"
+        m "OH FUCK!"
         "You spring out of your chair."
-        m"What if someone saw her leaving my dorm?!"
+        m "What if someone saw her leaving my dorm?!"
         #what is he afraid of? just that he will be noticed? Why is being with a girl a negative thing?
-        m"I need to find her, and make sure no one sees her" 
+        m "I need to find her, and make sure no one sees her" 
 
         "You walk over to the door and walk through it into the corridor."
         "You look towards both ends of the passage, but no one is there."
