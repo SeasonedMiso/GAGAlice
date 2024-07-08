@@ -965,7 +965,9 @@ kel "Wait don't tell me... Kalimb-"
 m "I can't play anything"
 kel "WOAH, so you're fresh blood! That's so exciting"
 m "Yeah, I guess you could say that"
+
 (Damn, he's so nice, but I'm already so exausted from this conversation)
+
 m "I know we've never talked before"
 m "And this is a big ask..."
 m "but I was wondering if..."
@@ -993,10 +995,11 @@ m "Are you sure it's okaykel "
 kel "Yeah, I don't really use it either way..."
 kel "Oh you probably want this too"
 kel "And this and..."
+
 fade to black
 transition to your room
-<<<<<<< HEAD
 (mc with guitar in soft bag on back and arms fulled with stuff
+
 ali "Woah, you got it! Thanks but..."
 ali "I thought you were just getting a guitar, what's all that"
 m "A tuner, an overdrive, compressor and delay pedal, a practice amp-"
@@ -1009,21 +1012,6 @@ ali "Geez"
 m "I managed to turn down the record player"
 "I guess we're lucky you have such a supportive neighbour"
 m "yeah... But I can't help the feeling that maybe I'm doing him a favour by giving him someone new to rant at"
-=======
-(mc with guitar in soft bag on back and arms fulled with stuff)
-ali"Woah, you got it! Thanks but..."
-ali"I thought you were just getting a guitar, what's all that"
-mc"A tuner, an overdrive, compressor and delay pedal, a practice amp-"
-ali"That's-"
-mc"-headphones, a box of picks, 2 instructional dvds-"
-ali"Uh-"）
-mc"-3 live dvds, 8 cds..."
-mc"And one vinyl"
-ali"Geez"
-mc"I managed to turn down the record player"
-ali"I guess we're lucky you have such a supportive neighbour"
-mc"yeah... But I can't help the feeling that maybe I'm doing him a favour by giving him someone new to rant at"
->>>>>>> 6904f4857781a3085ddfe48c5b12947c6638a713
 
 #neighbour comes to his door
 #you're taken back by his clothing
@@ -1059,7 +1047,6 @@ mc"yeah... But I can't help the feeling that maybe I'm doing him a favour by giv
 #he apologizes that his spare guitar's strings are super old, but he needs his main gutiar for practice, and it's set to a weird tuning (and it's an 8 string)
 
 label:day2GuitarSetup
-<<<<<<< HEAD
 
 ali "So can we set it up? Please!?"
 ali "...I mean, if you're free right now that is"
@@ -1094,8 +1081,6 @@ m "Hey, uh... I need to go make a phone call"
 #you waddle over back to your room after exhcanging discord accounts with him
    #where do we show this     
 
-=======
->>>>>>> 6904f4857781a3085ddfe48c5b12947c6638a713
 #alice is waiting inside and is super excited, but is trying to keep her composture (failing)
 #you set it up for her and she starts messing around (not really knowing what to do)
 #You've never been good at gutiar but your parents paid for lessons for you for a semester in highschool, but you never practiced, so they stopped paying
@@ -1105,27 +1090,42 @@ m "Hey, uh... I need to go make a phone call"
 
 #while she's messing around you get up and see your phone on your desk
 
-ali excited
-ali"So can we set it up? I can play now right?"
-ali embaressed
-ali"I mean, whenever you have time"
-
-mc"Uh, sure, lemme just tune it and stuff"
-# Maybe the neighbour should tune it in the previous scene, or have a little more of an explaination to why mc can tune a guitar
-...
-"Just a little higher"
-(sting breaking sound)
-ali shocked
-mc grimace
-ali"EEK"
-mc"... I guess he said the strings were a little old"
-ali"Is it going to be okay? Is there like a spare or anything"
-mc"Sorry but you're going to have to make do with this for now"
-mc"We can get a new set tomorrow"
-ali"Okay..."
-
-
 label:day2PhoneCall
+You climb up to the roof and tap the call button
+Ring...
+ring...
+...ring...
+dad "Hello?"
+m "Hey dad... How's it going?"
+dad "Well it was doing pretty good"
+dad "I went down to the shop to see how the work on my car is going"
+dad "I was just talking to the mechanic about what kind of engine to import"
+dad "And then... I got a notification from the card I gave you"
+m "*gulp*"
+dad "And I saw you've been doing some {i}clothes shopping{/i}"
+m "Uh... yeah"
+m "So it's come to this..."
+m "I can expl-"
+dad "You finally have a girlfriend?"
+m "Huh?!"
+dad "I mean that's the only thing I can think of"
+dad "You're not one of {i}those{/i} people to go buying stuff from women's stores for yourself"
+m "..."
+m "Uh, yeah, haha..."
+m"... Of course not"
+dad "So you're going to introduce me sometime right?"
+m "uhh"
+dad "I looked through all your social media looking to see if I could find her, but I didn't see anything, seeing how you never post"
+dad "You don't have any accounts I don't know about do you?"
+m "Uh no..."
+dad "Good."
+m "Is that it?"
+dad "Yeah, I'm going to get back to making my moonshine"
+dad "You remember I showed you the distillation rig I built right?"
+m "Uh yeah... Have fun!"
+dad "Will do {i}son{/i}"
+dad "Later"
+
 #missed call from dad, who saw account activity from where you went shopping
 #he won't give you your own card and has a card on his account so he gets a text msg when ever you spend money, and can see where
 
