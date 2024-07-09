@@ -264,6 +264,7 @@ choice: [Quickly get this over with, Show her something you like]
 
    jump: aliceDay2DateLocation
 
+#move to day 1 maybe
 label: arcadeDate
 m "I think I saw a sign for an arcade back there"
 ali "An arcade?"
@@ -879,13 +880,6 @@ show mc slightly sad
 m "I'll see what I can do"
 
 
-#maybe the scene with the butterfly should happen after this? swap the order
-
-
-
-#arrive back, decide to let alice into your room first
-#it's hard enough to meet someone new, let alone if i need to explain who alice is
-
 #choice whether to get the courage to talk to neighbour
 #how does alice respond if you don't do it
 
@@ -1013,39 +1007,6 @@ m "I managed to turn down the record player"
 "I guess we're lucky you have such a supportive neighbour"
 m "yeah... But I can't help the feeling that maybe I'm doing him a favour by giving him someone new to rant at"
 
-#neighbour comes to his door
-#you're taken back by his clothing
-#you can see inside his room is fulled with colorful posters, chokers, thighghighs, other stuff like that
-#MC blushes slightly when talking to him due to being embarssed by the way he's dressed 
-#you introduce yourself as his neighbour, all while feeling like its super awkward because its too late
-#he beams and is excited to finally meet you
-
-#"is this not a good time? I can maybe come back later if you're... busy"
-#"no, I'm fine, I was just [doing something]"
-#he's very unashamed and forthcoming about his interests
-
-
-#when you clear the confusion and finally say that you heard him playing guitar and were wondering if you could borrow it for the weekend
-#his expresion instantly brightens and he's super excited for you to try it
-#YOU WANT TO START GUITAR?? WE SHOULD START A BAND! I know a bassist in my computer science class, we should totally jam sometime
-#you try to play down his expectations because you're just a beginner, 
-#he sees you looking at the band posters, and is excited that you might be interested
-
-#show his room as a reskin of mc room, but contrasts it 
-
-
-
-#He asks you what kind of music you're into
-#you know he's listened to stuff with screaming in it so you try your best to pretend like you know what you're talking about
-#even though you've only every listened to lofi live streams, game osts, and anime intros
-#choice of 3 genres to get different reactions from him
-#if you say emo: he asks which bands, you answer MCR and stuff, because you had seen people online say that's emo
-#he gives you a variation of the 'real emo" copy pasta as a response
-
-#he offers to give you lessons
-#you turn him down, but he loans you : 1 guitar, an amp (has headphone-in), a box of different sorts of picks, 3 live bluerays for his fav bands
-#he apologizes that his spare guitar's strings are super old, but he needs his main gutiar for practice, and it's set to a weird tuning (and it's an 8 string)
-
 label:day2GuitarSetup
 
 ali "So can we set it up? Please!?"
@@ -1088,6 +1049,10 @@ ring...
 ...ring...
 dad "Hello?"
 m "Hey dad... How's it going?"
+# I think maybe it's better that he opens with like "Hope you aren't partying too much"
+# I haven't heard about your grades but you're staying on top of it right?
+# That's the agreement, You get As, and I pay for your internet, food, utilities
+# If not, you're an adult... You're old enough to figure something out
 dad "Well it was doing pretty good"
 dad "I went down to the shop to see how the work on my car is going"
 dad "I was just talking to the mechanic about what kind of engine to import"
@@ -1137,17 +1102,24 @@ m "Are you going to keep playing all night? How am I supposed to relax like this
 ali "Huh? What's up with you? I've literally done nothing and you're being super passive aggressive for no reason"
 m "It's not for no reason! I go through all the effort to setup all this stuff for you, and you..."
 ali "And I what?"
-
-#after call you talk to alice who's been messing around on guitar
-#she's already started figuring out nice sounding chords you don't think you've ever played 
-# you're a little overwhelmed by how quick she's learning
-
-#at first she's like excited to share with you (in autism mode)
-#at first mc is like "oh that's cool" but in a detatched and apathetic way
-#she senses that she doesn't have his approval, so she gets moody
-#mc gets defensive: Why are you angry, i literally didn't do anything
-
-#You start to lash out at her
+ali "Have fun and use it?"
+ali "Sorry for existing I guess"
+m "You don't get it..."
+m "You just start learning guitar on a whim"
+m "And you're already better than I've been at anything"
+m "In literally the span of hours"
+m "What the fuck am I supposed to do?"
+m "I'm not good enough for my parents"
+m "And I'm not good enough for myself"
+m "I'm a fucking loser, and yet I tell my self I'll learn to draw"
+m "Or learn an instrument"
+m "Or fucking anything"
+m "But even then..."
+m "I know it will never be enough"
+m "I'm never going to be enough for my parents"
+m "Because all they want me to be is the person they THINK I am"
+m "But I CAN'T be that person!!"
+m "I never have been"
 
 #contrast of how the 2 of them argue
 
