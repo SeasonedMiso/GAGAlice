@@ -1078,17 +1078,8 @@ bg music stops
 "Or should I call him now?"
 m "Hey, uh... I need to go make a phone call"
 
-#you waddle over back to your room after exhcanging discord accounts with him
-   #where do we show this     
-
-#alice is waiting inside and is super excited, but is trying to keep her composture (failing)
-#you set it up for her and she starts messing around (not really knowing what to do)
-#You've never been good at gutiar but your parents paid for lessons for you for a semester in highschool, but you never practiced, so they stopped paying
-#you show her the very basics of low vs high string, and how to fret. show her an E minor chord
-#it's a little out of tune, so you try to tune it up, and when you do the high e string snaps
-#she's visibly disappointed, but is still eager to keep playing
-
-#while she's messing around you get up and see your phone on your desk
+#choice -> call back?
+#if call back trust++
 
 label:day2PhoneCall
 You climb up to the roof and tap the call button
@@ -1126,20 +1117,27 @@ m "Uh yeah... Have fun!"
 dad "Will do {i}son{/i}"
 dad "Later"
 
-#missed call from dad, who saw account activity from where you went shopping
-#he won't give you your own card and has a card on his account so he gets a text msg when ever you spend money, and can see where
-
-#choice -> call back?
-#if call back trust++
-
-#call goes really badly, and dad is abusive
-#"how's school going"lie
-#"I saw you bought some clothes... from a women's store... I didn't raise you to be like this" etc
- 
-#maybe they've put him down for liking femme stuff before, and are concerned about it. so it's more of a "i thought we talked about this"
-
-#[do you only show one side of it or skip dialogue or whole dialogue]
 label:day2DeepTalk
+You go back downstairs to your room
+alice is sitting there and has already figure out some basic chord progression kind of stuff
+m "..."
+ali "*focus silence*"
+m "Looks like you're having fun"
+ali "Yeah... I feel like I'm starting to get the hang of this"
+m "That must be nice"
+ali "Hey, are you angry or something? Did I do something?"
+m "No... It's whatever, just go back to your noodling"
+ali "If that's what you want then fine..."
+she plays but it gets more aggresive and she pauses every once in a while
+...
+she keeps playing and you just sit there...
+It boils up...
+Until you just can't take it anymore
+m "Are you going to keep playing all night? How am I supposed to relax like this?"
+ali "Huh? What's up with you? I've literally done nothing and you're being super passive aggressive for no reason"
+m "It's not for no reason! I go through all the effort to setup all this stuff for you, and you..."
+ali "And I what?"
+
 #after call you talk to alice who's been messing around on guitar
 #she's already started figuring out nice sounding chords you don't think you've ever played 
 # you're a little overwhelmed by how quick she's learning
@@ -1159,7 +1157,6 @@ label:day2DeepTalk
 #choice as to whether to fully give into it or whether to take a step back
 #[I think all of the decisions need to be subtle, not GOOD CHOICE or BAD CHOICE]
 #She's on the verge of tears, and you take a step back
-
 
 #Explain that your relationship with your parents isn't ideal, and that they aren't proud of who you are but only when you 
 #match the image of you they already have
