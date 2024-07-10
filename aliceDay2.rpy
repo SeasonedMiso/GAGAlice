@@ -1098,12 +1098,22 @@ she plays but it gets more aggresive and she pauses every once in a while
 she keeps playing and you just sit there...
 It boils up...
 Until you just can't take it anymore
+
 m "Are you going to keep playing all night? How am I supposed to relax like this?"
 ali "Huh? What's up with you? I've literally done nothing and you're being super passive aggressive for no reason"
 m "It's not for no reason! I go through all the effort to setup all this stuff for you, and you..."
 ali "And I what?"
 ali "Have fun and use it?"
 ali "Sorry for existing I guess"
+
+
+#choice as to whether to fully give into it or whether to take a step back
+#[I think all of the decisions need to be subtle, not GOOD CHOICE or BAD CHOICE]
+#She's on the verge of tears, and you take a step back
+
+#choice 1 "I'm jealous of you"
+#choice 2 "You're so selfish"
+
 m "You don't get it..."
 m "You just start learning guitar on a whim"
 m "And you're already better than I've been at anything"
@@ -1114,63 +1124,88 @@ m "And I'm not good enough for myself"
 m "I'm a fucking loser, and yet I tell my self I'll learn to draw"
 m "Or learn an instrument"
 m "Or fucking anything"
+m "I just want to like myself."
+
 m "But even then..."
 m "I know it will never be enough"
 m "I'm never going to be enough for my parents"
 m "Because all they want me to be is the person they THINK I am"
 m "But I CAN'T be that person!!"
 m "I've never been that person..."
+
 ali "..."
 m "They think I'm a straight A student, with lots of friends."
 m "My dad is making up fantasies of me having a girlfriend and living up to how he was in college"
-m "But I'm not like him..."
+
+m "I don't even know what he would do if he found out"
+m "Who I {i}actually{/i} am"
+
+m "That I'm on the verge of flunking out"
+m "That I have no friends"
+m "That I'm not like him..."
+
+# nuance of disgust
 m "I just feel like..."
 m "Time keeps moving..."
 m "And I'm still alone... Here... In my room"
 m "But I can't stay in college for ever."
-m "I'm going to flunk out or scrape through"
-m "And then I'm going to work doing some crappy deskjob I hate, until I get old"
-m "And die."
-# nuance of disgust
+m "I'm going to drop out or scrape through"
+m "And then I'm going to work doing some crappy deskjob I hate, until I get old..."
+m "And then I die."
+
 ali "..."
 ali "You know.. It's kind of funny"
 m "?"
 ali "How when it was me wanting attention"
-ali "You can rationalize all the reasons why I was being stupid for wanting that"
-ali "But you're just the same"
+ali "You could rationalize all the reasons why I was being stupid for wanting that"
+ali "But you..."
+ali "You're the exact same."
 ali "Get over yourself."
 ali "You're drowning in your own tears about only having another 60 years left to accomplish something"
 ali "How do you think I feel?"
 ali "I have one more day"
 ali "..."
 
+m "I'm sorry..."
+
+ali "It's okay..."
+ali "I haven't spent that much time with you"
+ali "Or you know, being alive"
+ali "But I think maybe, you're waiting for an excuse"
+
+m "What do you mean?"
+
+ali "You took me to a whole bunch of places and showed me a bunch of stuff"
+ali "and at first I thought it was meaningless"
+ali "But I realized that nothing matters except what is important to you"
+ali "Latte art is just making pictures in cow boob juice"
+ali "And video games are just what depressed people do to avoid dealing with real life"
+# Too much
+ali "But even then"
+ali "Those are things that bring meaning to people"
+ali "Every single thing you could be interested in"
+ali "has so much depth when you actually look into it"
+ali "Every rabbit hole runs so deep"
+
+ali "And I guess what I'm trying to say is"
+ali "You can't wait for someone else to give you permission to act" 
+ali "To do what you want with your life"
+
+m "But what if it doesn't work out?"
+
+ali "Well then you're back where you started."
+ali "And you can find another reason to live"
+ali "Humans are good at it"
+
+ali "So I guess in the meanwhile, all you can do is find a waste of time that feels special to you"
+
+# I'm worried this reads as preechy and goes against do don't say
+
 
 #contrast of how the 2 of them argue
 
 #Alice: short and cold and precise when she's argueing, but when she's really hurt, will also do insults she doesn't mean. More petty. Tends to run away, when like this.
 #MC:bottles up, tries not to express, but if he panics, he word vomits, with internal stuff leaking out. Sometimes he deflects and blames others. Focuses on what-ifs, over thinker.
-
-#choice as to whether to fully give into it or whether to take a step back
-#[I think all of the decisions need to be subtle, not GOOD CHOICE or BAD CHOICE]
-#She's on the verge of tears, and you take a step back
-
-#Explain that your relationship with your parents isn't ideal, and that they aren't proud of who you are but only when you 
-#match the image of you they already have
-
-#mc is masking that he's not doing anything: he's close to failing courses, tests grades aren't good
-#he's lying to his parents about it
-
-#we can explore the impact and stress of needing to lie
-
-#A huge part of why you're afraid to do stuff, make music, wear clothes, (be like your neighbour) is that you've always been given a hard time
-#just want to love myself, but every step i make towards that is met with pain
-#So i'm stuck between trying to pretend to be who they want, and trying to express who i am, and both of those aren't an option
-#maybe that's why I'm stuck in this small room, feeling like my life is on hold
-#but time keeps moving, i keep aging, i can't stay in uni for ever, and I'm going to die one day
-#and that's scary
-
-#alice listens to what you have to say (how does she respond?)
-#beware of just telling and not showing (try to be more subtle maybe?)
 
 #FOCUS:You can't live for conditional love: pretending to be something you're not, when you only live one.
 
