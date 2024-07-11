@@ -1116,7 +1116,7 @@ ali "Sorry for existing I guess"
 
 m "You don't get it..."
 m "You just start learning guitar on a whim"
-m "And you're already better than I've been at anything"
+m "And you're already better than I've ever been at anything"
 m "In literally the span of hours"
 m "What the fuck am I supposed to do?"
 m "I'm not good enough for my parents"
@@ -1195,12 +1195,36 @@ m "But what if it doesn't work out?"
 
 ali "Well then you're back where you started."
 ali "And you can find another reason to live"
-ali "Humans are good at it"
+ali "Humans are good at that"
 
 ali "So I guess in the meanwhile, all you can do is find a waste of time that feels special to you"
 
 # I'm worried this reads as preechy and goes against do don't say
 
+m "...Thanks"
+ali "Don't mention it"
+
+m "I guess... I think you're right..."
+m "I don't really know what I'm going to do yet but... I think I'm going to stop thinking about everything I want to do"
+m "Everything I want to be"
+m "And just pick something and see where it takes me"
+
+ali "Well as long as you're having fun right"
+
+m "... I think I'm kind tired after going out today"
+m "Kind of a bit past my threshold for exposure to humans"
+
+ali "You going to go to bed"
+
+m "Yeah I think so..."
+m "Do you mind switching to headphones"
+
+ali "Sure"
+ You crawl into bed and fall asleep to the dull sound of unamplified guitar sounds
+
+
+ #defuse by doing something together, show her music on youtube?  maybe you show her a little bit before, and then something after?
+#You make a promise that tomorrow you would go to a music store and buy a new set of strings
 
 #contrast of how the 2 of them argue
 
@@ -1209,11 +1233,4 @@ ali "So I guess in the meanwhile, all you can do is find a waste of time that fe
 
 #FOCUS:You can't live for conditional love: pretending to be something you're not, when you only live one.
 
-label:day2Evening
-#how do you spend the rest of the evening? Watch the dvds from neighbour?
 
-#maybe mc msgs neighbour on discord to say about string, he tells you about his friend working at a music store
-
-#<- maybe the order here needs to change ->
-#defuse by doing something together, show her music on youtube?  maybe you show her a little bit before, and then something after?
-#You make a promise that tomorrow you would go to a music store and buy a new set of strings
