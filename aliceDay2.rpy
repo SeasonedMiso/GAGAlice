@@ -1356,7 +1356,9 @@ label Day2Neighbour:
    #maybe do the emo copypasta?
    kel "I haven't changed the strings on this one for a while so if this is okay then"
    show mc worried
-   m "Are you sure it's okay, Kel?"
+   m "Are you sure it's okay?
+   m "ummmm..."
+   m "K-Kel?"
    kel "Yeah, I don't really use it either way..."
    kel "Oh you probably want this too"
    kel "And this and..."
