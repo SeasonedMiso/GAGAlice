@@ -462,6 +462,7 @@ na"Sorry to keep you waiting!"
 na"Over here for you I thought you might like something cute and uplifting to freshen up the bags under your eyes"
 "He places a coffee cup in front of you with a detailed illustration of a small rabbit running through a flower garden"
 na"And for you, I thought you might like this [...]"
+#todo: think of something fitting for her to get in terms of symbolism
 #What does he see in her that inspires him to draw something that says something about her?
 ali "Huh... wow... You made this for me? Even though I'm going to drink this in front of you, and undo all of your effort... Why?"
 
@@ -500,7 +501,7 @@ ali "Hmm... It's okay... I think maybe I understand why people go out to eat a b
 "You sense that she wants to say something else"
 m "Yeah, and why's that"
 ali "I guess... I just have some stuff to think about... About me... About... You know..."
-"She gulps and seems slightly stressed"
+"She gulps and her hands grasp the coffee cup tighter"
 ali "But anyway, the taste was nostalgic and I think maybe... I don't hate coffee"
 m "That's great to hear."
 m "You seemed like you were thinking pretty hard looking into the mug. What were you thinking about?"
@@ -731,14 +732,12 @@ ali "All anyone ever thinks about me"
 ali "..."
 ali "But you know... The worst part is..."
 ali "Their fears aren't unwarranted"
-ali "I kill the things around me"
-ali "You know, they used to crush us up and mix us into milk to kill flies wanting to drink it"
+ali "I do kill the things around me"
+ali "You know, they used to crush us up and mix us into milk to lure flies to their death"
 ali "That's where the 'Fly' part of the name comes from "
-ali "Isn't that weird if you think about it for a second?"
-ali "If we are so scary, why would you mix it into the milk you drink?"
 ali "I don't get it..."
 ali "I don't understand anything"
-ali "But I don't want to be something that causes suffering and death to everything around me"
+ali "I don't want to be something that causes suffering and death to everything around me"
 ali "But that's how you all see me"
 ali "By default"
 ali "And there's nothing I can say that will change the way you all see me"
@@ -1100,8 +1099,11 @@ m "That must be nice"
 ali "Hey, are you angry or something? Did I do something?"
 m "No... It's whatever, just go back to your noodling"
 ali "If that's what you want then fine..."
-she plays but it gets more aggresive and she pauses every once in a while
-...
+# she plays but it gets more aggresive and she pauses every once in a while
+# ...
+
+
+#todo: draw this out and make this escalation more natural
 she keeps playing and you just sit there...
 It boils up...
 Until you just can't take it anymore
@@ -1181,6 +1183,11 @@ ali "Or you know, being alive"
 ali "But I think maybe, you're waiting for an excuse"
 
 m "What do you mean?"
+
+#todo: here she should point out that her took her out to all these places 
+#under the pretense of trying to teach her about about meaning
+#but he just wants someone else to say that to him
+#Hes saying it like 自分に言い聞かせるため
 
 ali "You took me to a whole bunch of places and showed me a bunch of stuff"
 ali "and at first I thought it was meaningless"
