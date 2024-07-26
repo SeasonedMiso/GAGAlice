@@ -1225,6 +1225,8 @@ menu:
 #how does alice respond if you don't do it
 
 #how does mc deal with needing to concur the anxiety to knock.
+
+#todo: i think maybe exaggerate how hyper and basil is even more? Maybe make his text speed really fast like N from pokemon
 label Day2Neighbour:
    scene black with fade
    "You get back to your place, and lead Alice inside."
