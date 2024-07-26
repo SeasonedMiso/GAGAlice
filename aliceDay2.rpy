@@ -50,6 +50,9 @@ m "..."
 show alice laugh cruel
 ali "See?"
 
+#This part needs to be changed:
+   #it's not that she's perceptive, it's that you aren't used to someone else voicing negative thoughts about you
+
 "It's like she's reading your mind"
 "She puts to words the things you think about yourself before the thought is even fully formed"
 # shes better at hating you than you ever could be. 
@@ -84,7 +87,7 @@ show alice childlike joy
 ali "Really?"
 ali "..." # tsundere alice sprite
 ali "Hmph, fine, if you wanna go so bad, I guess I have no choice then"
-m "{size-10} manipulateable"
+m "{size-10} that was easy"
 ali "{size+10} Did you say something"
 m "No! Let's just go"
 
@@ -113,6 +116,7 @@ m "Yes?"
 #Make it a choice of "Where you see her looking"
 #And make it requirement for true end
 
+#todo:make this scene more subtle
 
 ali "Whatever, what about that place over there?"
 m "You mean the men's attire store?"
@@ -165,7 +169,9 @@ ali "But can you honestly tell me that you /want/ things to carry on like they a
 
 m "..."
 show alice laugh cruel
-ali "So... let's get you some cute clothes!"
+ali "So..."
+ali"..."
+ali"Let's get you some cute clothes!"
 m "That's where you were going with this?!?!?"
 ali "So that's a no then?"
 #choice: "We can take a look I guess", "Not in a million years, no way"
@@ -236,8 +242,8 @@ m "..."
 ali "It's just a shame you want to hide away under all that fabric"
 ali "Wouldn't hurt you to show us some skin"
 show mc embarresed tears
-ali "But I guess fruiting bodies don't grow in a day, and that suits you pretty good as is."
-
+ali "But I guess fruiting bodies don't sprout in a day, and that suits you pretty good as is."
+m "Who is supposed to know about fruiting bodies?! You're lucky I'm a biology major..."
 ali "Anyways, it's still pretty early and we are here already so let's go somewhere else."
 m "Like where?"
 ali "Hmmm... I don't know..."
@@ -402,7 +408,8 @@ m "And then we wait for it to be prepared"
 m "Eat"
 m "Then pay for our order and leave"
 ali "So it's just waiting for food, eating and then you leave? And this makes memories how?"
-ali "Don't you guys eat like, 3 times a day?"
+ali "And you guys have to do this like..."
+ali "3 times a day?"
 m "Yeah, but there's still like... Ummm... You know? It's different when you go somewhere to do it"
 ali "If you're so desperate for a change of scenery while eating, then can't you just like, eat in the shower or something?"
 
