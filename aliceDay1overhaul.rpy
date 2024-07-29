@@ -36,17 +36,17 @@ label: ad1Morning
     show alice tsun at left 
     #First line is super important so come back later
     #Make it more impactful, pretending to be something you're not
-    na"So this is your room? Smaller than I hoped for but I guess this will work."
+    na "So this is your room? Smaller than I hoped for but I guess this will work."
     m "..."
     m "WHAT THE FUCK?!?!"
-    na"..."
+    na "..."
     "The girl that emerged from your mushroom box unapologetically grabs the spray bottle on the table beside her"
     "She pulls the trigger and a cloud of mist appears in front of her"
     "She steps slowly through it and towards me"
     
     #staring down at you cruelly
     show alice tsun annoyed
-    na"Warm fucking welcome... You /really/ have a way with words."
+    na "Warm fucking welcome... You /really/ have a way with words."
 
     #gets reflexively small and subby
     show mc sad
@@ -56,30 +56,30 @@ label: ad1Morning
     m "WAIT A SEC! WHO-... or...what?... THE HELL ARE YOU?!"
     show alice sad
     #I think the word she chooses to use here to address him such as client, parent, guardian, is really important! come back here later
-    na"That's tragic... I hoped my client would be like mentally all there or whatever"
+    na "That's tragic... I hoped my client would be like mentally all there or whatever"
     #make this line more PC
-    na"But I guess I just have that effect on people."    
+    na "But I guess I just have that effect on people."    
 
-    #na"How pitiful... I would have hoped that my client would be able to perform basic congnitive tasks"
-    #na"But I suppose the surreal allure of my visage is beyond your comprehension"
+    #na "How pitiful... I would have hoped that my client would be able to perform basic congnitive tasks"
+    #na "But I suppose the surreal allure of my visage is beyond your comprehension"
     show alice despair
-    na"Actually tragic..."
+    na "Actually tragic..."
     m "You're... the mushroom I bought?"
-    na"So you aren't brain damaged?"
+    na "So you aren't brain damaged?"
     #This is actually good foreshadowing for her toxicity
 
-    #na"It seems you have something resmebling sentience... Well Done."
+    #na "It seems you have something resmebling sentience... Well Done."
     show mc angry
     m "THAT'S MY LINE!!!"
     m "YOU'RE TALKING!"
     show alice neutral
-    na"..."
-    #na"Seeing as your brain is functioning to _some_ degree, perhaps you could tell me your name?"
-    na"Well since your brain is functioning to _some_ level, maybe you could tell me what to call you?"
+    na "..."
+    #na "Seeing as your brain is functioning to _some_ degree, perhaps you could tell me your name?"
+    na "Well since your brain is functioning to _some_ level, maybe you could tell me what to call you?"
     show mc awed
     m "Ummm... My name..."
     show alice sad
-    na"My bad, I should have picked something easier for you right?"
+    na "My bad, I should have picked something easier for you right?"
     #The scene is like: She thinks that maybe you've been poisoned by her already, but she's phrasing it so it's like
     #her look sare the reason why you are cognitively impared
     #She's kind of making fun of you
@@ -87,14 +87,14 @@ label: ad1Morning
     #Don't actually know if I like this convo, maybe rewrite
     
     
-    #na"Forgive me, I should have chosen a less challenging display of intelligence."
+    #na "Forgive me, I should have chosen a less challenging display of intelligence."
     show mc angry
     m "NO!!!"
     show mc sad
     m "Just give me a sec..."
     "You weren't mentally prepared to need to talk to someone... "
     show alice neutral
-    na"So, what do I call you?"
+    na "So, what do I call you?"
     #name input
 
     label name_ali: 
@@ -105,12 +105,12 @@ label: ad1Morning
             "...%(player_name)"
             show alice meanLaugh
             #like aqua from konosuba or uminekoBeatrice
-            na"Hold on a second... THAT'S your name?"
+            na "Hold on a second... THAT'S your name?"
             show mc stressed
             m "No! I just stuttered..."
-            na"Okay."
+            na "Okay."
             show alice tsun
-            na"Then what is your name then?"
+            na "Then what is your name then?"
             $name_redo = True
             jump name_ali
         if playername = "":
@@ -121,16 +121,16 @@ label: ad1Morning
         m "...%(player_name)s."
         show alice smug
         if (name_redo):
-            na"Are you sure this time?"
+            na "Are you sure this time?"
             show mc angry
             m "YES!"
             show alice meanLaugh
-            na"Just wanted to make sure..."
+            na "Just wanted to make sure..."
         show alice smug
-        na"What an cute name... I guess it suits someone like you."
+        na "What an cute name... I guess it suits someone like you."
         m "What's that supposed to mean?!"
         show alice meanLaugh
-        na"What ever you want."
+        na "What ever you want."
         "...'
         stop music
         
@@ -141,14 +141,14 @@ label: ad1Morning
 
 
         m "So... Getting back on topic... I thought I was supposed to be growing a mushroom?"
-        na"Well, I guess you were able to succeed in {i}something{/i} at least."
+        na "Well, I guess you were able to succeed in {i}something{/i} at least."
         m "So... You're a mushroom then? Not like a scary alien that's going to lay eggs in my stomach or something?"
-        na"What are you talking about?"
+        na "What are you talking about?"
         "I didn't think that mushrooms were supposed to talk... or... be animate..."
-        na"You seem to REALLY like asking about stupid shit"
-        #na"You really seem to enjoy asking meaningless questions."
-        na"How about you stop thinking so hard, and we get more comfortable?"
-        #na"Why don't you stop thinking about hard stuff, and relax a little bit?"
+        na "You seem to REALLY like asking about stupid shit"
+        #na "You really seem to enjoy asking meaningless questions."
+        na "How about you stop thinking so hard, and we get more comfortable?"
+        #na "Why don't you stop thinking about hard stuff, and relax a little bit?"
         "She lowers herself down onto the corner of the bed and leans back slightly, crossing one leg ontop of the other.'        
         "She protudes the aura of a queen sitting on a throne."
         
@@ -156,8 +156,8 @@ label: ad1Morning
         #instead of these lines I think it should be more like she's getting fed up with her advances not working.
 
 
-        na"..."
-        na"So, anyway... Should we start?"
+        na "..."
+        na "So, anyway... Should we start?"
         m "Ummm... Start...what?"
 #------------------------------------------
 
@@ -191,23 +191,23 @@ label: ad1Morning
         "You're unable to control your emotions, as adrenaline courses through your brain"
         show alice shock
         "You look back up at the girl, whose face is frozen with shock" 
-        na"..."
+        na "..."
         "Slowly, her expression darkens, and her bottom lip begins to tremble, as she turns her face downwards"
-        na"{size=-10}... you're not supposed to... i'm..."
+        na "{size=-10}... you're not supposed to... i'm..."
         "..."
         #choice: apologize, yell at her (be more subtle than that)
         m "{size=+10} Sorry, I didn't mean to yell... I'm just really..."
         "You trail off after noticing that she contiues to mumble to herself."
         "She's clearly not listening"
-        na"{size=-10}... i thought that you... were meant to..."
+        na "{size=-10}... i thought that you... were meant to..."
         "lose.. reason... maybe i'm just not...{size=+10} "
         m "Hey, I'm trying to apologize but I need you to listen."
         m "I was kind of freaked out that you got so close all of a sudden and-"
-        na"SHUT UP!"
+        na "SHUT UP!"
         "She suddenly snaps at you"
         "Her face twists with rage and pain"
-        na"What's wrong with you?! Isn't this what you wanted?"
-        na"ISN'T THIS WHY YOU RAISED ME?"
+        na "What's wrong with you?! Isn't this what you wanted?"
+        na "ISN'T THIS WHY YOU RAISED ME?"
         m "What are you talking about I-"
 
         show alice sad
@@ -225,19 +225,19 @@ label: ad1Morning
 	#She tries once again to reinitiate
 	#But this time mc is more vocal/aggresive, and it shocks her
     #choice: horrible turn down, passive let her do whatever, let her down nicely
-	na"...So... You don't want me?"      
+	na "...So... You don't want me?"      
         m "?"
-        na"That's not what's supposed to happen..."
-        na"I'm supposed to entice anyone to abandon reason."
-        na"But you..." 
+        na "That's not what's supposed to happen..."
+        na "I'm supposed to entice anyone to abandon reason."
+        na "But you..." 
         m "I'm trying to tell you I-"
         show alice shoutTears
-        na"SHUT UP!"
+        na "SHUT UP!"
         show mc shocked
         m "..."
         show alice crying
-        na"..."
-        na"{size=-8}What's wrong with me...{size=+8}"
+        na "..."
+        na "{size=-8}What's wrong with me...{size=+8}"
         hide alice with easeoutbottom
         "Before you can open my mouth, she turns towards the door"
         "She swiftly turns the door knob and runs out"
@@ -387,41 +387,15 @@ label: ad1Morning
         #the only times he goes outside is to buy a new cardboard box of instant ramen
         #salt contents are bad :c
 
-        #Choice: Look on roof, look in cafeteria, Forget about her
-
-        label: checkRoof
-        "You turn toward the staircase leading to the roof."
-        "There's a small chain barring access, but you easily step over it"
-       
 
 
-        #why would the player know to check on the roof?
-        
-        #maybe the player was told that this mushroom likes high places 
 
-        play sound footstepsEchoingStairs
-        scene rooftop afternoon
-        play music wind
 
-	
-        "You walk up the narrow set of stairs and arrive onto the roof of your dormitory building."
-        "From here, you can look out at the university campus that you haven't explored since your first semester of classes."
-        "Ivy grows on the walls to either side of a large stairset, that climbs from the bottom of the campus, towards the ceremonial hall"
-        "You remember sitting there during your initial orientation and listening to long speeches about how you as the youth of the world"
-        "Are here to learn the skills necessary to make the world a better place."
-        "..."
-	"Sometimes you think about how when you graduate, you will feel like it was truely a waste:"
-	"That you spent so much of your youth so close to such incredible architecure;"
-	"And so many other people trying their best to make their dreams come true."
-	"..."
 
-    #it feels like her chacter development goes too fast, and that too much is said and not told.
-    #move some of this convo to day 2, as she still needs to be toxic in day 2 as well.
 
-	#find her on the rooftop
-	"You look around and see "
-	#Tears/swollen eyes, but calmer
-	#She starts she conversation in a sad tone
+
+
+------------------------
 	#as a mushroom, she doesn't have memories or a sense of personal identity
 	#She does have instinct and the information in her DNA
 	#In that DNA there's a clear purpose, be desireable, be pretty
@@ -431,8 +405,6 @@ label: ad1Morning
 	#So that she can feel like it was worth it.
 	#Not because she likes him, or wants to do the act as itself, but because she wants the validation it implies.
     
-    #this makes the mc blushy and panic even more internally
-
  	#MC explains that humans too have biological instincts for survival
 	#There's some stuff we can't ignore, like food, water, shelter love
 	#But sometimes that desire causes more problems for us like obesity with candy
@@ -446,57 +418,3 @@ label: ad1Morning
 	#Everything in life is meaningless, so we get to pick whats meaningful for ourselves.
 	#She smiles faintly at you and feels a little better
 	#it's important here that she's not in as much as a state, but that she's not completely over it: just enough to make it possible for the 2 of you to get along
-
-	#You walk back down to the room with her
-	#You decide what to call her
-	
-	#it's evening now
-    #you ask her how she wants to spend the rest of the evening
-
-    #i don't know what she wants to do, decide this
-
-    #you say that you're getting a little sleepy, and she gives an offer to 'spend the night with her" again
-    #you decline
-    #after spending some time with her you decide to sleep
-
-
-
-
-
-
-
-
-
-#--------------------------------
-
-
-#try her telling her name here, vs earlier
-
-
-
-#[with button route think of the silloutes and how much personality came through that... How would she be posed for that?]
-
-#intial talk with Alice
-#"will you submit to me?" 
-#if yes bad end? maybe no choice at all the first time
-#choice gives you either trust++ if you deal well, or neutral if not
-#[from which point should the actual submission end branch off]
-#from here we can begin to hint at her scent etc being mind-altering
-#alice is taken aback by you not giving her attention, and runs off
-
-#in this panic you decide to take a moment to cool off, let her calm down
-# you decide to check website and see the website to understand whats going on
-#you see that you have a discord notification, you reply to friend and tell himm your situation
-#he's confused why you aren't taking this oppertunity
-
-#you find her on the roof
-#try to understand why she got mad
-#open up a little towards her too
-#go back to room together
-
-#you suggest that you do something together?
-
-#sleep
-
-
-
