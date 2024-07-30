@@ -371,7 +371,7 @@ label: ad1Morning
 
         m "Tch, just remembered something I was trying to forget"
         "You're unloveable"
-        "Even if you tried: you hoesntly think that YOU could play the role of boyfriend to someone" 
+        "Even if you tried: you honestly think that YOU could play the role of boyfriend to someone" 
         "Nobody would even want to be seen with you"
         "..."
         m "OH FUCK!"
@@ -388,15 +388,25 @@ label: ad1Morning
         #salt contents are bad :c
 
 
+    #choice: Go back to your room and wait for her to come back (forget about her)
+        #Go look outside
 
 
-
-
-
-
-
-------------------------
-	#as a mushroom, she doesn't have memories or a sense of personal identity
+    #go out to the enterance
+    #mental preparation, scared of going out to look
+    #hear a scream
+    #Run towards location (shower)
+    #KYAAA! it's shadow person
+    #She closing in about to try to get closer to him
+    #You grab her in the nick of time
+    #pull her back to your room
+    #you yell at her for attempting to assault a random person
+    #Also that if people see you in here, it will cause problems for you
+    #She starts crying and says it's you fault for not giving her attention
+    #She explains that it hurt her because she's supposed to be attractive and alluring
+    #And so it makes her feel like a failure
+    
+    #as a mushroom, she doesn't have memories or a sense of personal identity
 	#She does have instinct and the information in her DNA
 	#In that DNA there's a clear purpose, be desireable, be pretty
 	#If she isn't those things, she has no sense of meaning
@@ -405,7 +415,7 @@ label: ad1Morning
 	#So that she can feel like it was worth it.
 	#Not because she likes him, or wants to do the act as itself, but because she wants the validation it implies.
     
- 	#MC explains that humans too have biological instincts for survival
+    #MC explains that humans too have biological instincts for survival
 	#There's some stuff we can't ignore, like food, water, shelter love
 	#But sometimes that desire causes more problems for us like obesity with candy
 	#Sometimes those instincts lead for us to harm the environment, step on other people, and to be discimantory
@@ -416,5 +426,5 @@ label: ad1Morning
 	#She looks at the vastness of the city and feels like there's more possibility than she could have imagined
 	#Maybe even she can try to find some kind of meaning in life 
 	#Everything in life is meaningless, so we get to pick whats meaningful for ourselves.
-	#She smiles faintly at you and feels a little better
+	#She acts dismissive but smiles faintly at you and feels a little better
 	#it's important here that she's not in as much as a state, but that she's not completely over it: just enough to make it possible for the 2 of you to get along
