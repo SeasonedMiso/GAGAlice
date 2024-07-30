@@ -25,10 +25,7 @@ label: ad1Morning
        #Siloutte animation of her breaking out by herself
     show mc shocked at right with move
     show alice tsun at left 
-<<<<<<< HEAD
     na "So this is your room? Smaller than I hoped for but I guess this will work."
-=======
->>>>>>> b459953adb52acc51cdd679c0da4e005bc6e2ce8
     m "..."
     m "WHAT THE FUCK?!?!"
     na "..."
@@ -37,12 +34,8 @@ label: ad1Morning
     "She steps slowly through it and towards me"
     
     show alice tsun annoyed
-<<<<<<< HEAD
     na "Warm fucking welcome..."
     na "You /really/ have a way with words."
-=======
-
->>>>>>> b459953adb52acc51cdd679c0da4e005bc6e2ce8
 
     show mc sad
     m "I'm sorry..."
@@ -50,90 +43,40 @@ label: ad1Morning
     show mc shocked
     m "WAIT A SEC! WHO-... or...what?... THE HELL ARE YOU?!"
     show alice sad
-<<<<<<< HEAD
     na "That's tragic..."
     na "I hoped my client would be like mentally all there or whatever"
     na "But I guess I just have that effect on people."    
-=======
-    #I think the word she chooses to use here to address him such as client, parent, guardian, is really important! come back here later
-    na "That's tragic... I hoped my client would be like mentally all there or whatever"
-    #make this line more PC
-    na "But I guess I just have that effect on people."    
->>>>>>> b459953adb52acc51cdd679c0da4e005bc6e2ce8
 
-<<<<<<< HEAD
-=======
-    #na "How pitiful... I would have hoped that my client would be able to perform basic congnitive tasks"
-    #na "But I suppose the surreal allure of my visage is beyond your comprehension"
->>>>>>> b459953adb52acc51cdd679c0da4e005bc6e2ce8
     show alice despair
     na "Actually tragic..."
     m "You're... the mushroom I bought?"
-<<<<<<< HEAD
     na "And you aren't brain damaged?"
-=======
-    na "So you aren't brain damaged?"
-    #This is actually good foreshadowing for her toxicity
->>>>>>> b459953adb52acc51cdd679c0da4e005bc6e2ce8
 
-<<<<<<< HEAD
-=======
-    #na "It seems you have something resmebling sentience... Well Done."
->>>>>>> b459953adb52acc51cdd679c0da4e005bc6e2ce8
     show mc angry
     m "THAT'S MY LINE!!!"
     m "YOU'RE TALKING!"
     show alice neutral
-<<<<<<< HEAD
     na "..."
     na "Well since your brain is functioning to _some_ level, maybe you could tell me what to call you?"
-=======
-    na "..."
-    #na "Seeing as your brain is functioning to _some_ degree, perhaps you could tell me your name?"
-    na "Well since your brain is functioning to _some_ level, maybe you could tell me what to call you?"
->>>>>>> b459953adb52acc51cdd679c0da4e005bc6e2ce8
     show mc awed
     m "Ummm... My name..."
     show alice sad
-<<<<<<< HEAD
     na "My bad, I should have picked something easier for you right?"
 
-=======
-    na "My bad, I should have picked something easier for you right?"
-    #The scene is like: She thinks that maybe you've been poisoned by her already, but she's phrasing it so it's like
-    #her look sare the reason why you are cognitively impared
-    #She's kind of making fun of you
-    #But mc is just nervous
-    #Don't actually know if I like this convo, maybe rewrite
-    
-    
-    #na "Forgive me, I should have chosen a less challenging display of intelligence."
->>>>>>> b459953adb52acc51cdd679c0da4e005bc6e2ce8
     show mc angry
     m "NO!!!"
     show mc sad
     m "Just give me a sec..."
     "You weren't mentally prepared to need to talk to someone... "
     show alice neutral
-<<<<<<< HEAD
     na "So, what do I call you?"
-=======
-    na "So, what do I call you?"
-    #name input
-
->>>>>>> b459953adb52acc51cdd679c0da4e005bc6e2ce8
     label name_ali: 
         $name_redo = False
         $playername = renpy.input("So, what do I call you?", length = 8).strip().lower().capitalize()
         if playername in badNames:
             "...%(player_name)"
             show alice meanLaugh
-<<<<<<< HEAD
             na "Hold on a second... THAT'S your name?"
-=======
-            #like aqua from konosuba or uminekoBeatrice
-            na "Hold on a second... THAT'S your name?"
->>>>>>> b459953adb52acc51cdd679c0da4e005bc6e2ce8
             show mc stressed
             m "No! I just stuttered..."
             na "Okay."
@@ -167,31 +110,15 @@ label: ad1Morning
         m "So... You're a mushroom then? Not like a scary alien that's going to lay eggs in my stomach or something?"
         na "What are you talking about?"
         "I didn't think that mushrooms were supposed to talk... or... be animate..."
-<<<<<<< HEAD
         na "You seem to REALLY like asking about stupid shit"
         na "How about you stop thinking so hard, and we get more comfortable?"
-=======
-        na "You seem to REALLY like asking about stupid shit"
-        #na "You really seem to enjoy asking meaningless questions."
-        na "How about you stop thinking so hard, and we get more comfortable?"
-        #na "Why don't you stop thinking about hard stuff, and relax a little bit?"
-        "She lowers herself down onto the corner of the bed and leans back slightly, crossing one leg ontop of the other.'        
->>>>>>> b459953adb52acc51cdd679c0da4e005bc6e2ce8
         "She protudes the aura of a queen sitting on a throne."
         
-<<<<<<< HEAD
         na "..."
         na "So, anyway... Should we start?"
-=======
-        #here she tries to get you to stop asking questions, and come over to her
-        #instead of these lines I think it should be more like she's getting fed up with her advances not working.
-
-
-        na "..."
-        na "So, anyway... Should we start?"
->>>>>>> b459953adb52acc51cdd679c0da4e005bc6e2ce8
         m "Ummm... Start...what?"
 
+# switch to nvl?
         "Without answering your question, she takes a confident lunge in your direction"
         "Her face appoaches yours suddenly"
         "You throw your center of balance backward to evade her advance, but you start to fall backwards"
@@ -217,15 +144,8 @@ label: ad1Morning
         m "...!"
         m "GET THE FUCK AWAY FROM ME!!"
         show alice shock
-<<<<<<< HEAD
         na "..."
         na "{size=-10}... you're not supposed to... i'm..."
-=======
-        "You look back up at the girl, whose face is frozen with shock" 
-        na "..."
-        "Slowly, her expression darkens, and her bottom lip begins to tremble, as she turns her face downwards"
-        na "{size=-10}... you're not supposed to... i'm..."
->>>>>>> b459953adb52acc51cdd679c0da4e005bc6e2ce8
         "..."
         m "{size=+10} Sorry, I didn't mean to yell... I'm just really..."
         "You trail off after noticing that she contiues to mumble to herself."
@@ -252,35 +172,7 @@ label: ad1Morning
         m "She's gone..."
         "Your line of sight slowly drops towards the floor as you hang your head"
         "You notice several shimmering drops of clear liquid on the wooden flooring."
-<<<<<<< HEAD
     
-=======
-        #is it even wood in the cg?
-
-
-	
-	#She tries once again to reinitiate
-	#But this time mc is more vocal/aggresive, and it shocks her
-    #choice: horrible turn down, passive let her do whatever, let her down nicely
-	na "...So... You don't want me?"      
-        m "?"
-        na "That's not what's supposed to happen..."
-        na "I'm supposed to entice anyone to abandon reason."
-        na "But you..." 
-        m "I'm trying to tell you I-"
-        show alice shoutTears
-        na "SHUT UP!"
-        show mc shocked
-        m "..."
-        show alice crying
-        na "..."
-        na "{size=-8}What's wrong with me...{size=+8}"
-        hide alice with easeoutbottom
-        "Before you can open my mouth, she turns towards the door"
-        "She swiftly turns the door knob and runs out"
-        "You hear her sobbing echo through the dormitory passage, and then fade into the distance"
-        #maybe you only learn her name on the rooftop?
->>>>>>> b459953adb52acc51cdd679c0da4e005bc6e2ce8
         show mc stressed at center
         play music normal
         m "What the fuck just happened?"
@@ -390,8 +282,7 @@ label: ad1Morning
         m "Like... Is this sort of buisness just like... normal?"
         "
         "You're just afraid"
-        #too obvious, rewrite to be more subtle
-        #i feel like this interaction maybe needs more impact?
+
         "Anybody who gets to know you is going to be repulsed when they actually get to know you anyway."
         "That's how it always has been"
         "And always will be..."
@@ -404,7 +295,7 @@ label: ad1Morning
         m "OH FUCK!"
         "You spring out of your chair."
         m "What if someone saw her leaving my dorm?!"
-        #what is he afraid of? just that he will be noticed? Why is being with a girl a negative thing?
+
         m "I need to find her, and make sure no one sees her" 
 
         "You walk over to the door and walk through it into the corridor."
@@ -412,26 +303,88 @@ label: ad1Morning
         
         Choice: Where go???
 
+   #go out to the enterance
+    #mental preparation, scared of going out to look
+    #hear a scream
+    #Run towards location (shower)
+    #KYAAA! it's shadow person
+    #She closing in about to try to get closer to him
+    #You grab her in the nick of time
+    #pull her back to your room
+    change scene to main gate
+    m "Fuck... There's no sight of her anywhere"
+    m "She wouldn't go outside..."
+    m "Would she?"
+    m "Aaaah! Fuck!"
+    m "This is way more stress than I signed up for"
+    "She's probably already out in the city"
+    "I wonder if she knows that you need to wait to cross the road"
+    "That would be an interesting ambulance call"
 
-<<<<<<< HEAD
-=======
-    #choice: Go back to your room and wait for her to come back (forget about her)
-        #Go look outside
->>>>>>> b459953adb52acc51cdd679c0da4e005bc6e2ce8
+    m "Ahhhh!!! Damn it... Maybe I should just..."
+
+    Choice "Head back to room to wait for her to come back" "Go outside"
+    Go outside:
+    m "I can't just give up"
+    m "She could be in trouble"
+    m "Fuck it! Here goes nothing"
+    "As you place your hand on the front door of the dormitory entrance"
+    na "KYAAAAAAAAAA!"
+    m "Alice!!"
+    
+    scene transition to black 
+    transitoin to kitchen
+    transition to bathroom
+    keShad "AAAAA"
+    ali "Why are you backing away from me?"
+    ali "Don't you want to get closer to me?"
+    keShad "AAAAHHGH"
+
+    show mc sprite approaching alice
+    Slap sound effect
+    then dragging her off screen
+
+    fade to black
+
+    dragging her into your room
+
+    ali "Where are you dragging me you pervert?"
+    ali "What kind of sick,"
+    ali "tormented"
+    ali "degenegerate things are you going to-"
+    mc "What the fuck were you doing down there?!"
+    ali "I-"
+    mc "You were harassing... assaulting someone"
+    ali "I-"
+    mc "Don't you get how stupid you are?"
+    mc "It's bad enough you let someone see you"
+    mc "What am I supposed to do if they call the police?"
+    ali "I-"
+    mc "You what?"
+    # try to spell stuff to make it sound like she's sobbing
 
 
-<<<<<<< HEAD
+    # okay make
+
+    # ali "Iz not mai fault!"
+    # ali "You didn pay attention to me an"
+    # ali "I jus wanned you to make me feel pretty"
+    # ali "I felt like a failure"
+    # ali "Like if you don't want me, then obviously there's something wrong with me"
+    # ali "So I went to go find someone who did want me"
+
+    make her angry about like, why did you even grow me
+    can't you take some responsibility
+    why do you not want me that bad?
+    am i that ugly
 
 
-then goes to look
-not sure where to look = anxious. hypes self up to go outside and search
-hears a girlish squeal
-runs to bathroom
-he thinks it’s alice’s screaming, but once inside she’s like wtf it was him not me - points to neighbour showering.
-neighbour is a eldritch blob (on the friendlier/shocked side with dyed hair). in funny jojo pose covering parts and very scared.
-brief argument where alice chastises mc on being too scared to do her.
 
-
+ #you yell at her for attempting to assault a random person
+    #Also that if people see you in here, it will cause problems for you
+    #She starts crying and says it's you fault for not giving her attention
+    #She explains that it hurt her because she's supposed to be attractive and alluring
+    #And so it makes her feel like a failure
 mc grabs alice and takes back to room
 argument: she blames him for her actions. angry tear up. “What am I supposed to do? you’re an asshole and how else am i going to get that affection.”
 he is still annoyed and awkward and flustered but apologises to get bed to feel better since she’s crying a bit. especially since inner thoughts guilt him.
@@ -463,38 +416,10 @@ Bad end where alice disfigures her face to look prettier
 #as a mushroom, she doesn't have memories or a sense of personal identity
 
 
-    #go out to the enterance
-    #mental preparation, scared of going out to look
-    #hear a scream
-    #Run towards location (shower)
-    #KYAAA! it's shadow person
-    #She closing in about to try to get closer to him
-    #You grab her in the nick of time
-    #pull her back to your room
-    #you yell at her for attempting to assault a random person
-    #Also that if people see you in here, it will cause problems for you
-    #She starts crying and says it's you fault for not giving her attention
-    #She explains that it hurt her because she's supposed to be attractive and alluring
-    #And so it makes her feel like a failure
+ 
+   
     
     #as a mushroom, she doesn't have memories or a sense of personal identity
-=======
-    #go out to the enterance
-    #mental preparation, scared of going out to look
-    #hear a scream
-    #Run towards location (shower)
-    #KYAAA! it's shadow person
-    #She closing in about to try to get closer to him
-    #You grab her in the nick of time
-    #pull her back to your room
-    #you yell at her for attempting to assault a random person
-    #Also that if people see you in here, it will cause problems for you
-    #She starts crying and says it's you fault for not giving her attention
-    #She explains that it hurt her because she's supposed to be attractive and alluring
-    #And so it makes her feel like a failure
-    
-    #as a mushroom, she doesn't have memories or a sense of personal identity
->>>>>>> b459953adb52acc51cdd679c0da4e005bc6e2ce8
 	#She does have instinct and the information in her DNA
 	#In that DNA there's a clear purpose, be desireable, be pretty
 	#If she isn't those things, she has no sense of meaning
@@ -511,11 +436,3 @@ Bad end where alice disfigures her face to look prettier
 	#Obviously it's not that simple
 	#but mc wants alice to find what makes her happy outside of her assigned purpose
 	
-<<<<<<< HEAD
-=======
-	#She looks at the vastness of the city and feels like there's more possibility than she could have imagined
-	#Maybe even she can try to find some kind of meaning in life 
-	#Everything in life is meaningless, so we get to pick whats meaningful for ourselves.
-	#She acts dismissive but smiles faintly at you and feels a little better
-	#it's important here that she's not in as much as a state, but that she's not completely over it: just enough to make it possible for the 2 of you to get along
->>>>>>> b459953adb52acc51cdd679c0da4e005bc6e2ce8
