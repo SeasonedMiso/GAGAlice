@@ -348,22 +348,60 @@ label: ad1Morning
 
     dragging her into your room
 
+    # I feel like the tone is kinda off
+
     ali "Where are you dragging me you pervert?"
     ali "What kind of sick,"
     ali "tormented"
     ali "degenegerate things are you going to-"
-    mc "What the fuck were you doing down there?!"
+    m "What the fuck were you doing down there?!"
+    ali "It-"
+    m "You were harassing... assaulting someone"
     ali "I-"
-    mc "You were harassing... assaulting someone"
-    ali "I-"
-    mc "Don't you get how stupid you are?"
-    mc "It's bad enough you let someone see you"
-    mc "What am I supposed to do if they call the police?"
-    ali "I-"
-    mc "You what?"
+    m "Don't you get how stupid you are?"
+    m "It's bad enough you let someone see you"
+    m "What am I supposed to do if they call the police?"
+    ali "It-"
+    m "You what?"
     # try to spell stuff to make it sound like she's sobbing
 
+    ali "It's not my fault that you ignored me!"
+    ali "The only reason I went looking for someone else is because you humiliated me"
+    m "Hold on a sec... I how did I humiliate you?"
+    ali "You bought me, and picked me out for one reason"
+    ali "But when you actually see me, you throw me away"
+    ali "I guess I'm just not good enough for you"
+    m "What are you talking about?"
+    m "I you just came up to me, and started touching my face"
+    m "and... saying weird stuff"
+    ali "But that's why you raised me right?"
+    m "No! It's a misunderstanding"
+    m "I didn't know anything about you until literally a few hours ago"
+    ali "So what? I'm supposed to be irresitible"
+    ali "That's my whole thing"
+    ali "My value"
+    # I feel like this is too introspecive
+    ali "So I felt like either there's something wrong with me, or something wrong with you"
+    m "So... That's why you went to find someone else"
+    ali "I guess"
+    ali "But all he did is scream"
+    ali "..."
+    ali "Is there something wrong with how I turned out?"
+    ali "Maybe it's my face or..."
+    #Choice: It's okay ; I think you're pretty ; step on me mommy
+    #I think you're pretty
+    m "You're incredibly pretty"
+    m "So much that anyone would be jealous"
+    m "..."
+    m "Especially compared to someone so plain like me"
+    ali "Oh yeah, self depreciation always makes people feel better"
+    m "Anyway, I was just trying to say that..."
+    m "I think you might be being a bit hard on yourself"
+    ali "You wouldn't understand"
+    m "..."
 
+    
+    
     # okay make
 
     # ali "Iz not mai fault!"
@@ -373,10 +411,10 @@ label: ad1Morning
     # ali "Like if you don't want me, then obviously there's something wrong with me"
     # ali "So I went to go find someone who did want me"
 
-    make her angry about like, why did you even grow me
-    can't you take some responsibility
-    why do you not want me that bad?
-    am i that ugly
+    # make her angry about like, why did you even grow me
+    # can't you take some responsibility
+    # why do you not want me that bad?
+    # am i that ugly
 
 
 

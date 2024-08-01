@@ -1662,7 +1662,7 @@ label day2DeepTalk:
    ali "Humans are good at that"
    show alice happy
    ali "So I guess in the meanwhile, all you can do is find a waste of time that feels special to you"
-
+   #maybe try to fit in a bit about like: I'm just scared even if I sacrifice everything, that ill still feel as broken and fucked up as i did before
    # I'm worried this reads as preechy and goes against do don't say
    show mc awed
    m "...Thanks"
