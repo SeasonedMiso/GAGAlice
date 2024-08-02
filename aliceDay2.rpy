@@ -21,6 +21,10 @@ label day2Morning:
    #if trust == 0 then she's mopey, so make sure enough chances to get it to be > 1
    #talk to her
 
+
+
+   # (Shes left hunderds of tabs open on your laptop)
+
    show bedroom_day with fade:
       zoom 0.9
       
@@ -374,6 +378,10 @@ label aliceDay2DateLocation:
       
 
 
+# while out, she makes comments here and there that show her interest in 
+# creating and having a sense of identity/srtle. 
+# eg. “If I made this game, I’d make the characters cuter or something.”
+# /“Could you draw X on this latter instead?”
 
 #move to day 1 maybe
 label arcadeDate:

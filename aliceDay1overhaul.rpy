@@ -118,7 +118,11 @@ label: ad1Morning
         na "So, anyway... Should we start?"
         m "Ummm... Start...what?"
 
-# switch to nvl?
+# switch to nvl?]
+
+# So part of this is going on about the MC's perception of her as poisonous
+# I kind of don't know if it serves the narrative or not
+# I think it's better that it's just about him being sexually harrassed
         "Without answering your question, she takes a confident lunge in your direction"
         "Her face appoaches yours suddenly"
         "You throw your center of balance backward to evade her advance, but you start to fall backwards"
@@ -202,6 +206,7 @@ label: ad1Morning
 
         m "I mean, I guess she was pretty attractive, but I wasn't really paying attention to that."
         m "...only has 3 days to live..."
+        # Is that really all he has to say about this? Isn't this like really shocking? 
         
         "So? Are you any closer to figuring out what is going on?"
         
@@ -303,7 +308,7 @@ label: ad1Morning
         
         Choice: Where go???
 
-   #go out to the enterance
+    #go out to the enterance
     #mental preparation, scared of going out to look
     #hear a scream
     #Run towards location (shower)
@@ -370,51 +375,43 @@ label: ad1Morning
     m "Hold on a sec... I how did I humiliate you?"
     ali "You bought me, and picked me out for one reason"
     ali "But when you actually see me, you throw me away"
-    ali "I guess I'm just not good enough for you"
+    ali "How am I not good enough for you?"
     m "What are you talking about?"
     m "I you just came up to me, and started touching my face"
     m "and... saying weird stuff"
     ali "But that's why you raised me right?"
     m "No! It's a misunderstanding"
     m "I didn't know anything about you until literally a few hours ago"
-    ali "So what? I'm supposed to be irresitible"
+    ali "So what?"
+    ali "I'm supposed to be irresitible"
     ali "That's my whole thing"
-    ali "My value"
+    ali "That's why I'm valueble"
     # I feel like this is too introspecive
-    ali "So I felt like either there's something wrong with me, or something wrong with you"
+    ali "So there's either there's something wrong with me, or something wrong with you"
     m "So... That's why you went to find someone else"
-    ali "I guess"
+    ali "I guess..."
     ali "But all he did is scream"
     ali "..."
     ali "Is there something wrong with how I turned out?"
     ali "Maybe it's my face or..."
-    #Choice: It's okay ; I think you're pretty ; step on me mommy
-    #I think you're pretty
+    #Choice: It's okay ; I think you're valueble ; step on me mommy; 
+    #You're valueble
     m "You're incredibly pretty"
     m "So much that anyone would be jealous"
     m "..."
     m "Especially compared to someone so plain like me"
     ali "Oh yeah, self depreciation always makes people feel better"
     m "Anyway, I was just trying to say that..."
-    m "I think you might be being a bit hard on yourself"
-    ali "You wouldn't understand"
+    m "I don't think that's what makes you valueble"
+    ali ""
     m "..."
 
     
     
-    # okay make
 
-    # ali "Iz not mai fault!"
-    # ali "You didn pay attention to me an"
-    # ali "I jus wanned you to make me feel pretty"
-    # ali "I felt like a failure"
-    # ali "Like if you don't want me, then obviously there's something wrong with me"
-    # ali "So I went to go find someone who did want me"
 
-    # make her angry about like, why did you even grow me
-    # can't you take some responsibility
-    # why do you not want me that bad?
-    # am i that ugly
+
+
 
 
 
@@ -423,32 +420,53 @@ label: ad1Morning
     #She starts crying and says it's you fault for not giving her attention
     #She explains that it hurt her because she's supposed to be attractive and alluring
     #And so it makes her feel like a failure
-mc grabs alice and takes back to room
-argument: she blames him for her actions. angry tear up. “What am I supposed to do? you’re an asshole and how else am i going to get that affection.”
-he is still annoyed and awkward and flustered but apologises to get bed to feel better since she’s crying a bit. especially since inner thoughts guilt him.
-she brushes off his tenderness
-“Oh whatever.”
-this irks him and he’s like “Fine if you’re not ready to hear it.”
-
-However they agree to disagree.
-mc checks website. shocked that she  only lives for 3 days.
-she’s like “I know, and I have to spend it with YOU.”
-
-He also sees that she’s poisonous and freaks out. Alice is annoyed by his reaction and hints at this hatred/fear towards her being unjustified and unfair. “You think they’re going to kill their customer base? They thrive on repeat customers.”
-
-She’s a bit sad/angry. “Relax. i won’t do anything anyway. I can tell I’m not wanted.”
-
-- bad route idea: he dies, but it’s not her poison that kills him. It’s his OVERREACTION and fear of her poison that kills him.
-
-Tension again. He wants to clear the air a bit. suggests goes to rooftop. He talks excitedly about the stars. She’s like “Okay I guess. i don’t really see the point.” He describes how people can find meaning in the stars. she SUBTLY goes from making fun of it and calling it stupid to warming up to it.
-
-Back at room. When he gets in to sleep, she starts to pull back the cover and climb in bc she assumed that’s what she was supposed to do.
-
-She demands he gives her something to do while he sleeps. “What, you expect me to just wait?”
-mc says he guesses she can just go on her laptop.
 
 
-Bad end where alice disfigures her face to look prettier
+
+
+
+# mc checks website. shocked that she  only lives for 3 days.
+# she’s like “I know, and I have to spend it with YOU.”
+
+# He also sees that she’s poisonous and freaks out. Alice is annoyed by his reaction and hints at this hatred/fear towards her being unjustified and unfair. 
+# “You think they’re going to kill their customer base? They thrive on repeat customers.”
+
+# She’s a bit sad/angry. “Relax. i won’t do anything anyway. I can tell I’m not wanted.”
+
+# - bad route idea: he dies, but it’s not her poison that kills him. It’s his OVERREACTION and fear of her poison that kills him.
+
+# Tension again. He wants to clear the air a bit. suggests goes to rooftop. He talks excitedly about the stars. She’s like “Okay I guess. i don’t really see the point.” He describes how people can find meaning in the stars. she SUBTLY goes from making fun of it and calling it stupid to warming up to it.
+
+# Back at room. When he gets in to sleep, she starts to pull back the cover and climb in bc she assumed that’s what she was supposed to do.
+
+# She demands he gives her something to do while he sleeps. “What, you expect me to just wait?”
+# mc says he guesses she can just go on her laptop.
+
+
+# Bad end where alice disfigures her face to look prettier
+
+
+
+
+
+
+# more conflict in terms of like maybe
+# them brushing off this gendered society thing to each other
+# like "you have it so much easier"
+# i think like
+# a fundamental women experience is that there's an assumed like
+# standard of beauty and those below it are hardly considered like
+# people
+# but if you are concerned at all with being over that line, and being into beauty or whatever
+# then you're seen as vain
+# that double standard feels very important here
+# like the contrast between a society that punishes you for not complying, but berates your attempts to comply
+# So I want to fit that in some how
+
+
+
+
+
 
 
 #as a mushroom, she doesn't have memories or a sense of personal identity
