@@ -102,6 +102,11 @@ label day2Morning:
    "You would need to go outside"
    "Where \"people\" are"
    m "Ummm...Not really"
+
+
+    # I think maybe it makes more sense that it's the mc trying to get alice to go out with him, not the other way around. She gets roped into it by the prospect of clothing
+
+
    show alice shocked
    #Like GAN face here with sound effect, let it be sort of slapstick
    ali "but... I..."
