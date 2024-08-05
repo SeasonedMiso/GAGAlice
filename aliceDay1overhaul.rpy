@@ -22,7 +22,7 @@ label: ad1Morning
     "You prepare your cheap instant coffee, turn back towards your bed, and place your coffee on the bed side table."
     "You shift your attention toward your proto-roommate"
     "Suddenly you hear a rustling sound from the corner of your room "
-       #Siloutte animation of her breaking out by herself
+    #Siloutte animation of her breaking out by herself
     show mc shocked at right with move
     show alice tsun at left 
     na "So this is your room? Smaller than I hoped for but I guess this will work."
@@ -196,17 +196,27 @@ label: ad1Morning
         m "Why don't I look at the site I got it from... There must have been some kind of mistake or something."
 
         m "Okay let's see what this buisness is 'ABOUT'"
+        # player navigates to site
         m "WHAT THE FUCK IS THIS??? IS THIS EVEN LEGAL????"
-        m "So I'm supposed to grow a companion?"
+        m "So I'm supposed to grow a 'companion'?"
         m "Even I'm not THAT much of a loser." 
         "Who the hell is selling this kind of thing? And who is buying it?"
         m "..."
         m "So let me get this straight... "
         m "She's a mushroom companion... And her characteristics are... Unparalleled beauty and dominance?"
+        
+    
 
-        m "I mean, I guess she was pretty attractive, but I wasn't really paying attention to that."
+        m "I mean, I guess she was pretty attractive..."
         m "...only has 3 days to live..."
         # Is that really all he has to say about this? Isn't this like really shocking? 
+
+        m "...Do not attempt to consume unless prepared by a professional??"
+        m "That sounds... Concerning"
+        m "By consume do they mean like..."
+        m "Eat?"
+        # m "Make sure to prepare adaquetely before consumption due to "
+        # MC needs to find a part talking about her toxicity and 
         
         "So? Are you any closer to figuring out what is going on?"
         
@@ -221,7 +231,7 @@ label: ad1Morning
         show mc shocked
         m "AAH!"
         "It's just a dischord message"
-        "Oh it's Rom "
+        "Oh it's Rom"
         "Even if you don't have any friends in the real world, you still know some people online."
         "Even then though, you mostly talk in a small private server"
         "There's about 10 people"
@@ -233,7 +243,7 @@ label: ad1Morning
             play music computerHum
 
             rb "sup i was wondering if you wanted to hop in vc"
-            "this is one of my few online friends..."
+            "This is one of your few online friends..."
             "Normally if you internally prepared for a few minutes, you might be able to talk for a bit"
             "But right now, you don't have the capacity for that"
             m "Sorry, kinda busy rn... can you type?"
@@ -249,13 +259,15 @@ label: ad1Morning
             m "yeah i'm fine... it's just"
             m "idk"
             rb "did something happen?"
-            "you think about if you should tell him about what just transpired"
             m "you probably won't believe me so..."
             rb "don't be like that"
             m "fine"
-            m "You know I told you I was growing mushrooms... Well this is where I ordered them from and ummm "
+            m "You know I told you I was growing mushrooms..."
             m "It bloomed today... into a girl"
             rb "lmao nice nice"
+            m "No like a real one, that talks and everything"
+            rb "can u send link to site"
+            m "https://mushroom-site.something"
             m "and then umm "
             m "She got all close to me and then ran off crying..."
             rb "wait, did you make this site? I didn't know you could make websites"
@@ -269,39 +281,34 @@ label: ad1Morning
             rb "emoji upside down smile"
             rb "lmao wtf"
             rb "let me order one real quick"
-            rb "I wonder if I can get it to cosplay Rom "
-        m "What? Is he not listening to me?"
+            rb "I wonder if I can get it to cosplay Rom"
+            m "What? Is he not listening to me?"
             m "are you for real?"
             rb "like was she hot? I've always wanted a girlfriend that can become my waifu"
             m "I'm being serious, she's like a living being... She talks and moves and everything"
             rb "sounds like I don't need my onahole anymore"
-        m "What the fuck?"
+            m "What the fuck?"
             m "I'm sorry, I think i've gotta go"
             rb "don't have too much fun"
 
         "You close the window, and turn away from your computer screen."
         show mc stressed
         m "Am I the weird one?"
-        m "Like... Is that how I'm supposed to act?"
-        m "Is that how guys are supposed to think about girls?"
-        m "Like... Is this sort of buisness just like... normal?"
+        m "Like... Is that how normal guy would react to this??"
+        m "Is this sort of buisness just like... normal?"
         "
         "You're just afraid"
 
         "Anybody who gets to know you is going to be repulsed when they actually get to know you anyway."
         "That's how it always has been"
         "And always will be..."
-
-        m "Tch, just remembered something I was trying to forget"
         "You're unloveable"
         "Even if you tried: you honestly think that YOU could play the role of boyfriend to someone" 
         "Nobody would even want to be seen with you"
         "..."
         m "OH FUCK!"
-        "You spring out of your chair."
         m "What if someone saw her leaving my dorm?!"
-
-        m "I need to find her, and make sure no one sees her" 
+        m "I've gotta find her, and make sure no one sees her" 
 
         "You walk over to the door and walk through it into the corridor."
         "You look towards both ends of the passage, but no one is there."
@@ -317,6 +324,7 @@ label: ad1Morning
     #You grab her in the nick of time
     #pull her back to your room
     change scene to main gate
+
     m "Fuck... There's no sight of her anywhere"
     m "She wouldn't go outside..."
     m "Would she?"
@@ -340,6 +348,7 @@ label: ad1Morning
     scene transition to black 
     transitoin to kitchen
     transition to bathroom
+
     keShad "AAAAA"
     ali "Why are you backing away from me?"
     ali "Don't you want to get closer to me?"
@@ -377,22 +386,21 @@ label: ad1Morning
     ali "But when you actually see me, you throw me away"
     ali "How am I not good enough for you?"
     m "What are you talking about?"
-    m "I you just came up to me, and started touching my face"
+    m "You just came up to me, and started touching my face"
     m "and... saying weird stuff"
     ali "But that's why you raised me right?"
     m "No! It's a misunderstanding"
-    m "I didn't know anything about you until literally a few hours ago"
+    m "I didn't know anything about you until literally just now"
     ali "So what?"
     ali "I'm supposed to be irresitible"
     ali "That's my whole thing"
-    ali "That's why I'm valueble"
-    # I feel like this is too introspecive
-    ali "So there's either there's something wrong with me, or something wrong with you"
+    ali "That's my purpose"
+    ali "So it's either something wrong with me, or something wrong with you"
     m "So... That's why you went to find someone else"
     ali "I guess..."
     ali "But all he did is scream"
     ali "..."
-    ali "Is there something wrong with how I turned out?"
+    ali "Maybe there _is_ something wrong with me?"
     ali "Maybe it's my face or..."
     #Choice: It's okay ; I think you're valueble ; step on me mommy; 
     #You're valueble
@@ -420,20 +428,21 @@ label: ad1Morning
     ali "... *sigh*"
     ali "Not really anything detailed"
     ali "I just have a vague sense of like"
-    ali "What I'm supposed to do I guess"
+    ali "What I'm _supposed_ to do I guess"
     ali "As well as every possible way to tie you up"
     m "..."
     ali "But all I could think when I first woke up was that"
     ali "I'm supposed to make advances on who ever grew me"
-    ali "And that's supposed to be my purpose"
-    ali "My meaning"
+    ali "That's my goal"
+    ali "My purpose..."
     ali "So for you to turn me down how you did"
-    ali "Really hurt"
+    ali "Really sucked"
     ali "..."
     ali "And I know that wasn't your intention"
     ali "And that's not why you grew me"
-    ali "But it's like"
+    ali "But it's like..."
     ali "If I can't do that, then what AM I supposed to do"
+
     m "I..."
     m "I don't know how to answer that"
     m "I guess you could say I'm struggling with the same question"
@@ -455,7 +464,7 @@ label: ad1Morning
     ali "Plus, it's not like I sleep"
     ali "I'm a fungi"
     m "Ughh... What the fuck kind of stuff has that company tought you"
-    ali "You mean, this isn't normal"
+    ali "You mean, this isn't normal?"
     m "Ummm... Well it depends"
     ali "On?"
     m "Look I don't really want to explain this right now"
@@ -464,25 +473,11 @@ label: ad1Morning
     m "Maybe you'll be able to find something that inspires you there"
     "You fall asleep to the faint humming of the laptop fan interrupted by the occasional tapping of keys, and dull popping of the trackpad buttons "
 
-   
-
-    
-    
-
-
-
-
-
-
-
- #you yell at her for attempting to assault a random person
+    #you yell at her for attempting to assault a random person
     #Also that if people see you in here, it will cause problems for you
     #She starts crying and says it's you fault for not giving her attention
     #She explains that it hurt her because she's supposed to be attractive and alluring
     #And so it makes her feel like a failure
-
-
-
 
 
 # mc checks website. shocked that she  only lives for 3 days.

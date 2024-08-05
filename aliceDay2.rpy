@@ -112,7 +112,7 @@ label day2Morning:
    ali "but... I..."
    ali "..."
    show alice angry tears
-   ali "Fine, what ever, die alone virgin, see if I give a fuck"
+   ali "Fine, what ever, die alone virgin, see if I care"
    show mc shocked at bounce
    m "!"
    m "No wait, it's fine! We can go! Wherever, Whatever you want"
@@ -467,7 +467,7 @@ label arcadeDate:
    show mc awed
    m "Well... The satisfaction of having gotten further, and accomplishing something that not many people have done?"
    show alice annoyed
-   ali "That's fucking stupid."
+   ali "That's stupid."
    ali "Who cares if you are the best in the world at playing stupid children's games?"
    show mc normal
    m "..."
@@ -635,7 +635,7 @@ label cafeDate:
    ali "I've have never heard of something."
    ali "So"
    show alice disgusted
-   ali "fucking stupid in my life."
+   ali "stupid in my life."
    show mc slightsad
    m "You've been alive for like 24 hours."
    show alice annoyed
@@ -894,7 +894,7 @@ label coffeeTalkArcade:
    ali "But it didn't go the way I assumed it would."
    m "So you mean like... You had like... Instincts about specific information? Like genetic memories?"
    show alice neutral
-   ali "I don't know what the fuck you're talking about but uh, yeah sure, why not?"
+   ali "I don't know what you're talking about but uh, yeah sure, why not?"
    show mc normal
    m "What I mean is, that you like woke up and knew how to speak perfect English, and all of that other stuff."
    show mc normalside
