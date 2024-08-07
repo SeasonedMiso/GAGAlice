@@ -1,13 +1,3 @@
-
-# THIS DAY NEEDS MAJOR TWEAKS
-# -Alice = valley girl not ojousama
-# -Make it clear that alice's trauma is the expectation that she's sexually desireable
-# -make the conflict make sense and natural
-# -Make the resolution make sense, but leave them as like acquaintances, not friends
-
-
-
-##Check all the comments and non spoken lines from ori
 label ad1Morning:
 
     #Character definitions:
@@ -489,8 +479,43 @@ label ad1Morning:
     show mc shocked
     m "OH FUCK!"
     m "What if someone saw her leaving my dorm?!"
-    
-    
+    show mc stressed at center with move
+    window hide
+    hide mc with easeoutbottom
+    play sound "door.wav"
+    scene hallway with fade
+    show mc worried with easeinbottom
+    window show
+    m "Where is she?"
+    m "She wouldn't go outside..."
+    show mc stressed
+    m "...would she?"
+    m "Aaaah! Fuck!"
+    show mc sad
+    m "This is way more stress than I signed up for."
+    "She's probably already out in the city."
+    show mc worried
+    m "Does she know that you need to wait before you cross the road?"
+    m "I wonder if she'd just explode into mushroom pieces if she got hit by a car..."
+    show mc stressed
+
+    #add expressions here
+    m "If she's outside, she could be anywhere"
+    m "The only way I could realistically find her is by asking passers-by if they saw her"
+    m "And that means..."
+    mc shudder
+    m "Talking to people"
+    "You're probably just over thinking it."
+    "It's called 'Anxiety'"
+    "Thought you'd be familiar with it by now"
+    m "..."
+    m "She got upset in the heat of the moment"
+    m "But as soon as she realizes she has no shelter, she's gunna come running back"
+    m "Maybe I should just go and wait for her in my room?"
+    m "But-"
+    m"..."
+
+
     show mc at right with move
 
     menu:
@@ -503,14 +528,41 @@ label ad1Morning:
             show black with dissolve:
                 alpha 0.5
             window show
-            "You imagine leaving the room."
             "She could be anywhere. This place is huge. She might have already left the dorms..."
             "She looked like she could handle herself, so..."
             "Is it really even necessary for you to even ask people if they've seen a red-headed hottie?"
             "It would be so embarrassing. They'd probably just laugh at you."
-            "So what's even the point? She's gone. She didn't want to hang around."
-            show black with dissolve
-            "Just let her go."
+            "Let's go inside"
+            show black with dissolve:
+                            alpha 0.5
+            "You wait..."
+            "For a few minutes..."
+            "Then an hours passes..."
+            "2 hours..."
+            play heartbeat
+            "The sun begins to wane in the sky"
+            "And then suddenly"
+            *Knock knock*
+
+            #show room
+            m "Alice?!"
+                show black with dissolve:
+                            alpha 0.5
+            play fastClammeringFootsteps
+      
+            play sound "door.wav"
+            scene hallway with fade
+            show mc worried with easeinbottom
+            window show
+            m "Huh? Where is she?"
+            m "Alice?!"
+            "No one is there"
+
+
+            # keep going
+            
+
+
             "END X:..."
             # pause 1
 
@@ -524,28 +576,14 @@ label ad1Morning:
             return
 
         "Search outside.":
-            show mc stressed at center with move
-            m "She could be in trouble."
-            m "Fuck it! Here goes nothing-"
-            window hide
-            hide mc with easeoutbottom
-            play sound "door.wav"
-            scene hallway with fade
-            show mc worried with easeinbottom
-            window show
-            m "Where is she?"
-            m "She wouldn't go outside..."
-            show mc stressed
-            m "...would she?"
-            m "Aaaah! Fuck!"
-            show mc sad
-            m "This is way more stress than I signed up for."
-            "She's probably already out in the city."
-            show mc worried
-            m "Does she know that you need to wait before you cross the road?"
-            m "I wonder if she'd just explode into mushroom pieces if she got hit by a car..."
+            
+     
             show mc vstressed
-            m "Ahhhh!!! Damn it... Maybe I should just..."
+            "You wait for a few minutes"
+            "Slowly mustering up determination from the depths of your very soul"
+            m "..."
+            m "Ahhhh!!! Fuck it"
+            m "Here goes nothing!"
             na "KYAAAAAAAAAA!" with sshake
             show mc surprised at bounce
             m "Alice!"
