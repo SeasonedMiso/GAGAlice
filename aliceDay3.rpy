@@ -42,5 +42,10 @@ label:day3Restring
 
 #[how does she respond to the fact that today is her last day? How does she want to spend it with you?]
 
+#-----------------
+so i've been thinking about this day for while and i'm concerned about how it turns out. 
+I think just making it that she wants to write a song and that the recording is left then 
+that's kinda anticlimactic. 
+maybe it would be better that there's like an open mic so that there's an event to lead up to
 
 
