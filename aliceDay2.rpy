@@ -12,9 +12,7 @@ label day2Morning:
    #It's very important that alice has fun making fun of mc, in a sadistic way, but almost like nagatoro
    #It starts cruel, but gradually starts to reveal that at her core she really cares about him
 
-   #If you can replace narration with dialogue, go back and do it! 
-
-
+  
    #wake up
    #she waters herself
 
@@ -90,6 +88,10 @@ label day2Morning:
    show alice normal
    ali "Ummm... If you want I could help you... you know?"
    ali "Look less like your mom picks out your clothes from the bargain bin"
+
+#    Alice wants to try go to the mall to experiment with finding a new way to express herself the only way that she knows how: through her appearance. 
+# The MC tries to use this as an opportunity to expose her to new things: and maybe find something for her to find meaning in. 
+
    m "Is that supposed to be an apology?" #  "Is that supposed to be an make me feel better?"
    ali "Whatever, do you want my help or not?"
 
@@ -155,6 +157,11 @@ label day2Morning:
    jump day2date
 
 label day2date:
+#    The mall setting serves as a perfect backdrop for Alice’s exploration of self-expression. Her desire to use appearance as a form of validation reflects her programming,
+# while the main character’s attempts to show her deeper forms of meaning create an interesting contrast.
+# The arcade scene highlights Alice’s lack of understanding of human activities. 
+# The main character’s explanation of video games as a form of connection and self-improvement could be a moment where Alice starts to see value in things beyond physical appearance.
+
    scene mall with Fade(0.5, 1.0, 1)
    show mc normal at right
    show alice surprised at left
@@ -184,161 +191,7 @@ label day2date:
 #Make it a choice of "Where you see her looking"
 #And make it requirement for true end
 
-#todo:make this scene more subtle
-label clothes:
-   show alice normalside
-   ali "Whatever, what about that place over there?"
-   m "You mean the men's attire store?"
-   show mc normal
-   m "Do you think I look like I have the money for a suit and tie?"
-   show alice smug
-   ali "Even if you did, it's not like it would /suit/ you anyway"
-   show mc annoyed
-   m "Hehe-"
-   "You almost give in and laugh at her joke"
-   "A joke at your expense"
-   "You know she's right"
-   show alice normal
-   ali "So how about you give me something to work with?"
-   ali "Makes it easier to at least know what we are going for"
-   show mc normalside
-   m "I guess I like grey-scale stuff that's not too flashy"
-   show alice cruel 
-   ali "So what we came all this way so that you can keep trying to blend in with the shadows?"
-   ali "Come on, you must like at least some /real/ colors"
-   show mc blushside
-   m "... I kinda... don't hate pastel stuff..."
-   show alice laugh
-   ali "Heeeh? That's unexpected. Didn't think you were the type for cute stuff like that"
-   ali "Want me to pick you out a skirt too? I bet I can find one that will /really/ suit you"
-   show mc embarrassed
-   m "What?! Why does lik- not hating pastels make me a creep like that?!"
-   ali "You don't need to play stupid, I saw your wallpaper on your big screen thing"
-   #Show like a cute kirby-ish wallpaper on the pc during the discord scene
-   m "!"
-   m "..."
-   "She's got you there"
-   ali "Besides, how is it creepy? I'm serious, I think you'd look really cute~"
-   show mc vstressed
-   m "Stop fucking with me..."
-   show alice serious
-   ali "I'm not"
-   m "There's no way you actually mean that..."
-   show mc worried
-   m "Besides, I already can't deal with people..."
-   m "How am I supposed to handle them if they stare at me"
-   m "I just want to fade into the background"
-   "In your room... Forever"
-   # a room that isnt his and is temporary
-   show alice neutral
-   ali "Really?"
-   m "..."
-   show alice annoyed
-   ali "I'm going to die soon... I don't have much time left..."
-   ali "And you have some more... But even then"
-   show alice 
-   ali "Your time is limited."
-   show alice sad
-   ali "Don't you feel like it's a waste? Of youth? Of life?"
-   ali "I think you're just scared."
-   ali "Me too..."
-   ali "But can you honestly tell me that you /want/ things to carry on like they are?"
-   show mc awed
-   m "..."
-   show alice laugh cruel
-   ali "So..."
-   ali"..."
-   ali"Let's get you some cute clothes!"
-   show mc vvannoyed
-   m "That's where you were going with this?!?!?"
-   ali "So that's a no then?"
-
-menu:
-   "We can take a look I guess":
-      jump mallPastel
-   "Not in a million years, no way (N/A)":
-      "Skye must still write this part..."
-
-label mallPastel:
-   $ alice_rp+=10
-   show black with dissolve
-   "..."
-   
-   #cut to the mall later, with mc wearing a slightly oversized pastel pink hoodie
-   # :3 insignia?
-   show mc pink embarrassed
-   show alice smug
-   
-   hide black with dissolve
-   m "..."
-   show mc pink embarrassed desperate
-   #make sure it's not obvious that they are trans, make it like they are a guy who's ashamed of having a feminine side
-   #because of it bringing more attention to him and that going against the status quo
-   #she acutally thinks it suits him, and is trying to help him give less of a fuck
-   # but is also teasing him by picking on the obvious discomfort he feels about this 
-
-   m "EVERYONE'S LOOKING AT ME!"
-   ali "So? Let them."
-
-   m "Easy for you to say..."
-   ali "What was that?"
-   m "Easy for you to say when you could even make rags work!!!" # change this line X3
-   show alice flirt
-   ali "You really think so?"
-
-   m "That's not my point! I just mean like..."
-   m "I'm not like you. It's better for everyone else that I just stay out of sight."
-   show alice annoyed 
-   ali "Stop saying stupid shit. If I hear one more thing from you I'll take that as a personal insult."
-   m "Huh? Why what does what I say about myself have to do with you?"
-   show alice vannoyed
-   ali "I picked out those clothes, and my sense is absolute."
-   show alice angry
-   ali "So shut the fuck up and enjoy the attention."
-   m "..."
-   m "I-"
-   ali "What did I just say?!"
-   m "Sorry..."
-   show alice laugh
-   ali "You really are cute."
-   show mc pink embarrassed
-   show black with dissolve:
-      alpha 0.5
-   "You don't really know how to feel..."
-   "You can't help but feel scared."
-   "Scared of judgement."
-   "Memories of the kids you went to elementary school with flash into your mind's eye."
-   "Of little comments your parents made."
-   "When you stepped out of line."
-   "Not for being rude, or malicious."
-   "But for being curious."
-   "..."
-   "You like cute anime."
-   "You like playing games where you talk to little animals people, and go fishing."
-   "You know you like this hoodie."
-   "But is it {i}really{/i} okay?"
-   "For someone like you to wear this?"
-   "Up until now, it's always been participating in this stuff as an observer..."
-   "Out of sight."
-   hide black with dissolve
-   show alice disappointed
-   ali "It's just a waste you wouldn't try on the good stuff."
-   show alice laugh
-   ali "I picked you out the cutest thigh-highs and everything."
-   ali "The little cat paw prints on the sole were adorable."
-   m "I bought this - can't you just leave it?!"
-
-   show alice happy
-   ali "Jokes aside, I think that it really suits you and I can tell you like it too."
-   m "..."
-   show alice normalside
-   ali "It's just a shame you want to hide away under all that fabric."
-   ali "Wouldn't hurt you to show us some skin."
-   show mc embarrassed tears
-   show alice hime
-   ali "But I guess fruiting bodies don't sprout in a day, and that suits you pretty good as is."
-   m "Who is supposed to know about fruiting bodies?! You're lucky I'm a biology major..."
-   ali "Anyways, it's still pretty early and we are here already so let's go somewhere else."
+#todo:make this scene more subtle ali "Anyways, it's still pretty early and we are here already so let's go somewhere else."
    show mc confused
    m "Like where?"
    show alice confused
@@ -390,6 +243,10 @@ label aliceDay2DateLocation:
 
 #move to day 1 maybe
 label arcadeDate:
+
+#    The arcade scene highlights Alice’s lack of understanding of human activities. 
+# The main character’s explanation of video games as a form of connection and self-improvement could be a moment where Alice starts to see value in things beyond physical appearance.
+
    show mc normal
    m "I think I saw a sign for an arcade back there"
    show alice confused
@@ -515,6 +372,12 @@ label arcadeDate:
 
 
 label cafeDate:
+#    The latte art scene offers a poignant lesson about the impermanence of art and the importance of the process rather than the outcome. 
+# This could subtly parallel Alice’s own fleeting existence and her search for meaning within it.
+# The barista’s philosophy on art could resonate with Alice, planting the seeds for her eventual embrace of music as a form of expression, 
+# even if she doesn’t fully grasp it yet.
+
+
    scene mall with fade
    show mc normal at right
    show alice normal at left
@@ -963,6 +826,166 @@ label coffeeTalkArcade:
    jump leaveCafe
 
 
+label clothes:
+#    The scene where Alice notices the main character’s interest in the pastel pink hoodie is a lovely touch. 
+# It reveals her growing awareness of his internal struggles and offers a moment of connection between them.
+# Her playful teasing and encouragement for him to try on the hoodie show that she’s beginning to understand and care for him on a deeper level. 
+# This scene subtly hints at the main character’s gender identity issues, adding another layer to his character.
+
+   show alice normalside
+   ali "Whatever, what about that place over there?"
+   m "You mean the men's attire store?"
+   show mc normal
+   m "Do you think I look like I have the money for a suit and tie?"
+   show alice smug
+   ali "Even if you did, it's not like it would /suit/ you anyway"
+   show mc annoyed
+   m "Hehe-"
+   "You almost give in and laugh at her joke"
+   "A joke at your expense"
+   "You know she's right"
+   show alice normal
+   ali "So how about you give me something to work with?"
+   ali "Makes it easier to at least know what we are going for"
+   show mc normalside
+   m "I guess I like grey-scale stuff that's not too flashy"
+   show alice cruel 
+   ali "So what we came all this way so that you can keep trying to blend in with the shadows?"
+   ali "Come on, you must like at least some /real/ colors"
+   show mc blushside
+   m "... I kinda... don't hate pastel stuff..."
+   show alice laugh
+   ali "Heeeh? That's unexpected. Didn't think you were the type for cute stuff like that"
+   ali "Want me to pick you out a skirt too? I bet I can find one that will /really/ suit you"
+   show mc embarrassed
+   m "What?! Why does lik- not hating pastels make me a creep like that?!"
+   ali "You don't need to play stupid, I saw your wallpaper on your big screen thing"
+   #Show like a cute kirby-ish wallpaper on the pc during the discord scene
+   m "!"
+   m "..."
+   "She's got you there"
+   ali "Besides, how is it creepy? I'm serious, I think you'd look really cute~"
+   show mc vstressed
+   m "Stop fucking with me..."
+   show alice serious
+   ali "I'm not"
+   m "There's no way you actually mean that..."
+   show mc worried
+   m "Besides, I already can't deal with people..."
+   m "How am I supposed to handle them if they stare at me"
+   m "I just want to fade into the background"
+   "In your room... Forever"
+   # a room that isnt his and is temporary
+   show alice neutral
+   ali "Really?"
+   m "..."
+   show alice annoyed
+   ali "I'm going to die soon... I don't have much time left..."
+   ali "And you have some more... But even then"
+   show alice 
+   ali "Your time is limited."
+   show alice sad
+   ali "Don't you feel like it's a waste? Of youth? Of life?"
+   ali "I think you're just scared."
+   ali "Me too..."
+   ali "But can you honestly tell me that you /want/ things to carry on like they are?"
+   show mc awed
+   m "..."
+   show alice laugh cruel
+   ali "So..."
+   ali"..."
+   ali"Let's get you some cute clothes!"
+   show mc vvannoyed
+   m "That's where you were going with this?!?!?"
+   ali "So that's a no then?"
+
+menu:
+   "We can take a look I guess":
+      jump mallPastel
+   "Not in a million years, no way (N/A)":
+      "Skye must still write this part..."
+
+label mallPastel:
+   $ alice_rp+=10
+   show black with dissolve
+   "..."
+   
+   #cut to the mall later, with mc wearing a slightly oversized pastel pink hoodie
+   # :3 insignia?
+   show mc pink embarrassed
+   show alice smug
+   
+   hide black with dissolve
+   m "..."
+   show mc pink embarrassed desperate
+   #make sure it's not obvious that they are trans, make it like they are a guy who's ashamed of having a feminine side
+   #because of it bringing more attention to him and that going against the status quo
+   #she acutally thinks it suits him, and is trying to help him give less of a fuck
+   # but is also teasing him by picking on the obvious discomfort he feels about this 
+
+   m "EVERYONE'S LOOKING AT ME!"
+   ali "So? Let them."
+
+   m "Easy for you to say..."
+   ali "What was that?"
+   m "Easy for you to say when you could even make rags work!!!" # change this line X3
+   show alice flirt
+   ali "You really think so?"
+
+   m "That's not my point! I just mean like..."
+   m "I'm not like you. It's better for everyone else that I just stay out of sight."
+   show alice annoyed 
+   ali "Stop saying stupid shit. If I hear one more thing from you I'll take that as a personal insult."
+   m "Huh? Why what does what I say about myself have to do with you?"
+   show alice vannoyed
+   ali "I picked out those clothes, and my sense is absolute."
+   show alice angry
+   ali "So shut the fuck up and enjoy the attention."
+   m "..."
+   m "I-"
+   ali "What did I just say?!"
+   m "Sorry..."
+   show alice laugh
+   ali "You really are cute."
+   show mc pink embarrassed
+   show black with dissolve:
+      alpha 0.5
+   "You don't really know how to feel..."
+   "You can't help but feel scared."
+   "Scared of judgement."
+   "Memories of the kids you went to elementary school with flash into your mind's eye."
+   "Of little comments your parents made."
+   "When you stepped out of line."
+   "Not for being rude, or malicious."
+   "But for being curious."
+   "..."
+   "You like cute anime."
+   "You like playing games where you talk to little animals people, and go fishing."
+   "You know you like this hoodie."
+   "But is it {i}really{/i} okay?"
+   "For someone like you to wear this?"
+   "Up until now, it's always been participating in this stuff as an observer..."
+   "Out of sight."
+   hide black with dissolve
+   show alice disappointed
+   ali "It's just a waste you wouldn't try on the good stuff."
+   show alice laugh
+   ali "I picked you out the cutest thigh-highs and everything."
+   ali "The little cat paw prints on the sole were adorable."
+   m "I bought this - can't you just leave it?!"
+
+   show alice happy
+   ali "Jokes aside, I think that it really suits you and I can tell you like it too."
+   m "..."
+   show alice normalside
+   ali "It's just a shame you want to hide away under all that fabric."
+   ali "Wouldn't hurt you to show us some skin."
+   show mc embarrassed tears
+   show alice hime
+   ali "But I guess fruiting bodies don't sprout in a day, and that suits you pretty good as is."
+   m "Who is supposed to know about fruiting bodies?! You're lucky I'm a biology major..."
+
+
 label leaveCafe:
    stop music fadeout 3
    scene mall with fade
@@ -998,6 +1021,15 @@ label leaveCafe:
    stop music fadeout 3
    m "Don't just run off like that! You had me worried for a sec, when I lost sight of-"
    ali "..."
+
+
+# Butterfly Incident:
+# The butterfly scene is a powerful moment that symbolizes Alice’s internal conflict and the pain she causes unintentionally. 
+# It humanizes her and shows her vulnerability, making her more relatable and tragic.
+# The main character’s reassurance that she’ll always have him and the squirrels creates a bond between them, 
+# showing that he’s starting to see past her toxic exterior to the person she is inside.
+ 
+
 
    scene butterfly with fade
    #Here I think it's important to have a cg? I don't want to just write a huge monologue, but it's that or a picture
@@ -1133,6 +1165,14 @@ m "..."
 m "Yeah, I guess now that you mention it"
 hide alice with easeoutright
 m "Huh? Hold on slow down!!"
+
+
+# Music Decision:
+# Alice’s decision to embrace heavy music as her form of expression is a bold and fitting choice. 
+# It aligns with her desire to confront her mortality and make the most of her limited time.
+# Her determination to write a song and perform in the open mic competition adds urgency and direction to the story. 
+# It gives her a concrete goal to work towards, which could drive the narrative forward.
+
 
 #transition to alley way
 scene alley with fade
@@ -1407,6 +1447,11 @@ label Day2Neighbour:
    m "yeah... But I can't help the feeling that maybe I'm doing him a favour by giving him someone new to rant at"
 
 label day2GuitarSetup: 
+#    Guitar Practice:
+# The guitar scene reinforces the theme of resilience. Despite the broken string, Alice’s quick progress on the instrument reflects her innate abilities and determination.
+# The main character’s willingness to ask his neighbor for the guitar, despite his social anxiety, shows his growing commitment to helping Alice.
+# This small victory for him could be a significant moment in his own journey.
+
    show alice excited
    ali "So can we set it up? Please!?"
    show alice hime
@@ -1435,282 +1480,26 @@ label day2GuitarSetup:
    m "For now we'll just have to make do with those"
    show alice pout
    ali "...I guess..."
-   #start some really bad beginner guitar experimenting
-   "I guess that's my obligations for the day over..."
-   "Let's check if there's any new meme compilations"
-   stop music
-   show mc awed
-   "..."
-   "3 missed calls from dad"
-   "You haven't talk to him in almost a month"
-   show mc stressed
-   "Fuck"
-   "Should I text him an excuse for why I can't talk now?"
-   "Or should I call him now?"
 
-   menu:
-      "What should I do?"
-      "Make an excuse(N/A).":
-         "..."
-      "Call him back.":
-         show mc stressed
-         m "Hey, uh... I need to go make a phone call."
-         jump day2PhoneCall
+
+
+# Potential Additions:
+# Internal Struggles:
+# The main character’s internal dialogue could delve into his mixed feelings about encouraging Alice to find meaning, knowing her time is limited. 
+# This could add a layer of bittersweet tension to their interactions.
+# Alice’s thoughts while practicing the guitar could reveal her growing sense of purpose, mixed with the knowledge that she’s running out of time.
+
+# Foreshadowing and Symbolism:
+# The butterfly’s death could foreshadow the challenges Alice will face in the competition and her own mortality. 
+# It could also symbolize the fragile nature of the connections she’s forming with the main character.
+# The pastel pink hoodie could become a recurring symbol of the main character’s suppressed identity, perhaps reappearing in later scenes as he becomes more comfortable with himself.
+
+
+
+
 #choice -> call back?
 #if call back trust++ - Why?
 
-label day2PhoneCall:
-   scene black with fade
-   play music "wind.wav"
-   "You climb up to the roof and tap the call button"
-   scene rooftop with fade
-   play sound "phonecall.mp3"
-   "Ring..."
-   "ring..."
-   "...ring..."
-   stop sound
-   dad "Hello?"
-   show mc stressed
-   m "Hey dad... How's it going?"
-   # I think maybe it's better that he opens with like "Hope you aren't partying too much"
-   # I haven't heard about your grades but you're staying on top of it right?
-   # That's the agreement, You get As, and I pay for your internet, food, utilities
-   # If not, you're an adult... You're old enough to figure something out
-   dad "Well it was doing pretty good"
-   dad "I went down to the shop to see how the work on my car is going"
-   dad "I was just talking to the mechanic about what kind of engine to import"
-   dad "And then... I got a notification from the card I gave you"
-   show mc worried
-   m "*gulp*"
-   dad "And I saw you've been doing some {i}clothes shopping{/i}"
-   show mc surprised
-   m "Uh... yeah"
-   show mc worried
-   m "So it's come to this..."
-   m "I can expl-"
-   dad "You finally have a girlfriend?"
-   show mc confused
-   m "Huh?!"
-   dad "I mean that's the only thing I can think of"
-   dad "You're not one of {i}those{/i} people to go buying stuff from women's stores for yourself"
-   m "..."
-   show mc awkwardsmile
-   m "Uh, yeah, haha..."
-   m"... Of course not"
-   dad "So you're going to introduce me sometime right?"
-   m "uhh"
-   dad "I looked through all your social media looking to see if I could find her, but I didn't see anything, seeing how you never post"
-   dad "You don't have any accounts I don't know about do you?"
-   show mc slightsad
-   m "Uh no..."
-   dad "Good."
-   show mc sad
-   m "Is that it?"
-   dad "Yeah, I'm going to get back to making my moonshine"
-   dad "You remember I showed you the distillation rig I built right?"
-   m "Uh yeah... Have fun!"
-   dad "Will do, {i}son{/i}."
-   dad "Later"
-   stop music fadeout 3
-   scene black with fade
-   jump day2DeepTalk
-
-label day2DeepTalk:
-   "You go back downstairs to your room."
-
-   play music "night.mp3"
-   
-   
-   show bottle night with Dissolve(2):
-      zoom 0.9
-   
-   show alice serious at left
-   with dissolve 
-   play sound "door.wav"
-   
-   "Alice is sitting there and has already figure out some basic chord progression kind of stuff"
-   show mc normal at right with easeinbottom
-   m "..."
-   ali "*focused silence*"
-   show mc normalside
-   m "Looks like you're having fun"
-   ali "Yeah... I feel like I'm starting to get the hang of this"
-   show mc slightsad
-   m "That must be nice."
-   show alice annoyed
-   ali "Hey, are you angry or something? Did I do something?"
-   show mc stressed
-   m "No... It's whatever, just go back to your noodling."
-   show alice normal
-   ali "If that's what you want then fine..."
-   "she plays but it gets more aggresive and she pauses every once in a while."
-   "..."
-   show mc vstressed
-   "she keeps playing and you just sit there..."
-   "It boils up..."
-   "Until you just can't take it anymore."
-   show mc vshout
-   m "Are you going to keep playing all night? How am I supposed to relax like this?"
-   show alice angry
-   ali "Huh? What's up with you? I've literally done nothing and you're being super passive aggressive for no reason."
-   show mc shout
-   m "It's not for no reason! I go through all the effort to setup all this stuff for you, and you..."
-   show alice serious
-   ali "And I what?"
-   ali "Have fun and use it?"
-   show alice annoyed
-   ali "Sorry for existing I guess."
-
-
-   #choice as to whether to fully give into it or whether to take a step back
-   #[I think all of the decisions need to be subtle, not GOOD CHOICE or BAD CHOICE]
-   #She's on the verge of tears, and you take a step back
-
-   #choice 1 "I'm jealous of you"
-   #choice 2 "You're so selfish"
-   show mc vannoyed
-   
-   m "You don't get it..."
-   m "You just start learning guitar on a whim."
-   show mc sulk
-   m "And you're already better than I've ever been at anything."
-   m "In literally the span of hours."
-   show mc stressed
-   m "What the fuck am I supposed to do?"
-   m "I'm not good enough for my parents."
-   m "And I'm not good enough for myself."
-   show mc slightsad
-   m "I'm a fucking loser, and yet I tell my self I'll learn to draw."
-   m "Or learn an instrument."
-   show mc shout
-   m "Or fucking anything."
-   show mc sad
-   m "I just want to like myself."
-
-   m "But even then..."
-   m "I know it will never be enough"
-   show mc slightsad
-   m "I'm never going to be enough for my parents"
-   m "Because all they want me to be is the person they THINK I am"
-   show mc vannoyed
-   m "But I CAN'T be that person!!"
-   m "I've never been that person..."
-   show alice neutral
-   ali "..."
-   show mc normalside
-   m "They think I'm a straight A student, with lots of friends."
-   m "My dad is making up fantasies of me having a girlfriend and living up to how he was in college"
-
-   m "I don't even know what he would do if he found out"
-   show mc cynical
-   m "Who I {i}actually{/i} am"
-   show mc stressed
-   m "That I'm on the verge of flunking out"
-   m "That I have no friends"
-   m "That I'm not like him..."
-
-   # nuance of disgust
-   show mc sulk
-   m "I just feel like..."
-   m "Time keeps moving..."
-   m "And I'm still alone... Here... In my room."
-   m "But I can't stay in college for ever."
-   m "I'm going to drop out or scrape through."
-   m "And then I'm going to work doing some crappy deskjob I hate, until I get old..."
-   m "And then I die."
-
-   ali "..."
-   show alice sulk
-   ali "You know.. It's kind of funny"
-   show mc normal
-   m "?"
-   ali "How when it was me wanting attention"
-   ali "You could rationalize all the reasons why I was being stupid for wanting that"
-   ali "But you..."
-   show alice normal
-   ali "You're the exact same."
-   show alice disgusted
-   ali "Get over yourself."
-   ali "You're drowning in your own tears about only having another 60 years left to accomplish something."
-   show alice sulk
-   ali "How do you think I feel?"
-   ali "I have one more day"
-   ali "..."
-   show mc sad
-   m "I'm sorry..."
-   show alice normalside
-   ali "It's okay..."
-   ali "I haven't spent that much time with you."
-   ali "Or you know, being alive."
-   show alice serious
-   ali "But I think maybe, you're waiting for an excuse."
-   show mc confused
-   m "What do you mean?"
-   
-   ali "You took me to a whole bunch of places and showed me a bunch of stuff."
-   show alice confused
-   ali "and at first I thought it was meaningless."
-   show alice normal
-   ali "But I realized that nothing matters except what is important to you."
-   
-   ali "Latte art is just making pictures in cow boob juice."
-   ali "And video games are just what depressed people do to avoid dealing with real life."
-   # Too much
-   ali "But even then."
-   show alice serious
-   ali "Those are things that bring meaning to people."
-   ali "Every single thing you could be interested in."
-   ali "has so much depth when you actually look into it."
-   ali "Every rabbit hole runs so deep."
-   show alice normalside
-   ali "And I guess what I'm trying to say is"
-   show alice sad
-   ali "You can't wait for someone else to give you permission to act" 
-   ali "To do what you want with your life"
-   show mc worried
-   m "But what if it doesn't work out?"
-   show alice sigh
-   ali "Well then you're back where you started."
-   ali "And you can find another reason to live"
-   ali "Humans are good at that"
-   show alice happy
-   ali "So I guess in the meanwhile, all you can do is find a waste of time that feels special to you"
-   #maybe try to fit in a bit about like: I'm just scared even if I sacrifice everything, that ill still feel as broken and fucked up as i did before
-   # I'm worried this reads as preechy and goes against do don't say
-   show mc awed
-   m "...Thanks"
-   show alice sly smile
-   ali "Don't mention it"
-   show mc normalside
-   m "I guess... I think you're right..."
-   show mc stressed
-   m "I don't really know what I'm going to do yet but... I think I'm going to stop thinking about everything I want to do."
-   m "Everything I want to be."
-   show mc sad
-   m "And just pick something and see where it takes me."
-   show alice happy
-   ali "Well as long as you're having fun right"
-   show mc normal
-   m "... I think I'm kind tired after going out today"
-   m "Kind of a bit past my threshold for exposure to humans"
-   show alice normal
-   ali "You going to go to bed?"
-   
-   m "Yeah I think so..."
-   show mc awed
-   m "Do you mind switching to headphones?"
-   ali "Sure"
-
-   scene black with fade  
-   window hide
-   stop music fadeout(3)
-   show chibi_sleep at truecenter with dissolve
-   show top_text "You crawl into bed and fall asleep to the dull sound of unamplified guitar sounds" with dissolve 
-   pause 3
-
-
-   play sound "yay.wav"
-   "END!!!"
 
 
 #defuse by doing something together, show her music on youtube?  maybe you show her a little bit before, and then something after?

@@ -30,7 +30,7 @@ label ad1Morning:
     show mc sad with easeinbottom
     window show
     "And raise your heavy body out of bed."
-    "You prepare your cheap instant coffee, turn back towards your bed, and place your coffee on the bed side table."
+    "You prepare your cheap coffee, turn back towards your bed, and place your coffee on the bed side table."
     "You shift your attention toward your proto-roommate."
     stop music fadeout(2)
     play sound "tear.wav"
@@ -60,53 +60,69 @@ label ad1Morning:
     play music "normal.mp3" fadein(3)
 
     #Siloutte animation of her breaking out by herself
+
+
+
+
+# Initial Shock and Interaction:
+
+# The main character’s shock at Alice’s appearance can be emphasized to highlight his social anxiety. Maybe he stumbles over his words or struggles to make sense of what’s happening,
+# which would contrast with Alice’s bold and straightforward approach.
+# Alice’s immediate attempt at physicality sets the tone for her character, showing her programming and how she’s driven by the need for validation. 
+# This also allows the main character to reveal his discomfort with her advances, starting the theme of conflicting desires.
+
+
     show mc shocked at right
     show alice confused at left
     with easeinbottom
      
-    na "So this is your room? Smaller than I hoped for but I guess this will work."
+    na "So this is your room? It's so... {i}cozy{/i}."
     m "..."
     show mc shout at bounce
     m "{sc=3}{size=+40}{color=#000000}WHAT THE FUCK?!?!"
     show alice normal
     na "..."
-    "The girl that emerged from your mushroom box unapologetically grabs the spray bottle on the table beside her"
+    show alice spray
     play sound "spray.wav"
-    "She pulls the trigger and a cloud of mist appears in front of her"
-    "She steps slowly through it and towards me"
-    
-    show alice annoyed
-    na "Warm fucking welcome..."
-    na "You {i}really{/i} have a way with words."
+    #todo: put in a mist cloud sprite with fadeout     
+    show alice fake smile
+    na "What a warm welcome!"
+    na "You {i}really{/i} have an interesting way with words."
 
     show mc sad
     m "I'm sorry..."
     "..."
     show mc shocked at bounce
     m "WAIT A SEC! WHO-... or...what?... THE HELL ARE YOU?!"
-    show alice sad
-    na "That's tragic..."
-    na "I hoped my client would be like mentally all there or whatever"
+    show alice confused
+    na "Are you okay master?"
+    na "You should have memories of watering me for the last several weeks."
+    na "I hope that you aren't suffering from any kind of neuralogical ailment"
+    na "Luckily, I come prepared with knowledge for just such cases!"
+    na "Although I do specialize in treating hypoxia!"
+    # I don't know if this lands, I'm trying to make the joke that she's programmed to deal with brain damage from being choked by her during sex
     show alice hime
-    na "But I guess I just have that effect on people."    
+    na "Or perhaps you're just looking forward to spending the evening with me?"
 
-    show alice pout
-    na "Actually tragic..."
     m "You're... the mushroom I bought?"
-    show alice cruel
-    na "And you aren't brain damaged?"
-
+    show alice moe smile
+    na "Oh, it seems that you're alright"
     show mc vshout
-    m "THAT'S MY LINE!!!" # doesn't make sense - change this 
     m "YOU'RE TALKING!"
     show alice neutral
     na "..."
-    na "Well since your brain is functioning to {i}some{/i} level, maybe you could tell me what to call you?"
+    na "Since you appear to be in good health, perhaps you could do me the favour of telling me what to call you?"
+    show alice thinking
+    na "Master, Onii-chan, Servant, Slave-"
+    show mc shout
+    m "NO! J-Just my n-name is fine..."
+    na "As you wish. Your name which is?"
     show mc awed
-    m "Ummm... My name..."
+    m "Ummm..."
+    m "My name..."
+    m "My name is... Ummm"
     show alice sad
-    na "My bad, I should have picked something easier for you right?"
-
+    na "Are you sure you don't need me to commence a neuralogical evaluation?"
     show mc shout
     m "NO!!!"
     show mc stressed
@@ -117,6 +133,7 @@ label ad1Morning:
     label name_ali: 
         $name_redo = False
         $player_name = renpy.input("So, what do I call you?", length = 8).strip().lower().capitalize()
+        # Reply from Skye: bad_names needs to be a global variable, and we should do the same thing in the other routes.
         # if player_name in badNames:  # you haven't define badNames yet so it makes an error as is
         #     "...%(player_name)"
         #     show alice meanLaugh
@@ -131,18 +148,19 @@ label ad1Morning:
         if player_name == "":
             "Can't even remember your own name... Come on..."
             "I guess you <b>really</b> can't do anything right."
-            "Just go with Finn."
-            $player_name = "Finn"
+            "Just go with Ryland."
+            $player_name = "Ryland"
         
         $ playername = player_name
         m "...%(player_name)s."
         
         if (name_redo):
             show alice smug
-            na "Are you sure this time?"
+            na "So master %(player_name)s?"
             show mc angry
             m "YES!"
-            show alice meanLaugh
+            m "But you can leave out the ummm... master part..."
+            # show alice meanLaugh
             na "Just wanted to make sure..."
         
     show alice smug
@@ -231,17 +249,26 @@ label ad1Morning:
     show mc worried
     m "{size=+10} Sorry, I didn't mean to push you... I'm just really..."
 
+
+
+# Alice’s Reaction to Rejection:
+# Alice’s emotional shock at being rejected could be portrayed as intense, almost like she’s never experienced rejection before.
+# Her fleeing the scene in search of someone new emphasizes her desperation for validation.
+# The incident with the other dorm member introduces the idea that Alice doesn’t fully understand human social norms or boundaries,
+# making her actions seem almost childlike in their simplicity. This could create a sense of vulnerability in her character.
+
+
+
+
+
     show alice sulk
     na "{size=-10}... I thought that you... were meant to..."
     na "{size=-10}...fall for me... maybe I'm just not...{size=+10} "
-    #m "Hey, I'm trying to apologize but I need you to listen."
     show mc stressed
     m "I was kind of freaked out that you got so close all of a sudden and-"
     show alice angry tears
     na "{size=+40}SHUT UP!"
     show mc surprised
-    #"She suddenly snaps at you."
-    #"Her face twists with rage and pain."
     show alice disgusted
     na "What's wrong with you?! Isn't this what you wanted?"
     show alice vangry tears
@@ -263,9 +290,7 @@ label ad1Morning:
     "..."
     show mc awed
     m "She's gone..."
-    # "Your line of sight slowly drops towards the floor as you hang your head."
-    # "You notice several shimmering drops of clear liquid on the wooden flooring."
-
+ 
     show mc stressed at center with move
     play music "normal.mp3"
     m "What the fuck just happened?"
@@ -458,7 +483,6 @@ label ad1Morning:
 
     scene bottle_phone day with fade:
         zoom 0.9
-    #"You close the window, and turn away from your computer screen."
     show mc stressed with easeinbottom
     m "Am I the weird one?"
     show mc worried
@@ -466,7 +490,6 @@ label ad1Morning:
     
     
     show mc stressed
-
     # This part goes on too long# 
     "Anyone you meet is going to be repulsed when they actually get to know you anyway."
     "That's how it always has been."
@@ -498,7 +521,6 @@ label ad1Morning:
     m "Does she know that you need to wait before you cross the road?"
     m "I wonder if she'd just explode into mushroom pieces if she got hit by a car..."
     show mc stressed
-
     #add expressions here
     m "If she's outside, she could be anywhere"
     m "The only way I could realistically find her is by asking passers-by if they saw her"
@@ -590,17 +612,7 @@ label ad1Morning:
             window hide
     
         
-        #Choice: Where go???
 
-    #go out to the enterance
-    #mental preparation, scared of going out to look
-    #hear a scream
-    #Run towards location (shower)
-    #KYAAA! it's shadow person
-    #She closing in about to try to get closer to him
-    #You grab her in the nick of time
-    #pull her back to your room
-    
 
     scene bathroom with fade
     show showerguy scream at right 
@@ -653,6 +665,20 @@ label ad1Morning:
     with easeinbottom
 
     # I feel like the tone is kinda off
+
+#     Confrontation and Apology:
+
+# The confrontation when the main character drags Alice back could be a pivotal moment. 
+# His frustration could stem not just from her reckless behavior but also from the overwhelming situation he finds himself in.
+# When Alice blames the main character for rejecting her, it could trigger a moment of self-reflection for him. 
+# Perhaps he realizes that his reaction was more about his own insecurities than about Alice herself, which could add depth to his apology.
+
+# The Rooftop Scene:
+# The rooftop scene with the stars is a beautiful moment where the main character tries to impart some wisdom to Alice.
+# His attempt to show her that meaning can be found in anything could reflect his own struggle to find purpose in life.
+# Alice’s inability to grasp the concept could underscore the gap between them, highlighting her programmed nature and lack of understanding of deeper human experiences.
+
+
     window show
     ali "Where are you dragging me you pervert?"
     ali "What kind of sick,"
@@ -882,6 +908,11 @@ label ad1Morning:
     ali "Sigh... Okay..."
     hide alice with easeoutbottom
 
+# YouTube and Knowledge:
+# Leaving the laptop with Alice introduces an interesting dynamic where she absorbs information rapidly. 
+# This could lead to her developing new perspectives or even challenging the main character’s views in the days that follow.
+# Her overnight binge-watching could also lead to humorous or insightful moments the next day, where she parrots back things she’s learned or misunderstood from the videos.
+
     window hide
     scene black with fade
     stop music fadeout(3)
@@ -895,37 +926,23 @@ label ad1Morning:
     "You've reached the end of day 1!"
     return
 
-    #you yell at her for attempting to assault a random person
-    #Also that if people see you in here, it will cause problems for you
-    #She starts crying and says it's you fault for not giving her attention
-    #She explains that it hurt her because she's supposed to be attractive and alluring
-    #And so it makes her feel like a failure
+# Potential Additions:
+# Internal Monologue:
+# The main character’s internal thoughts during these events could add depth to his character, showing his anxiety, guilt, and confusion. 
+# It would also help convey his struggle with toxic masculinity and his internal gender identity conflict.
+
+# Alice’s Perspective:
+# Brief insights into Alice’s thoughts or feelings could make her more relatable. Even if she doesn’t fully understand human emotions, 
+# she might have her own way of processing events, which could be intriguing to explore.
+
+# Foreshadowing:
+# Small hints about Alice’s limited lifespan or the company’s motives could be woven into the narrative subtly, 
+# creating a sense of impending conflict and adding tension to their interactions.
 
 
-# mc checks website. shocked that she  only lives for 3 days.
-# she’s like “I know, and I have to spend it with YOU.”
-
-# He also sees that she’s poisonous and freaks out. Alice is annoyed by his reaction and hints at this hatred/fear towards her being unjustified and unfair. 
-# “You think they’re going to kill their customer base? They thrive on repeat customers.”
-
-# She’s a bit sad/angry. “Relax. i won’t do anything anyway. I can tell I’m not wanted.”
+# ----------------------
 
 # - bad route idea: he dies, but it’s not her poison that kills him. It’s his OVERREACTION and fear of her poison that kills him.
-
-# Tension again. He wants to clear the air a bit. suggests goes to rooftop. He talks excitedly about the stars. She’s like “Okay I guess. i don’t really see the point.” He describes how people can find meaning in the stars. she SUBTLY goes from making fun of it and calling it stupid to warming up to it.
-
-# Back at room. When he gets in to sleep, she starts to pull back the cover and climb in bc she assumed that’s what she was supposed to do.
-
-# She demands he gives her something to do while he sleeps. “What, you expect me to just wait?”
-# mc says he guesses she can just go on her laptop.
-
-
-# Bad end where alice disfigures her face to look prettier
-
-
-
-
-
 
 # more conflict in terms of like maybe
 # them brushing off this gendered society thing to each other
@@ -940,26 +957,7 @@ label ad1Morning:
 # like the contrast between a society that punishes you for not complying, but berates your attempts to comply
 # So I want to fit that in some how
 
-
-
-
-
-
-
-#as a mushroom, she doesn't have memories or a sense of personal identity
-
-
- 
    
-    
-#as a mushroom, she doesn't have memories or a sense of personal identity
-#She does have instinct and the information in her DNA
-#In that DNA there's a clear purpose, be desireable, be pretty
-#If she isn't those things, she has no sense of meaning
-#That's why she wants for him to look at her
-#To use her
-#So that she can feel like it was worth it.
-#Not because she likes him, or wants to do the act as itself, but because she wants the validation it implies.
 
 #MC explains that humans too have biological instincts for survival
 #There's some stuff we can't ignore, like food, water, shelter love
