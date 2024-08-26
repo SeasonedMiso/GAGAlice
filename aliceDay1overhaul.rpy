@@ -1,11 +1,9 @@
 label ad1Morning:
 
     #Character definitions:
-
-    define nvlChar = Character(None, kind=nvl, what_color = "#FFFFFF") # have to make NVL as a character:
+    define nvlChar = Character(None, kind=nvl, what_color = "#FFFFFF")
     
-
-
+# I'm concerned that the narrator being another character in MC's head is forgotten in this route
     stop music fadeout(2)
     
     default aliceTrust = 0
@@ -18,6 +16,7 @@ label ad1Morning:
         alpha 0.5
     show pulsingblack
     with dissolve
+
     "You wake up..."
     hide bottle_phone day
     show bottle_phone noon:
@@ -87,13 +86,14 @@ label ad1Morning:
     #todo: put in a mist cloud sprite with fadeout     
     show alice fake smile
     na "What a warm welcome!"
-    na "You {i}really{/i} have an interesting way with words."
-
+    na "My name is Fly Amanita!"
+    na "You {i}really{/i} have an interesting way with words master."
     show mc sad
-    m "I'm sorry..."
+    m "Sorry I uh..."
     "..."
     show mc shocked at bounce
     m "WAIT A SEC! WHO-... or...what?... THE HELL ARE YOU?!"
+    m "Fly?!"
     show alice confused
     na "Are you okay master?"
     na "You should have memories of watering me for the last several weeks."
@@ -164,10 +164,10 @@ label ad1Morning:
             na "Just wanted to make sure..."
         
     show alice smug
-    na "What a cute name... I guess it suits someone like you."
+    na "What a cute name... It {i}really{/i} suits you."
     m "What's that supposed to mean?!"
     show alice laugh cruel
-    na "Whatever you want, {i}\"Master\" {/i} %(player_name)s."
+    na "Nothing, {i}\"Master\" {/i} %(player_name)s."
     #She introduces herself
     
     "..."
@@ -175,79 +175,125 @@ label ad1Morning:
     show mc confused
     m "So... Getting back on topic... I thought I was supposed to be growing a mushroom?"
     show alice normal
-    na "Well, at least you didn't screw THAT part up."
+    na "Which you valiantly succeeded in."
     m "So... You're a mushroom then? Not like a scary alien that's going to lay eggs in my stomach or something?"
     show alice mendokusai
-    na "What are you talking about?"
+    na "Of course not!"
     show mc awed
     m "I didn't think that mushrooms were supposed to talk... or... move..."
     show alice disgusted
-    na "You REALLY love talking about semantics." #make it obvious that slice expects him to know what he was growing
+    na "Well this one does"
+    m "But-"
     show alice sly smile
-    na "How about you stop thinking so hard, and we get more comfortable?"
-    "She protudes the aura of a queen sitting on a throne."
-    show mc surprised
-    m "...?"
+    na "You don't need to think so hard about it!"
+    na "You're going to tire yourself out"
     show alice flirt
-    na "So, anyway... Should we start?"
-    show mc confused
-    m "Ummm... Start...what?"
+    na " Why don't we relax a little bit and get more comfortable?"
+    m "Uh, yeah, sure"
+    "She sits down on the bed, and gestures for you to follow suit"
+    "You hesitate for a moment, but shortly follow suit"
+    # I think we need a CG here of her crawling on top of him on the bed
+    na "You seem so stressed!"
+    m "Well, there's kind of a lot to take in"
+    na "Oh I'm sure"
+    na "But that's okay!"
+    na "You have me now!"
+    na "You don't have to worry about anything anymore"
+    m "Uh... Fly... Amanatee?"
+    na "Amanita! But I know that's a mouth full"
+    na "So you can call me whatever you want"
+    "You take a look at her hair(?) buns, and blurt out the first thing that comes to mind"
+    m "Maybe something like Alice? 'Eat me, Drink me' that sort of thing"
+    na "I'm not really sure what you mean, but sure, if that's what you want!"
+    m "Yeah..."
+    m "Sorry, it's just so much to take in..."
+    m "I started growing you because I felt like I wanted a tiny bit of responsibility"
+    m "But now it's like-"
+    ali "..."
+    play sound "sheets.wav"
+    window hide
+    play music "tense.wav"
+    scene PinnedDown with fade
+    ali "I told you..."
+    ali "You're thinking..." 
+    ali "too..." 
+    ali "much..."
+    m "Wha- Uh- I-"
+    "Before you can process whats happening you feel Alice's small hands wrap around your wrist"
+    play music "heartbeat.wav"
+    "Your brain to melt as a faint {color=#C4A484}sweet{/color} and {color=#C4A484}earthy{/color} scent enters your conciousness."
+    "Somewhere between the smell of coffee, vanilla, cinnamon and moss."
+    "You look up to see her face approaching yours"
+    "Before you can consider how to react, your body moves on it's own"
+    # I feel like maybe there needs to be bigger red flag before this
+    menu:
+        "Kiss her":
+            return
+        "Push her away":
+            return
+
+
+    # show mc surprised
+    # m "...?"
+    # na "So, anyway... Should we start?"
+    # show mc confused
+    # m "Ummm... Start...what?"
 
     # switch to nvl?]
 
     # So part of this is going on about the MC's perception of her as poisonous
     # I kind of don't know if it serves the narrative or not
     # I think it's better that it's just about him being sexually harrassed
-    show alice normal at center with move
-    show mc shocked at bounce
-    nvlChar "Without answering your question, she takes a confident lunge in your direction."
-    nvlChar "Her face appoaches yours suddenly."
-    nvlChar "You throw your center of balance backward to evade her advance, but you start to fall backwards."
-    nvlChar "Her hand pinches the neck of your oversized hoodie, preventing your descent."
-    nvlChar "She tightens her grasp and shifts her own body weight forward, bringing her face closer to yours."
-    nvl clear
-    show mc awed
-    nvlChar "You stare at her face."
-    nvlChar "Her expression remains fixed in a neutral casual, but apathetic expression as she looks down at you."
-    show black:
-        alpha 0.2
-    nvlChar "You notice a faint {color=#C4A484}sweet{/color} and {color=#C4A484}earthy{/color} scent."
-    nvlChar "Somewhere between the smell of coffee, vanilla, cinnamon and moss."
-    show black:
-        alpha 0.3
-    nvlChar "You have been suspended in place for what feels like several minutes."
-    nvlChar "Each passing moment, the scent seeps further into your body."
-    nvlChar "Your mind begins to melt inside your head."
-    nvl clear
-    show black:
-        alpha 0.4
-    nvlChar "It feels warm and fuzzy, almost like a pleasant numbness spreading from to core of your conciousness."
-    nvlChar "You feel your thoughts slow to a halt."
-    nvlChar "Your gaze shifts to her lips, which shimmer as if moist."
-    show black:
-        alpha 0.5
-    play music "heartbeat.wav"
-    show mc worried
-    nvlChar "The sound of your heart pounds violently through your ears."
-    nvlChar "Every fiber of your being is telling you to get away from her." #rewrite so not certain if sexual or even want to get away
-    nvlChar "You know intuitively, that if she gets close to you..."
+    # show alice normal at center with move
+    # show mc shocked at bounce
+    # nvlChar "Without answering your question, she takes a confident lunge in your direction."
+    # nvlChar "Her face appoaches yours suddenly."
+    # nvlChar "You throw your center of balance backward to evade her advance, but you start to fall backwards."
+    # nvlChar "Her hand pinches the neck of your oversized hoodie, preventing your descent."
+    # nvlChar "She tightens her grasp and shifts her own body weight forward, bringing her face closer to yours."
+    # nvl clear
+    # show mc awed
+    # nvlChar "You stare at her face."
+    # nvlChar "Her expression remains fixed in a neutral casual, but apathetic expression as she looks down at you."
+    # show black:
+    #     alpha 0.2
+    # nvlChar "You notice a faint {color=#C4A484}sweet{/color} and {color=#C4A484}earthy{/color} scent."
+    # nvlChar "Somewhere between the smell of coffee, vanilla, cinnamon and moss."
+    # show black:
+    #     alpha 0.3
+    # nvlChar "You have been suspended in place for what feels like several minutes."
+    # nvlChar "Each passing moment, the scent seeps further into your body."
+    # nvlChar "Your mind begins to melt inside your head."
+    # nvl clear
+    # show black:
+    #     alpha 0.4
+    # nvlChar "It feels warm and fuzzy, almost like a pleasant numbness spreading from to core of your conciousness."
+    # nvlChar "You feel your thoughts slow to a halt."
+    # nvlChar "Your gaze shifts to her lips, which shimmer as if moist."
+    # show black:
+    #     alpha 0.5
+    # play music "heartbeat.wav"
+    # show mc worried
+    # nvlChar "The sound of your heart pounds violently through your ears."
+    # nvlChar "Every fiber of your being is telling you to get away from her." #rewrite so not certain if sexual or even want to get away
+    # nvlChar "You know intuitively, that if she gets close to you..."
     
-    nvlChar "{sc=3}{color=#FF0000}{size=+40}YOU ARE GOING TO DIE."
-    nvl clear
-    hide black
-    stop music
-    show mc vshout
-    show alice vannoyed at left with move
-    show alice shocked at left
-    play sound "slap.ogg" # find a good push/shove sf
-    m "{sc=3}{color=#000000}{size=+40}GET THE FUCK AWAY FROM ME!"
-    show alice surprised
-    na "..."
-    na "{size=-10}... you're not supposed to... I'm..."
-    show mc stressed
-    "..."
-    show mc worried
-    m "{size=+10} Sorry, I didn't mean to push you... I'm just really..."
+    # nvlChar "{sc=3}{color=#FF0000}{size=+40}YOU ARE GOING TO DIE."
+    # nvl clear
+    # hide black
+    # stop music
+    # show mc vshout
+    # show alice vannoyed at left with move
+    # show alice shocked at left
+    # play sound "slap.ogg" # find a good push/shove sf
+    # m "{sc=3}{color=#000000}{size=+40}GET THE FUCK AWAY FROM ME!"
+    # show alice surprised
+    # na "..."
+    # na "{size=-10}... you're not supposed to... I'm..."
+    # show mc stressed
+    # "..."
+    # show mc worried
+    # m "{size=+10} Sorry, I didn't mean to push you... I'm just really..."
 
 
 
