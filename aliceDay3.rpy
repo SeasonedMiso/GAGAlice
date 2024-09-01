@@ -59,7 +59,7 @@ label day2PhoneCall:
    # I haven't heard about your grades but you're staying on top of it right?
    # That's the agreement, You get As, and I pay for your internet, food, utilities
    # If not, you're an adult... You're old enough to figure something out
-   dad "Well it was doing pretty good"
+   dad "Well I was doing pretty good"
    dad "I went down to the shop to see how the work on my car is going"
    dad "I was just talking to the mechanic about what kind of engine to import"
    dad "And then... I got a notification from the card I gave you"
@@ -252,7 +252,7 @@ label day2DeepTalk:
    show alice angry
    ali "Huh? What's up with you? I've literally done nothing and you're being super passive aggressive for no reason."
    show mc shout
-   m "It's not for no reason! I go through all the effort to setup all this stuff for you, and you..."
+   m "It's not for no reason! I go through all the effort to set up all this stuff for you, and you..."
    show alice serious
    ali "And I what?"
    ali "Have fun and use it?"
@@ -372,7 +372,7 @@ label day2DeepTalk:
    ali "And you can find another reason to live"
    ali "Humans are good at that"
    show alice happy
-   ali "So I guess in the meanwhile, all you can do is find a waste of time that feels special to you"
+   ali "So I guess in the meantime, all you can do is find a waste of time that feels special to you"
    #maybe try to fit in a bit about like: I'm just scared even if I sacrifice everything, that ill still feel as broken and fucked up as i did before
    # I'm worried this reads as preechy and goes against do don't say
 
@@ -391,7 +391,8 @@ label day2DeepTalk:
 # This could set the stage for Alice’s final performance, where she embraces imperfection and the beauty of the moment.
 
    show mc awed
-   m "...Thanks"
+   m "..."
+   m "...Thanks..."
    show alice sly smile
    ali "Don't mention it"
    show mc normalside
@@ -402,10 +403,10 @@ label day2DeepTalk:
    show mc sad
    m "And just pick something and see where it takes me."
    show alice happy
-   ali "Well as long as you're having fun right"
+   ali "Well as long as you're having fun, right?"
    show mc normal
    m "... I think I'm kind tired after going out today"
-   m "Kind of a bit past my threshold for exposure to humans"
+   m "Kind of a bit past my threshold for humans interaction"
    show alice normal
    ali "You going to go to bed?"
    
