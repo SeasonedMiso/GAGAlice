@@ -54,9 +54,9 @@ label day2Morning:
    show alice disappointed
 
    ali "You're such a waste of space"
-   ali "I'm honestly impressed you had time to remember to water me between sleeping the day away and listening to people on youtube tell you what cartoons are worth watching"
+   ali "I'm honestly impressed you had time to remember to water me between sleeping the day away and listening to people on YouTube tell you what cartoons are worth watching"
 
-   m "How do you know what youtube is?"
+   m "How do you know what YouTube is?"
    #Elongate
    #Or just change it to say videos?
    
@@ -83,7 +83,7 @@ label day2Morning:
    "It's like she sees right through you"
    m "..."
    "You turn your head down towards the messy duvet you're sitting on to avoid her gaze"
-   #she says one more mean thing here,  insulting your aethstetic and clothes 
+   #she says one more mean thing here, insulting your aethstetic and clothes 
    #realizes that you're crying and is kinda shocked, then tries to make you feel better (softens up)
    show alice normal
    ali "Ummm... If you want I could help you... you know?"
@@ -114,10 +114,10 @@ label day2Morning:
    ali "but... I..."
    ali "..."
    show alice angry tears
-   ali "Fine, what ever, die alone virgin, see if I care"
+   ali "Fine, whatever! Die alone virgin! See if I care!"
    show mc shocked at bounce
    m "!"
-   m "No wait, it's fine! We can go! Wherever, Whatever you want"
+   m "No wait, it's fine! We can go! Wherever- Whatever you want"
    show alice excited
    ali "Really?"
    show mc confused
@@ -171,11 +171,11 @@ label day2date:
    m "I've only heard rumours, but I believe this place is called a \'mall\'."
    show alice awe
    ali "A \"mall\"..."
-   ali "Why would you stay inside all day when there's such vibrant places like this so close by?"
+   ali "Why would you stay inside all day when there are such vibrant places like this so close by?"
    show mc worried
    m "Well... It's loud and there's lot's of people..."
    show alice confused
-   ali "Hmm? For such a stupid reason? I don't get that"
+   ali "Hmm? That's such a stupid reason? I don't get it."
    ali "Anyway, now that we're here, let's try and find some stuff to gaslight people into thinking you're not a loser"
    show mc confused
    m "How do you know what gaslighting is?"
@@ -273,7 +273,7 @@ label arcadeDate:
    $ arcadeWent = True
    m "Woah, look at this place! They have so many retro titles!"
    show alice normalside
-   ali "Isn't that like a nice way of saying they're charging 25 cents for games that have been out of date for like 30 years?"
+   ali "Isn't that like a nice way of saying they're charging a dollar for games that have been out of date for like 30 years?"
    show alice confused
    ali "Can't you play these on your computer anyway?"
    show mc normalside
@@ -282,9 +282,9 @@ label arcadeDate:
    ali "Are you listening to yourself right now?"
    ali "I have no fucking clue what you're talking about."
    show mc awed
-   m "I just meant like, we could use my pc..."
+   m "I just meant like, we could use my PC..."
    show mc normalside
-   m "but then we're really comprimising on the authenticity of the experience."
+   m "but then we're really compromising on the authenticity of the experience."
    show alice smug
    ali "The experience of being in a run down shit hole?"
    show mc surprised
@@ -302,7 +302,7 @@ label arcadeDate:
    show alice happy
    ali "Those little dinosaur things are kinda cute~"
    show mc happy
-   m "Oh bubble bobble?"
+   m "Oh Bubble Bobble?"
    m "I haven't played that game since I was a kid."
    m "Lemme get some tokens..."
 
@@ -310,7 +310,7 @@ label arcadeDate:
    show black with dissolve
    "You show Alice how to move, blow bubbles, and capture monsters."
    "She quickly grasps the basics and is able to beat the first level without any issues."
-   "However, after only a few levels, the difficulty begins to increase dramamtically, and before more than a few minutes have passed..."
+   "However, after only a few levels, the difficulty begins to increase dramatically, and before more than a few minutes have passed..."
    show alice annoyed
    hide black with fade
    
@@ -340,7 +340,7 @@ label arcadeDate:
    m "Games about guns, games about fishing, games about defusing bombs."
    show mc stressed
    m "Games about just talking to people."
-   m "Games that give you a new outlook to look at the world..."
+   m "Games that give you a new outlook on the world..."
    show alice neutral
    ali "..."
    show mc awed
@@ -360,11 +360,10 @@ label arcadeDate:
    show alice normal
    ali "But even so, I don't really think this is for me."
    ali "Maybe if I had more time to find one that speaks to me."
-
    ali "But right now, I want to find something else."
    show mc slightsad
    m "..."
-   m "Okay... let's try find something else."
+   m "Okay... let's try and find something else."
    m "How about..."
    #obv need different dialogue path if it's not the first option
    #Choice
@@ -372,27 +371,25 @@ label arcadeDate:
 
 
 label cafeDate:
-#    The latte art scene offers a poignant lesson about the impermanence of art and the importance of the process rather than the outcome. 
+# The latte art scene offers a poignant lesson about the impermanence of art and the importance of the process rather than the outcome. 
 # This could subtly parallel Alice’s own fleeting existence and her search for meaning within it.
 # The barista’s philosophy on art could resonate with Alice, planting the seeds for her eventual embrace of music as a form of expression, 
 # even if she doesn’t fully grasp it yet.
-
-
    scene mall with fade
    show mc normal at right
    show alice normal at left
    with easeinbottom
    "You walk past a small cafe. It looks relatively empty, despite how busy the rest of the mall is."
-   "The tile floor and decor look clean and without wear."
+   "The tile-floor and decor look clean and without wear."
    "This place is probably new."
    
-   m "Do you want to go inside and get something to drink?"
+   m "Do you wanna go inside and get something to drink?"
    show alice neutral
-   ali "... As long as I have my water spray, I'm fine. I don't really get that whole animal thing of 'eating' in order to sustain yourself."
+   ali "...As long as I have my water spray, I'm fine. I don't really get that whole animal thing of 'eating' in order to 'sustain' yourself."
    show mc normalside
-   m "Well, there are plenty of reasons to eat and drink stuff, even if it's not purely for sustanance."
+   m "Well, there are plenty of reasons to eat and drink stuff, even if it's not purely for sustenance."
    m "Lots of people eat and drink stuff purely for enjoyment."
-   m "Going out for food is something a lot of people do as a way of seeing new places, and experiencing new things with people."
+   m "Going out for food is something a lot of people do as a way of seeing new places and experiencing new things with people."
    m "Making memories, that sort of stuff."
    show alice sly smile
    ali "When was the last time you went out to eat with someone?"
@@ -412,9 +409,8 @@ label cafeDate:
    show mc normal at right
    show alice normal at left
    with easeinbottom
-   "A young waitor is sitting at a desk by the storefront, flicking a pencil around notebook propped up at the corner of the desk at an angle."
+   "A young waiter is sitting at a desk by the storefront, flicking a pencil around a notebook propped up at the corner of the desk at an angle."
    "He looks up, notices us, and turns his gaze back to the paper, continuing as he was for a few more seconds before slowly getting up out of his seat."
-
    na "Welcome, can I get you guys a table?"
    show mc worried
    m "..."
@@ -423,7 +419,9 @@ label cafeDate:
    na "...Ummm... Are you okay?"
    show mc vstressed
    m "yEahh, umm I... uhHh.... 2 please?"
-   na "Sure, right this way."
+   ali "Uh, I don't think we need 2 tables, unless you wanna sit by yourself"
+   m "No, I meant like... Uhhh... Just the 1 table for the 2 of us..."
+   na "*Giggles* Sure, right this way."
    show alice disappointed
    ali "God, I forgot you can't talk to anybody except for your stuffed animals."
    show mc worried
@@ -434,9 +432,8 @@ label cafeDate:
 
    show black with dissolve:
       alpha 0.5
-
-   "You are escorted to a large table, with 2 chairs on one side, and couch seat built against the wall on the other."
-   "Alice swiftly slips onto the couch chair, without saying anything"
+   "You are escorted to a large table, with 2 chairs on one side, and a couch seat against the wall on the other."
+   "Alice swiftly slides onto the couch chair, without a word"
    #She picked the more comfortable choice without second thought
    hide black with dissolve
    show mc normal
@@ -479,36 +476,38 @@ label cafeDate:
    show mc sad
    m "Come on, please just pretend to TRY to enjoy yourself."
    show alice laugh
-   ali "OMG I'm am so excited to order 2 pieces of bread, with fermented cow mammary extract melted between! I'm actually quivering in ancipation to put it in my mouth, digest it and then wait for 8 hours, and then-"
+   ali "OMG I'm so excited to order 2 pieces of bread, with fermented cow mammary extract melted between!"
+   ali"I'm actually quivering in anticipation to put it in my mouth, digest it and then wait for 8 hours, and then-"
 
    m "Please! Just... like... Come on, how about this? This one looks kind of cool? Right?"
    show alice annoyed
    ali "Latte art? Like a drawing of coffee? And you eat the paper?"
    show mc normalside
-   m "No, they ummm... Make like an image ontop of the coffee by pouring the coffee into the foamed milk so it makes a picture"
+   m "No, they ummm... Make like an image on top of the coffee by pouring the foamed milk into the coffee so it makes a picture"
    show alice sly smile
-   ali "You guys really love drinking stuff from cow boob's huh? Is it like a sex-thing or..."
+   ali "You guys really love drinking stuff from cow boob's huh? Is it like a sex thing or..."
    show mc stressed
    m "No!"
    show alice confused
-   ali "So lemme get this stragiht? Somebody like, puts in the effort to make some kind of drawing out of foam, and then you just... drink it?"
+   ali "So lemme get this straight? Somebody like, puts in the effort to make some kind of drawing out of foam, and then you just... drink it?"
    show mc normal
    m "Yeah."
    show alice sigh
-   ali "I've have never heard of something."
-   ali "So"
+   ali "I have never heard of something-"
+   ali "So-"
    show alice disgusted
-   ali "stupid in my life."
+   ali "Stupid in my life."
    show mc slightsad
    m "You've been alive for like 24 hours."
    show alice annoyed
-   ali "THE POINT IS! Why would you make something that's just going to get destroyed a few minutes later? What's the point?"
+   ali "THE POINT IS! 
+   ali "Why would you make something that's just going to get destroyed a few minutes later? What's the point?"
 
    #Kind of a metaphor for life, especially with it being as short as it is
 
    m "Okay so if it's so stupid, then what ARE you going to order then"
    ali "..."
-   ali "Fine, you've peaked my interest, let's see what this is about"
+   ali "Fine, you've piqued my interest, let's see what this is about"
 
    hide cafe_menu with easeoutbottom
    play sound "page.wav"
@@ -518,9 +517,9 @@ label cafeDate:
    m "...Umm. I, umm. could I please...2... uhh."
    show mc stressed
    "You give up and point towards the listing for latte art in the menu."
-   "The waiter bends over to look and the item you're pointing at, and after spending a second registering, his expression instantly changes as if suddenly jolted awake"
+   "The waiter bends over to look at the item you're pointing at, and after spending a second processing, his expression suddenly changes as if suddenly jolted awake"
    na "Two latte arts right? Coming right up!"
-   "He energetically snatches the menus of from the table, and practically skips away from the table."
+   "He energetically snatches the menus off from the table, and practically skips away."
 
    #scene trans
    "..."
@@ -528,11 +527,22 @@ label cafeDate:
    na "Sorry to keep you waiting!"
    show alice vannoyed
    show mc normal
-   "Barely 5 minutes had past since the order was placed, the waiter arrives back balancing a tray in one hand."
+   "Barely 5 minutes had passed since the order was placed, the waiter returns balancing a tray in one hand."
    "He carefully places the tray down onto the table and without missing a beat, begins to explain the items." 
-   na "Over here for you I thought you might like something cute and uplifting to freshen up the bags under your eyes."
+   na "Over here, for you, I thought you might like something cute and uplifting to freshen up the bags under your eyes."
    "He places a coffee cup in front of you with a detailed illustration of a small rabbit running through a flower garden."
-   na "And for you, I thought you might like this [...]."
+   na "And for you, I thought you might like this butterfly."
+
+   #She relates to it because butterflies are only alive for mating, but they mean so much more
+   #So she relates to them
+
+   #When she kills it, she's more like, I killed it before it even fulfilled it's task
+   #So it opens up more doubt into why she is pursuing anything anyway
+   #But gives MC an oppurtunity to reassure her and take the pressure off
+   #Also means that the good end requires having gone to the cafe and done all the date stuff
+   #I think this is the kikkake to save her from the perfectionist end?
+
+   # ask chat gpt at work
    #What does he see in her that inspires him to draw something that says something about her?
    show alice surprised
    ali "Huh... wow... You made this for me? Even though I'm going to drink this in front of you, and undo all of your effort... Why?"
@@ -563,9 +573,9 @@ label cafeDate:
    show alice disgusted
    ali "Bleghhh... What the fuck is this? It's like... creamed dirt water..."
    show alice awe
-   ali "Ah!... But wait that after taste... This tastes kind of like my mycelium."
+   ali "Ah!... But wait that aftertaste... This tastes kind of like my mycelium."
    show mc awed
-   m "Yeah, well I threw in a couple of coffee grounds into where you were growing, since I read online it's good for mushroom growth"
+   m "Yeah, well I threw in a some coffee grounds into where you were growing, since I read online it's good for mushroom growth"
    show alice normalside
    ali "I see..."
    "She reluctantly takes a second taste of her coffee."
@@ -614,12 +624,12 @@ label coffeeTalkArcade:
    ali "You know..."
    ali "I was just thinking back to that dinosaur game in the arcade."
    show mc confused
-   m "Yeah, bubble bobble."
+   m "Yeah, Bubble Bobble."
    m "What about it?"
    show alice sulk
    ali "Yeah... Just like... In that game right, if you fuck up and get yourself killed, you can come back if you get a 1up, or waste your rent money."
    show mc annoyed
-   m "Yeah, but like, I wouldn't reccomend that strategy tbh."
+   m "Yeah, but like, I wouldn't recommend that strategy to be honest."
    ali "Sure, but like..."
    ali "We don't get anything like that do we?"
    show alice pout
@@ -630,11 +640,11 @@ label coffeeTalkArcade:
    ali "And even if you beat the game, it's over..."
    show alice pout
    ali "And so I feel like... What do you do when there's no point?"
-   ali "With a game like that you can brag to your friends, or... not get a girlfriend."
+   ali "With games like that, you can brag to your friends, or... repel every girl in a 5km radius."
    show alice depressed
    ali "But with life it's just like... Why even bother?"
    ali "At first, I just followed my instincts and tried to get you to pay attention to me."
-   ali "Not because you were special, or because I liked you, even even knew you."
+   ali "Not because you were special, or because I liked you, or even knew you."
    ali "But because that's what I felt would make me feel like I am worth something."
    show alice sulk
    ali "I don't know it's... stupid... Sorry, I just..."
@@ -658,58 +668,58 @@ label coffeeTalkArcade:
    "You're so stupid..."
    "Even when you luck into doing something nice, and helping someone, you have to fuck it up at the last second."
    "She's probably already seen through the pretty words you said yesterday as made up bullshit."
-   "Be real: YOU said it, so there's not way that you're right."
-   "You're so!"
+   "Be real: YOU said it, so there's no way that you're right."
+   "You're SO-"
    
    ali "..."
 
-   "FUCKING"
+   "FUCKING-"
    show alice pout
    ali "..."
 
    "STUP-"
+   #change music to heartfelt
    show alice blush
    ali "Thank you for taking me here."
    $ alice_rp += 10
 
    show mc surprised
-
    m "Ummm... Yeah, That's okay..."
    ali "..."
    show alice normal
    ali "You look suprised."
    show mc blushside
-   m "Yeah I uh... Didn't really expect you to say that."
+   m "Yeah I uh... didn't really expect you to say that."
    show alice sigh
-   ali "Me either."
+   ali "Me neither."
    show alice normal
-   ali "But I think that I'm starting to change"
+   # ali "But I think that I'm starting to change"
    ali "I don't know what it is but."
    show alice confused
-   ali "I just feel like when I was born, I had a very certain idea of how this life was supposed to go."
+   ali "I just feel like when I was born, I had a certain idea of how this life was supposed to go."
    show alice sad
    ali "You were going to be all over me, and I was going to feel good about that."
-   ali "Because that was proof that I succeeded in my purpose."
+   ali "Because that was proof that I was good enough."
    show alice smug
    ali "But you were too much of a little bitch to do anything and made me cry."
    show mc sad
-   m "I'm sorry, you know that I didn't mean it like that, I'm just-"
+   m "I'm sorry, you know that I didn't mean it like that, I just-"
    show alice happy
 
    ali "I know, don't worry about it."
    show alice pout
-   ali "It's just at the time that was kinda a shock you know..."
+   ali "It's just at the time that was kind of a shock, you know?"
    ali "Like I had just been told that I'm not cut out for my purpose."
    ali "I'm just too ugly, too annoying, too whatever."
    show alice depressed
    ali "And that's not a great feeling."
    ali "And for a while, I didn't really know what to do with myself."
-   ali "And being with you..."
+   ali "And being around you..."
    show alice sulk
    ali "Was painful..."
    show alice annoyed
-   ali "Do you know what it's like to be with someone you want to like you?"
-   ali "How painful it is to know that the reason they didn't like you isn't something you did?"
+   ali "Do you know what it's like to be around someone you want to like you?"
+   ali "How painful it is to know that the reason they don't like you isn't something you did?"
    ali "But just like... the way you are?"
    show alice sigh
    ali "And so I guess that's where I was for a while..."
@@ -724,11 +734,12 @@ label coffeeTalkArcade:
    show mc awkwardsmile
    m "I just said whatever words popped into my mind."
    m "Anyone could do that."
-   
-   ali "Yeah, but you did."
+   ali "Yeah, but {i}you{/i} did."
+   #blushies
    show mc awed
    m "..."
    show mc normalside 
+   #this is him hiding his embaressment
    m "Whatever."
    show alice confused
    ali "So while we are talking like this... I was curious if there was anything you wanted to know about me"
@@ -755,7 +766,7 @@ label coffeeTalkArcade:
    ali "Like when I was born I just KNEW that if I behaved a certain way, that you would like it."
    show alice pout
    ali "But it didn't go the way I assumed it would."
-   m "So you mean like... You had like... Instincts about specific information? Like genetic memories?"
+   m "So you mean like... You had like... instincts about specific information? Like genetic memories?"
    show alice neutral
    ali "I don't know what you're talking about but uh, yeah sure, why not?"
    show mc normal
@@ -765,13 +776,13 @@ label coffeeTalkArcade:
    show alice cry
    ali "What, you'd rather I was dead?"
    show mc vvannoyed
-   m "No I- Actually no, I'm not gunna take the bait this time."
+   m "No I- Actually no, I'm not gonna take the bait this time."
    show alice smug
    ali "Awww, but it worked before."
    show mc awed
    m "I was just trying to say that there needs to be a reason you know all of this stuff?"
    show alice confused
-   ali "Yeah well... Didn't you like buy me off of the internet from some sketchy darkweb site or something?"
+   ali "Yeah well... Didn't you like, buy me off of the internet from some sketchy darkweb site or something?"
    show mc stressed
    m "IT WASN'T THE DARKWEB-"
    show mc normalside
@@ -785,11 +796,11 @@ label coffeeTalkArcade:
    show alice normal
    ali "I think you might be onto something though..."
    show alice normalside
-   ali "It is kind of weird that I know over 200 sex postions, but didn't know what a mall is huh?"
+   ali "It is kind of weird that I know over 200 sex postions, but didn't know what a mall is, huh?"
    show mc shocked
    m "There are that many?!"
    show alice smug
-   ali "Way to reveal your power level wand master"
+   ali "Way to reveal your power level, 'wand master'"
    show mc sulk
    m "I just think it's really fucked up"
    m "How they programmed you to be the ideal product for them to profit off of"
@@ -802,12 +813,11 @@ label coffeeTalkArcade:
    ali "I mean... Think about it right?"
    show alice normal
    ali "If you look around at every one here, they were all raised by parents, who taught them what was right and wrong"
-   ali "And then sent them to a school to learn stuff the government wants them to know for like a billion years"
+   ali "And then sent them to a school to learn stuff the government wants them to know for like, a billion years"
    ali "If you're born with one set of bits, you get given toys to simulate child rearing"
    ali "And if you have the other, you're supposed to be like a firefighting astronaut football player or something"
    show mc vannoyed
    m "What were you watching on my computer last night?"
-   #Put in a bit in night of day 1 about her watching stuff on his computer because she's bored while he sleeps
    show alice hime
    ali "ANYWAYS! You know what I mean right... It's easy for you to point at me and say I'm fucked up, but from where I'm sitting"
    show alice serious
@@ -925,20 +935,18 @@ label mallPastel:
 
    m "EVERYONE'S LOOKING AT ME!"
    ali "So? Let them."
-
    m "Easy for you to say..."
    ali "What was that?"
-   m "Easy for you to say when you could even make rags work!!!" # change this line X3
+   m "Easy for you to say when you look good in anything!!!" # change this line X3
    show alice flirt
    ali "You really think so?"
-
    m "That's not my point! I just mean like..."
    m "I'm not like you. It's better for everyone else that I just stay out of sight."
    show alice annoyed 
    ali "Stop saying stupid shit. If I hear one more thing from you I'll take that as a personal insult."
    m "Huh? Why what does what I say about myself have to do with you?"
    show alice vannoyed
-   ali "I picked out those clothes, and my sense is absolute."
+   ali "I picked out those clothes, and my taste is absolute."
    show alice angry
    ali "So shut the fuck up and enjoy the attention."
    m "..."
@@ -946,7 +954,7 @@ label mallPastel:
    ali "What did I just say?!"
    m "Sorry..."
    show alice laugh
-   ali "You really are cute."
+   ali "You really {i}are{/i} cute."
    show mc pink embarrassed
    show black with dissolve:
       alpha 0.5
@@ -960,17 +968,17 @@ label mallPastel:
    "But for being curious."
    "..."
    "You like cute anime."
-   "You like playing games where you talk to little animals people, and go fishing."
+   "You like playing games where you talk to little animal people, and go fishing."
    "You know you like this hoodie."
    "But is it {i}really{/i} okay?"
-   "For someone like you to wear this?"
+   "For someone like {i}you{/i} to wear this?"
    "Up until now, it's always been participating in this stuff as an observer..."
    "Out of sight."
    hide black with dissolve
    show alice disappointed
-   ali "It's just a waste you wouldn't try on the good stuff."
+   ali "It's just a shame you wouldn't try on the good stuff."
    show alice laugh
-   ali "I picked you out the cutest thigh-highs and everything."
+   ali "I picked out the cutest thigh-highs and everything for you."
    ali "The little cat paw prints on the sole were adorable."
    m "I bought this - can't you just leave it?!"
 
@@ -1023,117 +1031,7 @@ label leaveCafe:
    ali "..."
 
 
-# Butterfly Incident:
-# The butterfly scene is a powerful moment that symbolizes Alice’s internal conflict and the pain she causes unintentionally. 
-# It humanizes her and shows her vulnerability, making her more relatable and tragic.
-# The main character’s reassurance that she’ll always have him and the squirrels creates a bond between them, 
-# showing that he’s starting to see past her toxic exterior to the person she is inside.
- 
-
-
-   scene butterfly with fade
-   #Here I think it's important to have a cg? I don't want to just write a huge monologue, but it's that or a picture
-   "You stop behind a still alice, crouching down on the grass."
-   "Her hand is outstretched but motionless, and a blue object lies on her extended index finger"
-   "A butterfly"
-   "The butterfly that moments ago fluttered about in the shallow breeze so freely"
-   "Laying peacefully still on her fingertip"
-   play sound "wind.wav"
-   "..."
-   "..."
-   "The butterfly remains motionless"
-   "..."
-   "The moment stretches on for longer that you feel comfortable"
-   "You want to say something... Anything... But you feel like there's an unspoken weight in the air"
-   "You hear alice's taut vocal cords produce a strained sound as she exhales deeply"
-   "Not quite a voice, but still communicating to you a signal"
-   "Something's not right"
-   "She exhales again"
-   "This time the flow of breath carries with it a small whimper"
-   "You step closer towards her"
-   "And look more carefully at her hand"
-   "The butterfly remains transfixed"
-   "..."
-   "It reminds you of the preserved butterflies pinned up around your university department"
-   "Beautiful, yet devoid of life"
-   "And then you realize"
-   "The butterfly is dead"
-   "You look down at her face"
-   "Two wet streams trace her cheeks down to her chin as she bites her lip"
-   "Staring at the thing that used to be a butterfly"
-   m "..."
-   "You don't know what to say"
-   "You think for a moment"
-   "'What's the matter... It's just a butterfly'... No..."
-   "'Why are you crying?'... You can't think of anything that doesn't sound insincere"
-   "..."
-   "You open your mouth in an attempt to muster up something to say"
-   ali "You know..."
-   m "?!"
-   play music "sad.wav"
-   ali "When people see a mushroom with spots like me... What do you think they think?"
-   m "Ummm... I uh... I think ummm like"
-   ali "Death... Toxicity... Poison... Hysteria"
-   ali "But you know... I'm not even that toxic"
-   ali "How many people do you think die from eating fly amanita?"
-   m "..."
-   ali "NOT A SINGLE PERSON IN THE LAST HUNDRED YEARS!"
-   ali "But still... That's what you all think of me"
-   ali "All anyone ever thinks about me"
-   ali "..."
-   ali "But you know... The worst part is..."
-   ali "Their fears aren't unwarranted"
-   ali "I kill the things around me"
-   ali "You know, they used to crush us up and mix us into milk to kill flies wanting to drink it"
-   ali "That's where the 'Fly' part of the name comes from "
-   ali "Isn't that weird if you think about it for a second?"
-   ali "If we are so scary, why would you mix it into the milk you drink?"
-   ali "I don't get it..."
-   ali "I don't understand anything"
-   ali "But I don't want to be something that causes suffering and death to everything around me"
-   ali "But that's how you all see me"
-   ali "By default"
-   ali "And there's nothing I can say that will change the way you all see me"
-   ali "I don't want to be like this!!!"
-   "Alice's voice slowly turns from words into incoherrent sobs"
-   m "..."
-   m "You know... ummm "
-   m "I'm not going to pretend I know everything about you..."
-   m "Or that I can talk for all human's or whatever"
-   m "But... I think I read a study about like... Japanese squirrels? I think?"
-   m "That were able to eat you guys. No problem..."
-   m "And so... I guess I was just thinking like"
-   m "Maybe it's not so black and white? That sure, maybe some people get the wrong idea, and think you're more of a threat than you really are"
-   m "But at least me... I think you're not that scary."
-   m "When we first met, I think maybe I was like what you said"
-   m "You did kind of freak me out"
-   m "But I sort of wasn't expecting the whole... You know? Living mushroom thing?"
-   m "And everything else"
-   m "So I'm sorry about that"
-   m "But right now... I think you're just like any other girl"
-   m "And I know maybe my opinion doesn't mean that much"
-   m "But I guess I wanted to say if you're feeling isolated"
-   m "I just wanted you to to know that..."
-   m "You have me... and..."
-   m " The squirrels I guess"
-   ali "..."
-   show butterfly_smile
-   #show alice smile cry
-   ali "That's so... stupid!"
-   m "I'm sorry..."
-   ali "And like... how would you know what a normal girl is like anyway"
-   m "I-"
-   ali "Hahahaha"
-   m "?"
-   ali "..."
-   ali "I'm sorry"
-   ali "I guess I got a little melodramatic"
-   m "It's okay"
-   scene black with fade
-   "She gets up and you keep starting walking again slowly"
-   "The sun has almost completely set"
-   jump day2WayHome
-
+#Introduce the butterfly here, but it just takes her to the live house
 label day2WayHome:
    #Here is the original idea for the scene/ Feel like I didn't add everything I wanted to
    #--------->
@@ -1153,7 +1051,7 @@ label day2WayHome:
 
 
 "You walk with Alice through along the embankment until you reach the outskirts of the city center"
-"Its hussle and bussle has died down partly due to distance from the crowds, and partly due to the day turning to evening"
+"Its hustle and bustle has died down partly due to distance from the crowds, and partly due to the day turning to evening"
 "However..."
 play music "date.wav"
 show alice normal at left
@@ -1166,13 +1064,11 @@ m "Yeah, I guess now that you mention it"
 hide alice with easeoutright
 m "Huh? Hold on slow down!!"
 
-
 # Music Decision:
 # Alice’s decision to embrace heavy music as her form of expression is a bold and fitting choice. 
 # It aligns with her desire to confront her mortality and make the most of her limited time.
 # Her determination to write a song and perform in the open mic competition adds urgency and direction to the story. 
 # It gives her a concrete goal to work towards, which could drive the narrative forward.
-
 
 #transition to alley way
 scene alley with fade
@@ -1190,6 +1086,7 @@ m "If you go down those stairs, there's people listening to a band or something 
 ali "Hmmm..."
 m "See, there's a poster for an event on here"
 #MAKE THE NAME OF THE EVENT SOMETHING FUNNY#
+#todo: needs to be a competition
 show alice normal
 ali "#name of the event#?"
 show mc normal
@@ -1198,20 +1095,22 @@ ali "Rock music?"
 m "Yeah it's like... I don't really get it, but I think it's a kind of music where people sing about like..."
 m "Being really angry at your ex-girlfriend..."
 show mc normalside
-m "Or like... Killing people? Or like... Maybe it's about dying yourself?"
+m "Or like... Killing people? Or like... yourself?"
 m "I don't know... I feel like I have lots of conflicting ideas about it"
-m "But either way, it's generally more intense music that deals with more heavy topics"
+m "But either way, it's generally more intense music that deals with heavier topics"
+#Maybe she should be more like WTF?
 ali "That sounds kinda interesting"
-ali "I feel like human's usually avoid interacting with the more ugly parts of being alive"
+ali "I feel like humans usually avoid interacting with the more ugly parts of being alive"
 ali "But it sounds like some people go out of their way to think about it"
 m "Yeah. Some people like to escape from their problems, and others like to think about them all day"
-m "I guess human's are weird"
-ali "I'm guessing that what you listen to is more in the 'escaping from life' catergory"
+m "I guess humans are weird"
+ali "I'm guessing you listen to the more of the 'escapism' category"
 m "..."
 m "I've heard a little bit of this sort of music"
 m "Through my bedroom wall"
 ali "So your neighbour is into this sort of stuff"
-m "Yeah, I think he plays guitar too from the sound of it. He's pretty good too"
+m "Yeah, I think he plays guitar too from the sound of it. He's pretty good"
+# ali "So how long have you guys been dating?"
 ali "So that means you have connections with an insider?"
 m "What? I don't even know what he looks like. So talking to him is out of the question"
 ali "You've been living there for ages, and you don't even know what you neighbour looks like?"
@@ -1242,6 +1141,7 @@ menu:
       ali "*sob* Ignore the last wishes of a petite, dying, defenseless-"
       m "Fuck you... Fine!"
       m "I'll go ask"
+      # He needs to be like "but you only have one day, how tf are you gunna do the thing" alsom lampshade that she has like higher power shroom creative intuition
       show alice excited
       ali "Really!?"
       m "Wait, you're actually excited?"
@@ -1312,7 +1212,7 @@ label Day2Neighbour:
    na "Did you need something? I heard mumbling and feet shuffling outside so?"
    # make text very small
    show mc worried
-   m "Uhh yeah, so I was kinda of ummm, sent here to ask a favour, but like I don't even know you, or like said my name and I"
+   m "Uhh yeah, so I was kinda of ummm, sent here to ask a favor, but like I don't even know you, or like said my name and I"
    na "Slow down, just take it easy"
    #what to make his name? Maybe like Kellin, or Ryland or something
    kel "First off, hi, I'm Kellin. I don't think I've met you before? Do you stay in the dorms?"
@@ -1442,9 +1342,10 @@ label Day2Neighbour:
    ali "Geez"
    show mc normal
    m "I managed to turn down the record player"
+   ali "Then why did you take the vinyl?"
    "I guess we're lucky you have such a supportive neighbour"
    show mc normalside
-   m "yeah... But I can't help the feeling that maybe I'm doing him a favour by giving him someone new to rant at"
+   m "yeah... But I can't help the feeling that maybe I'm doing him a favor by giving him someone new to rant at"
 
 label day2GuitarSetup: 
 #    Guitar Practice:
@@ -1502,7 +1403,7 @@ label day2GuitarSetup:
 
 
 
-#defuse by doing something together, show her music on youtube?  maybe you show her a little bit before, and then something after?
+#defuse by doing something together, show her music on YouTube?  maybe you show her a little bit before, and then something after?
 #You make a promise that tomorrow you would go to a music store and buy a new set of strings
 
 #contrast of how the 2 of them argue

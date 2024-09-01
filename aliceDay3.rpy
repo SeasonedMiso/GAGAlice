@@ -99,6 +99,131 @@ label day2PhoneCall:
    jump day2DeepTalk
 
 
+
+
+
+# In terms of the timing its too sudden and too much emotions... Doesn't feel earned
+
+# Maybe this entire thing should be scraped as it's not really relevant to her character arc
+
+# Butterfly Incident:
+# The butterfly scene is a powerful moment that symbolizes Alice’s internal conflict and the pain she causes unintentionally. 
+# It humanizes her and shows her vulnerability, making her more relatable and tragic.
+# The main character’s reassurance that she’ll always have him and the squirrels creates a bond between them, 
+# showing that he’s starting to see past her toxic exterior to the person she is inside.
+ 
+
+#Also the contents need to change a lot
+
+   # scene butterfly with fade
+   # #Here I think it's important to have a cg? I don't want to just write a huge monologue, but it's that or a picture
+   # "You stop behind a still alice, crouching down on the grass."
+   # "Her hand is outstretched but motionless, and a blue object lies on her extended index finger"
+   # "A butterfly"
+   # "The butterfly that moments ago fluttered about in the shallow breeze so freely"
+   # "Laying peacefully still on her fingertip"
+   # play sound "wind.wav"
+   # "..."
+   # "..."
+   # "The butterfly remains motionless"
+   # "..."
+   # "The moment stretches on for longer that you feel comfortable"
+   # "You want to say something... Anything... But you feel like there's an unspoken weight in the air"
+   # "You hear alice's taut vocal cords produce a strained sound as she exhales deeply"
+   # "Not quite a voice, but still communicating to you a signal"
+   # "Something's not right"
+   # "She exhales again"
+   # "This time the flow of breath carries with it a small whimper"
+   # "You step closer towards her"
+   # "And look more carefully at her hand"
+   # "The butterfly remains transfixed"
+   # "..."
+   # "It reminds you of the preserved butterflies pinned up around your university department"
+   # "Beautiful, yet devoid of life"
+   # "And then you realize"
+   # "The butterfly is dead"
+   # "You look down at her face"
+   # "Two wet streams trace her cheeks down to her chin as she bites her lip"
+   # "Staring at the thing that used to be a butterfly"
+   # "She's the reason it died."
+   # m "..."
+   # "You don't know what to say"
+   # "You think for a moment"
+   # "'What's the matter... It's just a butterfly'... No..."
+   # "'Why are you crying?'... You can't think of anything that doesn't sound insincere"
+   # "..."
+   # "You open your mouth in an attempt to muster up something to say"
+   # ali "You know..."
+   # m "?!"
+   # play music "sad.wav"
+   # ali "When people see a mushroom with spots like me... What do you think they think?"
+   # m "Ummm... I uh... I think ummm like"
+   # ali "Death... Toxicity... Poison... Hysteria"
+   # ali "But you know... I'm not even that toxic"
+   # ali "How many people do you think die from eating fly amanita?"
+   # m "..."
+   # ali "NOT A SINGLE PERSON IN THE LAST HUNDRED YEARS!"
+   # ali "But still... That's what you all think of me"
+   # ali "All anyone ever thinks about me"
+   # ali "..."
+   # ali "But you know... The worst part is..."
+   # ali "Their fears aren't unwarranted"
+   # ali "I kill the things around me"
+   # ali "You know, they used to crush us up and mix us into milk to kill flies wanting to drink it"
+   # ali "That's where the 'Fly' part of the name comes from "
+   # ali "Isn't that weird if you think about it for a second?"
+   # ali "If we are so scary, why would you mix it into the milk you drink?"
+   # ali "I don't get it..."
+   # ali "I don't understand anything"
+   # ali "But I don't want to be something that causes suffering and death to everything around me"
+   # ali "But that's how you all see me"
+   # ali "By default"
+   # ali "And there's nothing I can say that will change the way you all see me"
+   # ali "I don't want to be like this!!!"
+   # "Alice's voice slowly turns from words into incoherrent sobs"
+   # m "..."
+   # m "You know... ummm "
+   # m "I'm not going to pretend I know everything about you..."
+   # m "Or that I can talk for all human's or whatever"
+   # m "But... I think I read a study about like... Japanese squirrels? I think?"
+   # m "That were able to eat you guys. No problem..."
+   # m "And so... I guess I was just thinking like"
+   # m "Maybe it's not so black and white? That sure, maybe some people get the wrong idea, and think you're more of a threat than you really are"
+   # m "But at least me... I think you're not that scary."
+   # m "When we first met, I think maybe I was like what you said"
+   # m "You did kind of freak me out"
+   # m "But I sort of wasn't expecting the whole... You know? Living mushroom thing?"
+   # m "And everything else"
+   # m "So I'm sorry about that"
+   # m "But right now... I think you're just like any other girl"
+   # m "And I know maybe my opinion doesn't mean that much"
+   # m "But I guess I wanted to say if you're feeling isolated"
+   # m "I just wanted you to to know that..."
+   # m "You have me... and..."
+   # m " The squirrels I guess"
+   # ali "..."
+   # show butterfly_smile
+   # #show alice smile cry
+   # ali "That's so... stupid!"
+   # m "I'm sorry..."
+   # ali "And like... how would you know what a normal girl is like anyway"
+   # m "I-"
+   # ali "Hahahaha"
+   # m "?"
+   # ali "..."
+   # ali "I'm sorry"
+   # ali "I guess I got a little melodramatic"
+   # m "It's okay"
+   # scene black with fade
+   # "She gets up and you keep starting walking again slowly"
+   # "The sun has almost completely set"
+   # jump day2WayHome
+
+
+#I'm worried that it's weird that there's 2 big emotional freak outs in one day... It's important that each one resolves a different feeling
+
+
+
 # After the conversation the MC feels depressive, and the weight of his parents expectations of him. 
 # When he gets home he is in a bad mood, which leads to him bottling it up while alice is practicing loudly.
 # Alice is also acting incredibly stressed, and is being incredibly perfectionist, playing the same lines over and over again until they are perfect, 
