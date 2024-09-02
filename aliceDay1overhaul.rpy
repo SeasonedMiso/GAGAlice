@@ -70,7 +70,7 @@ label ad1Morning:
 # Alice’s immediate attempt at physicality sets the tone for her character, showing her programming and how she’s driven by the need for validation. 
 # This also allows the main character to reveal his discomfort with her advances, starting the theme of conflicting desires.
 
-
+#something subtly off about her behavior that makes the main character uncomfortable. This tension could be built up slowly, making her eventual advances feel more unsettling.
     show mc shocked at right
     show alice confused at left
     with easeinbottom
