@@ -3,6 +3,67 @@
 # Alice has been working extremely hard and obsessively on her song for the entire night.
 
 # MC goes out to get a new set of strings for her, but on the way back gets a call from his father. His father is a narcissist. 
+
+label day3Morning:
+   
+   #Wake up to alice with bloodshot eyes, shes been grinding all night
+   #You call out to her but she ignores you at first
+   #You pull off her headphones off her
+   #She says gm but needs to keep grinding
+   #choice: Insist she takes a break to come with
+   #Go to store
+   #Look at the instrument store 
+   #she looks at an one and cant take her eye off
+   #you could maybe afford it if you used most of your money 
+   #but shes going to die tonight (could buy and return but scam?)
+   #you leave the store and on the way back (by the river bed) and your dad calls 
+   #You tell her to go on ahead
+   #She sits down and looks at flowers (butterfly)
+   #You arrive back and she goes back to songing
+   # It's fine for the first few hours
+   #You try offer to help but shes stubbornly grinding
+   #Eventually you snap and get angry, its her last day
+   #she gets annoyed and needs space to work alone
+   #You take some time to calm down, and go find her
+   #Shes on the roof, and dead butterfly
+   #she cries and opens up to you now because she trusts you
+   #You listen. She talks about how the butterfly reminds her of herself
+   #And now shes very aware that shes just wanting validation in a different way
+   #Self doubt sets in
+   #MC defuses it by pointing out that it doesnt need to be what she focuses on, and that hes there to help
+   #He helps her refine the song with what ever feedback he can give
+   #They go to the event
+   #Kellin
+
+
+   #Convo happens
+
+
+
+   #You hang up and when you talk to her, shes crying
+   #Revised butterfly scene?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # His father has loaned him a card, which he uses to give allowence for food etc, instead of giving him his own card. 
 # He got a phone notification when they purchased the hoodie, and therefore was able to see that they were shopping at a women's clothing store. 
 # Initially the MC thinks he's going to see through and know he bought it from himself, but the dad instead assumes his son has a girlfriend and bought it for her,
@@ -23,6 +84,8 @@
    "I guess that's my obligations for the day over..."
    "Let's check if there's any new meme compilations"
    stop music
+   
+
    show mc awed
    "..."
    "3 missed calls from dad"
@@ -97,9 +160,6 @@ label day2PhoneCall:
    stop music fadeout 3
    scene black with fade
    jump day2DeepTalk
-
-
-
 
 
 # In terms of the timing its too sudden and too much emotions... Doesn't feel earned
@@ -221,7 +281,6 @@ label day2PhoneCall:
 
 
 #I'm worried that it's weird that there's 2 big emotional freak outs in one day... It's important that each one resolves a different feeling
-
 
 
 # After the conversation the MC feels depressive, and the weight of his parents expectations of him. 
@@ -498,7 +557,7 @@ label day2DeepTalk:
    ali "Humans are good at that"
    show alice happy
    ali "So I guess in the meantime, all you can do is find a waste of time that feels special to you"
-   #maybe try to fit in a bit about like: I'm just scared even if I sacrifice everything, that ill still feel as broken and fucked up as i did before
+   ...#maybe try to fit in a bit about like: I'm just scared even if I sacrifice everything, that ill still feel as broken and fucked up as i did before
    # I'm worried this reads as preechy and goes against do don't say
 
 
@@ -515,7 +574,7 @@ label day2DeepTalk:
 #   Letting Go: The fight could end with them both realizing that it’s okay to let go of perfection, to accept that their time together doesn’t have to be perfect to be meaningful. 
 # This could set the stage for Alice’s final performance, where she embraces imperfection and the beauty of the moment.
 
-   show mc awed
+   show mc awed   
    m "..."
    m "...Thanks..."
    show alice sly smile
