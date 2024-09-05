@@ -3,61 +3,111 @@
 # Alice has been working extremely hard and obsessively on her song for the entire night.
 
 # MC goes out to get a new set of strings for her, but on the way back gets a call from his father. His father is a narcissist. 
-
-label day3Morning:
    
    #Wake up to alice with bloodshot eyes, shes been grinding all night
    #You call out to her but she ignores you at first
    #You pull off her headphones off her
    #She says gm but needs to keep grinding
    #choice: Insist she takes a break to come with
+
+
+label day3Morning:
+"You wake up to the rhythm of dull strumming."
+m "Damn you're still going?"
+ali "..."
+m "Hello? Good morning~"
+ali "..."
+"She seems to be completely ingulfed in the guitar world."
+"She can't hear you."
+"You slowly get out of bed and walk towards the kettle to make some coffee."
+"While the kettle boils you look over to her and watch her play."
+"You can't hear her that well from the growling of the water being heated."
+"Her movements look a lot more confident that you remember last night"
+"But when you look at her face you see her eyes are bloodshot."
+"You walk over to her and tap her shoulder gently."
+m "..."
+"No response"
+"You bring your hand up to the top of her head and begin to lift the headphones upwards."
+ali "EEK! Wha-"
+m "Good morning!"
+ali "Jeez, don't scare me like that"
+m "Haha, sorry about that."
+m "Looks like you've been going the whole night?"
+ali "Yeah but I'm behind on time."
+ali "There's no way I'm going to win at this rate."
+#Maybe it would be funny if she forgets she hasn't practiced singing, so and the concert she doesn't realize and that's what her big failure is
+m "Take it easy, you still have lots of time."
+m "And besides, it's not about the outcome, it's about the experience."
+ali "Yeah, right, sure."
+"She turns back to the paper she's been taking notes on and resumes her practice."
+"You look at the notes, but it looks like no music notation you've ever seen before."
+m "Hey, how did you learn how to read music?"
+ali "What do you mean?"
+m "Like your notes, they must be some kind of thing you learned right?"
+ali "Nah, I just drew stuff to help me remember what part of the song go where."
+"You look closer at the page and it's full of abstract interconnecting shapes."
+m "Uhh, I have no idea what i'm looking at."
+ali "That's okay, just as long as I know."
+"You hear the kettle click and walk over to it."
+screen trans 
+# maybe slurping sound
+m "Okay I'm alive now"
+ali "*strum* *strum*"
+m "Are you ready to go to the guitar store?"
+ali '*pickedy* *pick*'
+"She can't hear you again"
+"You walk over to her and slowly wade your hand in front of her vision"
+ali "Whaaat~"
+m "Do you wanna go get strings or not?"
+ali "Ughhh, do I have to?"
+m "If you can do with out them then I guess not."
+ali "..."
+ali "Can't you just go for me? I'm running out of time and I still have so much to do"
+m "I think you should take a break, you've been grinding for like 12 hours straight"
+ali "Nooooo~"
+ali "I don't have time to go!"
+m ("Damn what should I do?")
+choice:let her keep grinding, 
+   -Take her along with you
+
+
+#wake up
+#she's been playing guitar the whole night on a guitar with old strings (missing a string). You feel sorry for her, but impressed at her drive.
+
+#have an internal dialogue of how you are jealous, but at the same time, you've never even tried that hard, so maybe you don't even have the kenri to feel that way
+
+#you decide to take her to a guitar store to buy new strings
+#[here i think the bg music when she's practicing should be the song she's writing, but at various levels of playing: think wa2]
+
+
+
+
+
+label day3Store:
+
+
+
    #Go to store
    #Look at the instrument store 
    #she looks at an one and cant take her eye off
    #you could maybe afford it if you used most of your money 
    #but shes going to die tonight (could buy and return but scam?)
    #you leave the store and on the way back (by the river bed) and your dad calls 
-   #You tell her to go on ahead
-   #She sits down and looks at flowers (butterfly)
-   #You arrive back and she goes back to songing
-   # It's fine for the first few hours
-   #You try offer to help but shes stubbornly grinding
-   #Eventually you snap and get angry, its her last day
-   #she gets annoyed and needs space to work alone
-   #You take some time to calm down, and go find her
-   #Shes on the roof, and dead butterfly
-   #she cries and opens up to you now because she trusts you
-   #You listen. She talks about how the butterfly reminds her of herself
-   #And now shes very aware that shes just wanting validation in a different way
-   #Self doubt sets in
-   #MC defuses it by pointing out that it doesnt need to be what she focuses on, and that hes there to help
-   #He helps her refine the song with what ever feedback he can give
-   #They go to the event
-   #Kellin
-
-
-   #Convo happens
-
-
-
-   #You hang up and when you talk to her, shes crying
-   #Revised butterfly scene?
+  
+#   The music store scene is a little empty. The part with the expensive guitar that she likes works, but it needs more. 
+#   One idea is that perhaps she sees someone else playing guitar and is hit by a wave of insecurity, watching how good and easily this guy is just playing around,
+#   and her fear of the concert + being compared to other performers, and self-doubt increases. Maybe all she tells mc is that she's feeling nervous for tonight.
+#   He could respond with empathy (from his experiences of stage fright and social anxiety) and that he'll be there cheering her on = makes her smile and they 
+#   have a cute little bonding moment.
+  
+  
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
+---------------------------------------------------
 
 
 
@@ -77,6 +127,13 @@ label day3Morning:
 # The father’s assumptions and comments reveal the generational cycle of toxic masculinity, further intensifying the main character’s internal conflict.
 # The call adds to the weight of the main character’s emotional burden, making the subsequent fight with Alice more impactful. 
 # It could also reinforce his feelings of isolation and the pressure to conform to societal norms.
+
+
+
+   #You tell her to go on ahead
+   #She sits down and looks at flowers and the butterflies
+   
+
 
 # Imported from day 2
 
@@ -162,125 +219,15 @@ label day2PhoneCall:
    jump day2DeepTalk
 
 
-# In terms of the timing its too sudden and too much emotions... Doesn't feel earned
-
-# Maybe this entire thing should be scraped as it's not really relevant to her character arc
-
-# Butterfly Incident:
-# The butterfly scene is a powerful moment that symbolizes Alice’s internal conflict and the pain she causes unintentionally. 
-# It humanizes her and shows her vulnerability, making her more relatable and tragic.
-# The main character’s reassurance that she’ll always have him and the squirrels creates a bond between them, 
-# showing that he’s starting to see past her toxic exterior to the person she is inside.
- 
-
-#Also the contents need to change a lot
-
-   # scene butterfly with fade
-   # #Here I think it's important to have a cg? I don't want to just write a huge monologue, but it's that or a picture
-   # "You stop behind a still alice, crouching down on the grass."
-   # "Her hand is outstretched but motionless, and a blue object lies on her extended index finger"
-   # "A butterfly"
-   # "The butterfly that moments ago fluttered about in the shallow breeze so freely"
-   # "Laying peacefully still on her fingertip"
-   # play sound "wind.wav"
-   # "..."
-   # "..."
-   # "The butterfly remains motionless"
-   # "..."
-   # "The moment stretches on for longer that you feel comfortable"
-   # "You want to say something... Anything... But you feel like there's an unspoken weight in the air"
-   # "You hear alice's taut vocal cords produce a strained sound as she exhales deeply"
-   # "Not quite a voice, but still communicating to you a signal"
-   # "Something's not right"
-   # "She exhales again"
-   # "This time the flow of breath carries with it a small whimper"
-   # "You step closer towards her"
-   # "And look more carefully at her hand"
-   # "The butterfly remains transfixed"
-   # "..."
-   # "It reminds you of the preserved butterflies pinned up around your university department"
-   # "Beautiful, yet devoid of life"
-   # "And then you realize"
-   # "The butterfly is dead"
-   # "You look down at her face"
-   # "Two wet streams trace her cheeks down to her chin as she bites her lip"
-   # "Staring at the thing that used to be a butterfly"
-   # "She's the reason it died."
-   # m "..."
-   # "You don't know what to say"
-   # "You think for a moment"
-   # "'What's the matter... It's just a butterfly'... No..."
-   # "'Why are you crying?'... You can't think of anything that doesn't sound insincere"
-   # "..."
-   # "You open your mouth in an attempt to muster up something to say"
-   # ali "You know..."
-   # m "?!"
-   # play music "sad.wav"
-   # ali "When people see a mushroom with spots like me... What do you think they think?"
-   # m "Ummm... I uh... I think ummm like"
-   # ali "Death... Toxicity... Poison... Hysteria"
-   # ali "But you know... I'm not even that toxic"
-   # ali "How many people do you think die from eating fly amanita?"
-   # m "..."
-   # ali "NOT A SINGLE PERSON IN THE LAST HUNDRED YEARS!"
-   # ali "But still... That's what you all think of me"
-   # ali "All anyone ever thinks about me"
-   # ali "..."
-   # ali "But you know... The worst part is..."
-   # ali "Their fears aren't unwarranted"
-   # ali "I kill the things around me"
-   # ali "You know, they used to crush us up and mix us into milk to kill flies wanting to drink it"
-   # ali "That's where the 'Fly' part of the name comes from "
-   # ali "Isn't that weird if you think about it for a second?"
-   # ali "If we are so scary, why would you mix it into the milk you drink?"
-   # ali "I don't get it..."
-   # ali "I don't understand anything"
-   # ali "But I don't want to be something that causes suffering and death to everything around me"
-   # ali "But that's how you all see me"
-   # ali "By default"
-   # ali "And there's nothing I can say that will change the way you all see me"
-   # ali "I don't want to be like this!!!"
-   # "Alice's voice slowly turns from words into incoherrent sobs"
-   # m "..."
-   # m "You know... ummm "
-   # m "I'm not going to pretend I know everything about you..."
-   # m "Or that I can talk for all human's or whatever"
-   # m "But... I think I read a study about like... Japanese squirrels? I think?"
-   # m "That were able to eat you guys. No problem..."
-   # m "And so... I guess I was just thinking like"
-   # m "Maybe it's not so black and white? That sure, maybe some people get the wrong idea, and think you're more of a threat than you really are"
-   # m "But at least me... I think you're not that scary."
-   # m "When we first met, I think maybe I was like what you said"
-   # m "You did kind of freak me out"
-   # m "But I sort of wasn't expecting the whole... You know? Living mushroom thing?"
-   # m "And everything else"
-   # m "So I'm sorry about that"
-   # m "But right now... I think you're just like any other girl"
-   # m "And I know maybe my opinion doesn't mean that much"
-   # m "But I guess I wanted to say if you're feeling isolated"
-   # m "I just wanted you to to know that..."
-   # m "You have me... and..."
-   # m " The squirrels I guess"
-   # ali "..."
-   # show butterfly_smile
-   # #show alice smile cry
-   # ali "That's so... stupid!"
-   # m "I'm sorry..."
-   # ali "And like... how would you know what a normal girl is like anyway"
-   # m "I-"
-   # ali "Hahahaha"
-   # m "?"
-   # ali "..."
-   # ali "I'm sorry"
-   # ali "I guess I got a little melodramatic"
-   # m "It's okay"
-   # scene black with fade
-   # "She gets up and you keep starting walking again slowly"
-   # "The sun has almost completely set"
-   # jump day2WayHome
 
 
-#I'm worried that it's weird that there's 2 big emotional freak outs in one day... It's important that each one resolves a different feeling
+
+#You arrive back and she goes back to songing
+   # It's fine for the first few hours, but now it's evening and she's been dismissive towards you
+   #You try offer to help but shes stubbornly grinding
+   #Eventually you snap and get angry, its her last day
+   # You tell her like "I'm trying to be supportive! Don't you get how hard this is for me? You've accomplished more than I ever have and you're only few hours deep! 
+   #This is the last time we have together and you're just wasting it" all that stuff
 
 
 # After the conversation the MC feels depressive, and the weight of his parents expectations of him. 
@@ -348,6 +295,16 @@ label day2DeepTalk:
    "she keeps playing and you just sit there..."
    "It boils up..."
    "Until you just can't take it anymore."
+
+
+#   For "The snapping point", I think his self-doubt about how quickly she's improved at guitar could be better portrayed:
+#   instead of saying it all from the POV of why this is hard for him (which is too obviously self-focused + annoys me), 
+#   he can phrase it as a frustrated encouragment, trying to get her to see why everything is okay and she can stop stressing and be proud of all she has done instead.
+#   For example, "Why are you so upset/stressed/afraid? Stop putting yourself down - don't you know how much I look up to you? You've worked so hard, you've learned so much,
+#   and what I can sounds better than anything I could do. You've accomplished more than I ever have!" 
+#   This way MC's self-hate is more backhanded AND it shows how their relationship has grown to the point that
+#   he is genuinely worried about her and wants her to see how HE sees her.
+
 
 
 
@@ -611,6 +568,38 @@ label day2DeepTalk:
    "END!!!"
 
 
+
+
+  
+   #she gets upset and walks out with the guitar to work alone
+   #You take some time to calm down, and go find her
+   #Shes on the roof, and shes not playing guitar, instead shes holding a dead butterfly
+   #She's crying 
+   # opens up to you now because she trusts you
+   #You listen. She talks about how the butterfly reminds her of herself
+   #And now shes very aware that shes just wanting validation in a different way
+   #Self doubt sets in
+   #She's scared that shes wasted the small bit of time she has with you
+   #But she just wanted to accomplish something
+   #This is the only chance she has to fee like her life was able to accomplish something
+   #MC defuses it by pointing out that the validation doesnt need to be what she focuses on,
+   #She picked this because she saw something in it that resonated with her, and as long as she had fun, that's all that matters
+   #hes there to help
+   #He helps her refine the song with what ever feedback he can give
+   #They go to the event
+   #Kellin is there and is afraid to see alice at first, but eventually he chills out around her
+   #Her time comes to play 
+   #She goes up and (trips, or drops pick, or mic howls really bad, or guitar jack cuts out)
+   #She smiles and make a joke of it into the mic, and the audience laughs with her
+   #The lyrics are using butterfly metaphor and about how she feels about life, and the mc
+   #She doesn't win the competion
+   # Kellin comes up to her and he shows her respect and asks her about the song
+   Post-concert, for some bittersweetness and dramatic irony, Kellin could go over the top about how well Alice did, and how much potential she has if she keeps on going + he wants to make future plans with her and begs her to join his band. Alice and MC know she can't, but how they navigate that convo could be interesting, and can help lead to the somber tone of the "one last conversation" on the way home. 
+   # You and her go home together and have one last conversation on the way home
+   # She tells you there might be a way to cook her without dying
+   # It ends with you thinking about what you want to do with your life, about how maybe you'll go and get that guitar, or take kellin up on playing in a band with him
+   # But no matter what happens, you're going to start from trying to like yourself first
+
 /////////////
 
 Alice’s Performance:
@@ -631,40 +620,3 @@ The main character’s newfound resolve to live authentically could be a bitters
 ////
 
 
-
-label:day3Morning
-#wake up
-#she's been playing guitar the whole night on a guitar with old strings (missing a string). You feel sorry for her, but impressed at her drive.
-
-#have an internal dialogue of how you are jealous, but at the same time, you've never even tried that hard, so maybe you don't even have the kenri to feel that way
-
-#you decide to take her to a guitar store to buy new strings
-#[here i think the bg music when she's practicing should be the song she's writing, but at various levels of playing: think wa2]
-label:day3GuitarStore
-#she's wowed by just how many types of guitars there are
-#she find's a more pro-ish gutiar that she thinks really suits you (or that she really wants)
-#maybe have a scene where you talk to the worker there (maybe he's a friend of the neighbour,  and the neighbour reccomended this place)
-#you buy new strings and go back home
-label:day3WayHome
-#you end up becoming a little depressed and standoffish, but this time she asks you whats wrong
-#you explain that you had always wanted to be creative but never had a spark, maybe waiting from a push from someone else
-
-#you try apologize for how you acted yesterday
-#choice as to whether to fully give into it or whether to take a step back
-#She's on the verge of tears, and you take a step back
-
-#jealous of how in a matter of hours, she got better than you were able to get (half-assedly), and so it makes you feel even more useless. 
-#maybe i'm only trying to nurture your creativeness because I wish someone had done the same for me
-
-#she gets upset: I only have a few days to live, yet you have years. I just want to try to find some sort of meaning while i'm here
-#[i think try to maybe build that part of her character: in contrast to buttons attitude towards death, hers is more like: I want to be immortalized through creation]
-
-#maybe this should go into day 2
-
-#alice kind of represents the ego, with validation being a huge part of her character, and this results in her attitude towards death
-#put this in earlier days too
-
-label:day3Restring
-#you tune up the guitar strings for her and are suprised by just how good she sounds
-#she explains as a mushroom she has connection with ancient wisdom, and so for her it was very intuitive, 
-#and she was able to learn super fast

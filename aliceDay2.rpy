@@ -937,7 +937,7 @@ label mallPastel:
    ali "So? Let them."
    m "Easy for you to say..."
    ali "What was that?"
-   m "Easy for you to say when you look good in anything!!!" # change this line X3
+   m "Easy for you to say when you look good in anything!!!"
    show alice flirt
    ali "You really think so?"
    m "That's not my point! I just mean like..."
