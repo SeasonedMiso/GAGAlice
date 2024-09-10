@@ -11,6 +11,9 @@
    #choice: Insist she takes a break to come with
 
 
+
+#[here i think the bg music when she's practicing should be the song she's writing, but at various levels of playing: think wa2]
+
 label day3Morning:
 "You wake up to the rhythm of dull strumming."
 m "Damn you're still going?"
@@ -49,6 +52,10 @@ ali "Nah, I just drew stuff to help me remember what part of the song go where."
 m "Uhh, I have no idea what i'm looking at."
 ali "That's okay, just as long as I know."
 "You hear the kettle click and walk over to it."
+"You can't help but be impressed by her"
+"But you also feel a bit..."
+"..."
+#Maybe leave this just as an incomplete sentence
 screen trans 
 # maybe slurping sound
 m "Okay I'm alive now"
@@ -69,45 +76,100 @@ ali "I don't have time to go!"
 m ("Damn what should I do?")
 choice:let her keep grinding, 
    -Take her along with you
+m "Hey, I'm kind of worried about you"
+m "You've been grinding non-stop for the entire night"
+m "Please, come with me"
+ali "Ugh, fine~"
+ scene trans
 
-
-#wake up
-#she's been playing guitar the whole night on a guitar with old strings (missing a string). You feel sorry for her, but impressed at her drive.
-
-#have an internal dialogue of how you are jealous, but at the same time, you've never even tried that hard, so maybe you don't even have the kenri to feel that way
-
-#you decide to take her to a guitar store to buy new strings
-#[here i think the bg music when she's practicing should be the song she's writing, but at various levels of playing: think wa2]
-
-
-
-
+#What do they talk about on the way?
+#For now they're just going to walk in silence
+"The two of you walk together towards the music store."
+"You walk a little ahead of her, and she follows your back"
+"You get worried that she's lost sight of you, or got lost somewhere along the way"
+"So you check over your shoulder every few minutes, but she's always right behind you"
+"Walking lazily, yet somewhat annoyed."
 
 label day3Store:
+play sound shop bells
+scene mall with fade
+ali "!"
+ali "Woah this place is crazy"
+m "Yeah... There's all sorts of stuff"
+#Maybe drag this out and make it more like "why does that one have a birth defect?"
+ali "Why is there like... a conjoined twin guitar?"
+m "I have no idea."
+m "I'm going to go get the strings"
+m "You can have a look around in the meanwhile if you want"
+#Maybe it's better that she points it out only afterwards?
+ali "Are you sure you can talk to a strager all by yourself?"
+m "Damn, I didn't think that far..."
+m "It'll be fine! Probably..."
+ali "If you say so."
+ screen trans
+ #insert awkward purchasing
+ screen trans
+m "Ugh... That went a-about as expected"
+ali "So you pissed yourself and the staff had to clean it up in front of you?"
+"You hold up the string packet triumphantly"
+m "There, I did it! See! I c-can do it if I try!"
+ali "Your voice is still trembling though..."
+m "Whatever!"
+m "Since we're here we might as well have a proper look around"
+m "Look, there's a second floor where you can try them out with an amp"
+ali "It's fine, I should go home and practice anyway..."
+m "Look, we came out all this way, you might as well try some different guitars and see if theres any you like"
+m "Plus, you can always try play what you've been working on here"
+ali "I guess you're right..."
+ screen trans
+"You leave alice to try out some guitars while you watch"
+#maybe you take the phone call here and she's still on the guitar when you get back
+"She tries out a couple of different ones, but never for more than a couple seconds, before she unplugs it, it puts it up on the hanger"
+"Until..."
+ali "This one is... different?"
+m "Really? It just looks like a different color to that other one you were just playing to me."
+ali "But it feels completely different!"
+m "If you say so..."
+"After a few minutes pass she eventually unplugs it, and tries a couple others"
+"But it's obvious that none of them interest her as much"
+"You take a look at the price of the one she was eyeballing"
+"Fender Custom Shop 2022 Fall Event LTD 1960 Telecaster Journeyman Relic Aged Magenta Sparkle"
+"And the price is..."
+m "!"
+m "..."
+"If you bought it, you would be eating instant noodles every day for the next 2 months"
+"Which I guess isn't any different than how you live anyway"
+m "Okay, we should probably get going"
+ali "...Okay..."
+"She takes a last look at that guitar, and slowly gets up."
+"As she does a young boy with 2 older adults (probably his parents) takes a seat at the amp on the other side of the floor"
+"He plugs in the guitar his parents place on his lap for him to try and..."
+play sound shred
+
+#Maybe the idea of it being a little kid is better?
 
 
-
-   #Go to store
-   #Look at the instrument store 
-   #she looks at an one and cant take her eye off
-   #you could maybe afford it if you used most of your money 
-   #but shes going to die tonight (could buy and return but scam?)
-   #you leave the store and on the way back (by the river bed) and your dad calls 
-  
-#   The music store scene is a little empty. The part with the expensive guitar that she likes works, but it needs more. 
-#   One idea is that perhaps she sees someone else playing guitar and is hit by a wave of insecurity, watching how good and easily this guy is just playing around,
+#Enter store
+#You go up to counter to ask employee about strings
+#You leave her to wonder around
+#After you've purchased them you turn around to see her staring at a guitar she really likes the look of
+#You talk to her about it, but as soon as you see the price, you move her away from it, 
+#but shes going to die tonight (could buy and return but scam?)
+#She then sees a middle aged leather jacket guy rip out a shredding solo trying out a different guitar, and is hit by a wave of insecurity, watching how good and easily this guy is just playing around,
 #   and her fear of the concert + being compared to other performers, and self-doubt increases. Maybe all she tells mc is that she's feeling nervous for tonight.
 #   He could respond with empathy (from his experiences of stage fright and social anxiety) and that he'll be there cheering her on = makes her smile and they 
 #   have a cute little bonding moment.
-  
-  
+#you leave the store and on the way back (by the river bed) and your dad calls 
 
 
 
 
 
 
----------------------------------------------------
+
+
+
+--------------------------------------------------
 
 
 
@@ -618,5 +680,10 @@ This ending reinforces the themes of mortality, self-acceptance, and breaking fr
 The main character’s newfound resolve to live authentically could be a bittersweet yet hopeful conclusion to the route.
 
 ////
+
+
+After she dies, have a black screen where mc reflects on her experience with her, and the  black background
+slowly fades to be a shot of his computer with recording software open, and next to the computer a guitar stand 
+with the guitar she wanted from the store
 
 
