@@ -24,7 +24,7 @@ ali "..."
 "She can't hear you."
 "You slowly get out of bed and walk towards the kettle to make some coffee."
 "While the kettle boils you look over to her and watch her play."
-"You can't hear her that well from the growling of the water being heated."
+"You can't hear her that well over the rumbling of water being heated."
 "Her movements look a lot more confident that you remember last night"
 "But when you look at her face you see her eyes are bloodshot."
 "You walk over to her and tap her shoulder gently."
@@ -63,7 +63,7 @@ ali "*strum* *strum*"
 m "Are you ready to go to the guitar store?"
 ali '*pickedy* *pick*'
 "She can't hear you again"
-"You walk over to her and slowly wade your hand in front of her vision"
+"You walk over to her and slowly wave your hand in front of her vision"
 ali "Whaaat~"
 m "Do you wanna go get strings or not?"
 ali "Ughhh, do I have to?"
@@ -103,7 +103,7 @@ m "I'm going to go get the strings"
 m "You can have a look around in the meanwhile if you want"
 #Maybe it's better that she points it out only afterwards?
 ali "Are you sure you can talk to a strager all by yourself?"
-m "Damn, I didn't think that far..."
+m ("Damn, I didn't think that far...")
 m "It'll be fine! Probably..."
 ali "If you say so."
  screen trans
@@ -139,100 +139,53 @@ m "!"
 m "..."
 "If you bought it, you would be eating instant noodles every day for the next 2 months"
 "Which I guess isn't any different than how you live anyway"
+"But, she's only has today left..."
+"Maybe if I returned it after tomorrow and got a refund?"
+"... Nah, that's way too scummy"
 m "Okay, we should probably get going"
 ali "...Okay..."
 "She takes a last look at that guitar, and slowly gets up."
 "As she does a young boy with 2 older adults (probably his parents) takes a seat at the amp on the other side of the floor"
 "He plugs in the guitar his parents place on his lap for him to try and..."
 play sound shred
+ali "!"
+m "Damn kids these days are crazy huh?"
+ali "..."
+"You see her scrunch up her brow and turn her gaze towards the floor"
+m "Let's go, you've got a lot of work to do right?"
+ali "Yeah..."
+scene trans
+"The 2 of you walk along the river bank towards your dorm"
+"When suddenly- "
+play sound rintone
+m "Oh shit!"
+"You're not used to the sound of your ringtone"
+m "Dad..."
+m "Ugh..."
+m "I could just message him some excuse and let it ring out..."
+# make it more clear why he doesn't want to pickup
+m "Or...?"
 
-#Maybe the idea of it being a little kid is better?
-
-
-#Enter store
-#You go up to counter to ask employee about strings
-#You leave her to wonder around
-#After you've purchased them you turn around to see her staring at a guitar she really likes the look of
-#You talk to her about it, but as soon as you see the price, you move her away from it, 
-#but shes going to die tonight (could buy and return but scam?)
-#She then sees a middle aged leather jacket guy rip out a shredding solo trying out a different guitar, and is hit by a wave of insecurity, watching how good and easily this guy is just playing around,
-#   and her fear of the concert + being compared to other performers, and self-doubt increases. Maybe all she tells mc is that she's feeling nervous for tonight.
-#   He could respond with empathy (from his experiences of stage fright and social anxiety) and that he'll be there cheering her on = makes her smile and they 
-#   have a cute little bonding moment.
-#you leave the store and on the way back (by the river bed) and your dad calls 
-
-
-
-
-
-
-
-
-
---------------------------------------------------
-
-
-
-
-
-
-# His father has loaned him a card, which he uses to give allowence for food etc, instead of giving him his own card. 
-# He got a phone notification when they purchased the hoodie, and therefore was able to see that they were shopping at a women's clothing store. 
-# Initially the MC thinks he's going to see through and know he bought it from himself, but the dad instead assumes his son has a girlfriend and bought it for her,
-# and says things like "Of course, you probably have several of them at the same time, like I did at your age", 
-# where the father is projecting his own toxic masculine attitudes on to the MC, because he thinks that is what 'normal' is.  
-# He also needs to lie about academic and social performance
-
-
-# Father’s Call:
 # The interaction with the main character’s father is a key moment that showcases the toxic expectations placed on him. 
 # The father’s assumptions and comments reveal the generational cycle of toxic masculinity, further intensifying the main character’s internal conflict.
 # The call adds to the weight of the main character’s emotional burden, making the subsequent fight with Alice more impactful. 
-# It could also reinforce his feelings of isolation and the pressure to conform to societal norms.
-
-
-
-   #You tell her to go on ahead
-   #She sits down and looks at flowers and the butterflies
-   
-
-
-# Imported from day 2
-
-   #start some really bad beginner guitar experimenting
-   "I guess that's my obligations for the day over..."
-   "Let's check if there's any new meme compilations"
-   stop music
-   
-
-   show mc awed
-   "..."
-   "3 missed calls from dad"
-   "You haven't talk to him in almost a month"
-   show mc stressed
-   "Fuck"
-   "Should I text him an excuse for why I can't talk now?"
-   "Or should I call him now?"
+# It could also reinforce his feelings of isolation and the pressure to conform to societal norms.  
 
    menu:
       "What should I do?"
       "Make an excuse(N/A).":
          "..."
-      "Call him back.":
+      "Accept the call.":
          show mc stressed
          m "Hey, uh... I need to go make a phone call."
+         "Alice nods and sits on a near by bench along the riverbank"
          jump day2PhoneCall
 
 
 label day2PhoneCall:
    scene black with fade
    play music "wind.wav"
-   "You climb up to the roof and tap the call button"
-   scene rooftop with fade
-   play sound "phonecall.mp3"
-   "Ring..."
-   "ring..."
-   "...ring..."
+   "You tap the accept call button"
    stop sound
    dad "Hello?"
    show mc stressed
@@ -277,9 +230,214 @@ label day2PhoneCall:
    dad "Will do, {i}son{/i}."
    dad "Later"
    stop music fadeout 3
-   scene black with fade
-   jump day2DeepTalk
+   m "..."
+   "You turn back to find Alice"
+   "To find her kneeling beside some flowers on the grass"
+   "She's watching a butterfly perched on a white daisy."
+   m "Hey, sorry about that... Let's go"
+   ali "Are you okay? You seem kinda off."
+   m "Yeah, it's nothing..."
+   ali "Okay... If you say so..."
+   "She stands up slowly and you resume your walk back home"
 
+preFightDay3:
+   # show her rushing back thorugh door as you get back
+   m "Damn you really aren't wasting a second huh?"
+   ali "..."
+   m "*Sigh*"
+   m "We still have a couple hours, since the show is only in the evening"
+   m "I guess I'll try read some manga on my phone or something"
+   scene trans
+   "The first hour was fine enough..."
+   "You couldn't focus super on reading over the sound of the same guitar phrases repeated over and over"
+   "But it was fine..."
+   "Another hour rolled by"
+   # Tense is inconsistent
+   "And she hasn't so much as looked in your direction"
+   m "..."
+   "Another hour..."
+   "The sound of the guitar drills its way further into your brain"
+   "Echoing though your skull and through your ears"
+   "A wave of nausea hits you"
+   "You stand up, suddenly feeling restless"
+   "You don't know exactly why"
+   "But you don't want to be here right now"
+   "You can't be here right now"
+   "With her..."
+   "It's her last day... but she hasn't even spoken a word to you"
+   "After all you've done for her"
+   "Your stomach feels like you've swallowed a brick"
+   "You say it over and over in your head"
+   "..."
+   "'Shut the fuck up'"
+   "..."
+   "You've been annoyed since the call earlier"
+   "But you thought you could put on a smile for her"
+   "On her last day"
+   "You look over to her"
+   "She's staring at the fretboard"
+   m "..."
+   "You don't know what's going to come out, but you brace yourself"
+   "To say something..."
+   "Anything..."
+   m "..."
+   m "Hey, do you mind like... Taking a break? For my sanity?"
+   ali "..."
+   m "Hey I'm talking to you!"
+   ali "..."
+   "You walk over to her and..."
+   play sound guitar unplugged
+   m "Stop it already! You've been playing the whole day!"
+   ali "!"
+   m "I'm trying to support you here, but I just can't take it anymore"
+   # Maybe she just doesn't say anything because she doesn't know why hes mad
+   # Or just cold fax
+   ali "Hey what the fuck? I'm busy!"
+   show mc shout
+   m "I go through all the effort to set up all this stuff for you, and you..."
+   show alice serious
+   ali "And I what?"
+   ali "Use it?"
+   show alice annoyed
+   ali "Sorry for existing I guess."
+   show mc vannoyed
+   m "You don't get it..."
+   m "This is our last day together and you're just wasting it on this"
+   m "Who cares if you win or not? Why do you care so much about this stupid competition?!"
+   m "None of this shit matters!"
+   ali "..."
+   # Forced wait for 3 seconds so like . wait . wait ."
+   # but her expression changes 
+      "She stands up clutching the guitar towards her chest"
+   "And starts to walk towards the door"
+   m "Where are you going?!"
+   ali "..."
+   "..."
+   # ali "Somewhere I can focus without you"
+   m "!"
+   ali "..."
+   show sprite disappear 
+   m "She's gone..."
+   m "..."
+   m "Fuck..."
+   m "What's wrong with me?"
+
+
+
+
+
+
+
+
+
+
+
+//
+   m "You just start learning guitar on a whim."
+   show mc sulk
+   m "And you're already better than I've ever been at anything."
+   m "In literally the span of hours."
+   show mc stressed
+   m "What the fuck am I supposed to do?"
+   m "I'm not good enough for my parents."
+   m "And I'm not good enough for myself."
+   show mc slightsad
+   m "I'm a fucking loser, and yet I tell my self I'll learn to draw."
+   m "Or learn an instrument."
+   show mc shout
+   m "Or fucking anything."
+   show mc sad
+   m "I just want to like myself."
+
+   m "But even then..."
+   m "I know it will never be enough"
+   show mc slightsad
+   m "I'm never going to be enough for my parents"
+   m "Because all they want me to be is the person they THINK I am"
+   show mc vannoyed
+   m "But I CAN'T be that person!!"
+   m "I've never been that person..."
+   show alice neutral
+   ali "..."
+   show mc normalside
+   m "They think I'm a straight A student, with lots of friends."
+   m "My dad is making up fantasies of me having a girlfriend and living up to how he was in college"
+
+   m "I don't even know what he would do if he found out"
+   show mc cynical
+   m "Who I {i}actually{/i} am"
+   show mc stressed
+   m "That I'm on the verge of flunking out"
+   m "That I have no friends"
+   m "That I'm not like him..."
+
+   # nuance of disgust
+   show mc sulk
+   m "I just feel like..."
+   m "Time keeps moving..."
+   m "And I'm still alone... Here... In my room."
+   m "But I can't stay in college for ever."
+   m "I'm going to drop out or scrape through."
+   m "And then I'm going to work doing some crappy deskjob I hate, until I get old..."
+   m "And then I die."
+
+   ali "..."
+   show alice sulk
+   ali "You know.. It's kind of funny"
+   show mc normal
+   m "?"
+   ali "How when it was me wanting attention"
+   ali "You could rationalize all the reasons why I was being stupid for wanting that"
+   ali "But you..."
+   show alice normal
+   ali "You're the exact same."
+   show alice disgusted
+   ali "Get over yourself."
+   ali "You're drowning in your own tears about only having another 60 years left to accomplish something."
+   show alice sulk
+   ali "How do you think I feel?"
+   ali "I have one more day"
+   ali "..."
+   show mc sad
+   m "I'm sorry..."
+   show alice normalside
+   ali "It's okay..."
+   ali "I haven't spent that much time with you."
+   ali "Or you know, being alive."
+   show alice serious
+   ali "But I think maybe, you're waiting for an excuse."
+   show mc confused
+   m "What do you mean?"
+   
+   ali "You took me to a whole bunch of places and showed me a bunch of stuff."
+   show alice confused
+   ali "and at first I thought it was meaningless."
+   show alice normal
+   ali "But I realized that nothing matters except what is important to you."
+   
+   ali "Latte art is just making pictures in cow boob juice."
+   ali "And video games are just what depressed people do to avoid dealing with real life."
+   # Too much
+   ali "But even then."
+   show alice serious
+   ali "Those are things that bring meaning to people."
+   ali "Every single thing you could be interested in."
+   ali "has so much depth when you actually look into it."
+   ali "Every rabbit hole runs so deep."
+   show alice normalside
+   ali "And I guess what I'm trying to say is"
+   show alice sad
+   ali "You can't wait for someone else to give you permission to act" 
+   ali "To do what you want with your life"
+   show mc worried
+   m "But what if it doesn't work out?"
+   show alice sigh
+   ali "Well then you're back where you started."
+   ali "And you can find another reason to live"
+   ali "Humans are good at that"
+   show alice happy
+   ali "So I guess in the meantime, all you can do is find a waste of time that feels special to you"
+   ...
 
 
 
@@ -450,133 +608,7 @@ label day2DeepTalk:
 
 
 
-   show mc vshout
-   m "Are you going to keep playing all night? How am I supposed to relax like this?"
-   show alice angry
-   ali "Huh? What's up with you? I've literally done nothing and you're being super passive aggressive for no reason."
-   show mc shout
-   m "It's not for no reason! I go through all the effort to set up all this stuff for you, and you..."
-   show alice serious
-   ali "And I what?"
-   ali "Have fun and use it?"
-   show alice annoyed
-   ali "Sorry for existing I guess."
-
-
-   #choice as to whether to fully give into it or whether to take a step back
-   #[I think all of the decisions need to be subtle, not GOOD CHOICE or BAD CHOICE]
-   #She's on the verge of tears, and you take a step back
-
-   #choice 1 "I'm jealous of you"
-   #choice 2 "You're so selfish"
-   show mc vannoyed
-   
-   m "You don't get it..."
-   m "You just start learning guitar on a whim."
-   show mc sulk
-   m "And you're already better than I've ever been at anything."
-   m "In literally the span of hours."
-   show mc stressed
-   m "What the fuck am I supposed to do?"
-   m "I'm not good enough for my parents."
-   m "And I'm not good enough for myself."
-   show mc slightsad
-   m "I'm a fucking loser, and yet I tell my self I'll learn to draw."
-   m "Or learn an instrument."
-   show mc shout
-   m "Or fucking anything."
-   show mc sad
-   m "I just want to like myself."
-
-   m "But even then..."
-   m "I know it will never be enough"
-   show mc slightsad
-   m "I'm never going to be enough for my parents"
-   m "Because all they want me to be is the person they THINK I am"
-   show mc vannoyed
-   m "But I CAN'T be that person!!"
-   m "I've never been that person..."
-   show alice neutral
-   ali "..."
-   show mc normalside
-   m "They think I'm a straight A student, with lots of friends."
-   m "My dad is making up fantasies of me having a girlfriend and living up to how he was in college"
-
-   m "I don't even know what he would do if he found out"
-   show mc cynical
-   m "Who I {i}actually{/i} am"
-   show mc stressed
-   m "That I'm on the verge of flunking out"
-   m "That I have no friends"
-   m "That I'm not like him..."
-
-   # nuance of disgust
-   show mc sulk
-   m "I just feel like..."
-   m "Time keeps moving..."
-   m "And I'm still alone... Here... In my room."
-   m "But I can't stay in college for ever."
-   m "I'm going to drop out or scrape through."
-   m "And then I'm going to work doing some crappy deskjob I hate, until I get old..."
-   m "And then I die."
-
-   ali "..."
-   show alice sulk
-   ali "You know.. It's kind of funny"
-   show mc normal
-   m "?"
-   ali "How when it was me wanting attention"
-   ali "You could rationalize all the reasons why I was being stupid for wanting that"
-   ali "But you..."
-   show alice normal
-   ali "You're the exact same."
-   show alice disgusted
-   ali "Get over yourself."
-   ali "You're drowning in your own tears about only having another 60 years left to accomplish something."
-   show alice sulk
-   ali "How do you think I feel?"
-   ali "I have one more day"
-   ali "..."
-   show mc sad
-   m "I'm sorry..."
-   show alice normalside
-   ali "It's okay..."
-   ali "I haven't spent that much time with you."
-   ali "Or you know, being alive."
-   show alice serious
-   ali "But I think maybe, you're waiting for an excuse."
-   show mc confused
-   m "What do you mean?"
-   
-   ali "You took me to a whole bunch of places and showed me a bunch of stuff."
-   show alice confused
-   ali "and at first I thought it was meaningless."
-   show alice normal
-   ali "But I realized that nothing matters except what is important to you."
-   
-   ali "Latte art is just making pictures in cow boob juice."
-   ali "And video games are just what depressed people do to avoid dealing with real life."
-   # Too much
-   ali "But even then."
-   show alice serious
-   ali "Those are things that bring meaning to people."
-   ali "Every single thing you could be interested in."
-   ali "has so much depth when you actually look into it."
-   ali "Every rabbit hole runs so deep."
-   show alice normalside
-   ali "And I guess what I'm trying to say is"
-   show alice sad
-   ali "You can't wait for someone else to give you permission to act" 
-   ali "To do what you want with your life"
-   show mc worried
-   m "But what if it doesn't work out?"
-   show alice sigh
-   ali "Well then you're back where you started."
-   ali "And you can find another reason to live"
-   ali "Humans are good at that"
-   show alice happy
-   ali "So I guess in the meantime, all you can do is find a waste of time that feels special to you"
-   ...#maybe try to fit in a bit about like: I'm just scared even if I sacrifice everything, that ill still feel as broken and fucked up as i did before
+#maybe try to fit in a bit about like: I'm just scared even if I sacrifice everything, that ill still feel as broken and fucked up as i did before
    # I'm worried this reads as preechy and goes against do don't say
 
 
