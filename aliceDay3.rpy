@@ -322,15 +322,71 @@ preFightDay3:
    m "Fuck..."
    m "What's wrong with me?"
 
+   m "I've gotta go find her"
+   option 1: The mall
+   option 2: The river bank
+   # ORder doesn't matter but gives scenery to go past as you have the internal dialogue
+   scene trans
+   # switch nvl?
+   "Hey... You did it again!"
+   "If there was a prize for making girls cry, you would be a shoe in"
+   "The dis-noble prize"
+   "This is how it always is though"
+   "Every friendship or acquintance"
+   "Every classmate and every crush"
+   "Without fail, you always find the best way to push all of them away from you"
+   "But honestly..."
+   "Did you really expect anything different?"
+   "No... In fact..."
+   "I can say without a shadow of doubt..."
+   "This is what you wanted to happen."
 
-
-
-
-
-
-
-
-
+   m "I don't see her anywhere..."
+   m "Fuck where else could she be?"
+   choice :   
+      option 1: The mall
+      option 2: The river bank
+      (thing you already chose is disabled)
+         
+   "All of this 'helping her' and 'trying to grant her last wishes'"
+   "You're just trying to convince yourself that you are a good person"
+   "But if that were true you wouldn't be so alone in the first place"
+   "You were jealous of her from the very beginning"
+   "The way that she could say what she really felt"
+   "How she could do more than you've ever accomplished in less than a fraction of a percent of the time you've been alive"
+   "How she knows who she is..."
+   # ("How she dressed, or how she looked"?)
+   "That's how you really feel!"
+   "But that's okay!"
+   "We are happier this way!"
+   "Just you and I..."
+   "Forever..."
+   m "..."
+   "Besides, why do you care so much-"
+   m "I-"
+   "About some bitch who is going to die in a few hours anyway?"
+   m "I'm not like that!"
+   m "I'm not who you-"
+   m "Who I think I am..."
+   m "I've got to go find her..."
+   # Show running out into the hall
+   m "Fuck she could be anywhere..."
+   m "Where would she go in a time like this?"
+   "You think back to the first night where Alice ran off by herself"
+   "How she felt then"
+   m "..."
+   m "I think I know where she is"
+   scene trans
+   show black
+   play sound foodsteps and heartbeat
+   m "()"
+   show hallway
+   m "()"
+   scene trans
+   show scene rooftop cg with alice crying guitar and butterfly
+   play sound creaking door bursting open 
+   m "Alice!"
+   
 
 //
    m "You just start learning guitar on a whim."
