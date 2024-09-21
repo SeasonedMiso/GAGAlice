@@ -240,6 +240,16 @@ label day2PhoneCall:
    ali "Okay... If you say so..."
    "She stands up slowly and you resume your walk back home"
 
+
+#   For "The snapping point", I think his self-doubt about how quickly she's improved at guitar could be better portrayed:
+#   instead of saying it all from the POV of why this is hard for him (which is too obviously self-focused + annoys me), 
+#   he can phrase it as a frustrated encouragment, trying to get her to see why everything is okay and she can stop stressing and be proud of all she has done instead.
+#   For example, "Why are you so upset/stressed/afraid? Stop putting yourself down - don't you know how much I look up to you? You've worked so hard, you've learned so much,
+#   and what I can sounds better than anything I could do. You've accomplished more than I ever have!" 
+#   This way MC's self-hate is more backhanded AND it shows how their relationship has grown to the point that
+#   he is genuinely worried about her and wants her to see how HE sees her.
+
+
 preFightDay3:
    # show her rushing back thorugh door as you get back
    m "Damn you really aren't wasting a second huh?"
@@ -290,8 +300,6 @@ preFightDay3:
    m "Stop it already! You've been playing the whole day!"
    ali "!"
    m "I'm trying to support you here, but I just can't take it anymore"
-   # Maybe she just doesn't say anything because she doesn't know why hes mad
-   # Or just cold fax
    ali "Hey what the fuck? I'm busy!"
    show mc shout
    m "I go through all the effort to set up all this stuff for you, and you..."
@@ -305,6 +313,9 @@ preFightDay3:
    m "This is our last day together and you're just wasting it on this"
    m "Who cares if you win or not? Why do you care so much about this stupid competition?!"
    m "None of this shit matters!"
+   m "I thought the whole point of this was to not try to please anyone else"
+   m "But you're just going from an insecurity that was imposed on you to one you chose"
+   
    ali "..."
    # Forced wait for 3 seconds so like . wait . wait ."
    # but her expression changes 
@@ -447,13 +458,18 @@ preFightDay3:
    ali "But you..."
    show alice normal
    ali "You're the exact same."
-   show alice disgusted
-   ali "Get over yourself."
    ali "You're drowning in your own tears about only having another 60 years left to accomplish something."
    show alice sulk
    ali "How do you think I feel?"
    ali "I have one more day"
    ali "..."
+
+
+
+
+
+
+
    show mc sad
    m "I'm sorry..."
    show alice normalside
@@ -495,33 +511,11 @@ preFightDay3:
    ali "So I guess in the meantime, all you can do is find a waste of time that feels special to you"
    ...
 
-
-
-
-#You arrive back and she goes back to songing
-   # It's fine for the first few hours, but now it's evening and she's been dismissive towards you
-   #You try offer to help but shes stubbornly grinding
-   #Eventually you snap and get angry, its her last day
-   # You tell her like "I'm trying to be supportive! Don't you get how hard this is for me? You've accomplished more than I ever have and you're only few hours deep! 
-   #This is the last time we have together and you're just wasting it" all that stuff
-
-
-# After the conversation the MC feels depressive, and the weight of his parents expectations of him. 
-# When he gets home he is in a bad mood, which leads to him bottling it up while alice is practicing loudly.
-# Alice is also acting incredibly stressed, and is being incredibly perfectionist, playing the same lines over and over again until they are perfect, 
-# and being incredibly short and snappy with the main character, because she wants to win and be perfect. She can't 'afford the time to talk to him"
-# He eventually snaps and yells at her which leads to her fighting with him. He reveals that he is really jealous of her, 
-# and that it intimidates him that she's now better with one day of practice than he has ever been at anything in his life. 
-# That he feels conflicted because he wants to help her but feels like she's also being self centered, and is focusing too much on perfection. 
-# That she's gone from trying to get external validation from one source, just to change it for another. 
-
-# The fight is supposed to be the main emotional climax of the route.
 # Ideally they make up and both end up with a healthier outlook as a result of the fight. 
 # He realizes that he's just making excuses and that he's just jealous that she's doing what he's always want to, and she realizes that it's okay to not be perfect, 
 # and just to let what happens happen. She plays at the event but makes a couple mistakes, and ends up not winning, 
 # In fact, maybe she even drops her pick, or embaressing herself and needing to start over or something. But she goes throurgh it with a smile, 
 # because she just wants to know that she did something meaningful. 
-
 
 # Maybe the lyrics of the song reflect how she feels about the main character which adds more catharsis to the fight that they had earlier, 
 # where although she looked like she cared more about the song than spending time with him in her last day, 
@@ -530,95 +524,12 @@ preFightDay3:
 # and is going to try to become the version of himself he wants to be, free from what anyone else thinks of him
 
 
-
-
-# Alice’s Obsession:
-# Alice’s obsessive behavior and perfectionism reflect her desperation to achieve something meaningful before her time runs out.
-# Her snapping at the main character shows the strain she’s under, and her focus on perfection echoes her previous need for external validation.
-# This scene also highlights the difference in how they cope with stress—Alice by throwing herself into her work, and the main character by bottling up his emotions.
-
-label day2DeepTalk:
-   "You go back downstairs to your room."
-
-   play music "night.mp3"
-   
-   
-   show bottle night with Dissolve(2):
-      zoom 0.9
-   
-   show alice serious at left
-   with dissolve 
-   play sound "door.wav"
-   
-   "Alice is sitting there and has already figure out some basic chord progression kind of stuff"
-   show mc normal at right with easeinbottom
-   m "..."
-   ali "*focused silence*"
-   show mc normalside
-   m "Looks like you're having fun"
-   ali "Yeah... I feel like I'm starting to get the hang of this"
-   show mc slightsad
-   m "That must be nice."
-   show alice annoyed
-   ali "Hey, are you angry or something? Did I do something?"
-   show mc stressed
-   m "No... It's whatever, just go back to your noodling."
-   show alice normal
-   ali "If that's what you want then fine..."
-   "she plays but it gets more aggresive and she pauses every once in a while."
-   "..."
-   show mc vstressed
-   "she keeps playing and you just sit there..."
-   "It boils up..."
-   "Until you just can't take it anymore."
-
-
-#   For "The snapping point", I think his self-doubt about how quickly she's improved at guitar could be better portrayed:
-#   instead of saying it all from the POV of why this is hard for him (which is too obviously self-focused + annoys me), 
-#   he can phrase it as a frustrated encouragment, trying to get her to see why everything is okay and she can stop stressing and be proud of all she has done instead.
-#   For example, "Why are you so upset/stressed/afraid? Stop putting yourself down - don't you know how much I look up to you? You've worked so hard, you've learned so much,
-#   and what I can sounds better than anything I could do. You've accomplished more than I ever have!" 
-#   This way MC's self-hate is more backhanded AND it shows how their relationship has grown to the point that
-#   he is genuinely worried about her and wants her to see how HE sees her.
-
-
-
-
-#    The Fight:
-# The fight serves as the emotional heart of the route, where both characters lay bare their insecurities. 
-# The main character’s jealousy and frustration are understandable, and his outburst is a natural progression of the pressure he’s been under.
 # Alice’s reaction could reveal her own fears of inadequacy, despite her apparent confidence. 
-# The fight forces both characters to confront their flaws and the ways they’ve been avoiding their deeper issues.
 # The reconciliation should feel earned, with both characters acknowledging their mistakes and growing from the experience. 
 # This could be a moment where they find common ground in their struggles, leading to mutual understanding and support.
 
 
-# 1. Miscommunication and Resentment:
-# Alice's Frustration: 
-#   Alice is laser-focused on perfecting her song, seeing it as her only chance to prove her worth. She’s been practicing obsessively, 
-#   tuning out the main character and snapping at him whenever he tries to talk.
 
-# MC’s Resentment: 
-#   The main character has been bottling up his own feelings, feeling neglected and overshadowed by Alice’s sudden talent. He feels inadequate, 
-#   as if her rapid progress is a slap in the face to his own struggles with creativity.
-
-# The Trigger: 
-#   The main character might try to offer some advice or suggest she take a break, only for Alice to dismiss him curtly. 
-#   This dismissiveness could be the straw that breaks the camel's back, leading to an outburst where he accuses her of being self-centered and of seeking validation just like before,
-#   only now through music.
-
-# 2. Jealousy and Self-Worth:
-# MC’s Envy: 
-#   The main character could explode in anger, confessing that he’s jealous of how quickly she’s excelled at something he’s always wanted to do.
-#   He feels like a failure in comparison, and Alice’s focus on perfection makes him feel even worse.
-
-# Alice’s Counterattack: 
-#   Alice, feeling attacked, might lash out by accusing him of not understanding how much pressure she’s under. She might say something like,
-#   “At least I’m doing something! You’re too scared to even try.”
-
-# The Climax: 
-#   This could escalate to a moment where the main character questions why Alice even cares about this competition. 
-#   He might accuse her of just replacing one form of validation with another, hitting her deepest insecurity.
 
 # 3. Revealing Deep Fears:
 #   Alice’s Fear: 
@@ -633,53 +544,12 @@ label day2DeepTalk:
 #     This mutual confession could lead to a moment of understanding where they both realize they’re projecting their fears onto each other. 
 #     The fight could end with them both calming down, realizing that they’re not so different after all.
 
-# 4. The Breaking Point:
-# Alice’s Perfectionism:
-#   Alice’s obsession with perfection could be driving her to the point of exhaustion. The main character could try to intervene,
-#   telling her that it’s okay to make mistakes, only for Alice to snap back that she doesn’t have time for mistakes.
-
-# MC’s Breaking Point: 
-#   The main character, feeling like he’s losing her to this obsession, could finally break and yell that she’s going to burn herself out, 
-#   just like he did with his own dreams. He might accuse her of throwing away the time they have left together for something that doesn’t even matter.
-
-# Alice’s Realization: 
-#   This could lead to a moment where Alice realizes that in her pursuit of perfection, she’s been neglecting the one person who has shown her genuine care.
-#   This realization could be the turning point that helps her see that she doesn’t need to be perfect to be loved.
-
-# 5. A Fight for Each Other:
-#   MC’s Fear of Losing Her: 
 #     The main character, driven by the fear of losing Alice, could lash out, telling her that she’s wasting the little time they have left on 
 #     something that won’t change anything. He might confess that he’s terrified of her dying without them really connecting.
 
-#   Alice’s Retort: 
-#     Alice, feeling cornered, might fire back that she doesn’t want to just be “another pretty thing” to him, that she needs to do something that’s hers,
-#     something that matters, even if it’s just for a moment.
- 
-#   Emotional Release: 
-#     The fight could escalate until they’re both shouting, only to end with them collapsing into each other, realizing that they’re both scared, 
-#     both trying to find something meaningful in a world that feels overwhelming and unfair. 
-#     This could be the moment they both realize they’ve been fighting for each other all along,
-#     and that their connection is what truly matters.
 
-
-
-
-#maybe try to fit in a bit about like: I'm just scared even if I sacrifice everything, that ill still feel as broken and fucked up as i did before
-   # I'm worried this reads as preechy and goes against do don't say
-
-
-#    Post-Fight Reflection:
-# After the fight, a quiet moment of reflection for both characters could serve as a turning point, where they each realize the impact they’ve had on one another. 
-# This could lead to a deeper emotional connection before Alice’s final performance.
-
-# Resolution Ideas:
- 
 #   A Quiet Apology: After the fight, they might sit in silence, both emotionally drained, before one of them quietly apologizes. 
 # This could lead to a tender moment where they both acknowledge their fears and insecurities.
-#   A Song for Him: Alice might reveal that the song she’s been working on is actually about the main character, a way to express her feelings for him. 
-# This could add an extra layer of emotion to her performance the next day.
-#   Letting Go: The fight could end with them both realizing that it’s okay to let go of perfection, to accept that their time together doesn’t have to be perfect to be meaningful. 
-# This could set the stage for Alice’s final performance, where she embraces imperfection and the beauty of the moment.
 
    show mc awed   
    m "..."
@@ -695,29 +565,6 @@ label day2DeepTalk:
    m "And just pick something and see where it takes me."
    show alice happy
    ali "Well as long as you're having fun, right?"
-   show mc normal
-   m "... I think I'm kind tired after going out today"
-   m "Kind of a bit past my threshold for humans interaction"
-   show alice normal
-   ali "You going to go to bed?"
-   
-   m "Yeah I think so..."
-   show mc awed
-   m "Do you mind switching to headphones?"
-   ali "Sure"
-
-   scene black with fade  
-   window hide
-   stop music fadeout(3)
-   show chibi_sleep at truecenter with dissolve
-   show top_text "You crawl into bed and fall asleep to the dull sound of unamplified guitar sounds" with dissolve 
-   pause 3
-
-
-   play sound "yay.wav"
-   "END!!!"
-
-
 
 
   
