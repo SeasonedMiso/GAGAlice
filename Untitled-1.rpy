@@ -54,7 +54,63 @@ ali "But I'm toxic..."
 ali "You know the fly in fly aminita comes from the fact that they used to use us to kill flies by putting us in milk"
 ali "It's like... Why do I have to be like this?"
 ali "Why do I hurt those around me just by existing?"
-ali "I just *sob* "
+ali "I just *sob*"
+
+m "You know..."
+m "You've been playing guitar for a couple of hours..."
+m "And you're already better at it than I've ever been at anything"
+m "You're amazing, and I don't think you know how much you are..."
+m "I was thinking about how I lashed out earlier and..."
+m "I think... I'm jealous of you"
+m "Of your talent"
+m "Of your looks"
+m "Of everything"
+m "And I know maybe it's selfish for me to say that but"
+m "I just wanted to spend a bit more time with you before you..."
+
+# I think it's important that he says this at some point but the timing feels bad here
+m "Damn I'm fucking pathetic..."
+m "I have so much time compared to you, but I still haven't accomplished a thing."
+show mc slightsad
+m "I tell my self I'll learn to draw."
+m "Or learn an instrument."
+show mc shout
+m "Or fucking anything."
+show mc sad
+m "I just want to like myself."
+m "But even then..."
+m "I know it will never be enough"
+m "Even if I tried to like myself it wouldn't be enough for my parents"
+show mc slightsad
+m "Because all they want me to be is the person they THINK I am"
+show mc vannoyed
+m "But I CAN'T be that person!!"
+m "I've never been that person..."
+show alice neutral
+ali "..."
+show mc normalside
+m "They think I'm a straight A student, with lots of friends."
+m "My dad is making up fantasies of me having a girlfriend and living up to how he was in college"
+m "I don't even know what he would do if he found out"
+show mc cynical
+m "Who I {i}actually{/i} am"
+show mc stressed
+m "That I'm on the verge of flunking out"
+m "That I have no friends"
+m "That I'm not like him..."
+
+# nuance of disgust
+show mc sulk
+m "I just feel like..."
+m "Time keeps moving..."
+m "And I'm still alone... Here... In my room."
+m "But I can't stay in college for ever."
+m "I'm going to drop out or scrape through."
+m "And then I'm going to work doing some crappy deskjob I hate, until I get old..."
+m "And then I die."
+
+m "I'm sorry, I came to apologize and I just ended up talking at you..."
+
 
 
 # It makes him aware of what the issue is
