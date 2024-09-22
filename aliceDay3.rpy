@@ -442,6 +442,8 @@ ali "So I wanna say I'm sorry"
 ali "I'm sorry for losing sight of you, and for pushing you away"
 ali "It's just hard you know..."
 ali "The time we have is limited, and in the moment, it's easy to tell yourself that what you're focused on is the most important thing in the world"
+ali "I just have this one chance..."
+ali "To feel like I accomplished something"
 ali "But I didn't want to push you away"
 ali "I should have treasured the time I have with you more..."
 
@@ -457,6 +459,10 @@ ali "Why do I hurt those around me just by existing?"
 ali "I just *sob*"
 
 m "You know..."
+m "I don't think you picked music because you wanted to be the best, or win the competition..."
+m "I think it's because you saw something that spoke to you"
+m "And maybe that's all that matters..."
+m "But even so..."
 m "You've been playing guitar for a couple of hours..."
 m "And you're already better at it than I've ever been at anything"
 m "You're amazing, and I don't think you know how much you are..."
@@ -464,7 +470,7 @@ m "I was thinking about how I lashed out earlier and..."
 m "I think... I'm jealous of you"
 m "Of your talent"
 m "Of your looks"
-m "Of everything"
+m "Of everything about you"
 m "And I know maybe it's selfish for me to say that but"
 m "I just wanted to spend a bit more time with you before you..."
 
@@ -476,6 +482,19 @@ m "I tell my self I'll learn to draw."
 m "Or learn an instrument."
 show mc shout
 m "Or fucking anything."
+m "But I'm still just wasting time everyday"
+m "Telling myself it will all work itself out"
+m "That tomorrow, someone will push me towards living the life I want to..."
+m "For an excuse..."
+m "I'm just scared it won't work out, or people will judge me..."
+# Unused stuff to pull from
+
+   # ali "Well then you're back where you started."
+   # ali "And you can find another reason to live"
+   # ali "Humans are good at that"
+   # show alice happy
+   # ali "So I guess in the meantime, all you can do is find a waste of time that feels special to you"
+   # ...
 show mc sad
 m "I just want to like myself."
 m "But even then..."
@@ -488,6 +507,7 @@ m "But I CAN'T be that person!!"
 m "I've never been that person..."
 show alice neutral
 ali "..."
+
 show mc normalside
 m "They think I'm a straight A student, with lots of friends."
 m "My dad is making up fantasies of me having a girlfriend and living up to how he was in college"
@@ -507,163 +527,265 @@ m "I'm going to drop out or scrape through."
 m "And then I'm going to work doing some crappy deskjob I hate, until I get old..."
 m "And then I die."
 m "I'm sorry, I came to apologize and I just ended up talking at you..."
-m ""
+ali "No, it's okay"
+ali "I feel like now we both understand each other a little bit better"
+ali "I guess... Maybe it's okay if I..."
+ali "I'm not perfect"
+ali "Or enough..."
+ali "Just existing, and experiencing..."
+ali "Hey..."
+ali "I know it doesn't make up for earlier but..."
+ali "I still want to do this show, and I was just wondering if maybe"
+ali "You'd wanna help me with the finishing touches?"
+m "!"
+show mc embaressed
+m "Uh, yeah... No problem"
 
+scene trans
+label preshow:
+show bg concert hall outside
+m "Okay, we're here"
+ali "..."
+m "Now just to sign up over here and-"
+ali "Can we go home?"
+m "Huh?!"
+ali "I've changed my mind..."
+ali "I don't think I can..."
+m "Don't be ridiculous! You've worked so hard!"
+ali "But-"
+m "Hey, you've got this"
+m "And even if you fuck up... At least you commited and did something most people will never do in their lives"
+ali "Okay..."
+ali "Fuck it..."
+"She takes the pen in her hand with great enthusiasm and vigor and-"
+ali "..."
+ali "Can you sign up for me?"
+m "Huh? Why?"
+ali "I can't write remember?"
+m "Oh yeah... Forgot about that..."
+"*Skribble Skrabble*"
+m "There we go... Now just to go inside and wait until you've gotta go backstage."
 
-# It makes him aware of what the issue is
-# and he encourages her and explains his insecurity
-# THey go downstairs
+enter kellin and shadow friend
+kel "And then you should have seen her face when-"
+kel "(MC name)? What the hell!"
+kel "You should have told me you were gunna come down here!"
+kel "This is like my stomping ground!"
+kel "I've gotta introduce you to-"
+show alice from right
+kel "!"
+kel gets behind mc and uses him as a barrier from alice\
+kel "It's her!"
+m "?"
+kel "I'm sorry, I gotta go..."
+kel "I'll catch you later..."
+ali "..."
+m "What the fuck was that?"
+m "Why did he recognize you?"
+ali "You remember how when we first met..."
+ali "And I ran away to the shower room?"
+m "..."
+m "Wait! HE was the guy from back then?!"
+ali "Yeah..."
+show mc depressed
+m "Holy shit, that's so awkward..."
+m "I've gotta apologize to him later"
+m "Anyway let's head inside..."
 
+label aliceDay3Show:
+"You wait with Alice nervously in the venue"
+"You see several groups happily drinking beer and laughing"
+"The first couple of performers come out and the atmosphere of the place changes"
+# I'm going for that performance seems like the kind of thing you see on tv and not real people
+"You watch them together"
+"But you can't help but feel like you are watching 'A performance'"
+"Something you see on youtube or TV"
+"It doesn't feel real"
+"Real people who practiced and whose legs were shaking as they sung"
+"Until"
+ali "I think it's time..."
+m "Oh yeah! You should get backstage"
+ali "..."
+m "Hey! Just one thing before you go"
+m "..."
+m "I just want to remind you that no matter how it goes"
+m "That I'm really proud of you"
+ali "Thanks... I-"
+ali "I gotta go!"
+"And with that she turned her back and started walking towards the stage door"
+scene trans
 
-   show mc sad
-   m "I'm sorry..."
-   show alice normalside
-   ali "It's okay..."
-   ali "I haven't spent that much time with you."
-   ali "Or you know, being alive."
-   show alice serious
-   ali "But I think maybe, you're waiting for an excuse."
-   show mc confused
-   m "What do you mean?"
+# Use for her pre song talk
+   announcer "Okay ladies and gentlemen, and those in between..."
+   announcer "Next up I want you all to give a warm welcome to~"
+   announcer "Alice!"
+   ali "Uh- Hi there..."
+   announcer "Is there anything you want to say to the crowd before you start?"
+
+# Unused stuff to pull from
+      # ali "You took me to a whole bunch of places and showed me a bunch of stuff."
+   # show alice confused
+   # ali "and at first I thought it was meaningless."
+   # show alice normal
+   # ali "But I realized that nothing matters except what is important to you."
    
-   ali "You took me to a whole bunch of places and showed me a bunch of stuff."
-   show alice confused
-   ali "and at first I thought it was meaningless."
-   show alice normal
-   ali "But I realized that nothing matters except what is important to you."
-   
-   ali "Latte art is just making pictures in cow boob juice."
-   ali "And video games are just what depressed people do to avoid dealing with real life."
-   # Too much
-   ali "But even then."
-   show alice serious
-   ali "Those are things that bring meaning to people."
-   ali "Every single thing you could be interested in."
-   ali "has so much depth when you actually look into it."
-   ali "Every rabbit hole runs so deep."
-   show alice normalside
-   ali "And I guess what I'm trying to say is"
-   show alice sad
-   ali "You can't wait for someone else to give you permission to act" 
-   ali "To do what you want with your life"
-   show mc worried
-   m "But what if it doesn't work out?"
-   show alice sigh
-   ali "Well then you're back where you started."
-   ali "And you can find another reason to live"
-   ali "Humans are good at that"
-   show alice happy
-   ali "So I guess in the meantime, all you can do is find a waste of time that feels special to you"
-   ...
+   # ali "Latte art is just making pictures in cow boob juice."
+   # ali "And video games are just what depressed people do to avoid dealing with real life."
+   # # Too much
+   # ali "But even then."
+   # show alice serious
+   # ali "Those are things that bring meaning to people."
+   # ali "Every single thing you could be interested in."
+   # ali "has so much depth when you actually look into it."
+   # ali "Every rabbit hole runs so deep."
+   # show alice normalside
+   # ali "And I guess what I'm trying to say is"
+   # show alice sad
+   # ali "You can't wait for someone else to give you permission to act" 
 
-# Ideally they make up and both end up with a healthier outlook as a result of the fight. 
-# He realizes that he's just making excuses and that he's just jealous that she's doing what he's always want to, and she realizes that it's okay to not be perfect, 
-# and just to let what happens happen. She plays at the event but makes a couple mistakes, and ends up not winning, 
-# In fact, maybe she even drops her pick, or embaressing herself and needing to start over or something. But she goes throurgh it with a smile, 
-# because she just wants to know that she did something meaningful. 
+   ali "I uh- haven't really prepared anything but uh..."
+   ali "I guess the last few day have been a really chaotic time for me..."
+   ali "There where times I felt like everything was meaningless, but I had someone with me to help me through that"
+   ali "And I wouldn't be up here with out them."
+   ali "This song is called 'Metamorphisis'"
+   play song fail
 
-# Maybe the lyrics of the song reflect how she feels about the main character which adds more catharsis to the fight that they had earlier, 
+   # Maybe using dynamic audio and vamps to get the song to progress as the user clicks?
+   "Alice starts playing the melodies I had heard so many times at this point"
+   "But this time it felt different"
+   "Knowing how much she put into it to get here..."
+   "She opens her mouth to start singing and-"
+   "Her voice awkwardly pops out and cracks part way through the second word"
+   "Panic runs across her face and her hands freeze"
+   "An awkward silence runs across the room"
+   "..."
+   "Then, she looks through the audience"
+   "Until her eyes land on me"
+   show little smile
+   ali "I guess I focused so much on the guitar that I forgot to practice singing!"
+   ali "Hahaha..."
+   ali "Let's try that again!"
+   "She starts the song again from the beginning, but this time, when the verse starts"
+   ali "*first lyric line*"
+   "She talks over the music as if talking to herself"
+   ali "*lyrics*..."
+   # Lyrics go here ->
+   play sound applause
+   "She looks up to me and smiles"
+   announcer "Let's give it up one more time for Alice!"
+   announcer "Okay! Next up we have..."
+   scene trans
+
+
+   #The lyrics are using butterfly metaphor and about how she feels about life, and the mc
+   # Maybe the lyrics of the song reflect how she feels about the main character which adds more catharsis to the fight that they had earlier, 
 # where although she looked like she cared more about the song than spending time with him in her last day, 
-# it's because she wanted to properly communicate how she felt towards him. The main character and her go home, for him to slit her throat, 
-# and properly prepare her to eat without toxins, knowing that she has no regrets, and that the MC now has a new outlook on life,
-# and is going to try to become the version of himself he wants to be, free from what anyone else thinks of him
+# it's because she wanted to properly communicate how she felt towards him. 
 
 
-# Alice’s reaction could reveal her own fears of inadequacy, despite her apparent confidence. 
-# The reconciliation should feel earned, with both characters acknowledging their mistakes and growing from the experience. 
-# This could be a moment where they find common ground in their struggles, leading to mutual understanding and support.
+# Alice’s Performance:
+# Alice’s performance is a culmination of her journey. The mistakes she makes, and how she handles them, symbolize her acceptance of imperfection and her growth as a character.
+# The song’s lyrics could be a powerful way for Alice to express her feelings towards the main character, showing that her focus on the song was,
+# in fact, a way to connect with him on a deeper level.
+# Her decision to smile through the performance, despite the errors, underscores the theme of finding meaning in the process rather than the outcome. 
+# This could resonate with the main character, helping him see the value in his own efforts, regardless of external validation.
 
 
 
+label post-show:
+show outside venue
+m "Alice!"
+"You see her walk out from the backstage door, but waiting there for her is-"
+kel "Hey Alice!"
+ali "?!"
+"You walk over to try to get between them but before you get there-"
+kel "I'm so sorry!"
+ali "?!"
+kel "At first I hated you, because of what happened the other day."
+kel "But after hearing you song!"
+kel "I completely understand now!"
+kel "It must have been some weird misunderstanding right?!"
+ali "Ah... Ummmm"
+kel "You were so good! I really loved the way you did the- (Here put in technical aspects from the actual song)"
+m "Alice!"
+kel "(mc name)! I thought you were going to use that guitar to learn for yourself!"
+kel "Why didn't you tell me that-"
+m "Yeah, I'm sorry. I should have told you that-"
+kel "If you told me it was for a girl with such small hands, I would have lent you a guitar with a smaller neck!"
+kel "I bet it was hard to play!"
+ali "Wait you're the neighbour we're borrowing from?!"
+show mc embaressed
+m "Yeah..."
+ali "Thank you so much! I'm so grateful I was able to-"
+# Maybe kellins friend should rush from inside to let them know
+announcer "Okay it's time to announce today's winner!"
+m "We should hurry back inside!"
+scene trans
+announcer "And!"
+announcer "Today's winner!"
+announcer "Who will have the luxury of recording a single at (insert funny names) studios for completely free!
+announcer "IS~"
+ali "*gulp*"
+announcer "..."
+announcer "VICIOUS FISH!!!"
+m "Alice, I'm so-"
+show ali smile
+ali "Heheh, such a weird band name"
+m "?!"
+m "Are you okay?"
+ali "Yeah? What you thought I was gunna cry if I lost?"
+ali "Plus what am I gunna do with the prize of recording a single after I'm gone?"
+kel "Are you going somewhere?"
+m "?!"
+ali "Uh... Yeah... I'm going abroad"
+kel "Oh that's awesome! When are you leaving?"
+ali "..."
+ali "Tonight..."
+kel "Oh that's crazy!"
+kel "Do you need a ride to the airport?"
+kel "My friend has a big car, so we could-"
+ali "No it's okay!"
+ali "Thanks for offering."
+ali "Anyways! It's getting pretty late..."
+ali "We should head back so I can get ready"
+kel "Aww, I was hoping we could talk about music!"
+ali "I'm sure we'll get that chance next time..."
+kel "Yeah, I'm looking forward to it!"
+ali "Enjoy the rest of the night"
+kel "Yeah you two stay safe!"
+m "We will do, I'll look after her!"
+m+ali "Later~"
+scene trans
+   # Post-concert, for some bittersweetness and dramatic irony, Kellin could go over the top about how well Alice did, and how much potential she has if she keeps on going + he wants to make future plans with her and begs her to join his band. Alice and MC know she can't, but how they navigate that convo could be interesting, and can help lead to the somber tone of the "one last conversation" on the way home. 
+label aliceDay3WayBackHome:
 
-# 3. Revealing Deep Fears:
-#   Alice’s Fear: 
-#     During the fight, Alice could reveal that she’s terrified of dying without having done anything meaningful. 
-#     She might admit that the reason she’s pushing so hard is that she’s scared of being forgotten, of being just another product.
-    
-#   MC’s Confession:
-#     In turn, the main character could confess that he’s scared of never amounting to anything, of being a disappointment to his parents and to himself.
-#     He might admit that he envies Alice because she’s living the kind of bold, fearless life he’s always wanted, even if it’s only for a few days.
-    
-#   Resolution: 
-#     This mutual confession could lead to a moment of understanding where they both realize they’re projecting their fears onto each other. 
-#     The fight could end with them both calming down, realizing that they’re not so different after all.
-
-#     The main character, driven by the fear of losing Alice, could lash out, telling her that she’s wasting the little time they have left on 
-#     something that won’t change anything. He might confess that he’s terrified of her dying without them really connecting.
-
-
-#   A Quiet Apology: After the fight, they might sit in silence, both emotionally drained, before one of them quietly apologizes. 
-# This could lead to a tender moment where they both acknowledge their fears and insecurities.
-
-   show mc awed   
-   m "..."
-   m "...Thanks..."
-   show alice sly smile
-   ali "Don't mention it"
-   show mc normalside
-   m "I guess... I think you're right..."
-   show mc stressed
-   m "I don't really know what I'm going to do yet but... I think I'm going to stop thinking about everything I want to do."
-   m "Everything I want to be."
-   show mc sad
-   m "And just pick something and see where it takes me."
-   show alice happy
-   ali "Well as long as you're having fun, right?"
-
+# Talk about how kellin didn't ask if they were dasting or whatever
 
   
-   #she gets upset and walks out with the guitar to work alone
-   #You take some time to calm down, and go find her
-   #Shes on the roof, and shes not playing guitar, instead shes holding a dead butterfly
-   #She's crying 
-   # opens up to you now because she trusts you
-   #You listen. She talks about how the butterfly reminds her of herself
-   #And now shes very aware that shes just wanting validation in a different way
-   #Self doubt sets in
-   #She's scared that shes wasted the small bit of time she has with you
-   #But she just wanted to accomplish something
-   #This is the only chance she has to fee like her life was able to accomplish something
-   #MC defuses it by pointing out that the validation doesnt need to be what she focuses on,
-   #She picked this because she saw something in it that resonated with her, and as long as she had fun, that's all that matters
-   #hes there to help
-   #He helps her refine the song with what ever feedback he can give
-   #They go to the event
-   #Kellin is there and is afraid to see alice at first, but eventually he chills out around her
-   #Her time comes to play 
-   #She goes up and (trips, or drops pick, or mic howls really bad, or guitar jack cuts out)
-   #She smiles and make a joke of it into the mic, and the audience laughs with her
-   #The lyrics are using butterfly metaphor and about how she feels about life, and the mc
-   #She doesn't win the competion
-   # Kellin comes up to her and he shows her respect and asks her about the song
-   Post-concert, for some bittersweetness and dramatic irony, Kellin could go over the top about how well Alice did, and how much potential she has if she keeps on going + he wants to make future plans with her and begs her to join his band. Alice and MC know she can't, but how they navigate that convo could be interesting, and can help lead to the somber tone of the "one last conversation" on the way home. 
    # You and her go home together and have one last conversation on the way home
    # She tells you there might be a way to cook her without dying
+
+   #The main character and her go home, for him to slit her throat, 
+# and properly prepare her to eat without toxins, knowing that she has no regrets, and that the MC now has a new outlook on life,
+# and is going to try to become the version of himself he wants to be, free from what anyone else thinks of him
+label aliceDay3Goodbyes:
+
    # It ends with you thinking about what you want to do with your life, about how maybe you'll go and get that guitar, or take kellin up on playing in a band with him
+   Final Scene:
+      The final scene, where the main character prepares Alice for consumption, is both poignant and symbolic. It’s a moment of acceptance and closure,
+      as both characters come to terms with their respective journeys.
+      The act of consuming Alice could be seen as the main character internalizing the lessons she’s taught him, 
+      carrying her memory and the meaning of their time together forward in his life.
+      This ending reinforces the themes of mortality, self-acceptance, and breaking free from societal expectations. 
+      The main character’s newfound resolve to live authentically could be a bittersweet yet hopeful conclusion to the route.
+
+label aliceDay3Epilogue:
+
    # But no matter what happens, you're going to start from trying to like yourself first
-
-/////////////
-
-Alice’s Performance:
-Alice’s performance is a culmination of her journey. The mistakes she makes, and how she handles them, symbolize her acceptance of imperfection and her growth as a character.
-The song’s lyrics could be a powerful way for Alice to express her feelings towards the main character, showing that her focus on the song was,
-in fact, a way to connect with him on a deeper level.
-Her decision to smile through the performance, despite the errors, underscores the theme of finding meaning in the process rather than the outcome. 
-This could resonate with the main character, helping him see the value in his own efforts, regardless of external validation.
-
-Final Scene:
-The final scene, where the main character prepares Alice for consumption, is both poignant and symbolic. It’s a moment of acceptance and closure,
-as both characters come to terms with their respective journeys.
-The act of consuming Alice could be seen as the main character internalizing the lessons she’s taught him, 
-carrying her memory and the meaning of their time together forward in his life.
-This ending reinforces the themes of mortality, self-acceptance, and breaking free from societal expectations. 
-The main character’s newfound resolve to live authentically could be a bittersweet yet hopeful conclusion to the route.
-
-////
-
-
-After she dies, have a black screen where mc reflects on her experience with her, and the  black background
+   After she dies, have a black screen where mc reflects on her experience with her, and the  black background
 slowly fades to be a shot of his computer with recording software open, and next to the computer a guitar stand 
 with the guitar she wanted from the store
+
+
 
 
