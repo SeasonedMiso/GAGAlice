@@ -738,7 +738,10 @@ ali "Plus what am I gunna do with the prize of recording a single after I'm gone
 kel "Are you going somewhere?"
 m "?!"
 ali "Uh... Yeah... I'm going abroad"
-kel "Oh that's awesome! When are you leaving?"
+kel "Oh that's awesome! But kinda a shame..."
+kel "We were just missing a rhythm guitarist and I was gunna ask if you could fill in..."
+kel "ANYWAY!"
+kel "When are you leaving?"
 ali "..."
 ali "Tonight..."
 kel "Oh that's crazy!"
@@ -756,35 +759,99 @@ kel "Yeah you two stay safe!"
 m "We will do, I'll look after her!"
 m+ali "Later~"
 scene trans
-   # Post-concert, for some bittersweetness and dramatic irony, Kellin could go over the top about how well Alice did, and how much potential she has if she keeps on going + he wants to make future plans with her and begs her to join his band. Alice and MC know she can't, but how they navigate that convo could be interesting, and can help lead to the somber tone of the "one last conversation" on the way home. 
-label aliceDay3WayBackHome:
 
-# Talk about how kellin didn't ask if they were dasting or whatever
+label aliceDay3WayBackHome:
+"The two of you walk back towards your dormitory"
+"You walk together in silence until half way along the river bank"
+"Alice's pace grinds to a halt"
+ali "..."
+m "Hey, are you okay?"
+ali "Yeah... I mean..."
+ali "I don't know."
+ali "It's just that it's all over you know..."
+ali "I know I'm supposed to feel okay now"
+ali "Like this life was enough like this"
+ali "And like... I do feel like I accomplished something"
+ali "And make memories with you..."
+ali "But even still... This is it huh..."
+m "We still have time! Maybe if we wait til tommorow we'll find that you-"
+ali "Stop."
+ali "I know that it's time"
+ali "I can feel it."
+m "..."
+ali "Tonight was fun!"
+ali "Kellin was really nice... He seemed like he really loves music."
+m "Yeah... And he didn't even ask if we are dating or anything."
+ali "Haha, why's that the first thing you say?"
+m "I don't know."
+m "I guess he's just not like some other people I know."
+ali "Hmm~"
+"She starts walking again slowly and you follow her pace"
+ali "Don't you wish you'd reached out to him earlier?"
+m "..."
+m "I don't think I could have... Even now..."
+m "It's still scary to know that if I say the wrong thing he might never want to talk to me again"
+ali "Stop being so dramatic!"
+ali "Not everything is life or death..."
+ali "Unless your me that is! Haha"
+ali "But even if you fuck up a little, I think you could just apologize"
+m "Maybe..."
+m "Hey, I wanted to say..." 
+m "About the song you wrote."
+m "Thanks..."
+m "It meant a lot..."
+show alice embaressed
+ali "What are you talking about!"
+ali "Those l-lyrics didn't mean anything!"
+ali "Idiot!"
+m "?!"
+ali "Don't get me wrong!"
+ali "I just made them up to go with the melody!"
+m "Real Tsundere?!"
+ali "Huh? What does that mean?"
+m "Nothing..."
+m "You really worked hard for today, and I'm really proud of you"
+ali "...Thanks."
+ali "Hey... I just thought you should know..."
+ali "Even though I'm poisonous..."
+ali "There's a way you can prepare me so that I'm edible"
+ali "And even if you screw up a little, no one had died eating from eating a fly aminitas in over a hundred years."
+m "Eat you?"
+m "What?"
+m "Why-
+m "Why would I do something like that?"
+# MAybe it makes more sense if it's like she would rather not be eaten so she can die on her own terms
+ali "I want you to... It's the last "
 
   
+
+label aliceDay3Goodbyes:
+
+
    # You and her go home together and have one last conversation on the way home
    # She tells you there might be a way to cook her without dying
 
    #The main character and her go home, for him to slit her throat, 
 # and properly prepare her to eat without toxins, knowing that she has no regrets, and that the MC now has a new outlook on life,
 # and is going to try to become the version of himself he wants to be, free from what anyone else thinks of him
-label aliceDay3Goodbyes:
 
-   # It ends with you thinking about what you want to do with your life, about how maybe you'll go and get that guitar, or take kellin up on playing in a band with him
-   Final Scene:
-      The final scene, where the main character prepares Alice for consumption, is both poignant and symbolic. It’s a moment of acceptance and closure,
-      as both characters come to terms with their respective journeys.
-      The act of consuming Alice could be seen as the main character internalizing the lessons she’s taught him, 
-      carrying her memory and the meaning of their time together forward in his life.
-      This ending reinforces the themes of mortality, self-acceptance, and breaking free from societal expectations. 
-      The main character’s newfound resolve to live authentically could be a bittersweet yet hopeful conclusion to the route.
+
+   # Final Scene:
+   #    The final scene, where the main character prepares Alice for consumption, is both poignant and symbolic. It’s a moment of acceptance and closure,
+   #    as both characters come to terms with their respective journeys.
+   #    The act of consuming Alice could be seen as the main character internalizing the lessons she’s taught him, 
+   #    carrying her memory and the meaning of their time together forward in his life.
+   #    This ending reinforces the themes of mortality, self-acceptance, and breaking free from societal expectations. 
+   #    The main character’s newfound resolve to live authentically could be a bittersweet yet hopeful conclusion to the route.
 
 label aliceDay3Epilogue:
 
    # But no matter what happens, you're going to start from trying to like yourself first
-   After she dies, have a black screen where mc reflects on her experience with her, and the  black background
-slowly fades to be a shot of his computer with recording software open, and next to the computer a guitar stand 
-with the guitar she wanted from the store
+   # It ends with you thinking about what you want to do with your life, about how maybe you'll go and get that guitar, or take kellin up on playing in a band with him
+
+#    After she dies, have a black screen where mc reflects on her experience with her, and the  black background
+# slowly fades to be a shot of his computer with recording software open, and next to the computer a guitar stand 
+# with the guitar she wanted from the store
 
 
 
