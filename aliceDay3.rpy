@@ -724,8 +724,15 @@ ali "We should head back so I can get ready"
 kel "Aww, I was hoping we could talk about music!"
 ali "I'm sure we'll get that chance next time..."
 kel "Yeah, I'm looking forward to it!"
-kel ""
-ali "Enjoy the rest of the night"
+kel "Oh yeah... It should be ready now"
+ali "Huh? This is..."
+kel "This is the photo I took earlier!"
+kel "I thought it might be something nice for you to remember us by..."
+ali "Wow, this is so pretty... Is it really okay if-"
+kel "Of course! I bought it for this sort of thing anyway!"
+kel "Anyway, sorry to stop you from going home."
+ali "No it's okay! Thanks."
+ali "You all enjoy the rest of the night!"
 kel "Yeah you two stay safe!"
 m "We will do, I'll look after her!"
 m+ali "Later~"
@@ -868,7 +875,7 @@ label aliceDay3Goodbyes:
     m "..."
     scene trans
    #  Choice where you can chase after her?
-   
+
 
 label aliceDay3Epilogue:
    play music "dynamic_audio/clock.mp3" fadein(2)
