@@ -4,7 +4,7 @@ label day2Morning:
 
    # variables for Alice:
    default arcadeWent = False
-   
+
 
    $ alice_rp = 0
 
@@ -12,7 +12,7 @@ label day2Morning:
    #It's very important that alice has fun making fun of mc, in a sadistic way, but almost like nagatoro
    #It starts cruel, but gradually starts to reveal that at her core she really cares about him
 
-  
+
    #wake up
    #she waters herself
 
@@ -25,7 +25,7 @@ label day2Morning:
 
    show bedroom_day with fade:
       zoom 0.9
-      
+
    show mc stressed at right
    show alice pout at left
    with easeinbottom
@@ -59,12 +59,12 @@ label day2Morning:
    m "How do you know what YouTube is?"
    #Elongate
    #Or just change it to say videos?
-   
+
    m "...I was also... writing stories..."
    show alice laugh
    # make sure this makes sense in context
    ali "You didn't even TRY to deny it"
-   
+
    ali "I bet you didn't even finish a single chapter"
    show mc humiliated
    m "..."
@@ -78,25 +78,25 @@ label day2Morning:
 
    "It's like she's reading your mind"
    "She puts to words the things you think about yourself before the thought is even fully formed"
-   # shes better at hating you than you ever could be. 
+   # shes better at hating you than you ever could be.
    # the one thing you were good at and you have been outclassed
    "It's like she sees right through you"
    m "..."
    "You turn your head down towards the messy duvet you're sitting on to avoid her gaze"
-   #she says one more mean thing here, insulting your aethstetic and clothes 
+   #she says one more mean thing here, insulting your aethstetic and clothes
    #realizes that you're crying and is kinda shocked, then tries to make you feel better (softens up)
    show alice normal
    ali "Ummm... If you want I could help you... you know?"
    ali "Look less like your mom picks out your clothes from the bargain bin"
 
-#    Alice wants to try go to the mall to experiment with finding a new way to express herself the only way that she knows how: through her appearance. 
-# The MC tries to use this as an opportunity to expose her to new things: and maybe find something for her to find meaning in. 
+#    Alice wants to try go to the mall to experiment with finding a new way to express herself the only way that she knows how: through her appearance.
+# The MC tries to use this as an opportunity to expose her to new things: and maybe find something for her to find meaning in.
 
    m "Is that supposed to be an apology?" #  "Is that supposed to be an make me feel better?"
    ali "Whatever, do you want my help or not?"
 
    #maybe need to explain that although she's only a day old, she has instinct for only few things:
-   #Fashion/beauty, the need to be desired, knowledge on her species, as well as arts 
+   #Fashion/beauty, the need to be desired, knowledge on her species, as well as arts
    #(although the company programming tries to make her forget about that part)
    #maybe try to develop that motif a bit about like, her needing to fight her programming
    show mc normalside
@@ -136,7 +136,7 @@ label day2Morning:
    hide alice
    with easeoutbottom
 
-   scene black with Fade(0.5, 1.0, 0.5)        
+   scene black with Fade(0.5, 1.0, 0.5)
    play sound "door.wav"
    play music "mall.mp3" fadein 2
    show chibi_mc at slightright
@@ -145,7 +145,7 @@ label day2Morning:
    window show
 
    #Develop this conflict
-   #You didn't want to fight and you feel sorry for her since she's going to die soon anyway  
+   #You didn't want to fight and you feel sorry for her since she's going to die soon anyway
    "You try not to think about the thought of other students seeing you leave the dorm together with a girl"
    #talk a little more about the traveling process and getting to the mall
    window hide
@@ -159,7 +159,7 @@ label day2Morning:
 label day2date:
 #    The mall setting serves as a perfect backdrop for Alice’s exploration of self-expression. Her desire to use appearance as a form of validation reflects her programming,
 # while the main character’s attempts to show her deeper forms of meaning create an interesting contrast.
-# The arcade scene highlights Alice’s lack of understanding of human activities. 
+# The arcade scene highlights Alice’s lack of understanding of human activities.
 # The main character’s explanation of video games as a form of connection and self-improvement could be a moment where Alice starts to see value in things beyond physical appearance.
 
    scene mall with Fade(0.5, 1.0, 1)
@@ -232,19 +232,19 @@ label aliceDay2DateLocation:
    # >Show her something you like
    #    if(trust)>x:
    #       jump arcadeDate
-      
-      
 
 
-# while out, she makes comments here and there that show her interest in 
-# creating and having a sense of identity/srtle. 
+
+
+# while out, she makes comments here and there that show her interest in
+# creating and having a sense of identity/srtle.
 # eg. “If I made this game, I’d make the characters cuter or something.”
 # /“Could you draw X on this latter instead?”
 
 #move to day 1 maybe
 label arcadeDate:
 
-#    The arcade scene highlights Alice’s lack of understanding of human activities. 
+#    The arcade scene highlights Alice’s lack of understanding of human activities.
 # The main character’s explanation of video games as a form of connection and self-improvement could be a moment where Alice starts to see value in things beyond physical appearance.
 
    show mc normal
@@ -313,7 +313,7 @@ label arcadeDate:
    "However, after only a few levels, the difficulty begins to increase dramatically, and before more than a few minutes have passed..."
    show alice annoyed
    hide black with fade
-   
+
    ali "Game Over? What the fuck is this shit?"
    show mc annoyed
    m "In these kind of games you only get a few lives, and if you use them all up, you need to pay more to keep playing."
@@ -371,9 +371,9 @@ label arcadeDate:
 
 
 label cafeDate:
-# The latte art scene offers a poignant lesson about the impermanence of art and the importance of the process rather than the outcome. 
+# The latte art scene offers a poignant lesson about the impermanence of art and the importance of the process rather than the outcome.
 # This could subtly parallel Alice’s own fleeting existence and her search for meaning within it.
-# The barista’s philosophy on art could resonate with Alice, planting the seeds for her eventual embrace of music as a form of expression, 
+# The barista’s philosophy on art could resonate with Alice, planting the seeds for her eventual embrace of music as a form of expression,
 # even if she doesn’t fully grasp it yet.
    scene mall with fade
    show mc normal at right
@@ -382,7 +382,7 @@ label cafeDate:
    "You walk past a small cafe. It looks relatively empty, despite how busy the rest of the mall is."
    "The tile-floor and decor look clean and without wear."
    "This place is probably new."
-   
+
    m "Do you wanna go inside and get something to drink?"
    show alice neutral
    ali "...As long as I have my water spray, I'm fine. I don't really get that whole animal thing of 'eating' in order to 'sustain' yourself."
@@ -500,7 +500,7 @@ label cafeDate:
    show mc slightsad
    m "You've been alive for like 24 hours."
    show alice annoyed
-   ali "THE POINT IS! 
+   ali "THE POINT IS!
    ali "Why would you make something that's just going to get destroyed a few minutes later? What's the point?"
 
    #Kind of a metaphor for life, especially with it being as short as it is
@@ -528,7 +528,7 @@ label cafeDate:
    show alice vannoyed
    show mc normal
    "Barely 5 minutes had passed since the order was placed, the waiter returns balancing a tray in one hand."
-   "He carefully places the tray down onto the table and without missing a beat, begins to explain the items." 
+   "He carefully places the tray down onto the table and without missing a beat, begins to explain the items."
    na "Over here, for you, I thought you might like something cute and uplifting to freshen up the bags under your eyes."
    "He places a coffee cup in front of you with a detailed illustration of a small rabbit running through a flower garden."
    na "And for you, I thought you might like this butterfly."
@@ -563,7 +563,7 @@ label cafeDate:
    na "The kind of stuff that inspires revolutions or changes lives"
    na "It's a way of taking that message and trying your hardest to get someone else to feel the same way as you"
    na "When words can't"
-   na "So I guess it's like... It doesn't matter if my art lasts a second or thousand years, as long as I can try to share that feeling with someone" 
+   na "So I guess it's like... It doesn't matter if my art lasts a second or thousand years, as long as I can try to share that feeling with someone"
    show alice neutral
    ali "..."
    na "Sorry, I guess I talked a bit too much... Anyways, I hope you enjoy your coffee"
@@ -648,7 +648,7 @@ label coffeeTalkArcade:
    ali "But because that's what I felt would make me feel like I am worth something."
    show alice sulk
    ali "I don't know it's... stupid... Sorry, I just..."
-   ali "Maybe what you said last night... and what the cow boob artist said..." 
+   ali "Maybe what you said last night... and what the cow boob artist said..."
    show alice confused
    ali "Maybe there is something more to life than just using others to prove to yourself you're worth something."
    ali "So I wanted to say that..."
@@ -670,7 +670,7 @@ label coffeeTalkArcade:
    "She's probably already seen through the pretty words you said yesterday as made up bullshit."
    "Be real: YOU said it, so there's no way that you're right."
    "You're SO-"
-   
+
    ali "..."
 
    "FUCKING-"
@@ -738,7 +738,7 @@ label coffeeTalkArcade:
    #blushies
    show mc awed
    m "..."
-   show mc normalside 
+   show mc normalside
    #this is him hiding his embaressment
    m "Whatever."
    show alice confused
@@ -759,7 +759,7 @@ label coffeeTalkArcade:
    ali "Hmmm... Now that you mention it, a lot of it is related to sex."
    show mc confused
    m "?"
-   
+
    ali "Like, I have some other information that I was just born knowing"
    ali "Like uhhh.... I know a bit about mushrooms, and like... I guess some of the stuff is more abstract."
 
@@ -806,7 +806,7 @@ label coffeeTalkArcade:
    m "How they programmed you to be the ideal product for them to profit off of"
    show alice confused
    ali "Yeah, I guess... But..."
-   
+
    ali "Are you guys really all that different?"
    show mc confused
    m "Huh?"
@@ -837,9 +837,9 @@ label coffeeTalkArcade:
 
 
 label clothes:
-#    The scene where Alice notices the main character’s interest in the pastel pink hoodie is a lovely touch. 
+#    The scene where Alice notices the main character’s interest in the pastel pink hoodie is a lovely touch.
 # It reveals her growing awareness of his internal struggles and offers a moment of connection between them.
-# Her playful teasing and encouragement for him to try on the hoodie show that she’s beginning to understand and care for him on a deeper level. 
+# Her playful teasing and encouragement for him to try on the hoodie show that she’s beginning to understand and care for him on a deeper level.
 # This scene subtly hints at the main character’s gender identity issues, adding another layer to his character.
 
    show alice normalside
@@ -859,7 +859,7 @@ label clothes:
    ali "Makes it easier to at least know what we are going for"
    show mc normalside
    m "I guess I like grey-scale stuff that's not too flashy"
-   show alice cruel 
+   show alice cruel
    ali "So what we came all this way so that you can keep trying to blend in with the shadows?"
    ali "Come on, you must like at least some /real/ colors"
    show mc blushside
@@ -892,7 +892,7 @@ label clothes:
    show alice annoyed
    ali "I'm going to die soon... I don't have much time left..."
    ali "And you have some more... But even then"
-   show alice 
+   show alice
    ali "Your time is limited."
    show alice sad
    ali "Don't you feel like it's a waste? Of youth? Of life?"
@@ -919,19 +919,19 @@ label mallPastel:
    $ alice_rp+=10
    show black with dissolve
    "..."
-   
+
    #cut to the mall later, with mc wearing a slightly oversized pastel pink hoodie
    # :3 insignia?
    show mc pink embarrassed
    show alice smug
-   
+
    hide black with dissolve
    m "..."
    show mc pink embarrassed desperate
    #make sure it's not obvious that they are trans, make it like they are a guy who's ashamed of having a feminine side
    #because of it bringing more attention to him and that going against the status quo
    #she acutally thinks it suits him, and is trying to help him give less of a fuck
-   # but is also teasing him by picking on the obvious discomfort he feels about this 
+   # but is also teasing him by picking on the obvious discomfort he feels about this
 
    m "EVERYONE'S LOOKING AT ME!"
    ali "So? Let them."
@@ -942,7 +942,7 @@ label mallPastel:
    ali "You really think so?"
    m "That's not my point! I just mean like..."
    m "I'm not like you. It's better for everyone else that I just stay out of sight."
-   show alice annoyed 
+   show alice annoyed
    ali "Stop saying stupid shit. If I hear one more thing from you I'll take that as a personal insult."
    m "Huh? Why what does what I say about myself have to do with you?"
    show alice vannoyed
@@ -1022,7 +1022,7 @@ label leaveCafe:
    hide alice with easeoutright
 
    show mc surprised
-   
+
    m "Huh? Wait!"
 
    scene black with fade
@@ -1065,9 +1065,9 @@ hide alice with easeoutright
 m "Huh? Hold on slow down!!"
 
 # Music Decision:
-# Alice’s decision to embrace heavy music as her form of expression is a bold and fitting choice. 
+# Alice’s decision to embrace heavy music as her form of expression is a bold and fitting choice.
 # It aligns with her desire to confront her mortality and make the most of her limited time.
-# Her determination to write a song and perform in the open mic competition adds urgency and direction to the story. 
+# Her determination to write a song and perform in the open mic competition adds urgency and direction to the story.
 # It gives her a concrete goal to work towards, which could drive the narrative forward.
 
 #transition to alley way
@@ -1088,9 +1088,9 @@ m "See, there's a poster for an event on here"
 #MAKE THE NAME OF THE EVENT SOMETHING FUNNY#
 #todo: needs to be a competition
 show alice normal
-ali "#name of the event#?"
+ali "Bandemonium?"
 show mc normal
-m "Yeah, it's probably like a rock music thing from the vibes of the poster, and the little I can hear"
+m "Yeah, it's probably like a rock music competition thing from the vibes of the poster, and the little I can hear"
 ali "Rock music?"
 m "Yeah it's like... I don't really get it, but I think it's a kind of music where people sing about like..."
 m "Being really angry at your ex-girlfriend..."
@@ -1133,7 +1133,6 @@ m "..."
 
 #Choice: Give in to her, No means no
 menu:
-   
    "No means no.(N/A)":
       "..."
    "Give in.":
@@ -1149,6 +1148,11 @@ menu:
       show alice pout
       ali "Why are you so mean to me"
       ali "Such an abuser"
+      m "You only have today and tommorrow left. How do you play to learn a whole instrument?"
+      ali "I'll make it work out."
+      m "HOW'RE YOU SO COCKY?!"
+      ali "Tehe!"
+      m "..."
       m "Why do you have an interest in this all of a sudden though?"
       show mc confused
       m "Like I've spent the whole day showing you a bunch of stuff, and you didn't seem very excited about anything else"
@@ -1176,10 +1180,6 @@ menu:
 
 #choice whether to get the courage to talk to neighbour
 #how does alice respond if you don't do it
-
-#how does mc deal with needing to concur the anxiety to knock.
-
-#todo: i think maybe exaggerate how hyper and basil is even more? Maybe make his text speed really fast like N from pokemon
 label Day2Neighbour:
    scene black with fade
    "You get back to your place, and lead Alice inside."
@@ -1214,12 +1214,10 @@ label Day2Neighbour:
    show mc worried
    m "Uhh yeah, so I was kinda of ummm, sent here to ask a favor, but like I don't even know you, or like said my name and I"
    na "Slow down, just take it easy"
-   #what to make his name? Maybe like Kellin, or Ryland or something
    kel "First off, hi, I'm Kellin. I don't think I've met you before? Do you stay in the dorms?"
-   #here add that he recognizes you from yesterday
    m "Uhhh... Yeah, next door actually..."
    kel "Woah! So your the one that's been here the whole time! I tried to leave a package for you the other day but!"
-   m "Yeah I'm not too great at talking to people... Or waking up" 
+   m "Yeah I'm not too great at talking to people... Or waking up"
    m "Sorry about that"
    kel "No, it's okay, you're probably a really good listener!"
    kel "Damn we've been next-door room buddies for like... How long now?"
@@ -1235,13 +1233,6 @@ label Day2Neighbour:
    kel "It's okay you don't have to be polite!"
    kel "I'm so sorry, I should have been using headphones to being with"
 
-   #Maybe it would be funny if he keeps going on about it to the point of crying but mc isn't able to interject properly
-   #i think that's a good dynamic, like he just talks a lot and comes to his own conclusions, and the mc can't correct that
-   #But then how do you end the exchange, and move to the next point?
-   #I like the idea of him being super ADHD but very like　　マイペース
-
-   #He's basically an embodiment of the hyper fixation element of autism, so showing of the positives of it 
-   #compared to the anxiety and social awkwardness of mc
    show mc stressed
    m "No, you're fine, that's not it"
    m "I was just wondering if uhhh... Damn I guess I don't know you well enough to ask anything"
@@ -1287,8 +1278,8 @@ label Day2Neighbour:
    kel "You don't need to say anything to me! Our brains are connected on the same wavelength!"
    show mc worried
    m "Uhh... yeah... sure..."
-   kel "Come inside!" 
-   m "...Okay..." 
+   kel "Come inside!"
+   m "...Okay..."
 
    scene neighbour_bedroom with fade:
       zoom 0.9
@@ -1298,7 +1289,7 @@ label Day2Neighbour:
    with easeinbottom
    m "Woah this place is really... something"
    kel "I guess? Isn't it normal?"
-   
+
    m "Uh, if this is normal, then I think your reference point is kinda busted"
    kel "So this is what you wanted right?"
    kel "I have a couple guitars, but this is the only one that's not in a weird tuning right now"
@@ -1325,7 +1316,7 @@ label Day2Neighbour:
       zoom 0.9
    play music "night.mp3"
    show alice normal at left
-   with dissolve 
+   with dissolve
    play sound "door.wav"
    show mc stressed at right with easeinbottom
    #mc with guitar in soft bag on back and arms fulled with stuff
@@ -1347,7 +1338,7 @@ label Day2Neighbour:
    show mc normalside
    m "yeah... But I can't help the feeling that maybe I'm doing him a favor by giving him someone new to rant at"
 
-label day2GuitarSetup: 
+label day2GuitarSetup:
 #    Guitar Practice:
 # The guitar scene reinforces the theme of resilience. Despite the broken string, Alice’s quick progress on the instrument reflects her innate abilities and determination.
 # The main character’s willingness to ask his neighbor for the guitar, despite his social anxiety, shows his growing commitment to helping Alice.
@@ -1382,16 +1373,16 @@ label day2GuitarSetup:
    show alice pout
    ali "...I guess..."
 
-
+# todo: add new ending to the day
 
 # Potential Additions:
 # Internal Struggles:
-# The main character’s internal dialogue could delve into his mixed feelings about encouraging Alice to find meaning, knowing her time is limited. 
+# The main character’s internal dialogue could delve into his mixed feelings about encouraging Alice to find meaning, knowing her time is limited.
 # This could add a layer of bittersweet tension to their interactions.
 # Alice’s thoughts while practicing the guitar could reveal her growing sense of purpose, mixed with the knowledge that she’s running out of time.
 
 # Foreshadowing and Symbolism:
-# The butterfly’s death could foreshadow the challenges Alice will face in the competition and her own mortality. 
+# The butterfly’s death could foreshadow the challenges Alice will face in the competition and her own mortality.
 # It could also symbolize the fragile nature of the connections she’s forming with the main character.
 # The pastel pink hoodie could become a recurring symbol of the main character’s suppressed identity, perhaps reappearing in later scenes as he becomes more comfortable with himself.
 
@@ -1412,4 +1403,3 @@ label day2GuitarSetup:
 #MC:bottles up, tries not to express, but if he panics, he word vomits, with internal stuff leaking out. Sometimes he deflects and blames others. Focuses on what-ifs, over thinker.
 
 #FOCUS:You can't live for conditional love: pretending to be something you're not, when you only live one.
-
