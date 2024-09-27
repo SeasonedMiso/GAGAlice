@@ -1,19 +1,4 @@
-
-# Day 3: 
-# Alice has been working extremely hard and obsessively on her song for the entire night.
-
-# MC goes out to get a new set of strings for her, but on the way back gets a call from his father. His father is a narcissist. 
-   
-   #Wake up to alice with bloodshot eyes, shes been grinding all night
-   #You call out to her but she ignores you at first
-   #You pull off her headphones off her
-   #She says gm but needs to keep grinding
-   #choice: Insist she takes a break to come with
-
-
-
 #[here i think the bg music when she's practicing should be the song she's writing, but at various levels of playing: think wa2]
-
 label day3Morning:
 "You wake up to the rhythm of dull strumming."
 m "Damn you're still going?"
@@ -38,7 +23,6 @@ m "Haha, sorry about that."
 m "Looks like you've been going the whole night?"
 ali "Yeah but I'm behind on time."
 ali "There's no way I'm going to win at this rate."
-#Maybe it would be funny if she forgets she hasn't practiced singing, so and the concert she doesn't realize and that's what her big failure is
 m "Take it easy, you still have lots of time."
 m "And besides, it's not about the outcome, it's about the experience."
 ali "Yeah, right, sure."
@@ -56,7 +40,7 @@ ali "That's okay, just as long as I know."
 "But you also feel a bit..."
 "..."
 #Maybe leave this just as an incomplete sentence
-screen trans 
+screen trans
 # maybe slurping sound
 m "Okay I'm alive now"
 ali "*strum* *strum*"
@@ -74,7 +58,7 @@ m "I think you should take a break, you've been grinding for like 12 hours strai
 ali "Nooooo~"
 ali "I don't have time to go!"
 m ("Damn what should I do?")
-choice:let her keep grinding, 
+choice:let her keep grinding,
    -Take her along with you
 m "Hey, I'm kind of worried about you"
 m "You've been grinding non-stop for the entire night"
@@ -83,7 +67,6 @@ ali "Ugh, fine~"
  scene trans
 
 #What do they talk about on the way?
-#For now they're just going to walk in silence
 "The two of you walk together towards the music store."
 "You walk a little ahead of her, and she follows your back"
 "You get worried that she's lost sight of you, or got lost somewhere along the way"
@@ -166,11 +149,6 @@ m "I could just message him some excuse and let it ring out..."
 # make it more clear why he doesn't want to pickup
 m "Or...?"
 
-# The interaction with the main character’s father is a key moment that showcases the toxic expectations placed on him. 
-# The father’s assumptions and comments reveal the generational cycle of toxic masculinity, further intensifying the main character’s internal conflict.
-# The call adds to the weight of the main character’s emotional burden, making the subsequent fight with Alice more impactful. 
-# It could also reinforce his feelings of isolation and the pressure to conform to societal norms.  
-
    menu:
       "What should I do?"
       "Make an excuse(N/A).":
@@ -181,7 +159,6 @@ m "Or...?"
          "Alice nods and sits on a near by bench along the riverbank"
          jump day2PhoneCall
 
-
 label day2PhoneCall:
    scene black with fade
    play music "wind.wav"
@@ -190,10 +167,6 @@ label day2PhoneCall:
    dad "Hello?"
    show mc stressed
    m "Hey dad... How's it going?"
-   # I think maybe it's better that he opens with like "Hope you aren't partying too much"
-   # I haven't heard about your grades but you're staying on top of it right?
-   # That's the agreement, You get As, and I pay for your internet, food, utilities
-   # If not, you're an adult... You're old enough to figure something out
    dad "Well I was doing pretty good"
    dad "I went down to the shop to see how the work on my car is going"
    dad "I was just talking to the mechanic about what kind of engine to import"
@@ -240,15 +213,13 @@ label day2PhoneCall:
    ali "Okay... If you say so..."
    "She stands up slowly and you resume your walk back home"
 
-
 #   For "The snapping point", I think his self-doubt about how quickly she's improved at guitar could be better portrayed:
-#   instead of saying it all from the POV of why this is hard for him (which is too obviously self-focused + annoys me), 
+#   instead of saying it all from the POV of why this is hard for him (which is too obviously self-focused + annoys me),
 #   he can phrase it as a frustrated encouragment, trying to get her to see why everything is okay and she can stop stressing and be proud of all she has done instead.
 #   For example, "Why are you so upset/stressed/afraid? Stop putting yourself down - don't you know how much I look up to you? You've worked so hard, you've learned so much,
-#   and what I can sounds better than anything I could do. You've accomplished more than I ever have!" 
+#   and what I can sounds better than anything I could do. You've accomplished more than I ever have!"
 #   This way MC's self-hate is more backhanded AND it shows how their relationship has grown to the point that
 #   he is genuinely worried about her and wants her to see how HE sees her.
-
 
 preFightDay3:
    # show her rushing back thorugh door as you get back
@@ -315,10 +286,10 @@ preFightDay3:
    m "None of this shit matters!"
    m "I thought the whole point of this was to not try to please anyone else"
    m "But you're just going from an insecurity that was imposed on you to one you chose"
-   
+
    ali "..."
    # Forced wait for 3 seconds so like . wait . wait ."
-   # but her expression changes 
+   # but her expression changes
       "She stands up clutching the guitar towards her chest"
    "And starts to walk towards the door"
    m "Where are you going?!"
@@ -327,7 +298,7 @@ preFightDay3:
    # ali "Somewhere I can focus without you"
    m "!"
    ali "..."
-   show sprite disappear 
+   show sprite disappear
    m "She's gone..."
    m "..."
    m "Fuck..."
@@ -354,11 +325,11 @@ preFightDay3:
 
    m "I don't see her anywhere..."
    m "Fuck where else could she be?"
-   choice :   
+   choice :
       option 1: The mall
       option 2: The river bank
       (thing you already chose is disabled)
-         
+
    "All of this 'helping her' and 'trying to grant her last wishes'"
    "You're just trying to convince yourself that you are a good person"
    "But if that were true you wouldn't be so alone in the first place"
@@ -395,9 +366,9 @@ preFightDay3:
    m "()"
    scene trans
    show scene rooftop cg with alice crying guitar and butterfly
-   play sound creaking door bursting open 
+   play sound creaking door bursting open
    m "Alice!"
-   
+
 Rooftop reworked:
 # he goes up to roof sweaty
 # starts trying to apologise
@@ -596,7 +567,6 @@ label aliceDay3Show:
 "You wait with Alice nervously in the venue"
 "You see several groups happily drinking beer and laughing"
 "The first couple of performers come out and the atmosphere of the place changes"
-# I'm going for that performance seems like the kind of thing you see on tv and not real people
 "You watch them together"
 "But you can't help but feel like you are watching 'A performance'"
 "Something you see on youtube or TV"
@@ -615,12 +585,11 @@ ali "I gotta go!"
 "And with that she turned her back and started walking towards the stage door"
 scene trans
 
-# Use for her pre song talk
-   announcer "Okay ladies and gentlemen, and those in between..."
-   announcer "Next up I want you all to give a warm welcome to~"
-   announcer "Alice!"
-   ali "Uh- Hi there..."
-   announcer "Is there anything you want to say to the crowd before you start?"
+announcer "Okay ladies and gentlemen, and those in between..."
+announcer "Next up I want you all to give a warm welcome to~"
+announcer "Alice!"
+ali "Uh- Hi there..."
+announcer "Is there anything you want to say to the crowd before you start?"
 
 # Unused stuff to pull from
       # ali "You took me to a whole bunch of places and showed me a bunch of stuff."
@@ -628,7 +597,7 @@ scene trans
    # ali "and at first I thought it was meaningless."
    # show alice normal
    # ali "But I realized that nothing matters except what is important to you."
-   
+
    # ali "Latte art is just making pictures in cow boob juice."
    # ali "And video games are just what depressed people do to avoid dealing with real life."
    # # Too much
@@ -641,7 +610,7 @@ scene trans
    # show alice normalside
    # ali "And I guess what I'm trying to say is"
    # show alice sad
-   # ali "You can't wait for someone else to give you permission to act" 
+   # ali "You can't wait for someone else to give you permission to act"
 
    ali "I uh- haven't really prepared anything but uh..."
    ali "I guess the last few day have been a really chaotic time for me..."
@@ -676,22 +645,6 @@ scene trans
    announcer "Okay! Next up we have..."
    scene trans
 
-
-   #The lyrics are using butterfly metaphor and about how she feels about life, and the mc
-   # Maybe the lyrics of the song reflect how she feels about the main character which adds more catharsis to the fight that they had earlier, 
-# where although she looked like she cared more about the song than spending time with him in her last day, 
-# it's because she wanted to properly communicate how she felt towards him. 
-
-
-# Alice’s Performance:
-# Alice’s performance is a culmination of her journey. The mistakes she makes, and how she handles them, symbolize her acceptance of imperfection and her growth as a character.
-# The song’s lyrics could be a powerful way for Alice to express her feelings towards the main character, showing that her focus on the song was,
-# in fact, a way to connect with him on a deeper level.
-# Her decision to smile through the performance, despite the errors, underscores the theme of finding meaning in the process rather than the outcome. 
-# This could resonate with the main character, helping him see the value in his own efforts, regardless of external validation.
-
-
-
 label post-show:
 show outside venue
 m "Alice!"
@@ -716,7 +669,24 @@ kel "I bet it was hard to play!"
 ali "Wait you're the neighbour we're borrowing from?!"
 show mc embaressed
 m "Yeah..."
-ali "Thank you so much! I'm so grateful I was able to-"
+ali "Thank you so much! I wouldn't have been able to do this tonight if you didn't-"
+kel "If you wanna say thanks, I know the perfect way..."
+m "You don't mean..."
+kel "You'll have to pay by...
+ali "*gulp*""
+kel "Letting me take a group Polaroid of us!"
+ali "Huh?"
+m "Woah it's one of those old cameras..."
+m "Where did you get that?"
+kel "I ordered it second hand online for super cheap! Hahaha"
+kel "Ready or not! Cheese!"
+play sound camera shutter
+ali "!"
+play sound photo printing
+m "Are you okay? The flash must have been pretty suprising huh?"
+ali "Yeah... I'm fine...I was just-'
+
+play sound notice
 # Maybe kellins friend should rush from inside to let them know
 announcer "Okay it's time to announce today's winner!"
 m "We should hurry back inside!"
@@ -754,6 +724,7 @@ ali "We should head back so I can get ready"
 kel "Aww, I was hoping we could talk about music!"
 ali "I'm sure we'll get that chance next time..."
 kel "Yeah, I'm looking forward to it!"
+kel ""
 ali "Enjoy the rest of the night"
 kel "Yeah you two stay safe!"
 m "We will do, I'll look after her!"
@@ -762,7 +733,7 @@ scene trans
 
 label aliceDay3WayBackHome:
 "The two of you walk back towards your dormitory"
-"You walk together in silence until half way along the river bank"
+"You walk together in silence until you reach the road leading up to your dormitory"
 "Alice's pace grinds to a halt"
 ali "..."
 m "Hey, are you okay?"
@@ -796,7 +767,7 @@ ali "Not everything is life or death..."
 ali "Unless your me that is! Haha"
 ali "But even if you fuck up a little, I think you could just apologize"
 m "Maybe..."
-m "Hey, I wanted to say..." 
+m "Hey, I wanted to say..."
 m "About the song you wrote."
 m "Thanks..."
 m "It meant a lot..."
@@ -812,45 +783,50 @@ ali "Huh? What does that mean?"
 m "Nothing..."
 m "You really worked hard for today, and I'm really proud of you"
 ali "...Thanks."
+
 ali "Hey... I just thought you should know..."
-ali "Even though I'm poisonous..."
-ali "There's a way you can prepare me so that I'm edible"
-ali "And even if you screw up a little, no one had died eating from eating a fly aminitas in over a hundred years."
-m "Eat you?"
-m "What?"
-m "Why-
-m "Why would I do something like that?"
-# MAybe it makes more sense if it's like she would rather not be eaten so she can die on her own terms
-ali "I want you to... It's the last "
+# ali "Even though I'm poisonous..."
+# ali "There's a way you can prepare me so that I'm edible"
+# ali "And even if you screw up a little, no one had died eating from eating a fly aminitas in over a hundred years."
+# m "Eat you?"
+# m "What?"
+# m "Why-
+# m "Why would I do something like that?"
+# ali "I want you to... It's the last "
+
+ali "I really appreciate what you did for me."
+ali "Even though it was hard at first"
+ali "I'm glad that this is the way things turned out"
+ali "..."
+ali "I'm going to go for a walk tonight"
+ali "By myself"
+ali "So don't come looking for me"
+m "But I want to be with you when-"
+ali "Please. I want for you to remember me for the time we spent together"
+ali "Not for how I left"
+m "..."
+m "Okay."
+ali "...Sorry... Or I guess"
+ali "Thank you"
+scene trans
 
 label aliceDay3Goodbyes:
+    show scene mc room
+    ali "Home sweet home!"
+    ali "Aaah! I'm so tired..."
+    m "I bet..."
+    m "..."
+    "You stand there for a few moments not knowing what to say..."
+    "You don't feel equiped for dealing with situations like this."
+    ali "Do you want to like"
 
-
-   # You and her go home together and have one last conversation on the way home
-   # She tells you there might be a way to cook her without dying
-
-   #The main character and her go home, for him to slit her throat, 
-# and properly prepare her to eat without toxins, knowing that she has no regrets, and that the MC now has a new outlook on life,
-# and is going to try to become the version of himself he wants to be, free from what anyone else thinks of him
-
-
-   # Final Scene:
-   #    The final scene, where the main character prepares Alice for consumption, is both poignant and symbolic. It’s a moment of acceptance and closure,
-   #    as both characters come to terms with their respective journeys.
-   #    The act of consuming Alice could be seen as the main character internalizing the lessons she’s taught him, 
-   #    carrying her memory and the meaning of their time together forward in his life.
-   #    This ending reinforces the themes of mortality, self-acceptance, and breaking free from societal expectations. 
-   #    The main character’s newfound resolve to live authentically could be a bittersweet yet hopeful conclusion to the route.
 
 label aliceDay3Epilogue:
+    # Make in the same style as the intro
 
    # But no matter what happens, you're going to start from trying to like yourself first
    # It ends with you thinking about what you want to do with your life, about how maybe you'll go and get that guitar, or take kellin up on playing in a band with him
 
 #    After she dies, have a black screen where mc reflects on her experience with her, and the  black background
-# slowly fades to be a shot of his computer with recording software open, and next to the computer a guitar stand 
+# slowly fades to be a shot of his computer with recording software open, and next to the computer a guitar stand
 # with the guitar she wanted from the store
-
-
-
-
