@@ -823,8 +823,6 @@ m "Why would I do something like that?"
 # MAybe it makes more sense if it's like she would rather not be eaten so she can die on her own terms
 ali "I want you to... It's the last "
 
-  
-
 label aliceDay3Goodbyes:
 
 
