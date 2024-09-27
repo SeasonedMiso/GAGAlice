@@ -812,21 +812,83 @@ scene trans
 
 label aliceDay3Goodbyes:
     show scene mc room
+   #  This scene is 
     ali "Home sweet home!"
     ali "Aaah! I'm so tired..."
     m "I bet..."
     m "..."
     "You stand there for a few moments not knowing what to say..."
     "You don't feel equiped for dealing with situations like this."
-    ali "Do you want to like"
-
+    ali "Do you want to watch a movie or something?"
+    m "Huh?"
+    ali "Do you like comedy or are you into something like horror?"
+    m "Comedy but..."
+    ali "Yeah, that tracks..."
+    m "Are you sure you are fine with just watching a movie?"
+    m "Isn't there anything else you'd rather do?"
+    ali "..."
+    ali "No..."
+    ali "I just want normal..."
+    ali "That's already special enough for me."
+    m "If you're sure..."
+    scene trans
+    "You watch a random romantic comedy movie from Netflix together on your bed."
+    "She laughs at the stupid jokes, and tears up for the climax"
+    "And before you know it..."
+    scene trans
+    m "Ahhh... I guess it's over."
+    ali "Yeah. That kind of sucked hahaha..."
+    m "Well you seemed to be enjoying it"
+    ali "Yeah I did. Thanks to you..."
+   #  Insert more dialog here
+    ali "Hey...
+    ali "It's kinda getting late..."
+    ali "I should probably head out for my... walk..."
+    m "..."
+    m "So I guess... This is..."
+    ali "Yeah... This is it."
+    "She stands up and waits stands closer to the general vicinity of the door"
+    ali "I don't really know what I'm supposed to say here"
+    ali "I could do a long speech about everything I've learned with you..."
+    ali "But I think it's better if I do this."
+    show cg of her kissing mcs cheek or forehead
+    ali "You've got a lot of life left."
+    ali "So enjoy it enough for both of us"
+    ali "Okay?"
+    m "Yeah..."
+    "Your lip starts trembling as tears start to well in your eyes"
+    m "I-I-I"
+    ali "It's okay..."
+    "She opens the door and steps into the enterance"
+    ali "Have a good life"
+    ali "I'll miss you (player name)..."
+    ali "Where ever it is I'm going."
+    "She turns away and closes the door firmly behind her"
+    m "Alice..."
+    m "..."
+    scene trans
+   #  Choice where you can chase after her?
+   
 
 label aliceDay3Epilogue:
-    # Make in the same style as the intro
+   play music "dynamic_audio/clock.mp3" fadein(2)
+    show text "You're having your favourite dream."
+    $ renpy.pause ()
+    show text "In it, you're with your friends."
+    $ renpy.pause ()
+    show text "You look around and see them smiling. You hear their jokes and laughing.
+    $ renpy.pause ()
+    show text "You feel calm. You think nothing."
+    $ renpy.pause ()
+    show text "You simply exist together. How wonderful."
+    $ renpy.pause ()
+    show text "The heavy burden of your worries disappear." 
+    $ renpy.pause ()
+    show text "All the things you've cried over in the past don't matter anymore."
+    $ renpy.pause ()
+    show text "Even your {sc=1}failures{/sc}."
+    $ renpy.pause ()
+    show text "At first, you were terrified of this dream, but now...
 
-   # But no matter what happens, you're going to start from trying to like yourself first
-   # It ends with you thinking about what you want to do with your life, about how maybe you'll go and get that guitar, or take kellin up on playing in a band with him
-
-#    After she dies, have a black screen where mc reflects on her experience with her, and the  black background
-# slowly fades to be a shot of his computer with recording software open, and next to the computer a guitar stand
-# with the guitar she wanted from the store
+    fade out to a cg of the mc's room with the guitar alice wanted, the polaroid they all took together
+    as well as 2 more of MC with kellin and kellin's friend, playing in a band together
