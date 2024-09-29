@@ -1,9 +1,21 @@
+
+# THIS DAY NEEDS MAJOR TWEAKS
+# -Alice = valley girl not ojousama
+# -Make it clear that alice's trauma is the expectation that she's sexually desireable
+# -make the conflict make sense and natural
+# -Make the resolution make sense, but leave them as like acquaintances, not friends
+
+
+
+##Check all the comments and non spoken lines from ori
 label ad1Morning:
 
     #Character definitions:
-    define nvlChar = Character(None, kind=nvl, what_color = "#FFFFFF")
+
     
-# I'm concerned that the narrator being another character in MC's head is forgotten in this route
+    
+
+
     stop music fadeout(2)
     
     default aliceTrust = 0
@@ -16,7 +28,6 @@ label ad1Morning:
         alpha 0.5
     show pulsingblack
     with dissolve
-
     "You wake up..."
     hide bottle_phone day
     show bottle_phone noon:
@@ -29,12 +40,12 @@ label ad1Morning:
     show mc sad with easeinbottom
     window show
     "And raise your heavy body out of bed."
-    "You prepare your cheap coffee, turn back towards your bed, and place your coffee on the bed side table."
+    "You prepare your cheap instant coffee, turn back towards your bed, and place your coffee on the bed side table."
     "You shift your attention toward your proto-roommate."
     stop music fadeout(2)
     play sound "tear.wav"
     "Suddenly you hear a rustling sound from the corner of your room."
-
+    
     window hide
                 
     scene alice_box_1 with dissolve
@@ -59,70 +70,53 @@ label ad1Morning:
     play music "normal.mp3" fadein(3)
 
     #Siloutte animation of her breaking out by herself
-
-
-
-
-# Initial Shock and Interaction:
-
-# The main character’s shock at Alice’s appearance can be emphasized to highlight his social anxiety. Maybe he stumbles over his words or struggles to make sense of what’s happening,
-# which would contrast with Alice’s bold and straightforward approach.
-# Alice’s immediate attempt at physicality sets the tone for her character, showing her programming and how she’s driven by the need for validation. 
-# This also allows the main character to reveal his discomfort with her advances, starting the theme of conflicting desires.
-
-#something subtly off about her behavior that makes the main character uncomfortable. This tension could be built up slowly, making her eventual advances feel more unsettling.
     show mc shocked at right
     show alice confused at left
     with easeinbottom
      
-    na "So this is your room? It's so... {i}cozy{/i}."
+    na "So this is your room? Smaller than I hoped for but I guess this will work."
     m "..."
     show mc shout at bounce
     m "{sc=3}{size=+40}{color=#000000}WHAT THE FUCK?!?!"
     show alice normal
     na "..."
-    show alice spray
+    "The girl that emerged from your mushroom box unapologetically grabs the spray bottle on the table beside her"
     play sound "spray.wav"
-    #todo: put in a mist cloud sprite with fadeout     
-    show alice fake smile
-    na "What a warm welcome!"
-    na "My name is Fly Amanita!"
-    na "You {i}really{/i} have an interesting way with words master."
+    "She pulls the trigger and a cloud of mist appears in front of her"
+    "She steps slowly through it and towards me"
+    
+    show alice annoyed
+    na "Warm fucking welcome..."
+    na "You {i}really{/i} have a way with words."
+
     show mc sad
-    m "Sorry I uh..."
+    m "I'm sorry..."
     "..."
     show mc shocked at bounce
     m "WAIT A SEC! WHO-... or...what?... THE HELL ARE YOU?!"
-    m "Fly?!"
-    show alice confused
-    na "Are you okay master?"
-    na "You should have memories of watering me for the last several weeks."
-    na "I hope that you aren't suffering from any kind of neuralogical ailment"
-    na "Luckily, I come prepared with knowledge for just such cases!"
-    na "Although I do specialize in treating hypoxia!"
-    # I don't know if this lands, I'm trying to make the joke that she's programmed to deal with brain damage from being choked by her during sex
+    show alice sad
+    na "That's tragic..."
+    na "I hoped my client would be like mentally all there or whatever"
     show alice hime
-    na "Or perhaps you're just looking forward to spending the evening with me?"
+    na "But I guess I just have that effect on people."    
 
+    show alice pout
+    na "Actually tragic..."
     m "You're... the mushroom I bought?"
-    show alice moe smile
-    na "Oh, it seems that you're alright"
+    show alice cruel
+    na "And you aren't brain damaged?"
+
     show mc vshout
+    m "THAT'S MY LINE!!!" # doesn't make sense - change this 
     m "YOU'RE TALKING!"
     show alice neutral
     na "..."
-    na "Since you appear to be in good health, perhaps you could do me the favour of telling me what to call you?"
-    show alice thinking
-    na "Master, Onii-chan, Servant, Slave-"
-    show mc shout
-    m "NO! J-Just my n-name is fine..."
-    na "As you wish. Your name which is?"
+    na "Well since your brain is functioning to {i}some{/i} level, maybe you could tell me what to call you?"
     show mc awed
-    m "Ummm..."
-    m "My name..."
-    m "My name is... Ummm"
+    m "Ummm... My name..."
     show alice sad
-    na "Are you sure you don't need me to commence a neuralogical evaluation?"
+    na "My bad, I should have picked something easier for you right?"
+
     show mc shout
     m "NO!!!"
     show mc stressed
@@ -133,7 +127,6 @@ label ad1Morning:
     label name_ali: 
         $name_redo = False
         $player_name = renpy.input("So, what do I call you?", length = 8).strip().lower().capitalize()
-        # Reply from Skye: bad_names needs to be a global variable, and we should do the same thing in the other routes.
         # if player_name in badNames:  # you haven't define badNames yet so it makes an error as is
         #     "...%(player_name)"
         #     show alice meanLaugh
@@ -148,26 +141,25 @@ label ad1Morning:
         if player_name == "":
             "Can't even remember your own name... Come on..."
             "I guess you <b>really</b> can't do anything right."
-            "Just go with Ryland."
-            $player_name = "Ryland"
+            "Just go with Finn."
+            $player_name = "Finn"
         
         $ playername = player_name
         m "...%(player_name)s."
         
         if (name_redo):
             show alice smug
-            na "So master %(player_name)s?"
+            na "Are you sure this time?"
             show mc angry
             m "YES!"
-            m "But you can leave out the ummm... master part..."
-            # show alice meanLaugh
+            show alice meanLaugh
             na "Just wanted to make sure..."
         
     show alice smug
-    na "What a cute name... It {i}really{/i} suits you."
+    na "What a cute name... I guess it suits someone like you."
     m "What's that supposed to mean?!"
     show alice laugh cruel
-    na "Nothing, {i}\"Master\" {/i} %(player_name)s."
+    na "Whatever you want, {i}\"Master\" {/i} %(player_name)s."
     #She introduces herself
     
     "..."
@@ -175,148 +167,94 @@ label ad1Morning:
     show mc confused
     m "So... Getting back on topic... I thought I was supposed to be growing a mushroom?"
     show alice normal
-    na "Which you valiantly succeeded in."
+    na "Well, at least you didn't screw THAT part up."
     m "So... You're a mushroom then? Not like a scary alien that's going to lay eggs in my stomach or something?"
     show alice mendokusai
-    na "Of course not!"
+    na "What are you talking about?"
     show mc awed
     m "I didn't think that mushrooms were supposed to talk... or... move..."
     show alice disgusted
-    na "Well this one does"
-    m "But-"
+    na "You REALLY love talking about semantics." #make it obvious that slice expects him to know what he was growing
     show alice sly smile
-    na "You don't need to think so hard about it!"
-    na "You're going to tire yourself out"
+    na "How about you stop thinking so hard, and we get more comfortable?"
+    "She protudes the aura of a queen sitting on a throne."
+    show mc surprised
+    m "...?"
     show alice flirt
-    na " Why don't we relax a little bit and get more comfortable?"
-    m "Uh, yeah, sure"
-    "She sits down on the bed, and gestures for you to follow suit"
-    "You hesitate for a moment, but shortly follow suit"
-    # I think we need a CG here of her crawling on top of him on the bed
-    na "You seem so stressed!"
-    m "Well, there's kind of a lot to take in"
-    na "Oh I'm sure"
-    na "But that's okay!"
-    na "You have me now!"
-    na "You don't have to worry about anything anymore"
-    m "Uh... Fly... Amanatee?"
-    na "Amanita! But I know that's a mouth full"
-    na "So you can call me whatever you want"
-    "You take a look at her hair(?) buns, and blurt out the first thing that comes to mind"
-    m "Maybe something like Alice? 'Eat me, Drink me' that sort of thing"
-    na "I'm not really sure what you mean, but sure, if that's what you want!"
-    m "Yeah..."
-    m "Sorry, it's just so much to take in..."
-    m "I started growing you because I felt like I wanted a tiny bit of responsibility"
-    m "But now it's like-"
-    ali "..."
-    play sound "sheets.wav"
-    window hide
-    play music "tense.wav"
-    scene PinnedDown with fade
-    ali "I told you..."
-    ali "You're thinking..." 
-    ali "too..." 
-    ali "much..."
-    m "Wha- Uh- I-"
-    "Before you can process whats happening you feel Alice's small hands wrap around your wrist"
-    play music "heartbeat.wav"
-    "Your brain to melt as a faint {color=#C4A484}sweet{/color} and {color=#C4A484}earthy{/color} scent enters your conciousness."
-    "Somewhere between the smell of coffee, vanilla, cinnamon and moss."
-    "You look up to see her face approaching yours"
-    "Before you can consider how to react, your body moves on it's own"
-    # I feel like maybe there needs to be bigger red flag before this
-    menu:
-        "Kiss her":
-            return
-        "Push her away":
-            return
-
-
-    # show mc surprised
-    # m "...?"
-    # na "So, anyway... Should we start?"
-    # show mc confused
-    # m "Ummm... Start...what?"
+    na "So, anyway... Should we start?"
+    show mc confused
+    m "Ummm... Start...what?"
 
     # switch to nvl?]
 
     # So part of this is going on about the MC's perception of her as poisonous
     # I kind of don't know if it serves the narrative or not
     # I think it's better that it's just about him being sexually harrassed
-    # show alice normal at center with move
-    # show mc shocked at bounce
-    # nvlChar "Without answering your question, she takes a confident lunge in your direction."
-    # nvlChar "Her face appoaches yours suddenly."
-    # nvlChar "You throw your center of balance backward to evade her advance, but you start to fall backwards."
-    # nvlChar "Her hand pinches the neck of your oversized hoodie, preventing your descent."
-    # nvlChar "She tightens her grasp and shifts her own body weight forward, bringing her face closer to yours."
-    # nvl clear
-    # show mc awed
-    # nvlChar "You stare at her face."
-    # nvlChar "Her expression remains fixed in a neutral casual, but apathetic expression as she looks down at you."
-    # show black:
-    #     alpha 0.2
-    # nvlChar "You notice a faint {color=#C4A484}sweet{/color} and {color=#C4A484}earthy{/color} scent."
-    # nvlChar "Somewhere between the smell of coffee, vanilla, cinnamon and moss."
-    # show black:
-    #     alpha 0.3
-    # nvlChar "You have been suspended in place for what feels like several minutes."
-    # nvlChar "Each passing moment, the scent seeps further into your body."
-    # nvlChar "Your mind begins to melt inside your head."
-    # nvl clear
-    # show black:
-    #     alpha 0.4
-    # nvlChar "It feels warm and fuzzy, almost like a pleasant numbness spreading from to core of your conciousness."
-    # nvlChar "You feel your thoughts slow to a halt."
-    # nvlChar "Your gaze shifts to her lips, which shimmer as if moist."
-    # show black:
-    #     alpha 0.5
-    # play music "heartbeat.wav"
-    # show mc worried
-    # nvlChar "The sound of your heart pounds violently through your ears."
-    # nvlChar "Every fiber of your being is telling you to get away from her." #rewrite so not certain if sexual or even want to get away
-    # nvlChar "You know intuitively, that if she gets close to you..."
+    show alice normal at center with move
+    show mc shocked at bounce
+    nvlChar "Without answering your question, she takes a confident lunge in your direction."
+    nvlChar "Her face appoaches yours suddenly."
+    nvlChar "You throw your center of balance backward to evade her advance, but you start to fall backwards."
+    nvlChar "Her hand pinches the neck of your oversized hoodie, preventing your descent."
+    nvlChar "She tightens her grasp and shifts her own body weight forward, bringing her face closer to yours."
+    nvl clear
+    show mc awed
+    nvlChar "You stare at her face."
+    nvlChar "Her expression remains fixed in a neutral casual, but apathetic expression as she looks down at you."
+    show black:
+        alpha 0.2
+    nvlChar "You notice a faint {color=#C4A484}sweet{/color} and {color=#C4A484}earthy{/color} scent."
+    nvlChar "Somewhere between the smell of coffee, vanilla, cinnamon and moss."
+    show black:
+        alpha 0.3
+    nvlChar "You have been suspended in place for what feels like several minutes."
+    nvlChar "Each passing moment, the scent seeps further into your body."
+    nvlChar "Your mind begins to melt inside your head."
+    nvl clear
+    show black:
+        alpha 0.4
+    nvlChar "It feels warm and fuzzy, almost like a pleasant numbness spreading from to core of your conciousness."
+    nvlChar "You feel your thoughts slow to a halt."
+    nvlChar "Your gaze shifts to her lips, which shimmer as if moist."
+    show black:
+        alpha 0.5
+    play music "heartbeat.wav"
+    show mc worried
+    nvlChar "The sound of your heart pounds violently through your ears."
+    nvlChar "Every fiber of your being is telling you to get away from her." #rewrite so not certain if sexual or even want to get away
+    nvlChar "You know intuitively, that if she gets close to you..."
     
-    # nvlChar "{sc=3}{color=#FF0000}{size=+40}YOU ARE GOING TO DIE."
-    # nvl clear
-    # hide black
-    # stop music
-    # show mc vshout
-    # show alice vannoyed at left with move
-    # show alice shocked at left
-    # play sound "slap.ogg" # find a good push/shove sf
-    # m "{sc=3}{color=#000000}{size=+40}GET THE FUCK AWAY FROM ME!"
-    # show alice surprised
-    # na "..."
-    # na "{size=-10}... you're not supposed to... I'm..."
-    # show mc stressed
-    # "..."
-    # show mc worried
-    # m "{size=+10} Sorry, I didn't mean to push you... I'm just really..."
-
-
-
-# Alice’s Reaction to Rejection:
-# Alice’s emotional shock at being rejected could be portrayed as intense, almost like she’s never experienced rejection before.
-# Her fleeing the scene in search of someone new emphasizes her desperation for validation.
-# The incident with the other dorm member introduces the idea that Alice doesn’t fully understand human social norms or boundaries,
-# making her actions seem almost childlike in their simplicity. This could create a sense of vulnerability in her character.
-
-
-
-
+    nvlChar "{sc=3}{color=#FF0000}{size=+40}YOU ARE GOING TO DIE."
+    nvl clear
+    hide black
+    stop music
+    show mc vshout
+    show alice vannoyed at left with move
+    show alice shocked at left
+    play sound "slap.ogg" # find a good push/shove sf
+    m "{sc=3}{color=#000000}{size=+40}GET THE FUCK AWAY FROM ME!"
+    show alice surprised
+    na "..."
+    na "{size=-10}... you're not supposed to... I'm..."
+    show mc stressed
+    "..."
+    show mc worried
+    m "{size=+10} Sorry, I didn't mean to push you... I'm just really..."
 
     show alice sulk
     na "{size=-10}... I thought that you... were meant to..."
     na "{size=-10}...fall for me... maybe I'm just not...{size=+10} "
+    #m "Hey, I'm trying to apologize but I need you to listen."
     show mc stressed
     m "I was kind of freaked out that you got so close all of a sudden and-"
+    play music "fight.mp3"
     show alice angry tears
     na "{size=+40}SHUT UP!"
     show mc surprised
+    #"She suddenly snaps at you."
+    #"Her face twists with rage and pain."
     show alice disgusted
-    na "What's wrong with you?! Isn't this what you wanted?"
+    na "What's wrong with you?!\nIsn't this what you wanted?"
     show alice vangry tears
     na "ISN'T THIS WHY YOU RAISED ME?"
     show mc worried
@@ -331,12 +269,16 @@ label ad1Morning:
     ali "I don't need someone like you anyway..."
     show alice angry
     ali  "I can do better!"
+    stop music fadeout(2)
     hide alice with easeoutbottom
+    
     play sound "door.wav"
     "..."
     show mc awed
     m "She's gone..."
- 
+    # "Your line of sight slowly drops towards the floor as you hang your head."
+    # "You notice several shimmering drops of clear liquid on the wooden flooring."
+
     show mc stressed at center with move
     play music "normal.mp3"
     m "What the fuck just happened?"
@@ -475,7 +417,6 @@ label ad1Morning:
 
     label dischord_chat:
         # define romBestGrill = rb 
-        play music "computerHum.wav"
         scene discord with fade
         rb "sup i was wondering if you wanted to hop in vc"
         "This is one of your few online friends..."
@@ -529,6 +470,7 @@ label ad1Morning:
 
     scene bottle_phone day with fade:
         zoom 0.9
+    #"You close the window, and turn away from your computer screen."
     show mc stressed with easeinbottom
     m "Am I the weird one?"
     show mc worried
@@ -536,6 +478,7 @@ label ad1Morning:
     
     
     show mc stressed
+
     # This part goes on too long# 
     "Anyone you meet is going to be repulsed when they actually get to know you anyway."
     "That's how it always has been."
@@ -548,42 +491,8 @@ label ad1Morning:
     show mc shocked
     m "OH FUCK!"
     m "What if someone saw her leaving my dorm?!"
-    show mc stressed at center with move
-    window hide
-    hide mc with easeoutbottom
-    play sound "door.wav"
-    scene hallway with fade
-    show mc worried with easeinbottom
-    window show
-    m "Where is she?"
-    m "She wouldn't go outside..."
-    show mc stressed
-    m "...would she?"
-    m "Aaaah! Fuck!"
-    show mc sad
-    m "This is way more stress than I signed up for."
-    "She's probably already out in the city."
-    show mc worried
-    m "Does she know that you need to wait before you cross the road?"
-    m "I wonder if she'd just explode into mushroom pieces if she got hit by a car..."
-    show mc stressed
-    #add expressions here
-    m "If she's outside, she could be anywhere"
-    m "The only way I could realistically find her is by asking passers-by if they saw her"
-    m "And that means..."
-    mc shudder
-    m "Talking to people"
-    "You're probably just over thinking it."
-    "It's called 'Anxiety'"
-    "Thought you'd be familiar with it by now"
-    m "..."
-    m "She got upset in the heat of the moment"
-    m "But as soon as she realizes she has no shelter, she's gunna come running back"
-    m "Maybe I should just go and wait for her in my room?"
-    m "But-"
-    m"..."
-
-
+    
+    
     show mc at right with move
 
     menu:
@@ -596,41 +505,14 @@ label ad1Morning:
             show black with dissolve:
                 alpha 0.5
             window show
+            "You imagine leaving the room."
             "She could be anywhere. This place is huge. She might have already left the dorms..."
             "She looked like she could handle herself, so..."
             "Is it really even necessary for you to even ask people if they've seen a red-headed hottie?"
             "It would be so embarrassing. They'd probably just laugh at you."
-            "Let's go inside"
-            show black with dissolve:
-                            alpha 0.5
-            "You wait..."
-            "For a few minutes..."
-            "Then an hours passes..."
-            "2 hours..."
-            play heartbeat
-            "The sun begins to wane in the sky"
-            "And then suddenly"
-            *Knock knock*
-
-            #show room
-            m "Alice?!"
-                show black with dissolve:
-                            alpha 0.5
-            play fastClammeringFootsteps
-      
-            play sound "door.wav"
-            scene hallway with fade
-            show mc worried with easeinbottom
-            window show
-            m "Huh? Where is she?"
-            m "Alice?!"
-            "No one is there"
-
-
-            # keep going
-            
-
-
+            "So what's even the point? She's gone. She didn't want to hang around."
+            show black with dissolve
+            "Just let her go."
             "END X:..."
             # pause 1
 
@@ -644,21 +526,45 @@ label ad1Morning:
             return
 
         "Search outside.":
-            
-     
+            show mc stressed at center with move
+            m "She could be in trouble."
+            m "Fuck it! Here goes nothing-"
+            window hide
+            hide mc with easeoutbottom
+            play sound "door.wav"
+            scene hallway with fade
+            show mc worried with easeinbottom
+            window show
+            m "Where is she?"
+            m "She wouldn't go outside..."
+            show mc stressed
+            m "...would she?"
+            m "Aaaah! Fuck!"
+            show mc sad
+            m "This is way more stress than I signed up for."
+            "She's probably already out in the city."
+            show mc worried
+            m "Does she know that you need to wait before you cross the road?"
+            m "I wonder if she'd just explode into mushroom pieces if she got hit by a car..."
             show mc vstressed
-            "You wait for a few minutes"
-            "Slowly mustering up determination from the depths of your very soul"
-            m "..."
-            m "Ahhhh!!! Fuck it"
-            m "Here goes nothing!"
+            m "Ahhhh!!! Damn it... Maybe I should just..."
             na "KYAAAAAAAAAA!" with sshake
             show mc surprised at bounce
             m "Alice!"
             window hide
     
         
+        #Choice: Where go???
 
+    #go out to the enterance
+    #mental preparation, scared of going out to look
+    #hear a scream
+    #Run towards location (shower)
+    #KYAAA! it's shadow person
+    #She closing in about to try to get closer to him
+    #You grab her in the nick of time
+    #pull her back to your room
+    
 
     scene bathroom with fade
     show showerguy scream at right 
@@ -711,20 +617,6 @@ label ad1Morning:
     with easeinbottom
 
     # I feel like the tone is kinda off
-
-#     Confrontation and Apology:
-
-# The confrontation when the main character drags Alice back could be a pivotal moment. 
-# His frustration could stem not just from her reckless behavior but also from the overwhelming situation he finds himself in.
-# When Alice blames the main character for rejecting her, it could trigger a moment of self-reflection for him. 
-# Perhaps he realizes that his reaction was more about his own insecurities than about Alice herself, which could add depth to his apology.
-
-# The Rooftop Scene:
-# The rooftop scene with the stars is a beautiful moment where the main character tries to impart some wisdom to Alice.
-# His attempt to show her that meaning can be found in anything could reflect his own struggle to find purpose in life.
-# Alice’s inability to grasp the concept could underscore the gap between them, highlighting her programmed nature and lack of understanding of deeper human experiences.
-
-
     window show
     ali "Where are you dragging me you pervert?"
     ali "What kind of sick,"
@@ -732,6 +624,7 @@ label ad1Morning:
     ali "tormented,"
     show alice annoyed
     ali "degenegerate things are you going to-"
+    play music "fight.mp3"
     show mc vshout 
     m "{size=+20}What the fuck were you \n{sc=2}{size=+20}{color=#000000}doing{/sc} down there?!" with sshake
     show alice pout
@@ -783,6 +676,7 @@ label ad1Morning:
     show alice sad
     ali "...or there's something wrong with me."
     show mc worried
+    stop music fadeout 2
     m "..."
     show mc normalside
     m "So... That's why you went to find someone else."
@@ -797,7 +691,7 @@ label ad1Morning:
     #Choice: It's okay ; I think you're valueble ; step on me mommy; 
     #You're valueble
     menu:
-        "But you ARE pretty!":
+        "But you ARE pretty! (N/A)":
             show mc confused
             m "What...? But you're like... objectively attractive."
             show mc awed
@@ -954,11 +848,6 @@ label ad1Morning:
     ali "Sigh... Okay..."
     hide alice with easeoutbottom
 
-# YouTube and Knowledge:
-# Leaving the laptop with Alice introduces an interesting dynamic where she absorbs information rapidly. 
-# This could lead to her developing new perspectives or even challenging the main character’s views in the days that follow.
-# Her overnight binge-watching could also lead to humorous or insightful moments the next day, where she parrots back things she’s learned or misunderstood from the videos.
-
     window hide
     scene black with fade
     stop music fadeout(3)
@@ -967,28 +856,39 @@ label ad1Morning:
     with dissolve 
     pause 3
 
-    play sound "yay.wav"
-    window show
-    "You've reached the end of day 1!"
-    return
+    jump day2Morning
 
-# Potential Additions:
-# Internal Monologue:
-# The main character’s internal thoughts during these events could add depth to his character, showing his anxiety, guilt, and confusion. 
-# It would also help convey his struggle with toxic masculinity and his internal gender identity conflict.
-
-# Alice’s Perspective:
-# Brief insights into Alice’s thoughts or feelings could make her more relatable. Even if she doesn’t fully understand human emotions, 
-# she might have her own way of processing events, which could be intriguing to explore.
-
-# Foreshadowing:
-# Small hints about Alice’s limited lifespan or the company’s motives could be woven into the narrative subtly, 
-# creating a sense of impending conflict and adding tension to their interactions.
+    #you yell at her for attempting to assault a random person
+    #Also that if people see you in here, it will cause problems for you
+    #She starts crying and says it's you fault for not giving her attention
+    #She explains that it hurt her because she's supposed to be attractive and alluring
+    #And so it makes her feel like a failure
 
 
-# ----------------------
+# mc checks website. shocked that she  only lives for 3 days.
+# she’s like “I know, and I have to spend it with YOU.”
+
+# He also sees that she’s poisonous and freaks out. Alice is annoyed by his reaction and hints at this hatred/fear towards her being unjustified and unfair. 
+# “You think they’re going to kill their customer base? They thrive on repeat customers.”
+
+# She’s a bit sad/angry. “Relax. i won’t do anything anyway. I can tell I’m not wanted.”
 
 # - bad route idea: he dies, but it’s not her poison that kills him. It’s his OVERREACTION and fear of her poison that kills him.
+
+# Tension again. He wants to clear the air a bit. suggests goes to rooftop. He talks excitedly about the stars. She’s like “Okay I guess. i don’t really see the point.” He describes how people can find meaning in the stars. she SUBTLY goes from making fun of it and calling it stupid to warming up to it.
+
+# Back at room. When he gets in to sleep, she starts to pull back the cover and climb in bc she assumed that’s what she was supposed to do.
+
+# She demands he gives her something to do while he sleeps. “What, you expect me to just wait?”
+# mc says he guesses she can just go on her laptop.
+
+
+# Bad end where alice disfigures her face to look prettier
+
+
+
+
+
 
 # more conflict in terms of like maybe
 # them brushing off this gendered society thing to each other
@@ -1003,7 +903,26 @@ label ad1Morning:
 # like the contrast between a society that punishes you for not complying, but berates your attempts to comply
 # So I want to fit that in some how
 
+
+
+
+
+
+
+#as a mushroom, she doesn't have memories or a sense of personal identity
+
+
+ 
    
+    
+#as a mushroom, she doesn't have memories or a sense of personal identity
+#She does have instinct and the information in her DNA
+#In that DNA there's a clear purpose, be desireable, be pretty
+#If she isn't those things, she has no sense of meaning
+#That's why she wants for him to look at her
+#To use her
+#So that she can feel like it was worth it.
+#Not because she likes him, or wants to do the act as itself, but because she wants the validation it implies.
 
 #MC explains that humans too have biological instincts for survival
 #There's some stuff we can't ignore, like food, water, shelter love
