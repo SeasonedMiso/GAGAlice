@@ -2374,11 +2374,6 @@ label aboutCoffee:
 
 
 label clothes:
-#    The scene where Alice notices the main character’s interest in the pastel pink hoodie is a lovely touch.
-# It reveals her growing awareness of his internal struggles and offers a moment of connection between them.
-# Her playful teasing and encouragement for him to try on the hoodie show that she’s beginning to understand and care for him on a deeper level.
-# This scene subtly hints at the main character’s gender identity issues, adding another layer to his character.
-
    show alice normalside
    ali "Whatever, what about that place over there?"
    m "You mean the men's attire store?"
