@@ -587,7 +587,7 @@ label alice_bed_scene:
     show alice_bed_3 with dissolve
     pause 1
     "Alice gives your cheek a gentle caress with her fingertips, sending an ice-cold bolt of pure sensation up your spine."
-    "To anyone else, it would feel good, but you don't want it."
+    "To anyone else, it would feel good, but for you, it feels wrong, as if your body rejects the notion of liking it."
     "You flinch away, but Alice grapples you before you can escape."
     m "Don't come any closer! I-I-I don't-"
     a "Come on! Stop acting like this! Why don't you like it? This is why you made me, right? So-"
