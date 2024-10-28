@@ -116,7 +116,7 @@ label alice_d1_Sabrina_ver:
     show alice confused 
     na "Um, what's the word? Hmm..."
     show alice laugh
-    na "Warm! It feels so {i}cosy{/i} in here! Like a snuggly blanket of cuddles! It's sooooo nice!"
+    na "Cosy! It feels so {i}warm{/i} in here! Like a snuggly blanket of cuddles! It's sooooo nice!"
     show mc vstressed
     m "WHO-" with sshake
     show alice happy at bounce
@@ -129,7 +129,11 @@ label alice_d1_Sabrina_ver:
     show mc confused
     na "I beat ya! Too super-speedy for you to even finish your question! Teehee!"
     show alice hime
-    a "I'm Alice! Short and sweet, just like me! And I must say-"
+    a "I'm Alice! Short and sweet, just like me!"
+    show alice normalside
+    a "Well, it's the cute-ified version of my full name, but Amanita muscaria is a mouthful, y'know?"
+    show alice normal
+    "Aaaaanyway-"
     show alice laugh
     a "It's such, such, such, SUCH a pleasure to finally meet you, Master!"
     show mc shocked
@@ -143,8 +147,10 @@ label alice_d1_Sabrina_ver:
     m "Yes..."
     show alice sigh
     a "PHEW! Ah, for a second I thought-"
-    show alice angry
-    a "But anyway, that's wonderful!"
+    show alice depressed
+    a "{size-=20}I'd messed up-"
+    show alice happy
+    a "But I didn't! So everything's wonderful!"
     show mc stressed
     m "You're... not really a mushroom, are you?"
     show alice pout
@@ -168,8 +174,10 @@ label alice_d1_Sabrina_ver:
     show alice normal
     show mc surprised
     m "Did you just spray yourself in the face?"
-    show alice wink
-    a "Was that unbecoming of me? Hehe, sorry!"
+    show alice surprised
+    a "Oops! I completely forgot that was your whole thing! Sorry, did I accidently make you obsolete? Do you wanna do it?"
+    show mc stressed
+    m "No, I don't-"
     show alice happy
     a "So Master, what's your name?"
     show mc confused
@@ -211,7 +219,7 @@ label alice_d1_Sabrina_ver:
     show mc awkwardsmile
     m "Thanks? Alice is a good name too."
     show alice cutesad
-    a "Eeeeh? Really really really? It's not embarrassing and uncute? It's cute?"
+    a "Eeeeh? Really really really? I just thought of it for some reason. So I picked a good name?"
     show mc confused
     m "Alice? May I ask you something?"
     show alice pout
@@ -270,6 +278,9 @@ label alice_d1_Sabrina_ver:
     m "S-sorry, Alice. Please excuse me. I need to check what I ordered."
     show alice happy
     a "Mhm~ No problem!"
+    hide mc with easeoutbottom
+    show alice normal
+    a "Wait..."
     window hide
     hide mc
     hide alice
@@ -296,15 +307,19 @@ label alice_d1_Sabrina_ver:
         show alice normal at left
         show dress polkadot at left
         with easeinbottom
-        a "So this thingy has information about me?"
+        a "Hmm? So this thingy has information about me?"
         show mc surprised at right with move
         m "What are you doing here?"
         show alice pout
-        a "Aw, can't we discover my origins together? You're not going to exclude me from my whole back story, are you?"
+        a "Master %(player_name)s, why are you trying to spy on me? You don't need to resort to that - You can ask me anything!"
+        show mc normal
+        m "But I don't want jokes. I want the truth."
+        show alice happy
+        a "You don't need to know the truth! Let's just be happy together and have some fun!"
         show mc stressed
-        m "(When she puts it like that, she's right. I'd do the same in her shoes.)"
-        show mc normalside
-        m "Ah, fine."
+        m "Sorry Alice, but that's not my style."
+        show alice normalside
+        a "*Sigh* Fine... As long as you share whatever truth you find."
         window hide
         hide mc
         hide alice
@@ -421,7 +436,7 @@ label alice_d1_Sabrina_ver:
     m "(I am responsible for her life. I still can't believe I've just grown someone, but it's true.)"
     "How are you going to cope when looking after yourself is such a chore?"
     show alice pout
-    a "You won't abandon me, will you, Master? You won't!"
+    a "You won't abandon me, will you, Master?"
     show alice cutesad
     a "You keep talking about how I'm not what you wanted. Do you dislike me?"
     show mc shocked
@@ -430,7 +445,7 @@ label alice_d1_Sabrina_ver:
     a "Because I just wanna spend time with you! I'm trying my best!"
     show mc shocked
     m "(SHE'S CRYING!?)"
-    a "Please don't leave me~! *Sob* You're the only person who's ever cared about me!"
+    a "Please don't leave me~! *Sob* I need you! If you leave me, what will I do?"
     show mc worried
     m "It's okay! Just please stop crying-"
     a "You promise you like me?"
@@ -545,7 +560,7 @@ label alice_bed_scene:
     #     ]))
 
     m "Why'd you push me!?"
-    a "Because you're more green than I expected. You just need a {i}helpful little push{/i}!"
+    a "Because you're more innocent than I expected. You just need a {i}helpful little push{/i}!"
     "WAIT A SECOND! Why is she looking at you like THAT?"
     m "(I-I must be misinterpreting-)"
     a "%(player_name)s... I've been so lonely~ I haven't been able to say a thing for weeks..."
@@ -562,7 +577,7 @@ label alice_bed_scene:
     "But that's strange. You {b}SHOULD{/b} want this."
     m "(I should?)"
     "Yes! This is what real men do when they come to college! You've seen it on tv, movies, the radio..."
-    "Every man wants a hot woman! And now you've got one!"
+    "Every man wants a cute girl! And now you've got one!"
     "So what's with the hesitance?"
     a "Oh my goodness~ What's with your frown? There's nothing to worry about."
     a "It's just me and you here."
@@ -1655,7 +1670,7 @@ label nice_route:
     m "Got you!"
     show alice at center
     show dress at center
-    show alice_base_buns at center    
+    show alice_base_buns at center
     show mc at right 
     with move
     "In a burst of panic, you grab Alice's waist and yank her back to safety."
@@ -1663,7 +1678,7 @@ label nice_route:
     m "Oh my God! You need to be more careful! That could have gone so wrong!"
     "For a second of relief and draining adrenaline, you close your eyes."
     show alice cruel
-    a "Hehe, {size=-20} I knew you'd do that."
+    a "{size=-20}Hehe."
     show alice vcry
     show mc confused
     m "Are you okay?"
