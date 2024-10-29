@@ -71,6 +71,20 @@ label day3Morning:
    "You look closer at the page full of abstract, interconnecting shapes."
    m "Uhh, I have no idea what i'm looking at."
    ali "That's okay, just as long as I know."
+   "You think for a moment, but the more you do, the more confused you become"
+   m "I'm so confused... Like I had my doubts when you started talking about doing music in the first place"
+   m "But how on earth are you like... Doing any of this?"
+   ali "I... Don't really know..."
+   ali "It's kind of like how I knew about some stuff when I was born..."
+   ali "But kind of different?"
+   ali "That stuff was all facts and details."
+   ali "This all feels a lot more nebulous and abstract..."
+   ali "Like something that wasn't programmed in me, but more like, something I just..."
+   m "...I see..."
+   m "I guess if I had to make a guess based on what I know about dotted mushrooms, then maybe some psychedellic higher wisdom stuff is involved""
+   ali "Yeah, maybe!"
+   "She quickly turns back and starts practicing again."
+   "She doesn't seem anywhere near as interested in contemplating this as you are"
    hide alice with dissolve
    show mc normal
    "You hear the kettle click and walk over to it."
@@ -98,7 +112,7 @@ label day3Morning:
    show mc normal
    m "If you can do with out them then I guess not."
    ali "..."
-   show alice sad 
+   show alice sad
    ali "Can't you just go for me? I'm running out of time and I still have so much to do."
    show mc worried
    m "A-alone? I... guess I could try, but..."
@@ -228,7 +242,7 @@ label day3Store:
    show mc sad
    m "Alice, we should probably get going"
    show mc at right with move
-   
+
    show alice sad at left with easeinbottom
    ali "...Okay..."
    "She takes a last look at that guitar, and slowly gets up."
@@ -284,7 +298,7 @@ label day3Store:
          jump day2PhoneCall
 
 label day2PhoneCall:
-   
+
    stop music
    stop sound
    play sound "windgust.wav"
@@ -332,7 +346,7 @@ label day2PhoneCall:
    stop music fadeout 3
    m "..."
    show mc at right with move
-   show alice sad at left with dissolve 
+   show alice sad at left with dissolve
    "You turn back to find Alice"
    "To find her kneeling beside some flowers on the grass"
    "She's watching a butterfly perched on a white daisy."
@@ -373,7 +387,7 @@ label preFightDay3:
    show alice_affection at topright
    with dissolve
    play sound "door.wav"
-   play music "night.mp3" 
+   play music "night.mp3"
    show mc normal at right
    show alice serious at left
    with easeinbottom
@@ -397,7 +411,7 @@ label preFightDay3:
    # Tense is inconsistent
    "And she hasn't so much as looked in your direction."
    stop music fadeout 6
-   
+
    m "..."
    "Another hour..."
    play sound "guitar_note.wav"
@@ -408,7 +422,7 @@ label preFightDay3:
    hide mc
    show mc stressed with dissolve
    "A wave of nausea hits you."
-   
+
    "You stand up, suddenly feeling restless"
    "You don't know exactly why"
    "But you don't want to be here right now"
@@ -585,7 +599,7 @@ label preFightDay3:
 label rooftop_reworked:
    # he goes up to roof sweaty
    # starts trying to apologise
-   
+
    m "Alice!"
    show mc confused
    m "I- *pant* I- "
@@ -630,7 +644,7 @@ label rooftop_reworked:
    ali "Even if I could change the entire world"
    ali "It wouldn't change that I feel like I do"
    show alice serious
-   ali "So I'm sorry" 
+   ali "So I'm sorry"
    ali "I'm sorry for losing sight of you, and for pushing you away"
    show alice sad
    ali "It's just hard you know..."
@@ -644,11 +658,11 @@ label rooftop_reworked:
    ali "This butterfly over here..."
    ali "It's dead..."
    ali "Because of me..."
-   
+
    ali "I just wanted to touch it, so when it flew over to me"
    show alice sadsmile
    ali "But I'm toxic..."
-   
+
    #ali "You know the fly in fly aminita comes from the fact that they used to use us to kill flies by putting us in milk"
    show alice cry
    ali "It's like... Why do I have to be like this?"
@@ -942,7 +956,7 @@ label post_show:
    show alice cutesad at center with easeinbottom
    "You see her walk out from the backstage door, but waiting there for her is-"
    show kellin happy at left
-   with dissolve 
+   with dissolve
    kel "Hey Alice!"
    show alice shocked at flip
    ali "?!"
@@ -989,7 +1003,7 @@ label post_show:
    kel "I ordered it second hand online for super cheap! Hahaha"
    show kellin vhappy
    kel "Ready or not! Cheese!"
-   
+
    play sound "polaroid.wav"
    show white with dissolve
    hide white with dissolve
@@ -1012,7 +1026,7 @@ label post_show:
    show kellin normal at left
    show mc awed at right
    with dissolve
-   
+
    announcer "And!"
    announcer "Today's winner!"
    announcer "Who will have the luxury of recording a single at (insert funny names) studios for completely free!"
@@ -1092,7 +1106,7 @@ label aliceDay3WayBackHome:
    "The two of you walk back towards your dormitory."
    "You walk together in silence until you reach the road leading up to your dormitory."
    "Alice's pace grinds to a halt."
-   
+
    scene outside_dorm with fade
    play music "trip.mp3"
    ali "..."
@@ -1130,7 +1144,7 @@ label aliceDay3WayBackHome:
    m "I guess he's just not like some other people I know."
    show alice normal
    ali "Hmm~"
-   
+
    "She starts walking again slowly and you follow her pace"
    ali "Don't you wish you'd reached out to him earlier?"
    show mc normal
@@ -1209,7 +1223,7 @@ label aliceDay3WayBackHome:
    show alice normal
    ali "Thank you"
    stop music fadeout 2
-   
+
    jump aliceDay3Goodbyes
 
 label aliceDay3Goodbyes:
@@ -1225,7 +1239,7 @@ label aliceDay3Goodbyes:
       matrixcolor TintMatrix("#6F6FBB")
    with Dissolve(2)
    play music "night.mp3"
-   
+
    show day_3 at topleft
    show alice_affection at topright
    with dissolve
@@ -1261,7 +1275,7 @@ label aliceDay3Goodbyes:
    ali "That's already special enough for me."
    show mc slightsad
    m "If you're sure..."
-   
+
 
    show black with dissolve
 
@@ -1299,7 +1313,7 @@ label aliceDay3Goodbyes:
    show alice happy
    ali "But I think it's better if I do this."
    window hide
-   
+
    show alice_kiss with dissolve
    play music "date_musicbox.mp3"
    pause 1
@@ -1323,14 +1337,14 @@ label aliceDay3Goodbyes:
    ali "I'll miss you..."
    ali "Where ever it is I'm going."
    window hide
-   
+
    hide alice with easeoutbottom
    play sound "door.wav"
    #"She turns away and closes the door firmly behind her."
    show mc vcry
    window show
    m "Alice..."
-   show mc 
+   show mc
    m "..."
    stop music fadeout 3
    window hide
@@ -1351,7 +1365,7 @@ label aliceDay3Epilogue:
    $ renpy.pause ()
    show text "You simply exist together. How wonderful."
    $ renpy.pause ()
-   show text "The heavy burden of your worries disappear." 
+   show text "The heavy burden of your worries disappear."
    $ renpy.pause ()
    show text "All the things you've cried over in the past don't matter anymore."
    $ renpy.pause ()
@@ -1372,6 +1386,6 @@ label aliceDay3Epilogue:
    window show
    pause
 
-   
+
    # "fade out to a cg of the mc's room with the guitar alice wanted, the polaroid they all took together"
    # "as well as 2 more of MC with kellin and kellin's friend, playing in a band together"
