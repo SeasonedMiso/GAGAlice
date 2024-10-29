@@ -2366,8 +2366,222 @@ label aboutCoffee:
    ali "Yeah..."
    jump leaveCafe
 
+#fork if you went to arcade first and max trust
+label coffeeTalkArcade:
+   show alice normalside
+   ali "You know..."
+   ali "I was just thinking back to that dinosaur game in the arcade."
+   show mc confused
+   m "Yeah, Bubble Bobble."
+   m "What about it?"
+   show alice sulk
+   ali "Yeah... Just like... In that game right, if you fuck up and get yourself killed, you can come back if you get a 1up, or waste your rent money."
+   show mc annoyed
+   m "Yeah, but like, I wouldn't recommend that strategy to be honest."
+   ali "Sure, but like..."
+   ali "We don't get anything like that do we?"
+   show alice pout
+   ali "In real life"
+   show mc surprised
+   m "..."
+   ali "There's no amount of power or money, no one is important enough to get around the game over screen."
+   ali "And even if you beat the game, it's over..."
+   show alice pout
+   ali "And so I feel like... What do you do when there's no point?"
+   ali "With games like that, you can brag to your friends, or... repel every girl in a 5km radius."
+   show alice depressed
+   ali "But with life it's just like... Why even bother?"
+   ali "At first, I just followed my instincts and tried to get you to pay attention to me."
+   ali "Not because you were special, or because I liked you, or even knew you."
+   ali "But because that's what I felt would make me feel like I am worth something."
+   show alice sulk
+   ali "I don't know it's... stupid... Sorry, I just..."
+   ali "Maybe what you said last night... and what the cow boob artist said..."
+   show alice confused
+   ali "Maybe there is something more to life than just using others to prove to yourself you're worth something."
+   ali "So I wanted to say that..."
+   show mc awed
+   m "..."
+   show alice normalside
+   ali "Yesterday I didn't need to shout like that or whatever."
+   show mc confused
+   m "...wow... I uh... that's nice?"
+   show alice normal
+   a "..."
+   show alice disgusted
+   ali "That's... \"nice\"?"
+   show mc surprised
+   m "No! I mean, sorry that was just sudden so I don't really know what to say."
+   show alice sulk
+   ali "Agghh, I shouldn't have said anything to you."
+   show mc stressed
+   "You're so stupid..."
+   "Even when you luck into doing something nice, and helping someone, you have to fuck it up at the last second."
+   "She's probably already seen through the pretty words you said yesterday as made up bullshit."
+   "Be real: YOU said it, so there's no way that you're right."
+   "You're SO-"
 
-#todo: change this transition
+   ali "..."
+
+   "FUCKING-"
+   show alice pout
+   ali "..."
+
+   "STUP-"
+   #change music to heartfelt
+   show alice blush
+   ali "Thank you for taking me here."
+   $ alice_rp += 10
+
+   show mc surprised
+   m "!"
+   m "Ummm... Yeah, That's okay..."
+   ali "..."
+   show alice normal
+   ali "You look suprised."
+   show mc blushside
+   m "Yeah I uh... didn't really expect you to say that."
+   show alice sigh
+   ali "Me neither."
+   show alice normal
+   # ali "But I think that I'm starting to change"
+   ali "I don't know what it is but."
+   show alice confused
+   ali "I just feel like when I was born, I had a certain idea of how this life was supposed to go."
+   show alice sad
+   ali "You were going to be all over me, and I was going to feel good about that."
+   ali "Because that was proof that I was good enough."
+   show alice smirk
+   ali "But you were too much of a loser to do anything and made me cry."
+   show mc sad
+   m "I'm sorry, you know that I didn't mean it like that, I just-"
+   show alice happy
+
+   ali "I know, don't worry about it."
+   show alice pout
+   ali "It's just at the time that was kind of a shock, you know?"
+   ali "Like I had just been told that I'm not cut out for my purpose."
+   ali "I'm just too ugly, too annoying, too whatever."
+   show alice depressed
+   ali "And that's not a great feeling."
+   ali "And for a while, I didn't really know what to do with myself."
+   ali "And being around you..."
+   show alice sulk
+   ali "Was painful..."
+   show alice annoyed
+   ali "Do you know what it's like to be around someone you want to like you?"
+   ali "How painful it is to know that the reason they don't like you isn't something you did?"
+   ali "But just like... the way you are?"
+   show alice sigh
+   ali "And so I guess that's where I was for a while..."
+   show alice sulk
+   ali "And now I... I don't know."
+   ali "I feel like, maybe I can find something else worth living for."
+   ali "Even if it's only for another day."
+   show alice blush
+   ali "And I wouldn't have that without you."
+   show mc surprised
+   m "I didn't do anything special."
+   show mc awkwardsmile
+   m "I just said whatever words popped into my mind."
+   m "Anyone could do that."
+   ali "Yeah, but {i}you{/i} did."
+   #blushies
+   show mc awed
+   m "..."
+   show mc normalside
+   #this is him hiding his embaressment
+   m "Whatever."
+   show alice confused
+   ali "So while we are talking like this... I was curious if there was anything you wanted to know about me"
+   show mc confused
+   m "Like what kind of thing?"
+   show alice cruel
+   ali "I dunno? Like you know... My 3 sizes, the color of my underwear. You know, normal stuff?"
+   show mc stressed at bounce
+   m "Who taught you what normal is?!"
+
+   show alice sulk
+   ali "I guess I was just born knowing all kinds of stuff."
+   ali "Like ways to make people feel good, how to tie people up, that sort of stuff."
+   show mc vstressed at bounce
+   m "WHY IS IT ALL SEX?!?!"
+   show alice confused
+   ali "Hmmm... Now that you mention it, a lot of it is related to sex."
+   show mc confused
+   m "?"
+
+   ali "Like, I have some other information that I was just born knowing"
+   ali "Like uhhh.... I know a bit about mushrooms, and like... I guess some of the stuff is more abstract."
+
+   ali "Like when I was born I just KNEW that if I behaved a certain way, that you would like it."
+   show alice pout
+   ali "But it didn't go the way I assumed it would."
+   m "So you mean like... You had like... instincts about specific information? Like genetic memories?"
+   show alice neutral
+   ali "I don't know what you're talking about but uh, yeah sure, why not?"
+   show mc normal
+   m "What I mean is, that you like woke up and knew how to speak perfect English, and all of that other stuff."
+   show mc normalside
+   m "I didn't really think about it too hard after the shock of ummm... You like... Being alive and everything."
+   show alice cry
+   ali "What, you'd rather I was dead?"
+   show mc vvannoyed
+   m "No I- Actually no, I'm not gonna take the bait this time."
+   show alice smug
+   ali "Awww, but it worked before."
+   show mc awed
+   m "I was just trying to say that there needs to be a reason you know all of this stuff?"
+   show alice confused
+   ali "Yeah well... Didn't you like, buy me off of the internet from some sketchy darkweb site or something?"
+   show mc stressed
+   m "IT WASN'T THE DARKWEB-"
+   show mc normalside
+   m "But yeah, I guess I wouldn't put it past that site to do something like that"
+   m "I guess everything you knew makes sense for the purpose of what you were being sold for"
+   m "So maybe they like, embedded that information into your DNA to streamline the user experience of ummm "
+   show alice neutral
+   ali "I'm right here you know"
+   show mc awkwardsmile
+   m "Sorry, I phrased that sorta weird"
+   show alice normal
+   ali "I think you might be onto something though..."
+   show alice normalside
+   ali "It is kind of weird that I know over 200 sex postions, but didn't know what a mall is, huh?"
+   show mc shocked
+   m "There are that many?!"
+   show alice smug
+   ali "Way to reveal your power level, 'wand master'"
+   show mc sulk
+   m "I just think it's really fucked up"
+   m "How they programmed you to be the ideal product for them to profit off of"
+   show alice confused
+   ali "Yeah, I guess... But..."
+
+   ali "Are you guys really all that different?"
+   show mc confused
+   m "Huh?"
+   ali "I mean... Think about it right?"
+   show alice normal
+   ali "If you look around at every one here, they were all raised by parents, who taught them what was right and wrong"
+   ali "And then sent them to a school to learn stuff the government wants them to know for like, a billion years"
+   ali "If you're born with one set of bits, you get given toys to simulate child rearing"
+   ali "And if you have the other, you're supposed to be like a firefighting astronaut football player or something"
+   show mc vannoyed
+   m "What were you watching on my computer last night?"
+   show alice hime
+   ali "ANYWAYS! You know what I mean right... It's easy for you to point at me and say I'm fucked up, but from where I'm sitting"
+   show alice serious
+   ali "None of you guys seem that different"
+   show mc normal
+   m "..."
+   show alice confused
+   ali "I guess I just wanted to know like... How do you know your values are you own?"
+   ali "Like are you living for yourself? Or to feel like you're winning in some game you've been conditioned to think is important?"
+   #way too on the nose, rewrite to soften
+   show mc confused
+   m "I... I don't-"
+   show alice laugh
    ali "Anyways, lets order some cake! After trying that coffee, I kind of want to see if the other stuff is any good"
    m "Uhh... Yeah..."
    jump leaveCafe
@@ -2440,7 +2654,7 @@ label clothes:
    show mc vvannoyed
    m "That's where you were going with this?!?!?"
    ali "So that's a no then?"
-
+   default mc_gets_new_clothes = False
 menu:
    "We can take a look I guess":
       jump mallPastel
@@ -2448,7 +2662,66 @@ menu:
       "Skye must still write this part..."
 
 label mallPastel:
+
+   play music "mall.mp3"
+   scene clothes_shop with fade
+   show alice_base_longhair_choker at left
+   show dress polkadot at left
+   show alice surprised at left
+   
+   show mc worried at right
+   with easeinbottom
+   a "There are  more styles than I expected. Even {i}I{/i} like some of this."
+   show alice neutral
+   a "Why do you look so constipated?"
+   m "I don't know what to do."
+   show alice normalside
+   a "You look around, obviously."
+   show mc stressed
+   m "But that's... {size=-10}{i}so awkward."
+   show alice disappointed
+   a "How? You're just looking at clothes."
+   m "..."
+   m "What if someone sees me looking at something bad?"
+   m "Yeah. I-I'd rather just... wait outside."
+   show alice sigh
+   a "Oh my heavens. No one cares! Just looooook!"
+   show mc vstressed
+   m "Please don't shout. People will stare."
+   show alice sigh
+   a "Okay. Fine."
+   show alice serious
+   a "Let's {i}calmly{/i} look together, shall we?"
+   
+   window hide
+   hide alice
+   hide dress
+   hide alice_base_longhair_choker
+   hide mc
+   with easeoutbottom
+   window show
+   "Alice forces you to shop with her. She leads you from hanger to hanger, dismissing and contemplating shirts, vests, skirts, and more..." 
+   "You lag behind, observe, and offer the occassional shrug, frown or thumbs-up where appropriate."
+   "Honestly, her taking charge removes a lot of your stress. You thought you hated shopping for clothes, but it's surprising fun."
+   
+   window hide
+
+   show alice_base_longhair at left
+   show dress true at left
+   show alice laugh at left
+   show mc normal at right
+   with easeinbottom
+   window show
+   a "Okay. This is it. I can feel like an actual, normal person!"
+   show alice smirk
+   a "Goodbye, ugly-ass dress. Hello, clothes that don't make me feel disgusted."
+   show mc blushside
+   m "It looks good on you."
+   show alice blush
+   a "I know. Thanks for the compliment."
+   
    $ alice_rp+=10
+   $ mc_gets_new_clothes = True
    show black with dissolve
    "..."
 
@@ -2914,7 +3187,7 @@ menu:
    "Give in.":
       #Give in to her
       ali "*sob* Ignore the last wishes of a petite, dying, defenseless-"
-      m "Fuck you... Fine!"
+      m "Screw you... Fine!"
       m "I'll go ask"
       # He needs to be like "but you only have one day, how tf are you gunna do the thing" alsom lampshade that she has like higher power shroom creative intuition
       show alice excited
@@ -2935,8 +3208,8 @@ menu:
       show alice normal
       ali "I've been thinking about it the whole day"
       ali "At first I kinda of didn't understand why people care about stuff"
-      ali "like drawings, or food or video games"
-      ali "But thanks to everything you showed me, I think I started to get a better idea of why"
+      # ali "like drawings, or food or video games"
+      # ali "But thanks to everything you showed me, I think I started to get a better idea of why"
       ali "And then I was kind of hoping something would just leap out to me"
       ali "But I don't think life works like that"
       ali "I think instead of waiting for a lightning bolt to strike down and give some kinda of divine intervention"
@@ -2958,159 +3231,200 @@ menu:
 #how does alice respond if you don't do it
 label Day2Neighbour:
    scene black with fade
-   "You get back to your place, and lead Alice inside."
-   "You place your things on your table and then go out the door you just came from."
+   "Once you're back to your bedroom, Alice waits expectantly inside."
+   "Now it's up to you."
+   "Steeling yourself, you step into your dorm's hall..."
    scene hallway with fade
    show mc normal with easeinbottom
-   m "Okay... It's not that scary... It's just talking to a person."
+   m "Okay. It's not that scary. It's just talking to a person."
    show mc worried
    m "A person that you have never seen before."
-   m "Who could be a serial killer, or... a mormon or something"
-   m "But probably not!"
+   m "Who could be a serial killer. Or worse... he could be annoyed at me for never introducing myself!"
    show mc stressed
-   m "... Hopefully"
-   m "Just gotta knock at that door..."
+   m "No no... don't overthink it."
+   m "Just gotta knock on the door."
    m "Just a little rap-a-tap-tap..."
    show mc vstressed at bounce
-   m "FUCK!!!"
+   m "Dammit!"
    show mc sad
-   m "Why is this so hard?!!"
+   m "Why is this so hard?"
    show mc stressed
-   m "You know fuck it, I don't think I can-"
+   m "You know what? Screw it, I can't-"
    play sound "door.wav"
-   show kellin normal at left with easeinbottom
-   na "Uhh, are you okay?"
+   show kellin shadow at left with easeinbottom
+   na "Uh, are you okay?"
    play music "normal.mp3"
    show mc shocked at bounce
-   pause 1
+   m "AAH!"
    show mc shocked at right with move
-   m "AAH! ummm, Yeah, I was just!... Uh, you know... Ummm..."
-   na "Did you need something? I heard mumbling and feet shuffling outside so?"
+   show mc surprised
+   m "Um, y-yeah, I was just... Uh, you know... Ummm..."
+   na "Did you need something? I heard mumbling and feet shuffling outside, so...?"
    # make text very small
    show mc worried
-   m "Uhh yeah, so I was kinda of ummm, sent here to ask a favor, but like I don't even know you, or like said my name and I"
-   na "Slow down, just take it easy"
-   show kellin happy
-   kel "First off, hi, I'm Kellin. I don't think I've met you before? Do you stay in the dorms?"
-   m "Uhhh... Yeah, next door actually..."
-   show kellin shocked
-   kel "Woah! So your the one that's been here the whole time! I tried to leave a package for you the other day but!"
+   m "Uh yeah! I-I was kinda, um, sent here to ask a favour, but I realise I don't even know you and haven't said my name and I-"
+   na "Slow down, just take it easy."
+   show kellin shadowsmile
+   kel "First off, hi, I'm Kellin."
+   kel "I don't think I've met you before? Do you stay in the dorms?"
+   show mc surprised
+   m "Kellin. O-okay."
+   show mc awed
+   m "Uhhh... Yeah, I live next door actually..."
+   show kellin shadowshock
+   kel "Woah! So your the one that's been here the whole time!"
+   show mc worried
+   m "Y-Yeah... That's me..."
+   show kellin shadow
+   kel "I tried to leave a package for you the other day, well, like a month ago, but..."
    show mc stressed
-   m "Yeah I'm not too great at talking to people... Or waking up"
-   m "Sorry about that"
-   show kellin happy
-   kel "No, it's okay, you're probably a really good listener!"
-   kel "Damn we've been next-door room buddies for like... How long now?"
-   m "Uhhh... Like 2 years"
-   kel "Woah that long already? Good times..."
-   kel "By the way, I still don't know your name"
-   m "Oh it's player name"
-   kel "Nice to meet you!"
-   show kellin normal
-   kel "So what do you need?"
-   m "Uh, I've just heard you playing guitar and listening to music and stuff through the walls and ummm "
+   m "Yeah, I'm not too great at talking to people. Or waking up."
+   m "Sorry about that."
+   show kellin shadowsmile
+   kel "No, it's okay. You're probably a really good listener!"
+   kel "Damn, we've been next-door buddies for like... how long now?"
+   show mc confused
+   m "Uhhh... Like 2 years?"
+   kel "Woah, that long already? Good times..."
+   kel "By the way, I still don't know your name."
+   show mc normal
+   m "Oh, it's %(player_name)s."
+   kel "Nice to meet you, %(player_name)s!"
+   stop music fadeout 2
+   show mc awed
+   m "(Finally, after so long, I've actually greeted him.)"
+   show kellin happy with Dissolve(2)
+   show mc sad
+   m "(And he doesn't seem mad at me. Just cheerful.)"
+   show mc stressed
+   m "(Why did I wait so long? Why? Why?)"
+   show mc normalside
+   m "(Now I just have to ask for the guitar! But how? What words? In what order? We just met! I don't want to be rude...)"
+   show mc worried
+   m "(Ugh, what if I mess it up? Maybe I shouldn't... but Alice...)"
+   if mc_gets_new_clothes:
+      show kellin vhappy
+      kel "By the way, nice jacket! Lilac is so underrated."
+      show mc surprised
+      m "Oh... you really think so? Thanks."
+      show kellin happy
+      kel "Yeah. My hair used to be that colour before the dye started running out."
+   play music "normal.mp3"
+   kel "So, what do you need?"
+   show mc stressed
+   m "Well, I..."
+   m "I've heard you playing guitar, and I've been listening to the music through the walls, and, um...."
    show kellin shocked
-   kel "OH! I'm so sorry, I must have been blasting it too loud! I'll try be careful from now on!"
+   kel "OH! I'm so sorry, I must have been blasting it too loud! My bad, man. I'll be careful from now on!"
+   show mc awed
    m "No, uh-"
    show kellin awkward
-   kel "It's okay you don't have to be polite!"
-   kel "I'm so sorry, I should have been using headphones to being with"
+   kel "It's okay, you don't have to be polite!"
+   kel "I'm so sorry. I should have been using headphones to being with."
 
    show mc normalside
    m "No, you're fine, that's not it"
+   show mc confused 
+   m "I was just wondering if I could ask..."
    show kellin normal
-   m "I was just wondering if uhhh... Damn I guess I don't know you well enough to ask anything"
+   kel "...?"
+   show mc worried
+   m "Um... Well, I don't know if I know you well enough to ask this, but-"
    show kellin happy
-   kel "You don't have to say anything... I know why you're here!"
+   kel "You don't have to say anything. I know why you're here!"
 
    #Alternative progression: You nervously being trying to ask
    #he ends up getting over the toply worried expecting that you are going to tell him about someone being murdered on the floor or something
    #his assumption about the situation is that something bad MUST have happened, because he's picking up how stressed you are
    show kellin vhappy
-   kel "I see right through you... To your soul!"
+   kel "I see right through you. To your soul!"
    show mc shocked
    m "!?"
-   kel "I accept your proposal"
+   kel "I accept your proposal."
    show mc surprised
    m "Huh?"
    show kellin happy
-   kel "So if I'm doing guitar... Maybe backing vocals, then what are you going to be doing?"
+   kel "So if I'm doing guitar, maybe backing vocals, then what are you going to be doing?"
    kel "Don't tell me! You have the vibes of a bassist!"
-   kel "But if you were, then I would have heard you through the wall"
-   kel "So you must be a drummer! You must go to like a practice studio right!"
-   kel "It's so inconvinient to be a drummer living in a communal space right!"
+   show kellin normal
+   kel "But if you were, then I would have heard you through the wall too."
+   show kellin happy
+   kel "So you must be a drummer! You must go to a practice studio, right!?"
+   kel "It's so inconvenient to be a drummer living in a communal space, right!?"
    kel "So when is our first practice session? Do you have any songs done yet?"
    show mc worried
-   m "I don't uh... Know how to play drums"
+   m "I don't, uh... know how to play drums."
    show kellin vhappy
    kel "You're so humble! That's such a good quality in a band member!"
    show mc stressed
-   m "No like, literally I've never picked up a drum stick"
+   m "No, I've literallynever picked up a drum stick."
    show kellin normal
-   kel "Oh so then what do you play?"
+   kel "Oh, so then what do you play?"
    show kellin happy
-   kel "Wait don't tell me... Kalimb-"
+   kel "Wait, don't tell me... Kalimb-"
    show mc normalsquint
-   m "I can't play anything"
+   m "I can't play anything."
    show kellin vhappy
    kel "WOAH, fresh blood! That's so exciting!"
    show mc sad
-   m "Yeah, I guess you could say that."
-
-   m "(Damn, he's so nice, but I'm already so exausted from this conversation.)"
+   m "Yeah, I guess you could say that."   
+   m "(Damn, he's being nice, but I'm already so exhausted from this conversation.)"
+   
    show mc stressed
+   m "I know we've never talked before..."
 
-   m "I know we've never talked before"
    show kellin normal
    m "And this is a big ask..."
    show mc worried
-   m "but I was wondering if..."
-   m "I could ummm..."
+   m "But I was wondering if..."
+   m "I-I could, um..."
    show kellin happy
-   kel "Sure, I'll get it ready"
+   kel "Sure, I'll get it ready."
    show mc shocked
    m "I haven't even asked yet!"
    show kellin vhappy
    kel "What are you talking about? I told you! I get you!"
-   kel "You don't need to say anything to me! Our brains are connected on the same wavelength!"
+   kel "You don't need to say anything! Our brains are connected on the same wavelength!"
    show mc worried
    m "Uhh... yeah... sure..."
    show kellin happy
-   kel "Come inside!"
-   m "...Okay..."
+   kel "Come inside."
 
    scene neighbour_bedroom with fade:
       zoom 0.9
    play sound "door.wav"
    show mc awed at right
-   show kellin normal at left
+   show kellin happy at left
    with easeinbottom
-   m "Woah this place is really... something"
-   kel "I guess? Isn't it normal?"
-
-   m "Uh, if this is normal, then I think your reference point is kinda busted"
+   m "Woah this place is really... something."
+   show kellin normal
+   kel "Hm? Isn't it normal?"
+   show mc normalside
+   m "If this is normal, then I think your reference point is kinda busted."
+   show mc normal
    kel "So this is what you wanted right?"
-   kel "I have a couple guitars, but this is the only one that's not in a weird tuning right now"
+   kel "I have a couple guitars, but this is the only one that's not in a weird tuning right now."
    show mc confused
-   m "Tuning? uhh"
+   m "Tuning?"
    show kellin happy
-   kel "Most guitars are tuned in fourths starting from E, with the exception of the major third between the G and B strings"
+   kel "Most guitars are tuned in fourths starting from E, with the exception of the major third between the G and B strings."
    show kellin vhappy
-   kel "But recently I've been really into this emo tuning that's tuned to like an A major chord with a D in the bass"
+   kel "But recently I've been really into this emo tuning that's tuned to an A major chord with a D in the bass."
    kel "I also have an 8 string over here that's tuned-"
-   m "So guitars have strings... I think? and ummm emo?"
+   show mc stressed
+   m "So guitars have strings... I think? And, um, \"emo\" something?"
    #maybe do the emo copypasta?
    show kellin happy
-   kel "I haven't changed the strings on this one for a while so if this is okay then"
+   kel "I haven't changed the strings on this one for a while, so if this is okay then-"
    show mc worried
    m "Are you sure it's okay?"
-   m "ummmm..."
-   m "K-Kel?"
+   m "Um, K-Kel?"
    show kellin vhappy
-   kel "Yeah, I don't really use it either way..."
+   kel "Kel's good. Yeah, I don't really use it either way."
+   show mc awed
    show kellin normal
-   kel "Oh you probably want this too"
-   kel "And this and..."
+   kel "You'll probably want this too."
+   kel "And this and this..."
    stop music fadeout 2
    scene black with fade
 
@@ -3131,15 +3445,17 @@ label Day2Neighbour:
    with dissolve
 
    play music "night.mp3"
-   show alice normal at left
+   show alice normalside at left
    with dissolve
    play sound "door.wav"
    show mc stressed at right with easeinbottom
    #mc with guitar in soft bag on back and arms fulled with stuff
    show alice surprised
-   ali "Woah, you got it! Thanks but..."
-   ali "I thought you were just getting a guitar, what's all that"
+   ali "Woah, you actually got it."
+   show alice confused
+   ali "Thanks, but I thought you were just getting a guitar, what's all that?"
    m "A tuner, an overdrive, compressor and delay pedal, a practice amp-"
+   show alice normal
    ali "That's-"
    m "-headphones, a box of picks, 2 instructional dvds-"
    show alice neutral
@@ -3185,7 +3501,7 @@ label day2GuitarSetup:
    ali "Uwa, what do we do, should we call the police?"
    ali "They'll know what to do right?"
    show mc normal
-   m "We can just buy a new wire tomorrow."
+   m "We can just buy a new string tomorrow."
    m "For now, you'll just have to make do with those."
    show alice pout
    ali "...I guess..."
