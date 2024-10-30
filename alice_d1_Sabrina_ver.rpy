@@ -23,6 +23,9 @@ label alice_d1_Sabrina_ver:
     m "I just want someone to tell me what to do. I don't want to be responsible for my own life."
     m "I'm scared that when I start... I'm going to feel the same way."
 
+
+    #I feel like here it's important that there's the scene in my day 0 that shows kellin leaving the package. It's good foreshadowing and it's absent here
+
     stop music fadeout(2)
     scene black with fade
     show text "Four weeks of spraying later..."

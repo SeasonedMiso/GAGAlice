@@ -615,8 +615,8 @@ label rooftop_reworked:
    "You look down at her sitting on the floor, and notice a large red butterfly on her fingertip"
    show alice think
    ali "When we went to the cafe... At first I was really surprised when the waiter brought me that butterfly art"
-   ali "And I thought about what it might mean"
-   ali "Maybe I'm just overthinking it, and he just went of of vibes but..."
+   ali "And I thought about what it might have meant"
+   ali "Maybe I'm just overthinking it, and he just went off of vibes but..."
    ali "Maybe there was a reason that he chose that."
    show alice sulk
    ali "And so I thought really hard about it..."
@@ -626,16 +626,16 @@ label rooftop_reworked:
    show alice sadsmile
    ali "They're really pretty..."
    ali "But it doesn't last that long..."
-   ali "After they come out of their cacoon, they only have X days to live..."
-   ali "To breed and be attractive enough to breed and to leave any sort of lasting legacy"
+   ali "After they come out of their cacoon, they only have 14 days to live..."
+   ali "To be attractive enough to breed... And to leave any sort of lasting legacy..."
    show alice think
    ali "To have any proof that they existed at all..."
-   ali "So I see myself in them"
+   ali "So I see myself in them."
    show alice sad
-   ali "And they made me think a lot about myself..."
+   ali "They made me think a lot about myself..."
    ali "My life..."
    show alice cutesad
-   ali "I want my life to mean something... Anything..."
+   ali "I just want my life to mean something... Anything..."
    ali "To be remembered as a person that did something"
    ali "And not just a pretty butterfly that's gone with the wind"
    ali "But I'm still scared..."
@@ -746,7 +746,11 @@ label rooftop_reworked:
    m "I'm going to drop out or scrape through."
    m "And then I'm going to work doing some crappy deskjob I hate, until I get old..."
    m "And then I die."
+   m "When I was 15, I thought I would have accomplished so much more by now..."
+   m "But time keeps moving..."
+   m "It feels like everyday I come up with some shitty excuse for why today isn't the day to start my life."
    show mc sad
+   m "..."
    m "I'm sorry, I came to apologize and I just ended up talking at you..."
    show alice sulk
    ali "No, it's okay"
@@ -1389,3 +1393,6 @@ label aliceDay3Epilogue:
 
    # "fade out to a cg of the mc's room with the guitar alice wanted, the polaroid they all took together"
    # "as well as 2 more of MC with kellin and kellin's friend, playing in a band together"
+
+   #shot of mcs room with the polaroids on the wall. Guitar on a guitar stand. Cleaner and more managed room. more personality and hobbies
+   #Blue pills (estrogen) on top of their desk, and longer hair in the polaroids.
