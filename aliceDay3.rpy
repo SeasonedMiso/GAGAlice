@@ -81,7 +81,7 @@ label day3Morning:
    ali "This all feels a lot more nebulous and abstract..."
    ali "Like something that wasn't programmed in me, but more like, something I just..."
    m "...I see..."
-   m "I guess if I had to make a guess based on what I know about dotted mushrooms, then maybe some psychedellic higher wisdom stuff is involved""
+   m "I guess if I had to make a guess based on what I know about mushrooms, then maybe some psychedellic higher wisdom stuff is involved""
    ali "Yeah, maybe!"
    "She quickly turns back and starts practicing again."
    "She doesn't seem anywhere near as interested in contemplating this as you are"
