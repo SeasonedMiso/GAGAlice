@@ -19,10 +19,6 @@ label alice_d1_Sabrina_ver:
     "alice_rp >= -50", "sprites/affection/affection min.png",    
     "True", "sprites/affection/affection mid.png")   
 
-    m "But everytime I try to do one of my big dreams, something that needs committment, I struggle to finish stuff."
-    m "I just want someone to tell me what to do. I don't want to be responsible for my own life."
-    m "I'm scared that when I start... I'm going to feel the same way."
-
     stop music fadeout(2)
     scene black with fade
     show text "Four weeks of spraying later..."
@@ -48,27 +44,25 @@ label alice_d1_Sabrina_ver:
     "How? Are you hoping someone else will occupy your body and live it properly for you? I wouldn't be so optimistic."
     m "Maybe tomorrow I'll live properly..."
     "Always tomorrow, never today. Maybe you should give up. Though you'll probably procrastinate that too."
-    m "*muffled pillow screaming*"
+    m "*Muffled pillow groaning*"
     window hide
-    show mc stressed with easeinbottom
+    show mc stressed at right with easeinbottom
     window show
     m "(Of course. The instant I wake up, the thoughts won't stop.)"
     show mc normal 
     m "May as well get the mushroom-box spray of the day over with."
-    show mc at right with move
     m "Alright, let's get spritzing."
     show mc confused at bounce
     m "..."
-    show mc surprised
-    m "Whoa... Uh... Was this box always so engorged?"
+    m "Uh... Was this box always so engorged?"
     na "{size=-8}Whaaaa- Rude~!{size=+8}"
     m "..."
     show mc awed
     m "D... did it just... speak?"
-    na "{size=-8}Mhm, {i}that's right{/i}!"
+    na "{size=-8}Mhm, {i}that's right!"
     show mc shocked
-    m "!"
-    na "{size=-8}Eheh~ As much as I {i}love{/i} waiting for you to rescue me, I think I've about reached my limit."
+    m "Hah?"
+    na "{size=-8}As much as I {i}love{/i} waiting for you to rescue me, I think I've about reached my limit."
     na "{size=-8}So excuse me while I just-"
 
     window hide         
@@ -97,68 +91,62 @@ label alice_d1_Sabrina_ver:
 
     show day_1 at topleft
     with dissolve
-    #play music "wakabayashi.mp3"
     play music "normal.mp3" fadein(2)
 
     show mc shocked at right
     show alice_base_buns at left
     show dress polkadot at left
-    show alice sly smile at left
+    show alice excited at left
     with easeinbottom
-    show alice hime
-    na "{size=+20}AAAAAAAAAA~! Fresh air!"
+    na "{size=+20}AAAAAAAAAA~! HIIIIIIII!"
+    show alice happy
     na "Oh my gosh - sorry for the long wait, but I'm finally here!"
-    m "..."
+    m "...!"
     show alice wink
-    na "Aw, am I really that breath-taking? You're too kind, hehe."
+    na "Aw, am I really that breath-taking? You're too kind!"
     show alice surprised
-    na "Woooow! Your place is so..."
+    na "Oh my gosh! So this is your place, huh? WOoooOOoooow... Your place is so..."
     show alice confused 
-    na "Um, what's the word? Hmm..."
+    na "Ugh, how should I say this...?"
     show alice laugh
-    na "Cosy! It feels so {i}warm{/i} in here! Like a snuggly blanket of cuddles! It's sooooo nice!"
-    show mc vstressed
+    na "Cosy! Like, super {i}warm{/i} in here! Kinda like a snuggly, old, blanket of cuddles! SOOOOOooooo nice!"
     m "WHO-" with sshake
-    show alice happy at bounce
-    show dress at bounce
-    show alice_base_buns at bounce
-    na "\"Who am I\"?"
-    show mc surprised
-    m "Y-yes..."
     show alice wink
-    show mc confused
-    na "I beat ya! Too super-speedy for you to even finish your question! Teehee!"
+    na "\"Who am I\"? Beat ya to it!"
     show alice hime
-    a "I'm Alice! Short and sweet, just like me!"
+    show mc surprised
+    a "I'm Alice! Easy and cute, just like me!"
     show alice normalside
-    a "Well, it's the cute-ified version of my full name, but Amanita muscaria is a mouthful, y'know?"
-    show alice normal
-    "Aaaaanyway-"
+    a "Because Amanita muscaria is a bit of a mouthful... a confusing, embarrassingly old-fashioned mouthful, y'know?"
+    show alice happy
+    a "Aaaaanyway-"
     show alice laugh
     a "It's such, such, such, SUCH a pleasure to finally meet you, Master!"
     show mc shocked
-    m "MASTER!?"
-    show alice confused
+    m "{sc=2}{color=#000000}Master? ME?"
+    show alice normal
     a "Um, it is YOU who's been growing me this whole time, right?"
     show alice flirtsweat
     a "It would be SUUUUUPER AWKWARD if I did my whole one-time entrance in front of the wrong person, so please say yes!"
     a "You watered me everyday, right? I'm your one-and-only special mushroom, right?"
-    show mc confused
-    m "Yes..."
+    show mc worried
+    m "I... think so?"
     show alice sigh
     a "PHEW! Ah, for a second I thought-"
     show alice depressed
-    a "{size-=20}I'd messed up-"
+    a "{size=-20}I'd messed up-"
     show alice happy
     a "But I didn't! So everything's wonderful!"
-    show mc stressed
+    show mc surprised
     m "You're... not really a mushroom, are you?"
     show alice pout
-    a "Of course I am! I'm 100% pure mushroomy goodness. There's not a bone in my body."
+    a "HUH!? Are you some kind of..."
+    show alice flirtsweat
+    a "Some kind of... comedian? Because of course you should know that I'm 100\% pure mushroomy goodness! There's not a bone in my body."
     show alice wink
     a "Unless you want to put one-"
     show alice vannoyed
-    a "E-e-eHEM! Ugh, my throat..."
+    a "E-e-e-e-HEM! Ugh, sorry for gross cough sounds, I just haven't had my water yet."
     $ watered = 0
     show water_status at topright with dissolve
     
@@ -169,17 +157,16 @@ label alice_d1_Sabrina_ver:
     $ watered = 2
     hide water_status with dissolve
     show alice sigh
-    play music "normal.mp3"
     na "E-hem- ehem - Ah, much better."
     show alice normal
     show mc surprised
     m "Did you just spray yourself in the face?"
     show alice surprised
-    a "Oops! I completely forgot that was your whole thing! Sorry, did I accidently make you obsolete? Do you wanna do it?"
+    a "Oooh... Was that bad? I guess that was your whole job. Sorry, did I accidently make you obsolete, Master?"
     show mc stressed
-    m "No, I don't-"
+    m "M-my name's not Master!"
     show alice happy
-    a "So Master, what's your name?"
+    a "Then what is it?"
     show mc confused
     m "I'm... uh..."
     show mc vstressed
@@ -211,53 +198,51 @@ label alice_d1_Sabrina_ver:
             m "Uh, I'm %(player_name)s."
 
     show alice surprised 
-    a "%(player_name)s? No way. You have to be kidding me! That's literally the most amazing name I've ever heard."
+    a "%(player_name)s?"
+    show mc normal
+    show alice neutral
+    a "Out of all the names in the world, Master's name is... %(player_name)s?"
     show mc confused
-    m "..."
-    show alice laugh
-    a "I'm serious! %(player_name)s~ %(player_name)s~ %(player_name)s! Aaaah, how sweetly it rolls off the tongue."
-    show mc awkwardsmile
-    m "Thanks? Alice is a good name too."
-    show alice cutesad
-    a "Eeeeh? Really really really? I just thought of it for some reason. So I picked a good name?"
-    show mc confused
-    m "Alice? May I ask you something?"
-    show alice pout
-    a "Answering a question with a question? Not fair."
-    show mc stressed
-    m "Sorry, but it's really important, and I need your help."
+    m "...?"
+    show alice flirtsweat
+    a "Because it's so AMAZIIIIIING! Ha. Ha. Ha. That's literally the most... cool... name I've ever heard!"
+    show mc worried
+    m "A-alice, was it? May I ask you something?"
     show alice cute
-    a "Fine, ask away! No matter the question, I have to answer 100% truthfully."
-    show alice wink
-    a "It's a promise."
+    a "Yup, ask away! No matter the question, I HAVE to answer 100\% truthfully!"
     show mc confused
     m "If you're a mushroom, then why do you look like a human?"
     show alice surprised
-    a "!"
-    show alice sad
-    a "Um, are you sure you can handle the truth? It would be troublesome if I melted my master's brain."
+    a "Oh no! You asked THAT question! The one that's super secret!"
+    m "It's... a secret?"
+    show alice cutesad
+    a "Yeah! It really is. But... since you're Master and all-"
+    show mc stressed
+    m "Just call me %(player_name)s, please."
+    show alice happy
+    a "Okay, Master %(player_name)s. I'll tell you-"
+    show alice worried
+    a "But you must promise to let your brain melt!"
     show mc surprised
-    m "(Damn, how bad can it be?)"
-    "Famous last words."
-    show mc worried
-    m "Okay, tell me!"
-    a "Then prepare yourself. The truth is..."
+    m "I, uh, promise?"
+    show alice cutesad
+    a "Okay then.... The truth is..."
     show alice wink
     a "I have no idea! I was just born this way!"
     show mc confused
-    m "Wh- Then what was the point of all that \"Can you handle the truth\" stuff!?"
-    show alice laugh
-    a "I was playing around~! Hehehe!"
-    show mc stressed
     m "..."
-    show mc normalside
-    m "Now what? I still don't understand why this happened..."
+    show mc vshout
+    m "Then what was the point of all that \"Can you handle the truth\" stuff!?"
+    show alice laugh
+    a "I was playing around~! Soooooorryyyyyy!"
+    show mc worried
+    m "Now what!? I still don't understand why this happened..."
     show alice confused
-    a "Hmmm? I don't get it. What's the problem exactly?"
+    a "Hmmm? I don't get it. Why are you so upset, Master %(player_name)s?"
     show mc confused
-    m "You were supposed to be a normal mushroom. I was going to eat you-!"
-    show alice happy
-    a "Then there's no problem! You still can."
+    m "Well, for starters, I was expecting a normal mushroom. I was going to eat you-!"
+    show alice excited
+    a "OH! Then there's no problem! You still can."
     show mc surprised
     m "I... {i}can{/i}? And that doesn't bother you!?"
     show alice flirt
@@ -267,22 +252,22 @@ label alice_d1_Sabrina_ver:
     m "GAH! This... This doesn't make sense! I ordered normal mushrooms! But you're not-"
     show alice normal
     a "\"Normal\"?"
-    show alice confused
-    a "Eeeh? But normal would be so BORING!"
+    show alice happy
+    a "Normal would be so BORING anyway! Consider this a pleasant surprise. Ta-da~"
+    show alice sly smile
+    a "I mean, just look at me. You'd really rather take some tiny little versions of me? I bet they wouldn't have boobs."
+    m "They certainly wouldn't..."
     "Are you CERTAIN you know what you even ordered? Suddenly, you're starting to doubt yourself."
     show mc surprised
     m "(I mean, I did check it, didn't I?)"
     m "(I didn't just buy something without looking at it properly, right? That would be completely irresponsible!)"
-    "Yes, that would be VERY uncharacteristic of you."
+    "Yes, that would be VERY uncharacteristic of you *cough cough*."
     show mc worried
     m "S-sorry, Alice. Please excuse me. I need to check what I ordered."
-    show alice happy
-    a "Mhm~ No problem!"
-    hide mc with easeoutbottom
-    show alice normal
-    a "Wait..."
+    hide mc with dissolve
+    show alice shocked
+    a "Wh- You're leaving me ALREADY!? But..."
     window hide
-    hide mc
     hide alice
     hide alice_base_buns
     hide dress polkadot
@@ -304,22 +289,30 @@ label alice_d1_Sabrina_ver:
         m "This is the site. Maybe the \"About\" page will have more info about Alice?"
     
         show alice_base_buns at left
-        show alice normal at left
+        show alice surprised at left
         show dress polkadot at left
         with easeinbottom
-        a "Hmm? So this thingy has information about me?"
-        show mc surprised at right with move
-        m "What are you doing here?"
-        show alice pout
-        a "Master %(player_name)s, why are you trying to spy on me? You don't need to resort to that - You can ask me anything!"
-        show mc normal
-        m "But I don't want jokes. I want the truth."
+        a "So what's this?"
+        show mc confused at right with move
+        m "It's a computer... I'm trying to find out more about you."
+        show alice laugh
+        a "OH! Now it makes sense!"
         show alice happy
-        a "You don't need to know the truth! Let's just be happy together and have some fun!"
+        a "Silly-billy, you can just ask ME! Now come back!"
+        show mc awkwardsmile
+        m "But you don't know anything either, so you're not exactly helpful."
+        show alice cutesad
+        a "Waaaa... my heart..."
+        show alice pout
+        a "Well, who cares anyway!? The truth won't change a thing, so let's just be happy and have some fun!"
+        "Pouting, Alice grabs your sleeve."
+        a "And you're ignoring me... I just arrived. Don't you want to do something together?"
+        show alice wink
+        a "Anything you like~"
         show mc stressed
-        m "Sorry Alice, but that's not my style."
-        show alice normalside
-        a "*Sigh* Fine... As long as you share whatever truth you find."
+        m "Great. Then I'd like to just search this."
+        show alice sigh
+        a "Fine... I'll wait..."
         window hide
         hide mc
         hide alice
@@ -344,58 +337,63 @@ label alice_d1_Sabrina_ver:
         m "{sc=3}{color=#000000}WHAT THE HELL????\nWHAT KINDA MESSED UP WEBSITE IS THIS?"
         window hide
         show alice_base_buns at left
-        show alice surprised at left
+        show alice shocked at left
         show dress polkadot at left
 
         with easeinbottom
         window show
-        a "What's it say? What's it say?"
+        a "EEEEH!? What's it say? What kind of stuff about me is it saying!?"
         show mc worried
         m "Are you sure you-"
-        show mc confused
+        show mc surprised
         m "Wait, you mean you can't read?"
         show alice cutesad
-        a "No, these squiggle-lines are 100% incongruous to me, so I'm depending on you, okay?"
+        a "No, these squiggle-lines are 100\% incongruous to me, so I'm depending on you, okay?"
         show mc surprised
         m "(\"incongruous\"?)"
         show mc normal
         m "Well, okay. I'll read for you. Firstly, there's this word you should know:"
         show mc confused
-        m "Fly A-ma-ni-ta."
-        show alice happy
+        m "Fly A-ma-ni-ta." 
+        show alice laugh
         a "Hey, that's me!"
         show mc surprised
         m "You did? How?"
         show alice confused
-        a "Hmm... My body kinda just recognised it. Like, on an instinctual level!"
+        a "Fly amanita, Amanita muscaria, I just recognised it. Like, on an instinctual level!"
         show mc confused
         m "Okay, um, moving on... the site basically just says stuff like..."
+        show alice happy
         show mc blushside
         m "They're selling mushroom girls... to eat and..."
         m "Be intimate with..."
         show alice confused
         a "You mean when people know each other carnally?"
         show mc vstressed
-        m "Just so you know! I didn't know ANYTHING about this when I first got you!" with sshake
-        show alice happy
-        a "AAAANYWAY, what else does the thingy say about me? Does it say what else I should do?"
+        m "(She said it! And so casually too! Am I the only one who feels embarrassed?)"
+        m "Just so you know, I didn't know ANYTHING about this when I first got you!" with sshake
+        show alice surprised
+        a "So what else does the thingy say about me? Does it say what else I should do?"
         show mc normal
         m "..."        
         show mc sad
         m "Uh, it also gives your lifespan. Do you want to know?"
+        show alice shocked
+        a "Oh."
         show alice worried
-        a "Oh, um... is it good or bad?"
+        a "Eeeeh... is it good or bad?"
         "Ignorance is bliss. Maybe you shouldn't, to spare her the pain."
         show mc stressed
         m "(But she has the right to know.)"
         show mc sad
         m "It says your \"lifespan\" is three days. I'm sorry."
-        show alice surprised
-        a "\"I'm sorry\"? Is three days a short or long duration?"
+        a "Is that a short or long duration?"
         show mc awkwardsmile
         m "Kinda short? Compared to humans, at least. But you can do a lot in that time too, so..."
-        show alice normalside
-        a "Oh well."
+        show alice sad
+        a "..."
+        show alice happy
+        a "Oh well!"
         
     
     window hide
@@ -430,29 +428,35 @@ label alice_d1_Sabrina_ver:
     show mc surprised
     m "\"Oh well\"? That's it?"
     show alice sly smile
-    a "Mhm! I just gotta focus on my goals and everything'll be perfect, Master %(player_name)s."
-    a "And you'll help me, won't you?"
-    show mc normalside
-    m "(I am responsible for her life. I still can't believe I've just grown someone, but it's true.)"
-    "How are you going to cope when looking after yourself is such a chore?"
+    a "Time doesn't matter anyway. It's just what I do with it that's most important."
+    a "So as long as I stay focused, everything'll be perfect, Master %(player_name)s."
+    a "And you'll help me too! Won't you?"
+    show mc stressed
+    m "(I am responsible for her life. Unexpected, yes, but still... I have to just accept that I grew someone.)"
+    "How are you going to cope when looking after yourself is already such a chore?"
     show alice pout
-    a "You won't abandon me, will you, Master?"
-    show alice cutesad
-    a "You keep talking about how I'm not what you wanted. Do you dislike me?"
+    a "Hey, Master? You will help me, won't you? You won't abandon me, right?"
+    show mc normal
+    m "No, I won't."
+    show alice shocked
+    a "You won't help me!?"
+    show mc stressed
+    m "No - I mean, yes?"
+    show alice sad
+    a "Yes, you won't help me...? Is it because I'm not what you wanted? Do you dislike me?"
     show mc shocked
     m "No! Not at all!"
     show alice vcry
-    a "Because I just wanna spend time with you! I'm trying my best!"
+    a "I didn't mean to annoy you. I just wanna spend time with you! I'm trying my best!"
     show mc shocked
     m "(SHE'S CRYING!?)"
+    "How did you fumble your words so badly!?"
     a "Please don't leave me~! *Sob* I need you! If you leave me, what will I do?"
     show mc worried
-    m "It's okay! Just please stop crying-"
+    m "We're okay! I won't leave you, so please stop crying..."
     a "You promise you like me?"
-    show mc vstressed
-    "Great job! You've made her cry!"
     show mc awkwardsmile
-    m "Yes! I swear! No hard feelings!"
+    m "Yes! I swear!"
     a "*Sniffle* I need a hug!"
     
 
@@ -470,9 +474,9 @@ label alice_d1_Sabrina_ver:
         "Enforce your boundaries!":
             m "W-what are you doing!?"
             show alice worried
-            a "Mm? I just wanted a hug. Pwease, %(player_name)s?"
+            a "Mm? I just wanted a hug. Pwease, Master %(player_name)s?"
             show mc worried
-            m "Sorry, I don't do hugs like that. I'm... I'm just not a hugger."
+            m "I'm... I'm REALLY not a hugger."
             show alice cutesad
             a "Aw, then..."
             "Alice reaches for your hand."
@@ -1468,16 +1472,19 @@ label nice_route:
     show alice sadsmile
     a "Thank you! Knowing you'll be with me makes this all a lot easier. I'm really scared of being alone..."
     a "I'm glad my master is such a sensitive soul. He understands me."
-    "As soon as you hear those words, her trust in you, you feel ashamed for ever doubting Alice."
+    "As soon as you hear those words proclaiming her trust in you, you feel ashamed for ever doubting Alice."
     show mc cute
-    m "Hey, don't worry. I won't let you feel alone. I can promise that too."
+    m "Hey, don't worry. You won't be alone."
     show alice vcry
     a "Thank you... Ah gosh, I'm crying again. I'm such a dummy."
     m "If you gotta cry, you gotta cry."
     "The longer you hug it out, the less you seem to forget your initial worries."
     "Now, it's become enjoyable."
-    show alice cutesad
-    a "It's embarrassing, but... Can I tell you a secret? You have to promise not to laugh at me."
+    show alice cutesad at left
+    show alice_base_buns at left
+    show dress at left
+    with move
+    a "It's embarrassing, but... can I tell you a secret? You have to promise not to laugh at me."
     show mc surprised
     m "Okay."
     show alice sadsmile    
@@ -1499,32 +1506,30 @@ label nice_route:
     show mc confused
     m "Something in your eye?"
     show alice sigh
-    a "..."
+    a "{size=-20}This guy..."
     show bottle noon with Dissolve(2):
         zoom 0.9
-    play music "normal.mp3"
     show mc awed
     m "I can't believe it's already afternoon. We've been talking for a while."
     show alice wink
     a "Oh my. We're all alone in your bedroom and it's approaching night-time. Whatever shall we do?"
-    "She's bored. You're boring her."
-    "You're wasting her life."
+    "She's bored. You're boring her. You're wasting her life."
     show mc normalside
     m "(Of course I am. There's nothing to do here, and I'm hardly entertainment.)"
     show mc stressed
     "You don't seriously expect her to stay here, do you? That's not a real life. Real life is outside."
     "Waiting is all that she's been doing for her whole life so far. She's only got three days."
-    "You'd make her cry again."
     show mc vstressed
     m "(I get it! I GET IT!)"
     "Good. If you don't..."
     m "(I know! I'll disappoint her. I'll ruin her life. Ugh, being a parent is difficult.)"
     show mc sad
-    m "(Ugh. Why the outside though...)"
-    show mc normal
+    m "(Why the outside though...)"
+    show mc normalnormalside
     m "What if..."
     "If you say it, you have to go through with it."
     "You know this. So say it. Bind yourself with your own words. And force yourself to a fate you hate with this guilt."
+    show mc stressed
     m "...Urk, what if we go... somewhere else to pass the time?"
     show alice sigh
     a "*Sigh* That's not..."
@@ -1544,15 +1549,15 @@ label nice_route:
     a "Eh? Wait, so... you {i}don't{/i} like me?"
     show alice vcry
     a "%(player_name)s..."
-    show mc stressed
+    show mc shocked
     m "No no no! Don't cry! This is a misunderstanding! That's not what I'm saying at all!"
     a "But I just want to go out with you!"
-    show mc confused
+    show mc stressed
     m "Yes! We'll do that!"
     a "And talk with you!"
     m "Yes!"
     a "And... and hold your hand!"
-    show mc normal
+    show mc worried
     m "..."
     show alice vvdespair
     a "*Sob* So I'm going to die without holding a hand... I'll miss out on it!"
@@ -1566,7 +1571,7 @@ label nice_route:
     a "Aw, you're the best! Thank you, %(player_name)s~! I love you!"
     show mc shocked at bounce
     "{size=+40}WHAT?"
-    m "{size=-10}W-what... {size=-20} did she just say?"
+    m "{size=-10}W-what... {size=-10} did she just say?"
     show alice happy
     a "So where are you taking me?"
     show mc stressed
@@ -1580,9 +1585,9 @@ label nice_route:
     m "Ah. Actually..."
 
     stop music fadeout 2
-    scene black with fade
-
-    scene rooftop with fade
+    scene black with dissolve
+    pause 1
+    scene rooftop with dissolve
     show alice_base_buns at left
     show alice laugh at left
     show dress polkadot at left
@@ -1594,15 +1599,14 @@ label nice_route:
     a "Oooh~ Eek, it's soo windy up here! I'm getting a little cold."
     show mc annoyed
     m "Yeah, same."
-    a "..."
     show alice sly smile
     a "I sure wish I had something warm~"
     show mc normal
     m "..."
-    show mc awed
-    m "Oh! Uh, should I go back down and grab a jacket for you? It's great at insulating."
+    show mc confused
+    m "Should I go back down and grab a jacket for you? I've got one that's great at insulating."
     show alice sigh
-    a "No, no, nevermind. Just stay here."
+    a "Nevermind..."
     show alice cute
     a "So what did you want to show me?"
     show mc normal
@@ -1616,11 +1620,11 @@ label nice_route:
     show alice flirtsweat
     a "O-oh!"
     a "Those... tiny... white... dots?"
-    show mc awed
-    m "Yes. Aren't they beautiful?"
+    show mc happy
+    m "Yeah. Aren't they beautiful?"
     show alice happy
-    a "If you think so, then I agree."
-    show alice normal
+    a "If you think so, then I'm inclined to agree."
+    show mc awed
     m "Don't you think it's terrifying how far away they are?"
     m "Each one is a different place with its own conditions. There's so much out there that we will never know."
     show alice normalside
@@ -1631,33 +1635,32 @@ label nice_route:
     a "How unexpectedly... depressing."
     m "But when I see the stars, I think of possibilities and mysteries and how grand everything is."
     m "I always forget how lucky I am to be alive."
-    show alice happy
-    a "Aw, I'm lucky too!"
-    show alice cute
-    "My master is big-hearted and understanding. He takes good care of my every needs and puts me first!"
     show alice laugh
+    a "Aw, I'm lucky too!"
+    a "My master is big-hearted and understanding. He takes good care of my every needs and puts me first!"
     a "How much luckier can I get than that?"
     show mc sad
     "But her words only make you feel more guilty."
     "You're only doing all of this out of a sense of responsibility. You're not kind. You just can't handle disappointing someone."
-    show alice happy
-    a "%(player_name)s, can I hold your hand now?"
+    show alice flirt
+    a "Hey, %(player_name)s... Can I hold your hand now?"
     show mc worried
     m "Do you... have to?"
     show alice pout
-    a "You don't want to hold my wonderful, petite, perfect little hand?"
+    a "Whaa-? You don't want to hold my wonderful, petite, perfect little hand?"
     show mc stressed
     m "If you don't mind..."
+    a "..."
     show alice cruel
     a "!"
     show alice hime
     show mc normal
     a "On second thought, I'm going to look more at the stars and really appreciate what you've shown me!"
     
-    show alice look_up
-    show alice at slightleft
-    show dress at slightleft
-    show alice_base_buns at slightleft    
+    #show alice look_up
+    show alice at actualslightleft
+    show dress at actualslightleft
+    show alice_base_buns at actualslightleft    
     with move
     "Staring up, Alice suddenly walks to the edge of the rooftop."
     a "I wish I could just SEE them better."
@@ -1705,8 +1708,7 @@ label nice_route:
     show alice laugh
     a "Hehehe~ Ah, isn't so wonderful, %(player_name)s? I love holding your hand! Now we're even closer!"
     m "I guess..."
-    m "(This is too embarrassing to look at her in the eyes.)"
-    m "(But also, she didn't plan this, did she? That sw)"
+    m "(I'm too embarrassed and guilty to look at her in the eyes.)"
     show alice cutesad
     a "Thank you for saving me back there. I'm just {i}so{/i} clumsy!"
     show alice cute
@@ -1727,7 +1729,7 @@ label nice_route:
     show alice flirtsweat
     a "What I mean is! Why not go take a shower now and I'll wait for you in your room?"
     show mc sad
-    m "I hate to make you wait for me."
+    m "I dont' want to make you wait for me."
     show alice happy
     a "Nonsense! If you're happy, then I'm happy, so go take care of your needs!"
     show mc stressed
@@ -1779,7 +1781,7 @@ label nice_route:
     m "(She didn't!)"
     "She put your dirty-ass clothes on the pavement for everyone to see and smell?"
     "You can't collect them now! If you did, everyone would know who to be annoyed at!"
-    show alice cute
+    show alice happy
     a "You're welcome!"
     show alice cutesad
     a "You grew me, saved my life, and promised to always be with me. I wanted to help you some way."
@@ -1792,7 +1794,7 @@ label nice_route:
     show mc normal
     m "Are you also tired?"
     show alice happy
-    a "No silly! It means it's snuggling time!"
+    a "No, silly! It means it's snuggling time!"
     show mc normalsquint
     m "No."
     show alice pout
@@ -1841,13 +1843,15 @@ label nice_route:
     show alice normal
     show mc normal
     m "Look, you use the mouse to click on anything that looks interesting. *Click*. See? It's easy."
+    show alice surprised
+    a "Whoa! Someone's in the screen! And I can hear her!"
+    m "Yeah, for videos like these, you don't need to read. You can just watch and listen."
     show alice happy
-    a "Mhm! I'll try to educate myself so I can be the perfect partner for you."
+    a "Okay! I'll educate myself so I can be the perfect partner for you."
     "You're so tired that you don't bother to correct her. Instead, you plop into bed."
     hide mc with easeoutbottom
     show alice surprised
-    a "Ooh, this lady looks so pretty..."
-
+    
     window hide
     scene black with fade
     stop music fadeout(3)
