@@ -48,8 +48,6 @@ label alice_d2_morning_badroute:
     m "Uuuuuugh... it's so... early... Why'd you have to wake me up?"
     show alice hime
     a "Because I seriously don't have time to waste! We have a schedule to keep, you know!"
-    show mc confused
-    m "(We... do? What schedule?)"
     show alice happy
     a "I spent all night planning the perfect outing for today, curated to ensure your maximum enjoyment!"
     a "I've got every last detail down, from location, to time, to event. Well? Impressed?"
@@ -155,10 +153,7 @@ label alice_d2_morning_badroute:
     show mc vstressed
     m "What are {i}we{/i} doing here?"
     show alice laugh
-    a "We'll be doing the top three things to do on a date!"
-    show mc embarrassed
-    m "(So this IS a date. I knew she had an ulterior motive.)"
-    "Who cares? It's to your benefit! You've never gone on a date before. Finally! Manhood, here you come!"
+    a "We'll be doing the top three things to do on a date! You're going to love it!"
     show mc stressed
     m "(But I'm not looking forward to it at all.)"
     show alice happy
@@ -639,11 +634,9 @@ label choose_dress_menu:
     show outfit at left
     show alice happy at left
     with easeinbottom
-    m "I never knew how close I lived to a river."
-    m "How did you even know about this?"
-    show alice sly smile
-    a "You'd like to watch it with me, wouldn't you?"
-    m "Uh, I guess."
+    m "I never knew how close I lived to a river. How did you even know about this?"
+    show alice cute
+    a "Such a good find, right? I did my best to find the perfect romantic spot for us."
     window hide
     
     hide outfit
@@ -655,7 +648,7 @@ label choose_dress_menu:
     a "Sit with me?"
     if not outfit_neither and not food_neither:
         show mc happy
-        m "Sounds nice."
+        m "Yeah. Sounds nice."
     else:
         show mc stressed
         m "Fine."
@@ -740,7 +733,7 @@ label choose_dress_menu:
         show mc happyside
         "Even though you're nervous, you're not as jittery as before, so you can just enjoy the weight of her head on your shoulder."
         "Being in such close proximity to someone doesn't feel as strange as it did yesterday."
-        m "(This really IS a date, isn't it? My first one...)"
+        m "(This really IS a date, isn't it? My second one...)"
         m "(I thought dates were just a waste of money, but I see the appeal. It's actually... a lot of fun.)"
 
         # father calls?
@@ -819,82 +812,114 @@ label choose_dress_menu:
     a "Hey~ It's getting kinda heated, and not in the good way. What's the point in spoiling these good vibes?"
     show mc sad
     m "(But it's important. It's your life we're talking about!)"
-    show alice laugh
-    a "Let enjoy this beautiful sunset, just like you wanted."
-    show alice flirt
-    a "And if you want to hold my hand at any point, which I'm sure you will, no need to ask."
-    "She's being pretty obvious that you should make a move on her. Come on! Now's your chance!"
     show alice happy
+    a "Let enjoy this beautiful sunset..."
+    "She reaches over and lays her hand on top of yours. You can sink your hand any flatter to the ground."
+    show mc worried
+    "Expectation."
+    "She smiles sweetly at you, biting her lip a little, then glances at yours."
     show mc stressed
-    m "(Why doesn't she want to discuss this!? And how could she just call herself a product?"
-    "You wish you knew the right words to convince her. She deserves better than you."
+    "{sc=2}{size=+30}Expectation."
+    show alice flirt
+    a "Hey~ It's been our second date, you know? And, well... I really like you, %(player_name)s."
+    show alice blushside
+    a "Would you... kiss me?"
+    "And there it is. Clear as day. Alice's eyes pin you to the spot and wait expectantly for your answer."
+    m "(No no no! Why did it come to this!? Why does she have to be so fixated on me?)"
+    # a "And if you want to hold my hand at any point, which I'm sure you will, no need to ask."
+    # "She's being pretty obvious that you should make a move on her. Come on! Now's your chance!"
+    show alice happy
+    show mc vstressed
+    # m "(Why doesn't she want to discuss this!? And how could she just call herself a product?"
+    # "You wish you knew the right words to convince her. She deserves better than you."
     "You feel guilty."
-    "Maybe you SHOULD just hold her hand, just to make it up to her. It's the only thing she wants..."
+    "Maybe you SHOULD just kiss her, just because she deserves it. She's expects it from you. And she's going to die soon."
     "You're the only one can choose whether Alice gets to be happy or not."
-    "After all she's done, doesn't she deserve it?"
+    show mc slightsad
+
     show alice_affection at topright with dissolve
     
     menu:
-        "Do you do what Alice wants you to do?"
+        m "(But... I was supposed to end this today! I can't keep leading her on! What do I do?)"
         # Remove option - if you rejected all her previous stuff today, it locks you in the worst ending + she's paranoid. Else, you get more happy time with her.
-        "Hold her hand." if not outfit_neither or not food_neither:
+        "Force yourself to kiss her." if not outfit_neither or not food_neither:
             $ alice_rp += 10
             show mc sad
-            m "(I just want her to be a little selfish in the time she has left.)"
-            m "(And if this is all I can do for her, then...)"
-            "But can you physically do it?"
-            hide alice_affection with dissolve
-            show mc worried
-            m "(Okay, go! Move, hand! Come on! Just! Do! It!)"
-            show mc stressed
-            m "(Damn it! This is scarier than I expected. I feel really embarrassed for some reason...)"
-            "Hah. You are pathetic, and everyday, you just prove my point."
+            m "(In the end, this is all my fault. It's just a stupid kiss. I don't know why I've been saving it.)"
+            m "(Let's just get this over and done with.)"
+            # "But can you physically do it?"
             show mc normal
-            m "(No! It's for Alice! Failure isn't an option!)"
-            "You rush in and snatch Alice's hand!"
-            show alice shocked at bounce
-            show alice_base_buns at bounce
-            show outfit at bounce
-            show mc shocked at bounce
-            a "AH!"
-            show alice surprised
-            a "Oh? You're holding my-"
-            show alice laugh
-            a "Haha! That was your attempt at holding my hand?"
-            show mc awkwardsmile
-            m "Yeah... sorry... I don't have any experience in any of this stuff. Should I stop?"
-            show alice sly smile
-            a "Nope, I won't let you. You're trapped now."
-            "Her hand interwines with your's tightly."
-            show mc surprised
-            m "What are you, a Venus flytrap?"
+            "And so, your heart dull with apathy, you lean forward and give Alice your kiss."
+            hide alice_affection with dissolve
+            a "MMmm~"
+            show alice blushside
+            a "Wow... I can feel your passion!"
+            show mc normalside
+            m "(I didn't put anything into that... Whatever. I did it. She liked it.)"
+            show alice flirt
+            a "I'm so glad you finally turned around, %(player_name)s."
+            "You don't attempt to correct her."
             show alice hime
-            a "Are you calling me a goddess of beauty? What a flirt!"
-            show alice pout
-            a "You shouldn't call yourself a fly, though."
-            show mc annoyed
-            m "Uh, thanks?"           
-            show mc happy
-            show alice happy
-            "You both stare at the river as the sun dips into it..."
-            "Alice scoots a little closer to you..."
-            "And she presses a kiss against your cheek."
-            "Your cheek tingles in that spot. You're not quite sure how you feel about it, but you're smiling."
-            "But when you look back at Alice..."
-            show alice think
-            "She looks a little sad."
-            show mc surprised
-            m "(I thought doing this would make her happy.)"
-            m "(Isn't it enough for her?)"
-            "Or is your hand just THAT sweaty and unpleasant to hold?"
-            show mc confused
-            m "You alright?"
-            show alice happy
-            a "Yes! I am absolutedly elated over here!"
-            show alice flirtsweat
-            a "I-I can't believe I'm finally holding your hand like this! Haha..."
-            "Then why did she looks sad just now? Maybe she doesn't want to hurt your feeling."
-            "Better to just leave it alone, and to try enjoy the sunset."
+            a "Hmm, I've just notice something. No one's around."
+            show alice wink
+            a "Sure would be a great time to do something more~"
+            "Expectation."
+            show mc sad
+            m "Do you want another kiss?"
+            a "Be my guest! I'm here for anything you want to do, so go ahead~"
+            
+
+            # show mc worried
+            # m "(Okay, go! Move, hand! Come on! Just! Do! It!)"
+            # show mc stressed
+            # m "(Damn it! This is scarier than I expected. I feel really embarrassed for some reason...)"
+            # "Hah. You are pathetic, and everyday, you just prove my point."
+            # show mc normal
+            # m "(No! It's for Alice! Failure isn't an option!)"
+            # "You rush in and snatch Alice's hand!"
+            # show alice shocked at bounce
+            # show alice_base_buns at bounce
+            # show outfit at bounce
+            # show mc shocked at bounce
+            # a "AH!"
+            # show alice surprised
+            # a "Oh? You're holding my-"
+            # show alice laugh
+            # a "Haha! That was your attempt at holding my hand?"
+            # show mc awkwardsmile
+            # m "Yeah... sorry... I don't have any experience in any of this stuff. Should I stop?"
+            # show alice sly smile
+            # a "Nope, I won't let you. You're trapped now."
+            # "Her hand interwines with your's tightly."
+            # show mc surprised
+            # m "What are you, a Venus flytrap?"
+            # show alice hime
+            # a "Are you calling me a goddess of beauty? What a flirt!"
+            # show alice pout
+            # a "You shouldn't call yourself a fly, though."
+            # show mc annoyed
+            # m "Uh, thanks?"           
+            # show mc happy
+            # show alice happy
+            # "You both stare at the river as the sun dips into it..."
+            # "Alice scoots a little closer to you..."
+            # "And she presses a kiss against your cheek."
+            # "Your cheek tingles in that spot. You're not quite sure how you feel about it, but you're smiling."
+            # "But when you look back at Alice..."
+            # show alice think
+            # "She looks a little sad."
+            # show mc surprised
+            # m "(I thought doing this would make her happy.)"
+            # m "(Isn't it enough for her?)"
+            # "Or is your hand just THAT sweaty and unpleasant to hold?"
+            # show mc confused
+            # m "You alright?"
+            # show alice happy
+            # a "Yes! I am absolutedly elated over here!"
+            # show alice flirtsweat
+            # a "I-I can't believe I'm finally holding your hand like this! Haha..."
+            # "Then why did she looks sad just now? Maybe she doesn't want to hurt your feeling."
+            # "Better to just leave it alone, and to try enjoy the sunset."
             jump alice_d2_night_badroute
 
 
@@ -903,29 +928,28 @@ label choose_dress_menu:
             $ alice_rp -= 30
             m "(Even if it's for her, even if she did this for me, even if she's dying soon, even if she can't help it...)"
             show mc sad
-            m "(I don't feel that way about her. The longer she allows herself to believe it, the worse everything will be.)"
+            m "(I don't feel that way about her. The longer I allow hers to believe that, the worse everything will be.)"
             hide alice_affection with dissolve
-            m "(I don't want to lead her on. I can't.)"
+            m "(I don't want to lead her on. I know I could never do what she wants, so this is the only option.)"
             show mc stressed
             m "(But I do I have to feel like such a prick for it?)"
             m "Alice."
             show alice sly smile
             a "%(player_name)s?"
-            m "(Like you're ripping off a bandage. Make it hurt, but only for a second.)"
             show mc sad
-            m "I'm sorry, Alice. I don't like you that way. I never will."
+            m "I'm sorry. I don't like you that way. I never will."
             show alice shocked
             a "W-where is this coming from? Did I do something wrong?"
             a "If you tell me, I'll make it right-"
             m "You didn't do anything wrong. Sometimes, people aren't attracted to others in that way."
             show alice worried
-            a "Was it my freckles?"
-            show mc confused
-            m "Y-your... freckles? No. Not all."
+            a "But we went on two dates! That should have been more than enough!"
+            show mc embarrassed
+            m "..."
             show alice sad
-            a "Was it... my chubby face?"
+            a "Was it my freckles? My chubby face? Just be honest with me."
             show mc confused
-            m "What? No! I'm just not interested in you that way."
+            m "What? No! Physically you're fine! I'm just... not interested in you that way."
             show mc sad
             m "And that's okay. I just don't want you to waste your time. I still want to be friends-"
             show alice angry at quiver
@@ -965,8 +989,9 @@ label alice_d2_night_badroute:
     stop music fadeout 2
     scene black with fade
     window show
-    "After the sun sets, you and Alice stroll though the darkening streets, hand-in-hand, and slowly head back home."
-    "The night air is so calm, and you don't feel so worried."
+    "After the sun sets, you and Alice stroll though the darkening streets, her fingers interlocked with yours in an unescapable hold."
+    "You dread the arrival."
+    #"The night air is so calm, and you don't feel so worried."
 
     scene bottle_phone night with fade:
         zoom 0.9
@@ -977,125 +1002,491 @@ label alice_d2_night_badroute:
 
     show alice_base_buns at left
     show outfit at left
-    show alice sigh at left
+    show alice hime at left
     show mc normal at right
     with easeinbottom
-    a "Ahhh~ finally! Time to sit back and relax together! My back's kinda hurting so I'm going to streeeeetch out."
-    show mc annoyed
-    m "Why? Old age?"
-    show alice sulk
-    a "NO..."
-    show mc surprised
-    m "Sorry. I was just joking."
-    show alice worried
-    a "Do I have wrinkles showing?"
-    show mc confused
-    m "You wouldn't get wrinkles, would you? You're a mushroom!"
+
+    a "It took longer than expected, but I managed it in the end. You were just a little shy, totally understandable."
     show alice sigh
-    a "I'll take that as a no. Phew~" 
-    show mc sad
-    m "This is a bit of an awakward question, but..."
-    m "How will tomorrow work exactly? Do you know how you actually die?"
-    show alice pout
-    a "What a gross question! Do we have to talk about that?"
-    show alice cute
-    a "No need to think about it. Let's just focus on the time we get together."
-    show mc confused
-    m "Can't you just answer, please?"
-    show alice vannoyed
-    a "All I know is that, I'll keep withering up, until I can't move, and eventually BOOM! Mushroom dust!"
-    show alice cutesad
-    a "Ugh. I'm going to look so gross and wrinkly... bleh."
-    show alice laugh
-    a "Oh, but don't worry! I'll make sure it won't get to that. Can't get old if I die young, am I right? Haha..."
-    show mc sad
-    m "Please don't say that."
-    show alice normalside
-    a "Trust me, I'm doing you a favour. No one wants to see me in that state."
-    m "I don't care how you look. I don't want to you be alone."
-    show alice cute
-    a "Aw~ That's so sweet of you to say!"
-    m "(Doesn't she believe me?)"
-    m "How do you feel about tomorrow?"
-    a "Aw, come on, let's stop this depressing conversation and focus on something nice already, like-"
-    m "Just tell me! How do you feel?"
-    show alice normalside
-    a "*Fine*. The date was a success, so I'm feeling good. Happy now?"
-    m "Even though you just have one day left?"
-    show alice normal
-    a "Yup. We spent all day together being cute and romantic, so I'd say overall I'm doing what I'm supposed to."
-    m "If it were me, I'd feel panicked."
-    show alice hime
-    a "Well, I'm NOT you. I'm successful."
-    show mc annoyed
-    m "Um... ouch?"
-    show alice surprised
-    a "Ah, sorry! Finding the balance between playful teasing and insulting isn't easy."
-    show mc normal
-    m "But how exactly does you taking me out on dates make you feel successful?"
-    m "You're not alive just so you can be attractive."
-    show alice flirtsweat
-    a "This again? Didn't I tell you to drop it earlier?"
-    show mc confused
-    m "If I'm being annoying, then I'm sorry, but you're doing something you don't want to be."
-    m "It doesn't matter what your creator wanted you to do. No one's forcing you to do it. So why follow their path?"
+    a "I'm just glad it all worked out. I was getting seriously-"
     show alice happy
-    a "Not just my creator. It's what I believe too!"
-    show mc stressed
-    m "Then rearrange your head. Alice, you don't have a purpose. You're free."
-    show alice cutesad
-    a "But then what else am I supposed to do? Ugh, this is so stupid. I hate this conversation..."
-    show mc sad
-    m "Sorry... I just care."
-    show alice normal
-    a "I'm gonna be blunt: You're a human. I'm a mushroom. Don't push your fears onto me, okay? I'm fine, I promise."
-    show alice happy
-    a "*Phew* okay, now that that's over, let's prioritise having as much fun as possible!"
-    a "And oh my gosh, have I got a great idea-"
-    show alice laugh
-    a "Strip-poker!"
-    m "(Maybe a distraction isn't the worst idea.)"
+    a "Well, it doesn't matter."
+    show alice flirt
+    a "Now all that's left is the best part, hehe~ And I can assure you, you will be completely satisfied."
+    show mc slightsad
+    m "(It should be a good thing, right? I'm supposed to like it. Maybe I should just ignore my discomfort and just...)"
+    
     window hide
     hide mc
     hide alice
     hide alice_base_buns
-    hide outfit
-    with easeoutbottom
-    window show
-    "You play some cards you find laying around and start to play Old Maid."
-    "But you're not prepared for Alice's competitiveness."
-    "Despite having only been alive for 2 days, she's somehow way better than you!"
+    hide dress
+    with dissolve
+
+    scene alice_bed_1 with fade
+    a "Now that you want this ."
+
+    play music "sexy.mp3"
+
+    # Use audio filters in renpy to make the music sound like it's melting the closer she gets.
+    
+    # renpy.music.set_audio_filter("music",
+    #     af.Sequence([
+    #     af.Reverb(0.5),
+    #     af.Highpass(900),
+    #     ]))
+    m "(This is the part where I have to stop this. I can't do it, after all...)"
+    menu:
+        "Convince yourself.":
+            "Alice won't be here for much longer, so it's the least you could do."
+            "Everyone wins."
+            "You're just scared, but in the end, it's something you have to do eventually, right?"
+
+        "Bail!":
+            jump alice_d2_bail
+
+    show alice_bed_2 with dissolve 
+    a "Not much of a talker, are you? Hehe, if you need me to do all the work, I can."
+    m "(But... This doesn't right. Isn't this moment only supposed to be with someone you love?)"
+    m "(Aren't I just giving myself away?)"
+    menu:
+        "Bail!":
+            jump alice_d2_bail
+        "Accept guilt.":
+            "Even if you don't want to do it, that's just another reason to go through with it."
+            "You deserved to be punished in some way for all the sins you've committed."
+            "You're a horrible person. You can't even stand up for yourself."
+            "And poor, poor Alice. You all but promised her this would happen."
+            "And you never attempted to push her away."
+            "This is what happens. It doesn't matter that much, anyway."
+            "Why even care? Just let it happen."
+
+            show alice_bed_3 with dissolve
+    pause 1
+    a "..."
+    "."
+    menu:
+        m "(This is my last chance.)"
+        "Just stop caring.":
+            "Alice isn't the problem. It's you. You're the one acting strange."
+            "You have a willing woman in front of you. This is the supposed task that every man should aim to fulfill in his life."
+            "If you don't want to do it, then you're wrong."
+            "You're wrong. Not her. She's helping you. You're lucky."
+            "You should be thankful for this oppurtunity."
+            "Even if you don't want it, you have to do it."
+            "You let go."
+            scene black with fade
+            #Make music here strong
+            "Nothing matters. You can just float away. Your body doesn't matter. Just let it happen."
+            "Placing her hands against your chest, Alice presses her mouth against yours."
+            "Your head feels so dizzy, the world so confusing, that you can't tell what's happening."
+            "Dissociation embraces you. Time and reality derail."
+            "You can't feel anything anymore."
+            stop music fadeout 2
+            "Everything distorts, revolving around you, up and down, all around, like you're stuck on a carasoul."
+            "You just wait until the ride is over."
+
+            window hide
+            stop music fadeout 2
+            scene black with dissolve
+
+            $ alice_rp -= 100
+            
+            pause 1
+            window show
+            a "What's wrong with you?"
+            window hide
+            scene bottle night:
+                zoom 0.9
+            show day_1 at topleft
+            show alice_affection at topright
+            with dissolve
+
+            #show mc vstressed at right
+            show alice_base_buns at left            
+            show alice depressed at left
+            show dress polkadot at left
+            with easeinbottom
+
+            window show
+            show alice disgusted
+            a "I did all of that for you, and you didn't even enjoy it!? Why!? I've done everything I was supposed to!"
+            "Yes, what IS wrong with you? You still don't know what. Maybe it's everything."
+            a "Am I unattractive?"
+            m "{size=-30}\"No\"."
+            "Are you speaking? Your voice sounds empty to your own ears, like you don't even exist."
+            "Maybe you don't."
+            a "Then WHAT?"
+            "This problem seems so far away. It's hard to understand. And you just feel tired."
+            show alice angry
+            a "Are you even listening to me? Stop just lying there!"
+            show mc traumatised at right with Dissolve(3)
+            "None of this is happening. You are disconnected."
+            "Even as your body is shaken."
+            "It's easier to not exist."
+
+            # "As soon as you hear the anger in her voice, it all becomes too much."
+            # hide mc with easeoutbottom
+            # play sound "door.wav"
+            window hide
+            scene black with fade
+            pause 1
+            window show
+            # "You sprint out the door, down the hallway, and out the dorms."
+            # "Not caring about how you'll be perceived or who will see, you only listen to the urgent screaming inside your heart."
+            # "It doesn't matter where, or who sees. Right now, you have to run! Fast, hard and desperately, you run."
+            # "But no matter how far you go, how much you distance yourself mentally or exhaust yourself physically..."
+            # "The feeling of violation in your body doesn't leave."
+            # "And you are left feeling more broken. More hopeless. More ashamed."
+            "End 1: Violated."
+            return
+
+        "BAIL!":
+            jump alice_d2_bail
+label alice_d2_bail:
+    stop music
+    scene bottle night:
+        zoom 0.9
+    with dissolve
     show alice_base_buns at left
-    show outfit at left
-    show alice laugh at left
-    show mc happy at right
-    with easeinbottom
-    a "YEEEEEEES! I win! You know what that means, %(player_name)s~"
-    show mc annoyed
-    m "*Sigh* Sure, the right shoe is coming off ."
+    show dress polkadot at left
+    show alice surprised at left
+    show mc shout at right
+    with dissolve
+    m "{sc=3}{color=#000000}{size=+4}STOP!"
+    m "I can't do this! I'm sorry, I just can't!"
+    play music "sadsai.mp3"
+    show mc cry
+    m "I'm sorry for bailing at the last second. I tried! But it's too much! I can't do this. I'm not ready."
+    show alice sigh
+    a "Ah, there it is."
+    show alice happy
+    a "I could tell this was going to happen, but don't worry, I'm not mad. Dry your tears, sweetheart."
+    show alice sly smile
+    a "Look. I know it can be scary and confusing for first-timers, but you have to embrace it. I get that this is all new for you, but-"
+    show mc sulk
+    m "You keep saying that, but I've had sex before." # Should we go for a traumatised past where first time was bad and for the wrong reasons?
     show alice shocked
-    a "Wait a second. Why am I winning? I should be losing!"
+    a "..."
+    show alice surprised
+    a "Wow."
+    show alice flirtsweat
+    a "Well then! You know how it goes! Being vulnerable is always a bit scary at first, but that's what makes what happens even better!"
+    show mc stressed
+    m "Stop trying to convince me. I'm not changing my mind."
+    show alice normal
+    a "..."
+    a "Seriously?"
+    m "I'm serious."
+    # "The instant those words are out your mouth, relief floods you. It is said. You're committed."
+    show mc confused
+    show alice disgusted
+    # "But one look at Alice's expression, like water that's begun to boil, and that feeling is singed with dread."
+    a "Even though I did your little dates? We had fun. I played with you. I acted nice. I researched."
+    show mc worried
+    m "I never told you to do any of that."
+    a "You dressed me up! I gave you a great date and we even kissed at the end! I played my part, and now it's YOUR turn."
+    show mc stressed
+    m "You can't force me."
+    show alice flirtintense
+    a "Haha! Why knock it till you've tried it? I was literally {i}made{/i} for this."
+    show alice annoyed
+    a "Need I remind you that I'll be gone soon? You'll never get an opportunity to be with an expert again. What's the big deal anyway? I'm threatening you with a good time!"
+    a "You'll regret wasting this opportunity."
+    m "\"Wasting this opportunity\"? Don't say that like that's all you are."
+    show mc sad
+    m "This isn't right. And... you don't want this either. You don't even like me."
+    show mc slightsad
+    m "It's all fake. Nothing about you I've seen is genuine. You're just lying."
+    stop music fadeout 1
+    show alice disappointed
+    a "Ha. Lying, am I?"
+    m "..."
+    show mc confused
+    show alice laugh cruel
+    play music "fight.mp3"
+    a "Haha! Fine. What if I am?"
+    a "So what? All I'm trying to do-"
+    show alice vangry tears
+    show mc vshocked at bounce
+    a "{sc=3}{size=+20}{color=#000000}IS MY FUCKING JOB!"
+    a "Who CARES if I don't say what I feel? That doesn't fucking matter!"
+    a "I'm trying to live my life as perfectly as I can! And if I don't do that, there's no point to anything!"
+    a "So really, I AM GENUINE! I genuinely want you to like me, because apparently that matters for you to get a hard-on!"
+    a "WHY are you PUNISHING me!? What did I do to deserve your hatred? I've done nothing but slave away!"
+    show mc worried
+    m "I don't-"
 
-    window hide
-    hide mc
+    # show mc worried
+    # m "..."
+    # show alice angry tears
+    # show mc slightsad
+    # m "I don't hate you. I just... don't like being physically close like that, because it reminds me of... something from the past."
+    # m "And knowing that's all you wanted out of me just... sucks. Because I know you're not doing any of this because you want to."
+    # show alice depressed
+    # a "Ugh... when you put it like that..."
+    # a "But why don't you want it? I was MADE for this. Do I not... work?"
+    # show alice despair
+    # a "..."
+    
+    # show alice vdespair  
+    # a "THEN WHAT'S EVEN THE POINT?"
+    # show mc confused 
+    # m "Why does it matter so much to you? There's more to life than-"
+    # a "Not for me."
+    # m "But it-"
+    # a "NO!"
+    
+    # show alice disappointed
+    # a "You're a human. You wouldn't understand what it's like to be raised for one purpose."
+    stop music fadeout 1
+    show alice angry tears
+    a "No. I've had ENOUGH of this game. I don't have TIME for this!"
+    show alice vannoyed
+    a "If you won't let me be your girlfriend..."
+    show mc awed
+    m "..."
+    play music "dynamic_audio/drum.mp3"
+    show alice flirtintense
+    a "I'm going to {i}kill myself{/i}."
+    show mc shocked
+    m "Don't say that!"
+    show alice laugh
+    a "Why not? Without you, there's no point in being alive."
+    show alice despair
+    a "Worthless failures don't deserve it."
+    "How can you matter this much?"
+    "You stare at her, speechless, feeling utterly unprepared."
+    show alice cruel
+    a "So what's it going to be, then? Am I dying? Or will you follow and save me?"
     hide alice
+    hide dress
     hide alice_base_buns
-    hide outfit
     with easeoutbottom
-
-    window show
-    "Despite saying that, she keeps on winning, and you end the game after the socks come off."
-    "All the fun makes you forget about your worries."
-
+    play sound "door.wav"
+    show mc vstressed
+    "I don't know what to do! But I know I can't leave her alone!"
+    scene black with dissolve
+    "Heart pounding with a mix of adrenalin and fear, you chase Alice to the rooftop."
+    "You try to reach her, but neglecting to exercise has finally caught up to you, and by the time you catch up-"
     window hide
-    scene black with fade
-    stop music fadeout(3)
-    show chibi_sleep at truecenter with dissolve
-    show top_text "Feeling at peace, you drift off..."
-    with dissolve 
-    pause 3
+    # game where you can either try to persuade her not to do it, (you have 3 chances) and Alice steps closer to the edge everytime, until she finally gives up and doesn't go through with it.
+    # Use same dynamic music as Button's
 
-    jump alice_d3_morning_badroute
+    show rooftop_1 with dissolve  
+    pause 1
+    window show
+    a "Stop. Every step you take closer, I'll take one back."
+    m "O-okay! I'm not moving. I just... I-I want you to breathe, please. Just breathe and calm down."
+    show rooftop_2 with dissolve
+    a "Oh, I'm calm. How about you?"
+    m "I'm... calm too."
+    a "Good."
+    a "I'll be blunt about this, %(player_name)s. If you don't agree to fuck me, I'm going to fall to my death."
+    a "It won't be your fault. It's my decision, after all. So no pressure. I know how much you despise me for everything I've done."
+    a "All those dates and time I poured into you must have been so annoying, right? Haha..."
+    m "Alice. You're... you're a brilliant, intelligent woman. You can be anything you want to. I know you're smarter than this."
+    a "Cute peptalk."
+    m "(She's only waiting for what she wants to hear.)"
+
+    menu:
+        "Convince her.":
+            pass
+        "Give in.":
+            jump give_in_alice            
+
+    m "What would the point of this even be? Even if I DO date you, it wouldn't be for love, it would be for... I don't even know!"
+    m "I don't even know why you'd want to BE with me! I'm... nothing! You're totally out of my league!"
+    m "You deserve better than me! Why go to all this trouble for a piece of crap like myself!?"
+
+    "Alice steps back."
+    show rooftop_3 with dissolve
+    "The more this goes on, the more desperately and quickly you talk. The more you heart pounds with anxiety and panic."
+    "What can you say!? What are you supposed to do here!? Surely not just... to accept her demands?"
+    "That wouldn't be right... right?"
+
+    menu:
+        "Try convince her.":
+            pass
+        "Give in.":
+            jump give_in_alice  
+    m "(If what I'm saying isn't working, I need to change my approach. I need to be more understanding!)"
+    m "I... understand. You have limited time."
+    m "It's probably really stressful, isn't it, Alice?"
+    a "...?"
+    m "Maybe, it's always in the back of your head..."
+    m "Maybe you can't relax, because all you're thinking about is the {i}time left{/i}."
+    m "I've felt that way too."
+    a "..."
+    
+    "Alice steps back."
+
+    show rooftop_4 with dissolve
+
+    a "This is your final choice."
+    m "But... aren't you listening to me? Don't you agree that-"
+    a "It doesn't matter what I think, or what honeyed words you spout! All that matters is the result!"
+    a "We both have an agenda here."
+    a "So, yes or no."
+    a "Will you be my boyfriend?"
+
+    menu:
+        "Will you be her boyfriend?"
+        "No.":
+            stop music
+            m "No, but I still don't want you to die! Please Alice! Don't hurt yourself like this!"
+            a "..."
+            m "I'm sorry for-"
+            a "Ha. You said no, even after all of that?"
+            m "Don't-"
+            a "It was supposed to be so easy. I must really... disgust you."
+            a "Everything is so... cold."
+            m "I'm right here. I can warm you. All you have to do is step forward! Alice!"
+            "Alice steps..."
+            scene black
+            "... back."
+            window hide
+
+            scene nightsky with dissolve
+            "End 7: Failure."
+            return
+        "Yes.":
+            jump give_in_alice
+        
+
+label give_in_alice:
+    m "(What if I fail? Every attempt to talk her out of it is a risk, and I don't even know what to say.)"
+    "You will. You're terrible at talking. You'll fail."
+    m "(I don't want her to die because of me!)"
+    m "(And... honestly... is my discomfort with intimacy worth a life? It can't be. I can't be that selfish.)"
+    m "I'll agree to your terms."
+    a "Really? You'll do that for me?"
+    a "You'll do something you hate for me?"
+    a "Even though you think I'm disgusting?"
+    m "And you'll promise not to... hurt yourself?"
+    a "Yes."
+    m "{sc=1}{color=#000000}Okay. Please... just step forward."
+    scene black with dissolve
+    "End 8: Success."
+    return
+    
+
+    # a "Ahhh~ finally! Time to sit back and relax together! My back's kinda hurting so I'm going to streeeeetch out."
+    # show mc annoyed
+    # m "Why? Old age?"
+    # show alice sulk
+    # a "NO..."
+    # show mc surprised
+    # m "Sorry. I was just joking."
+    # show alice worried
+    # a "Do I have wrinkles showing?"
+    # show mc confused
+    # m "You wouldn't get wrinkles, would you? You're a mushroom!"
+    # show alice sigh
+    # a "I'll take that as a no. Phew~" 
+    # show mc sad
+    # m "This is a bit of an awakward question, but..."
+    # m "How will tomorrow work exactly? Do you know how you actually die?"
+    # show alice pout
+    # a "What a gross question! Do we have to talk about that?"
+    # show alice cute
+    # a "No need to think about it. Let's just focus on the time we get together."
+    # show mc confused
+    # m "Can't you just answer, please?"
+    # show alice vannoyed
+    # a "All I know is that, I'll keep withering up, until I can't move, and eventually BOOM! Mushroom dust!"
+    # show alice cutesad
+    # a "Ugh. I'm going to look so gross and wrinkly... bleh."
+    # show alice laugh
+    # a "Oh, but don't worry! I'll make sure it won't get to that. Can't get old if I die young, am I right? Haha..."
+    # show mc sad
+    # m "Please don't say that."
+    # show alice normalside
+    # a "Trust me, I'm doing you a favour. No one wants to see me in that state."
+    # m "I don't care how you look. I don't want to you be alone."
+    # show alice cute
+    # a "Aw~ That's so sweet of you to say!"
+    # m "(Doesn't she believe me?)"
+    # m "How do you feel about tomorrow?"
+    # a "Aw, come on, let's stop this depressing conversation and focus on something nice already, like-"
+    # m "Just tell me! How do you feel?"
+    # show alice normalside
+    # a "*Fine*. The date was a success, so I'm feeling good. Happy now?"
+    # m "Even though you just have one day left?"
+    # show alice normal
+    # a "Yup. We spent all day together being cute and romantic, so I'd say overall I'm doing what I'm supposed to."
+    # m "If it were me, I'd feel panicked."
+    # show alice hime
+    # a "Well, I'm NOT you. I'm successful."
+    # show mc annoyed
+    # m "Um... ouch?"
+    # show alice surprised
+    # a "Ah, sorry! Finding the balance between playful teasing and insulting isn't easy."
+    # show mc normal
+    # m "But how exactly does you taking me out on dates make you feel successful?"
+    # m "You're not alive just so you can be attractive."
+    # show alice flirtsweat
+    # a "This again? Didn't I tell you to drop it earlier?"
+    # show mc confused
+    # m "If I'm being annoying, then I'm sorry, but you're doing something you don't want to be."
+    # m "It doesn't matter what your creator wanted you to do. No one's forcing you to do it. So why follow their path?"
+    # show alice happy
+    # a "Not just my creator. It's what I believe too!"
+    # show mc stressed
+    # m "Then rearrange your head. Alice, you don't have a purpose. You're free."
+    # show alice cutesad
+    # a "But then what else am I supposed to do? Ugh, this is so stupid. I hate this conversation..."
+    # show mc sad
+    # m "Sorry... I just care."
+    # show alice normal
+    # a "I'm gonna be blunt: You're a human. I'm a mushroom. Don't push your fears onto me, okay? I'm fine, I promise."
+    # show alice happy
+    # a "*Phew* okay, now that that's over, let's prioritise having as much fun as possible!"
+    # a "And oh my gosh, have I got a great idea-"
+    # show alice laugh
+    # a "Strip-poker!"
+    # m "(Maybe a distraction isn't the worst idea.)"
+    # window hide
+    # hide mc
+    # hide alice
+    # hide alice_base_buns
+    # hide outfit
+    # with easeoutbottom
+    # window show
+    # "You play some cards you find laying around and start to play Old Maid."
+    # "But you're not prepared for Alice's competitiveness."
+    # "Despite having only been alive for 2 days, she's somehow way better than you!"
+    # show alice_base_buns at left
+    # show outfit at left
+    # show alice laugh at left
+    # show mc happy at right
+    # with easeinbottom
+    # a "YEEEEEEES! I win! You know what that means, %(player_name)s~"
+    # show mc annoyed
+    # m "*Sigh* Sure, the right shoe is coming off ."
+    # show alice shocked
+    # a "Wait a second. Why am I winning? I should be losing!"
+
+    # window hide
+    # hide mc
+    # hide alice
+    # hide alice_base_buns
+    # hide outfit
+    # with easeoutbottom
+
+    # window show
+    # "Despite saying that, she keeps on winning, and you end the game after the socks come off."
+    # "All the fun makes you forget about your worries."
+
+    # window hide
+    # scene black with fade
+    # stop music fadeout(3)
+    # show chibi_sleep at truecenter with dissolve
+    # show top_text "Feeling at peace, you drift off..."
+    # with dissolve 
+    # pause 3
+
+    # jump alice_d3_morning_badroute
 
 label alice_d3_morning_badroute:
 
@@ -1489,14 +1880,17 @@ label alice_worstending:
     with easeinbottom
     window show
     m "..."
-    m "H-hey, can we talk seriously for five minutes? I'm sorry for upsetting you earlier."
+    m "H-hey, can we talk seriously for five minutes? I'm sorry for everything. For not being clear at first and-"
     show alice laugh
-    a "Eh? You'd didn't upset me! We're both happy, right?"
+    a "You're so sensitive, %(player_name)s! You'd didn't upset me! We're both happy, right?"
+    show mc slightsad
     m "I... I still want to make it up to you. Is there anything I can do?"
     show alice normal
     a "..."
     show alice cutesad
-    a "You know, I DO actually feel really bad. I just didn't want to hurt your feelings. But if you honestly want to make it up to me..."
+    a "You know, I DO actually feel really bad."
+    m "I'm sorry..."
+    a "I just didn't want to hurt your feelings. But if you honestly want to make it up to me..."
     show mc surprised
     m "I do!"
     show alice wink
@@ -1526,7 +1920,7 @@ label alice_worstending:
     
     # play music "moody_music1.wav" fadein 3
     show alice surprised
-    m "I'm trying to be nice, but everytime you just ignore me! Do I have to shout? What must I do so you listen to me?"
+    m "I was trying to be nice - but it's like you just ignore me and try to find a loophole! Why won't you just listen to me?"
     show mc vshout
     m "No! No! NO! I'm NOT kissing you. I'm NOT being ANY kind of intimate with you. I don't want to. You can't guilt me into it."
     m "So stop it."
@@ -1536,7 +1930,7 @@ label alice_worstending:
     show alice flirtsweat
     a "Just tell me... what you need... to want me."
     show mc normalsquint
-    m "Nothing!"
+    m "Nothing! I'm not going to give you a false hope."
     show alice flirtintense
     a "There must be SOMETHING! You do like GIRLS don't you? I can change my clothes, my personality, whatever you want! Just TELL me! I'll do it!"
     a "I am committed to this! Nothing is off the table!"
@@ -1545,7 +1939,7 @@ label alice_worstending:
     show alice worried
     a "..." 
     a "You're still rejecting me... even if I'll change myself?"
-    show mc normalside
+    show mc slightsad
     m "Sorry."
     show alice vannoyed
     a "This doesn't make any sense! You should have fallen for me by now!"
@@ -2243,84 +2637,6 @@ label alice_d3_sabrina_ver:
 
 
 
-
-a "I'm losing it! This is my final stand!"
-m "Don't say that!"
-a "If you won't let me be your girlfriend, I'm going to {i}kill myself{/i}."
-m "..."
-"Her declaration leaves you speechless."
-"You never thought you'd be the one to hear those words. You're utterly unprepared."
-"But Alice steps closer to the edge at your silence."
-a "So what's it going to be, then? Am I dying? Or will you save me again?"
-
-# game where you can either try to persuade her not to do it, (you have 3 chances) and Alice steps closer to the edge everytime, until she finally gives up and doesn't go through with it.
-# Or 
-
-
-# show choice
-m "Alice. I want you to breathe."
-m "You're a brilliant, intelligent woman. I know you're smarter than this."
-
-a "..."
-
-
-"But it looks like she isn't listening to a word you say. She's only waiting for what she wants to hear."
-"Alice steps back."
-#show image
-
-
-# show choice
-
-m "What would the point of this even be? Even if I DO date you, it wouldnt' be for love, it would be for... I don't even know!"
-m "I don't even know why you'd want to BE with me! I'm... nothing! You're totally out of my league!"
-m "You deserve better than me! Why go to all this trouble for a piece of crap like myself!?"
-
-"Alice steps back."
-"The more this goes on, the more desperately and quickly you talk. The more you heart pounds with anxiety and panic."
-"What can you say!? What are you supposed to do here!? Surely not just... to accept her demands?"
-"That wouldn't be right... right?"
-
-# show choice
-m "(If what I'm saying isn't working, I need to change my approach. I need to be more understanding!)"
-
-m "I... understand. You have limited time."
-m "It's probably really stressful, isn't it, Alice?"
-a "...?"
-m "Maybe, it's always in the back of your head..."
-m "Maybe you can't relax, because all you're thinking about is the {i}time left{/i}."
-m "I've felt that way too."
-a "..."
-
-"Alice steps back."
-
-a "This is your final choice."
-m "But... aren't you listening to me? Don't you agree that-"
-a "It doesn't matter what I think, or what honeyed words you spout! All that matters is the result!"
-a "We both have an agenda here."
-a "So, either you say yes, or you say no."
-a "Will you be my boyfriend?"
-
-# show choice: Yes, no.
-
-if no:
-    m "No."
-    a "..."
-    m "..."
-    a "Ha."
-    m "..."
-    a "..."
-    a "Even after all of that."
-    a "I must really... disgust you."
-    "Alice steps away from the edge."
-
-    "Was she planning to never go throught with it from the start? Has she just been playing you?"
-    "How could she just threaten you like that?"
-    m "(There'll be a time and a place to be angry, but it's not now.)"
-    m "(She only did all of this because she's suffering.)"
-
-    a "So, that's it, then."
-    m "..."
-    a "I failed. There's nothing more I can do."
     
 # Lines:
 
