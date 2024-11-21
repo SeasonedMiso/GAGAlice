@@ -285,7 +285,14 @@ image chibi_alice:
     pause 0.5
     repeat
 
-
+image chibi_shower:
+    yanchor 1.0
+    xanchor 1.0
+    "chibi/shower_1.png"
+    pause 1.0
+    "chibi/shower_2.png"
+    pause 1.0
+    repeat
 image chibi_sleep:
     yanchor 1.0
     xanchor 1.0
@@ -411,8 +418,7 @@ transform slightcenter:
     xpos 0.5
     ypos 0.7 
 transform actualslightleft:
-    xpos 0.1
-    ypos 1    
+    xoffset 200
 transform actualslightright:
     xpos 0.5
     ypos 1 
@@ -467,13 +473,13 @@ label start:
     $ playername = "Me"
     image top_text = ParameterizedText(xalign=0.5, yalign=0.3)
     image bot_text = ParameterizedText(xalign=0.5, yalign=0.8)
-    
+    image shower_text = ParameterizedText(xalign=0.5, yalign=0.1)
     
     
 #------
     jump alice_d1_Sabrina_ver
-    jump alicebreakdown
-    jump mallPastel
+    #jump alicebreakdown
+    #jump mallPastel
     #g route test (remove after testing):
     #jump secret_ending
     #jump gd1Morningsai
@@ -587,7 +593,6 @@ label start:
             "Good. Get them."    
             "Look, you can buy a starter-kit there. Surely you couldn't mess this up too, right?"
             window hide
-            hide mc with easeoutbottom
             scene website with dissolve
             window show
             m "Um... which one should I get?"
@@ -646,9 +651,9 @@ label start:
         window show
         m "Oh, this one kinda looks like... Enoki mushrooms. I like those."
         m "They'd be great with ramen!"
-        "You're being dangerously optimistic."
-        "Be careful. If you raise your hopes too high, you'll be disappointed."
-        m "Yeah..."
+        "You think you could cook ramen? You'd just waste a lot of money trying and failing."
+        "Remember, if you raise your hopes too high, you'll be disappointed."
+        m "Yeah... you're right. I won't expect anything."
         $ gt = True
         window hide
         scene black with fade
