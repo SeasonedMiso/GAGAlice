@@ -76,14 +76,23 @@ label day3Morning:
    ali "Nah, I just drew stuff to help me remember what part of the song go where."
    show mc normalsquint
    "You look closer at the page full of abstract, interconnecting shapes."
-   show mc surprised
-   m "Uh, I have no idea what I'm looking at."
-   show alice normal
-   ali "That's fine. I'm the only one who needs to understand them anyway."
-   hide alice
-   hide dress
-   hide alice_base_longhair
-   with dissolve
+   m "Uhh, I have no idea what i'm looking at."
+   ali "That's okay, just as long as I know."
+   "You think for a moment, but the more you do, the more confused you become"
+   m "I'm so confused... Like I had my doubts when you started talking about doing music in the first place"
+   m "But how on earth are you like... Doing any of this?"
+   ali "I... Don't really know..."
+   ali "It's kind of like how I knew about some stuff when I was born..."
+   ali "But kind of different?"
+   ali "That stuff was all facts and details."
+   ali "This all feels a lot more nebulous and abstract..."
+   ali "Like something that wasn't programmed in me, but more like, something I just..."
+   m "...I see..."
+   m "I guess if I had to make a guess based on what I know about mushrooms, then maybe some psychedellic higher wisdom stuff is involved""
+   ali "Yeah, maybe!"
+   "She quickly turns back and starts practicing again."
+   "She doesn't seem anywhere near as interested in contemplating this as you are"
+   hide alice with dissolve
    show mc normal
    "You hear the kettle click and walk over to it."
    "You can't help but be impressed by her."
@@ -116,9 +125,8 @@ label day3Morning:
    ali "Ughhh, do I have to?"
    show mc normalside
    m "If you can do with out them then I guess not."
-   show alice sad 
    ali "..."
-   show alice worried
+   show alice sad
    ali "Can't you just go for me? I'm running out of time and I still have so much to do."
    show mc slightsad
    m "A-alone? I... guess I could try, but..."
@@ -283,20 +291,14 @@ label day3Store:
    "But, she's only has today left."
    m "(Maybe I could return it tomorrow and get a refund.)"
    show mc sad
-   "... No, that's way too scummy."
-   show mc sad
-   m "Alice, we should probably get going."
-   show mc at right
-   show hoodie at right
-   with move
-   show alice_base_longhair at left
-   show alice sad at left
-   show dress true at left
-   with dissolve
-   ali "*Sigh* We probably should have left a while ago..."
-   "She takes one long, last look at that guitar."
-   "As she does, a young boy with 2 older adults (probably his parents) takes a seat at the amp."
-   "His parents hand him a guitar, and he plugs it into the amp..."
+   m "Alice, we should probably get going"
+   show mc at right with move
+
+   show alice sad at left with easeinbottom
+   ali "...Okay..."
+   "She takes a last look at that guitar, and slowly gets up."
+   "As she does a young boy with 2 older adults (probably his parents) takes a seat at the amp on the other side of the floor"
+   "He plugs in the guitar his parents place on his lap for him to try and..."
    stop sound
    play sound "guitar_shred.wav"
    show mc surprised
@@ -416,11 +418,6 @@ label day3Store:
          jump day2PhoneCall
 
 label day2PhoneCall:
-   
-   show mc at center
-   show hoodie at center
-   with move
-   show mc slightsad
    stop music
    stop sound
    play sound "windgust.wav"
@@ -457,7 +454,6 @@ label day2PhoneCall:
       m "...Yes."
       dad "Aha. Give her lots of compliments. Just nod when she talks and nod like her every word is the fucking word of God."
       dad "You'll get there in no time. Later."
-
    else:
       dad "Hello?"
       show mc stressed
@@ -586,6 +582,7 @@ label preFightDay3:
    "......Another hour rolls by......."
    "...........And she hasn't so much as looked in your direction............."
    stop music fadeout 6
+   m "..."
    "Another hour..."
    play sound "guitar_note.wav"
    "The sound of the guitar drills its way further into your brain."
@@ -831,8 +828,7 @@ label preFightDay3:
 
 label rooftop_reworked:
    # he goes up to roof sweaty
-   # starts trying to apologise
-   
+   # starts trying to apologise  
    m "Alice, I- *pant* I-"
    show mc sad
    m "I wanna say that I'm-"
@@ -1256,7 +1252,7 @@ label post_show:
    kel "A polaroid! I ordered it second-hand online for super cheap! Hahaha!"
    show kellin vhappy
    kel "Ready or not! Cheese!"
-   
+
    play sound "polaroid.wav"
    show white with dissolve
    show alice shocked
@@ -1288,7 +1284,6 @@ label post_show:
    show mc awed at right
    show hoodie at right
    with dissolve
-   
    announcer "And today's winner..."
    announcer "Who will have the luxury of recording a single at (insert funny names) studios for completely free!"
    announcer "IS~"
@@ -1374,7 +1369,6 @@ label aliceDay3WayBackHome:
    "The two of you walk back towards your dormitory in silence."
    "Until Alice's pace grinds to a halt."
    window hide
-   
    scene outside_dorm with fade
    play music "trip.mp3"
    show mc awed at right
@@ -1491,7 +1485,7 @@ label aliceDay3WayBackHome:
    ali "Or rather, thank you."
    window hide
    stop music fadeout 2
-   
+
    jump aliceDay3Goodbyes
 
 label aliceDay3Goodbyes:
@@ -1500,7 +1494,7 @@ label aliceDay3Goodbyes:
       zoom 0.9
    with Dissolve(2)
    play music "night.mp3"
-   
+
    show day_3 at topleft
    show alice_affection at topright
    with dissolve
@@ -1539,7 +1533,6 @@ label aliceDay3Goodbyes:
    show mc confused
    m "If you're sure..."
    window hide   
-
    show black with dissolve
    window show
    "You watch a random romantic comedy movie on your laptop, together on your bed."
@@ -1582,7 +1575,6 @@ label aliceDay3Goodbyes:
    show alice sly smile
    ali "But I think it's better if I do this..."
    window hide
-   
    show alice_kiss with Dissolve(2)
    play music "date_musicbox.mp3"
    pause 1
@@ -1634,7 +1626,7 @@ label aliceDay3Epilogue:
    $ renpy.pause ()
    show text "You simply exist together. How wonderful."
    $ renpy.pause ()
-   show text "The heavy burden of your worries disappear." 
+   show text "The heavy burden of your worries disappear."
    $ renpy.pause ()
    show text "All the things you've cried over in the past don't matter anymore."
    $ renpy.pause ()
@@ -1655,6 +1647,9 @@ label aliceDay3Epilogue:
    window show
    pause
 
-   
+
    # "fade out to a cg of the mc's room with the guitar alice wanted, the polaroid they all took together"
    # "as well as 2 more of MC with kellin and kellin's friend, playing in a band together"
+
+   #shot of mcs room with the polaroids on the wall. Guitar on a guitar stand. Cleaner and more managed room. more personality and hobbies
+   #Blue pills (estrogen) on top of their desk, and longer hair in the polaroids.

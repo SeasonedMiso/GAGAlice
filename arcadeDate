@@ -1,0 +1,118 @@
+
+    show mc normal
+    m "Actually, there's this arcade I've always wanted to check out-"
+    show alice confused
+    ali "An arcade?"
+    m "We could go and I could maybe try show you how to play some video games."
+    show alice surprised
+    ali "What's that?"
+    show mc normalside
+    m "Like... you pretend to be someone else, and you complete fun missions using a device."
+    show alice neutral
+    a "..."
+    a "I trust my expression speaks for itself."
+    show mc confused
+    m "You want to find stuff you're interested in right?"
+    show mc annoyed
+    m "How do you know you don't like it if you don't give it a go?"
+    show alice pout
+    ali "..."
+    show alice mendokusai
+    ali "...FINE~"
+    scene arcade with fade
+    show mc surprised at right
+    show alice disappointed at left
+    with easeinbottom
+    #black scene
+
+
+    #Change this so alice has an appropriate amount of knowledge about this stuff
+    $ arcadeWent = True
+    m "Woah, look at this place! They have so many retro titles!"
+    show alice normalside
+    ali "Isn't that like a nice way of saying they're charging a dollar for games that have been out of date for like 30 years?"
+    show alice confused
+    ali "Can't you play these on your computer anyway?"
+    show mc normalside
+    m "I guess I could set up a MAME emulator on RetroArch, but-"
+    show alice annoyed
+    ali "Are you listening to yourself right now?"
+    ali "I have no fucking clue what you're talking about."
+    show mc awed
+    m "I just meant like, we could use my PC..."
+    show mc normalside
+    m "but then we're really compromising on the authenticity of the experience."
+    show alice smug
+    ali "The experience of being in a run down shit hole?"
+    show mc surprised
+    m "Woah! They have that weird train game?"
+    show mc happy
+    m "It's a weird Japan-only game where you play as a train conductor and like, there's train levers, and-"
+    show alice neutral
+    ali "You're really making this whole gaming thing SO interesting."
+    show mc normal
+    m "Well there's a whole bunch of other games too."
+    m "What kind of thing do you think you might like?"
+
+    show alice confused
+    ali "I don't know... What about that one over there?"
+    show alice happy
+    ali "Those little dinosaur things are kinda cute~"
+    show mc happy
+    m "Oh Bubble Bobble?"
+    m "I haven't played that game since I was a kid."
+    m "Lemme get some tokens..."
+
+    #interlude
+    show black with dissolve
+    "You show Alice how to move, blow bubbles, and capture monsters."
+    "She quickly grasps the basics and is able to beat the first level without any issues."
+    "However, after only a few levels, the difficulty begins to increase dramatically, and before more than a few minutes have passed..."
+    show alice annoyed
+    hide black with fade
+
+    ali "Game Over? What the fuck is this shit?"
+    show mc annoyed
+    m "In these kind of games you only get a few lives, and if you use them all up, you need to pay more to keep playing."
+    show mc happy
+    m "Do you want to keep playing this?"
+    show alice sulk
+    ali "What's the point? What do I {i}get{/i} if I keep playing?"
+    show mc awed
+    m "Well... The satisfaction of having gotten further, and accomplishing something that not many people have done?"
+    show alice disappointed
+    ali "That's stupid."
+    ali "Who cares if you are the best in the world at playing stupid children's games?"
+    show mc normal
+    m "..."
+    show mc sulk
+    m "It's not stupid to me..."
+    m "...or lots of other people."
+
+    m "These games represent memories of our childhoods."
+    m "Friendships."
+    show mc normalside
+    m "Although looking around here, you might not get it but..."
+    m "There are all sorts of games."
+    m "Games about guns, games about fishing, games about defusing bombs."
+    show mc stressed
+    m "Games about just talking to people."
+    m "Games that give you a new outlook on the world..."
+    show alice neutral
+    ali "..."
+    show mc awed
+    m "Games to play by yourself, games to pass the controller back and forth..."
+    m "Games that let you meet new people."
+    m "I think that for me, it helps to feel connected to something bigger."
+    m "The community of people brought together by having this small thing in common."
+    show mc normalside
+    m "I just thought it would be cool if you would be able to find something like that too."
+    show alice sulk
+    ali "I guess..."
+    show alice normalside
+    ali "I'm sorry okay?"
+    ali "I shouldn't have called it stupid."
+    show alice normal
+    ali "But even so, I don't really think this is for me."
+    show mc slightsad
+    m "Okay... let's go home."
