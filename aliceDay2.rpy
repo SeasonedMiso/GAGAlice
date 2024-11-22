@@ -4,7 +4,7 @@
 
 #    # variables for Alice:
 #    default arcadeWent = False
-
+   
 
 #    $ alice_rp = 0
 
@@ -12,7 +12,7 @@
 #    #It's very important that alice has fun making fun of mc, in a sadistic way, but almost like nagatoro
 #    #It starts cruel, but gradually starts to reveal that at her core she really cares about him
 
-#    #If you can replace narration with dialogue, go back and do it!
+#    #If you can replace narration with dialogue, go back and do it! 
 
 
 #    #wake up
@@ -23,7 +23,7 @@
 
 #    show bedroom_day with fade:
 #       zoom 0.9
-
+      
 #    show mc stressed at right
 #    show alice pout at left
 #    with easeinbottom
@@ -57,12 +57,12 @@
 #    m "How do you know what youtube is?"
 #    #Elongate
 #    #Or just change it to say videos?
-
+   
 #    m "...I was also... writing stories..."
 #    show alice laugh
 #    # make sure this makes sense in context
 #    ali "You didn't even TRY to deny it"
-
+   
 #    ali "I bet you didn't even finish a single chapter"
 #    show mc humiliated
 #    m "..."
@@ -76,12 +76,12 @@
 
 #    "It's like she's reading your mind"
 #    "She puts to words the things you think about yourself before the thought is even fully formed"
-#    # shes better at hating you than you ever could be.
+#    # shes better at hating you than you ever could be. 
 #    # the one thing you were good at and you have been outclassed
 #    "It's like she sees right through you"
 #    m "..."
 #    "You turn your head down towards the messy duvet you're sitting on to avoid her gaze"
-#    #she says one more mean thing here,  insulting your aethstetic and clothes
+#    #she says one more mean thing here,  insulting your aethstetic and clothes 
 #    #realizes that you're crying and is kinda shocked, then tries to make you feel better (softens up)
 #    show alice normal
 #    ali "Ummm... If you want I could help you... you know?"
@@ -90,7 +90,7 @@
 #    ali "Whatever, do you want my help or not?"
 
 #    #maybe need to explain that although she's only a day old, she has instinct for only few things:
-#    #Fashion/beauty, the need to be desired, knowledge on her species, as well as arts
+#    #Fashion/beauty, the need to be desired, knowledge on her species, as well as arts 
 #    #(although the company programming tries to make her forget about that part)
 #    #maybe try to develop that motif a bit about like, her needing to fight her programming
 #    show mc normalside
@@ -125,7 +125,7 @@
 #    hide alice
 #    with easeoutbottom
 #    stop music fadeout 2
-#    scene black with Fade(0.5, 1.0, 0.5)
+#    scene black with Fade(0.5, 1.0, 0.5)        
 #    play sound "door.wav"
 #    play music "mall.mp3" fadein 2
 #    show chibi_mc at slightright
@@ -134,7 +134,7 @@
 #    window show
 
 #    #Develop this conflict
-#    #You didn't want to fight and you feel sorry for her since she's going to die soon anyway
+#    #You didn't want to fight and you feel sorry for her since she's going to die soon anyway  
 #    "You try not to think about the other students seeing you leave the dorm with a girl."
 #    #talk a little more about the traveling process and getting to the mall
 #    window hide
@@ -194,7 +194,7 @@
 #    ali "Makes it easier to at least know what we are going for"
 #    show mc normalside
 #    m "I guess I like grey-scale stuff that's not too flashy"
-#    show alice cruel
+#    show alice cruel 
 #    ali "So what we came all this way so that you can keep trying to blend in with the shadows?"
 #    ali "Come on, you must like at least some /real/ colors"
 #    show mc blushside
@@ -227,7 +227,7 @@
 #    show alice annoyed
 #    ali "I'm going to die soon... I don't have much time left..."
 #    ali "And you have some more... But even then"
-#    show alice
+#    show alice 
 #    ali "Your time is limited."
 #    show alice sad
 #    ali "Don't you feel like it's a waste? Of youth? Of life?"
@@ -254,19 +254,19 @@
 #    $ alice_rp+=10
 #    show black with dissolve
 #    "..."
-
+   
 #    #cut to the mall later, with mc wearing a slightly oversized pastel pink hoodie
 #    # :3 insignia?
 #    show mc pink embarrassed
 #    show alice smug
-
+   
 #    hide black with dissolve
 #    m "..."
 #    show mc pink embarrassed desperate
 #    #make sure it's not obvious that they are trans, make it like they are a guy who's ashamed of having a feminine side
 #    #because of it bringing more attention to him and that going against the status quo
 #    #she acutally thinks it suits him, and is trying to help him give less of a fuck
-#    # but is also teasing him by picking on the obvious discomfort he feels about this
+#    # but is also teasing him by picking on the obvious discomfort he feels about this 
 
 #    m "EVERYONE'S LOOKING AT ME!"
 #    ali "So? Let them."
@@ -279,7 +279,7 @@
 
 #    m "That's not my point! I just mean like..."
 #    m "I'm not like you. It's better for everyone else that I just stay out of sight."
-#    show alice annoyed
+#    show alice annoyed 
 #    ali "Stop saying stupid shit. If I hear one more thing from you I'll take that as a personal insult."
 #    m "Huh? Why what does what I say about myself have to do with you?"
 #    show alice vannoyed
@@ -370,8 +370,8 @@
 #    # >Show her something you like
 #    #    if(trust)>x:
 #    #       jump arcadeDate
-
-
+      
+      
 
 
 
@@ -443,7 +443,7 @@
 #    "However, after only a few levels, the difficulty begins to increase dramamtically, and before more than a few minutes have passed..."
 #    show alice annoyed
 #    hide black with fade
-
+   
 #    ali "Game Over? What the fuck is this shit?"
 #    show mc annoyed
 #    m "In these kind of games you only get a few lives, and if you use them all up, you need to pay more to keep playing."
@@ -509,7 +509,7 @@
 #    "You walk past a small cafe. It looks relatively empty, despite how busy the rest of the mall is."
 #    "The tile floor and decor look clean and without wear."
 #    "This place is probably new."
-
+   
 #    m "Do you want to go inside and get something to drink?"
 #    show alice neutral
 #    ali "... As long as I have my water spray, I'm fine. I don't really get that whole animal thing of 'eating' in order to sustain yourself."
@@ -653,7 +653,7 @@
 #    show alice vannoyed
 #    show mc normal
 #    "Barely 5 minutes had past since the order was placed, the waiter arrives back balancing a tray in one hand."
-#    "He carefully places the tray down onto the table and without missing a beat, begins to explain the items."
+#    "He carefully places the tray down onto the table and without missing a beat, begins to explain the items." 
 #    na "Over here for you I thought you might like something cute and uplifting to freshen up the bags under your eyes."
 #    "He places a coffee cup in front of you with a detailed illustration of a small rabbit running through a flower garden."
 #    na "And for you, I thought you might like this [...]."
@@ -677,7 +677,7 @@
 #    na "The kind of stuff that inspires revolutions or changes lives"
 #    na "It's a way of taking that message and trying your hardest to get someone else to feel the same way as you"
 #    na "When words can't"
-#    na "So I guess it's like... It doesn't matter if my art lasts a second or thousand years, as long as I can try to share that feeling with someone"
+#    na "So I guess it's like... It doesn't matter if my art lasts a second or thousand years, as long as I can try to share that feeling with someone" 
 #    show alice neutral
 #    ali "..."
 #    na "Sorry, I guess I talked a bit too much... Anyways, I hope you enjoy your coffee"
@@ -762,7 +762,7 @@
 #    ali "But because that's what I felt would make me feel like I am worth something."
 #    show alice sulk
 #    ali "I don't know it's... stupid... Sorry, I just..."
-#    ali "Maybe what you said last night... and what the cow boob artist said..."
+#    ali "Maybe what you said last night... and what the cow boob artist said..." 
 #    show alice confused
 #    ali "Maybe there is something more to life than just using others to prove to yourself you're worth something."
 #    ali "So I wanted to say that..."
@@ -784,7 +784,7 @@
 #    "She's probably already seen through the pretty words you said yesterday as made up bullshit."
 #    "Be real: YOU said it, so there's not way that you're right."
 #    "You're so!"
-
+   
 #    ali "..."
 
 #    "FUCKING"
@@ -848,11 +848,11 @@
 #    show mc awkwardsmile
 #    m "I just said whatever words popped into my mind."
 #    m "Anyone could do that."
-
+   
 #    ali "Yeah, but you did."
 #    show mc awed
 #    m "..."
-#    show mc normalside
+#    show mc normalside 
 #    m "Whatever."
 #    show alice confused
 #    ali "So while we are talking like this... I was curious if there was anything you wanted to know about me"
@@ -872,7 +872,7 @@
 #    ali "Hmmm... Now that you mention it, a lot of it is related to sex."
 #    show mc confused
 #    m "?"
-
+   
 #    ali "Like, I have some other information that I was just born knowing"
 #    ali "Like uhhh.... I know a bit about mushrooms, and like... I guess some of the stuff is more abstract."
 
@@ -919,7 +919,7 @@
 #    m "How they programmed you to be the ideal product for them to profit off of"
 #    show alice confused
 #    ali "Yeah, I guess... But..."
-
+   
 #    ali "Are you guys really all that different?"
 #    show mc confused
 #    m "Huh?"
@@ -978,7 +978,7 @@
 #    hide alice with easeoutright
 
 #    show mc surprised
-
+   
 #    m "Huh? Wait!"
 
 #    scene black with fade
@@ -1181,7 +1181,7 @@
 
 # #Choice: Give in to her, No means no
 # menu:
-
+   
 #    "No means no.(N/A)":
 #       "..."
 #    "Give in.":
@@ -1264,7 +1264,7 @@
 #    #here add that he recognizes you from yesterday
 #    m "Uhhh... Yeah, next door actually..."
 #    kel "Woah! So your the one that's been here the whole time! I tried to leave a package for you the other day but!"
-#    m "Yeah I'm not too great at talking to people... Or waking up"
+#    m "Yeah I'm not too great at talking to people... Or waking up" 
 #    m "Sorry about that"
 #    kel "No, it's okay, you're probably a really good listener!"
 #    kel "Damn we've been next-door room buddies for like... How long now?"
@@ -1285,7 +1285,7 @@
 #    #But then how do you end the exchange, and move to the next point?
 #    #I like the idea of him being super ADHD but very like　　マイペース
 
-#    #He's basically an embodiment of the hyper fixation element of autism, so showing of the positives of it
+#    #He's basically an embodiment of the hyper fixation element of autism, so showing of the positives of it 
 #    #compared to the anxiety and social awkwardness of mc
 #    show mc stressed
 #    m "No, you're fine, that's not it"
@@ -1332,8 +1332,8 @@
 #    kel "You don't need to say anything to me! Our brains are connected on the same wavelength!"
 #    show mc worried
 #    m "Uhh... yeah... sure..."
-#    kel "Come inside!"
-#    m "...Okay..."
+#    kel "Come inside!" 
+#    m "...Okay..." 
 
 #    scene neighbour_bedroom with fade:
 #       zoom 0.9
@@ -1343,7 +1343,7 @@
 #    with easeinbottom
 #    m "Woah this place is really... something"
 #    kel "I guess? Isn't it normal?"
-
+   
 #    m "Uh, if this is normal, then I think your reference point is kinda busted"
 #    kel "So this is what you wanted right?"
 #    kel "I have a couple guitars, but this is the only one that's not in a weird tuning right now"
@@ -1368,7 +1368,7 @@
 #       zoom 0.9
 #    play music "night.mp3"
 #    show alice normal at left
-#    with dissolve
+#    with dissolve 
 #    play sound "door.wav"
 #    show mc stressed at right with easeinbottom
 #    #mc with guitar in soft bag on back and arms fulled with stuff
@@ -1389,7 +1389,7 @@
 #    show mc normalside
 #    m "yeah... But I can't help the feeling that maybe I'm doing him a favour by giving him someone new to rant at"
 
-# label day2GuitarSetup:
+# label day2GuitarSetup: 
 #    show alice excited
 #    ali "So can we set it up? Please!?"
 #    show alice hime
@@ -1502,15 +1502,15 @@
 #    "You go back downstairs to your room."
 
 #    play music "night.mp3"
-
-
+   
+   
 #    show bottle night with Dissolve(2):
 #       zoom 0.9
-
+   
 #    show alice serious at left
-#    with dissolve
+#    with dissolve 
 #    play sound "door.wav"
-
+   
 #    "Alice is sitting there and has already figure out some basic chord progression kind of stuff"
 #    show mc normal at right with easeinbottom
 #    m "..."
@@ -1552,7 +1552,7 @@
 #    #choice 1 "I'm jealous of you"
 #    #choice 2 "You're so selfish"
 #    show mc vannoyed
-
+   
 #    m "You don't get it..."
 #    m "You just start learning guitar on a whim."
 #    show mc sulk
@@ -1629,13 +1629,13 @@
 #    ali "But I think maybe, you're waiting for an excuse."
 #    show mc confused
 #    m "What do you mean?"
-
+   
 #    ali "You took me to a whole bunch of places and showed me a bunch of stuff."
 #    show alice confused
 #    ali "and at first I thought it was meaningless."
 #    show alice normal
 #    ali "But I realized that nothing matters except what is important to you."
-
+   
 #    ali "Latte art is just making pictures in cow boob juice."
 #    ali "And video games are just what depressed people do to avoid dealing with real life."
 #    # Too much
@@ -1648,7 +1648,7 @@
 #    show alice normalside
 #    ali "And I guess what I'm trying to say is"
 #    show alice sad
-#    ali "You can't wait for someone else to give you permission to act"
+#    ali "You can't wait for someone else to give you permission to act" 
 #    ali "To do what you want with your life"
 #    show mc worried
 #    m "But what if it doesn't work out?"
@@ -1678,17 +1678,17 @@
 #    m "Kind of a bit past my threshold for exposure to humans"
 #    show alice normal
 #    ali "You going to go to bed?"
-
+   
 #    m "Yeah I think so..."
 #    show mc awed
 #    m "Do you mind switching to headphones?"
 #    ali "Sure"
 
-#    scene black with fade
+#    scene black with fade  
 #    window hide
 #    stop music fadeout(3)
 #    show chibi_sleep at truecenter with dissolve
-#    show top_text "You crawl into bed and fall asleep to the dull sound of unamplified guitar sounds" with dissolve
+#    show top_text "You crawl into bed and fall asleep to the dull sound of unamplified guitar sounds" with dissolve 
 #    pause 3
 
 
@@ -1752,7 +1752,7 @@ label day2Morning:
    default arcadeWent = True
 
 
-
+   
 
 
    #It's very important that alice has fun making fun of mc, in a sadistic way, but almost like nagatoro
@@ -2382,6 +2382,7 @@ label aboutCoffee:
    ali "Yeah..."
    jump leaveCafe
 
+
 #fork if you went to arcade first and max trust
 label coffeeTalkArcade:
    show alice normalside
@@ -2604,6 +2605,11 @@ label coffeeTalkArcade:
 
 
 label clothes:
+#    The scene where Alice notices the main character’s interest in the pastel pink hoodie is a lovely touch.
+# It reveals her growing awareness of his internal struggles and offers a moment of connection between them.
+# Her playful teasing and encouragement for him to try on the hoodie show that she’s beginning to understand and care for him on a deeper level.
+# This scene subtly hints at the main character’s gender identity issues, adding another layer to his character.
+
    show alice normalside
    ali "Whatever, what about that place over there?"
    m "You mean the men's attire store?"
@@ -2927,229 +2933,7 @@ label day2WayHome:
 
 "You walk with Alice through along the embankment until you reach the outskirts of the city center"
 "Its hustle and bustle has died down partly due to distance from the crowds, and partly due to the day turning to evening"
-
-#fork if you went to arcade first and max trust
-#todo: change label
-label coffeeTalkArcade:
-    "You look over at Alice whose pace slows to a halt behind you..."
-    "She walks over to a nearby bench, and sits softly."
-    "You walk over and sit beside her."
-   show alice normalside
-   ali "You know..."
-   ali "I was just thinking back to that dinosaur game in the arcade."
-   show mc confused
-   m "Yeah, Bubble Bobble."
-   m "What about it?"
-   show alice sulk
-   ali "Yeah... Just like... In that game right, if you fuck up and get yourself killed, you can come back if you get a 1up, or waste your rent money."
-   show mc annoyed
-   m "Yeah, but like, I wouldn't recommend that strategy to be honest."
-   ali "Sure, but like..."
-   ali "We don't get anything like that do we?"
-   show alice pout
-   ali "In real life"
-   show mc surprised
-   m "..."
-   ali "There's no amount of power or money, no one is important enough to get around the game over screen."
-   ali "And even if you beat the game, it's over..."
-
-   show alice pout
-   ali "And so I feel like... What do you do when there's no point?"
-   ali "With games like that, you can brag to your friends, or... repel every girl in a 5km radius."
-   show alice depressed
-   ali "But with life it's just like... Why even bother?"
-   ali "At first, I just followed my instincts and tried to get you to pay attention to me."
-   ali "Not because you were special, or because I liked you, or even knew you."
-   ali "But because that's what I felt would make me feel like I am worth something."
-   show alice sulk
-   ali "I don't know it's... stupid... Sorry, I just..."
-   ali "Maybe what you said last night... and what the cow boob artist said..."
-   show alice confused
-   ali "Maybe there is something more to life than just using others to prove to yourself you're worth something."
-   ali "So I wanted to say that..."
-   show mc awed
-   m "..."
-   show alice normalside
-   ali "Yesterday I didn't need to shout like that or whatever."
-   show mc confused
-   m "...wow... I uh... that's nice?"
-   show alice normal
-   a "..."
-   show alice disgusted
-   ali "That's... \"nice\"?"
-   show mc surprised
-   m "No! I mean, sorry that was just sudden so I don't really know what to say."
-   show alice sulk
-   ali "Agghh, I shouldn't have said anything to you."
-   show mc stressed
-   "You're so stupid..."
-   "Even when you luck into doing something nice, and helping someone, you have to fuck it up at the last second."
-   "She's probably already seen through the pretty words you said yesterday as made up bullshit."
-   "Be real: YOU said it, so there's no way that you're right."
-   "You're SO-"
-
-   ali "..."
-
-   "FUCKING-"
-   show alice pout
-   ali "..."
-
-   "STUP-"
-   #change music to heartfelt
-   show alice blush
-   ali "Thank you for taking me out today."
-   $ alice_rp += 10
-
-   show mc surprised
-   m "!"
-   m "Ummm... Yeah, That's okay..."
-   ali "..."
-   show alice normal
-   ali "You look suprised."
-   show mc blushside
-   m "Yeah I uh... didn't really expect you to say that."
-   show alice sigh
-   ali "Me neither."
-   show alice normal
-   # ali "But I think that I'm starting to change"
-   ali "I don't know what it is but."
-   show alice confused
-   ali "I just feel like when I was born, I had a certain idea of how this life was supposed to go."
-   show alice sad
-   ali "You were going to be all over me, and I was going to feel good about that."
-   ali "Because that was proof that I was good enough."
-   show alice smirk
-   ali "But you were too much of a little bitch to do anything and made me cry."
-   show mc sad
-   m "I'm sorry, you know that I didn't mean it like that, I just-"
-   show alice happy
-
-   ali "I know, don't worry about it."
-   show alice pout
-   ali "It's just at the time that was kind of a shock, you know?"
-   ali "Like I had just been told that I'm not cut out for my purpose."
-   ali "I'm just too ugly, too annoying, too whatever."
-   show alice depressed
-   ali "And that's not a great feeling."
-   ali "And for a while, I didn't really know what to do with myself."
-   ali "And being around you..."
-   show alice sulk
-   ali "Was painful..."
-   show alice annoyed
-   ali "Do you know what it's like to be around someone you want to like you?"
-   ali "How painful it is to know that the reason they don't like you isn't something you did?"
-   ali "But just like... the way you are?"
-   show alice sigh
-   ali "And so I guess that's where I was for a while..."
-   show alice sulk
-   ali "And now I... I don't know."
-   ali "I feel like, maybe I can find something else worth living for."
-   ali "Even if it's only for another day."
-   show alice blush
-   ali "And I wouldn't have that without you."
-   show mc surprised
-   m "I didn't do anything special."
-   show mc awkwardsmile
-   m "I just said whatever words popped into my mind."
-   m "Anyone could do that."
-   ali "Yeah, but {i}you{/i} did."
-   #blushies
-   show mc awed
-   m "..."
-   show mc normalside
-   #this is him hiding his embaressment
-   m "Whatever."
-   show alice confused
-   ali "So while we are talking like this... I was curious if there was anything you wanted to know about me"
-   show mc confused
-   m "Like what kind of thing?"
-   show alice cruel
-   ali "I dunno? Like you know... My 3 sizes, the color of my underwear. You know, normal stuff?"
-   show mc stressed at bounce
-   m "Who taught you what normal is?!"
-
-   show alice sulk
-   ali "I guess I was just born knowing all kinds of stuff."
-   ali "Like ways to make people feel good, how to tie people up, that sort of stuff."
-   show mc vstressed at bounce
-   m "WHY IS IT ALL SEX?!?!"
-   show alice confused
-   ali "Hmmm... Now that you mention it, a lot of it is related to sex."
-   show mc confused
-   m "?"
-
-   ali "Like, I have some other information that I was just born knowing"
-   ali "Like uhhh.... I know a bit about mushrooms, and like... I guess some of the stuff is more abstract."
-
-   ali "Like when I was born I just KNEW that if I behaved a certain way, that you would like it."
-   show alice pout
-   ali "But it didn't go the way I assumed it would."
-   m "So you mean like... You had like... instincts about specific information? Like genetic memories?"
-   show alice neutral
-   ali "I don't know what you're talking about but uh, yeah sure, why not?"
-   show mc normal
-   m "What I mean is, that you like woke up and knew how to speak perfect English, and all of that other stuff."
-   show mc normalside
-   m "I didn't really think about it too hard after the shock of ummm... You like... Being alive and everything."
-   show alice cry
-   ali "What, you'd rather I was dead?"
-   show mc vvannoyed
-   m "No I- Actually no, I'm not gonna take the bait this time."
-   show alice smug
-   ali "Awww, but it worked before."
-   show mc awed
-   m "I was just trying to say that there needs to be a reason you know all of this stuff?"
-   show alice confused
-   ali "Yeah well... Didn't you like, buy me off of the internet from some sketchy darkweb site or something?"
-   show mc stressed
-   m "IT WASN'T THE DARKWEB-"
-   show mc normalside
-   m "But yeah, I guess I wouldn't put it past that site to do something like that"
-   m "I guess everything you knew makes sense for the purpose of what you were being sold for"
-   m "So maybe they like, embedded that information into your DNA to streamline the user experience of ummm "
-   show alice neutral
-   ali "I'm right here you know"
-   show mc awkwardsmile
-   m "Sorry, I phrased that sorta weird"
-   show alice normal
-   ali "I think you might be onto something though..."
-   show alice normalside
-   ali "It is kind of weird that I know over 200 sex postions, but didn't know what a mall is, huh?"
-   show mc shocked
-   m "There are that many?!"
-   show alice smug
-   ali "Way to reveal your power level, 'wand master'"
-   show mc sulk
-   m "I just think it's really fucked up"
-   m "How they programmed you to be the ideal product for them to profit off of"
-   show alice confused
-   ali "Yeah, I guess... But..."
-
-   ali "Are you guys really all that different?"
-   show mc confused
-   m "Huh?"
-   ali "I mean... Think about it right?"
-   "She gesutres over to some children playing with a ball on the otherside of the embankment"
-   show alice normal
-   ali "If you look around at everyone of them, they were all raised by parents, who taught them what was right and wrong"
-   ali "And then sent them to a school to learn stuff the government wants them to know for like, a billion years or whatever..."
-   ali "If you're born with one set of bits, you get given toys to simulate child rearing"
-   ali "And if you have the other, you're supposed to be like a firefighting astronaut sports guy or something"
-   show mc vannoyed
-   m "What were you watching on my computer last night?"
-   show alice hime
-   ali "ANYWAYS! You know what I mean right... It's easy for you to point at me and say I'm fucked up, but from where I'm sitting..."
-   show alice serious
-   ali "None of you guys seem that different."
-   show mc normal
-   m "..."
-   show alice confused
-   ali "I guess I just wanted to know like... How do you know your values are you own?"
-   ali "If you're living for yourself, or just to feel like you're winning in some game you've been told by others is important?"
-   #way too on the nose, rewrite to soften
-   show mc confused
-   m "I... I don't-"
-   show alice laugh
+"However..."
 play music "date.wav"
 show alice confused
 with easeinbottom
@@ -3514,11 +3298,11 @@ label Day2Neighbour:
    kel "WOAH, fresh blood! That's so exciting!"
    show mc slightsad
    m "Yeah, I guess you could say that."
-   m "(Damn, he's being nice, but I'm already so exhausted from this conversation.)"
    
+   m "(Damn, he's being nice, but I'm already so exhausted from this conversation.)"
    show mc stressed
+   
    m "I know we've never talked before..."
-
    show kellin normal
    m "... and this is a big ask..."
    show mc worried
@@ -3716,10 +3500,10 @@ label day2GuitarSetup:
    stop music fadeout(3)
    show chibi_sleep at truecenter with dissolve
    show top_text "Emotionally and physically exhausted, you let those simple guitar notes carry you to sleep."
-
    with dissolve 
    pause
    hide top_text with dissolve
+
 
    jump day3Morning
 

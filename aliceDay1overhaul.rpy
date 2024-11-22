@@ -1,5 +1,23 @@
+
+# THIS DAY NEEDS MAJOR TWEAKS
+# -Alice = valley girl not ojousama
+# -Make it clear that alice's trauma is the expectation that she's sexually desireable
+# -make the conflict make sense and natural
+# -Make the resolution make sense, but leave them as like acquaintances, not friends
+
+
+
+##Check all the comments and non spoken lines from ori
 label ad1Morning:
+
+    #Character definitions:
+
+    
+    
+
+
     stop music fadeout(2)
+    
     default aliceTrust = 0
     play music "horror.wav"
     "Everyday, you wake up, make cheap instant coffee, and spray the mycelium."
@@ -27,10 +45,12 @@ label ad1Morning:
     stop music fadeout(2)
     play sound "tear.wav"
     "Suddenly you hear a rustling sound from the corner of your room."
+    
     window hide
+                
     scene alice_box_1 with dissolve
-
-    stop sound
+    
+    stop sound 
     play sound "ballon.wav"
     #pause 3
     $ renpy.pause(1.0, hard=True)
@@ -38,12 +58,12 @@ label ad1Morning:
     $ renpy.pause(1.0, hard=True)
     show alice_box_3
     $ renpy.pause(1.0, hard=True)
-    stop sound
-    play sound "pop.ogg"
+    stop sound 
+    play sound "pop.ogg"  
     show alice_box_4
     #pause 2
     $ renpy.pause(2.0, hard=True)
-
+    
     scene bottle_phone noon with Fade(1, 2.0, 1):
         zoom 0.9
 
@@ -53,7 +73,7 @@ label ad1Morning:
     show mc shocked at right
     show alice confused at left
     with easeinbottom
-
+     
     na "So this is your room? Smaller than I hoped for but I guess this will work."
     m "..."
     show mc shout at bounce
@@ -64,7 +84,7 @@ label ad1Morning:
     play sound "spray.wav"
     "She pulls the trigger and a cloud of mist appears in front of her"
     "She steps slowly through it and towards me"
-
+    
     show alice annoyed
     na "Warm fucking welcome..."
     na "You {i}really{/i} have a way with words."
@@ -78,7 +98,7 @@ label ad1Morning:
     na "That's tragic..."
     na "I hoped my client would be like mentally all there or whatever"
     show alice hime
-    na "But I guess I just have that effect on people."
+    na "But I guess I just have that effect on people."    
 
     show alice pout
     na "Actually tragic..."
@@ -87,7 +107,7 @@ label ad1Morning:
     na "And you aren't brain damaged?"
 
     show mc vshout
-    m "THAT'S MY LINE!!!" # doesn't make sense - change this
+    m "THAT'S MY LINE!!!" # doesn't make sense - change this 
     m "YOU'RE TALKING!"
     show alice neutral
     na "..."
@@ -104,7 +124,7 @@ label ad1Morning:
     "You weren't mentally prepared to talk to someone... "
     show alice neutral
     na "So, what do I call you?"
-    label name_ali:
+    label name_ali: 
         $name_redo = False
         $player_name = renpy.input("So, what do I call you?", length = 8).strip().lower().capitalize()
         # if player_name in badNames:  # you haven't define badNames yet so it makes an error as is
@@ -123,10 +143,10 @@ label ad1Morning:
             "I guess you <b>really</b> can't do anything right."
             "Just go with Finn."
             $player_name = "Finn"
-
+        
         $ playername = player_name
         m "...%(player_name)s."
-
+        
         if (name_redo):
             show alice smug
             na "Are you sure this time?"
@@ -134,14 +154,14 @@ label ad1Morning:
             m "YES!"
             show alice meanLaugh
             na "Just wanted to make sure..."
-
+        
     show alice smug
     na "What a cute name... I guess it suits someone like you."
     m "What's that supposed to mean?!"
     show alice laugh cruel
     na "Whatever you want, {i}\"Master\" {/i} %(player_name)s."
     #She introduces herself
-
+    
     "..."
     stop music
     show mc confused
@@ -203,7 +223,7 @@ label ad1Morning:
     nvlChar "The sound of your heart pounds violently through your ears."
     nvlChar "Every fiber of your being is telling you to get away from her." #rewrite so not certain if sexual or even want to get away
     nvlChar "You know intuitively, that if she gets close to you..."
-
+    
     nvlChar "{sc=3}{color=#FF0000}{size=+40}YOU ARE GOING TO DIE."
     nvl clear
     hide black
@@ -251,7 +271,7 @@ label ad1Morning:
     ali  "I can do better!"
     stop music fadeout(2)
     hide alice with easeoutbottom
-
+    
     play sound "door.wav"
     "..."
     show mc awed
@@ -293,26 +313,26 @@ label ad1Morning:
 
         imagebutton:
             xanchor 0.5 yanchor 0.5 xpos 0.522 ypos 0.5 hover "mushroom_display/bed_hover.png" idle "mushroom_display/bed_idle.png"
-            action Notify("You really just want to crawl under them and ignore Alice, but that won't do.")
+            action Notify("You really just want to crawl under them and ignore Alice, but that won't do.")     
         imagebutton:
             xanchor 0.5 yanchor 0.5 xpos 0.7425 ypos 0.53 hover "mushroom_display/table_hover - Copy.png" idle "mushroom_display/table_idle - Copy.png"
-            action Notify("There are butt-shaped marks wiped into the dust.")
-
+            action Notify("There are butt-shaped marks wiped into the dust.")    
+        
         imagebutton:
             xanchor 0.5 yanchor 0.5 xpos 0.522 ypos 0.364 hover "mushroom_display/shark_hover.png" idle "mushroom_display/shark_idle.png"
-            action Notify("Blahaj will always be there for you to punch!")
+            action Notify("Blahaj will always be there for you to punch!") 
         imagebutton:
             xanchor 0.5 yanchor 0.5 xpos 0.56 ypos 0.36 hover "mushroom_display/noot_hover.png" idle "mushroom_display/noot_idle.png"
-            action Notify("Noot noot, the guard. He'll protect you from Alice, right?")
+            action Notify("Noot noot, the guard. He'll protect you from Alice, right?")     
         imagebutton:
             xanchor 0.5 yanchor 0.5 xpos 0.304 ypos 0.48 hover "mushroom_display/noodle_hover.png" idle "mushroom_display/noodle_idle.png"
-            action Notify("You haven't felt hungry in a while...")
+            action Notify("You haven't felt hungry in a while...")       
 
 
 
-
-
-    label alice_check_site:
+    
+    
+    label alice_check_site:       
         play sound "<from 0 to 1>type.wav"
         scene website2 with dissolve
         m "Okay, let's see what this business is \'ABOUT\'."
@@ -327,25 +347,25 @@ label ad1Morning:
         window hide
         scene website_about with dissolve
         pause
-
-    show mc surprised at right with easeinbottom
+    
+    show mc surprised at right with easeinbottom 
     window show
     m "..."
     show mc shocked
     m "{sc=3}{color=#000000}WHAT THE FUCK IS THIS??? \nIS THIS EVEN LEGAL????"
     m "So I'm supposed to grow a \'companion\'?"
-    m "Even I'm not THAT much of a loser."
+    m "Even I'm not THAT much of a loser." 
     m "Who the hell is selling this kind of thing?"
     show mc stressed
     m "..."
     m "So let me get this straight... "
     m "She's a mushroom companion... And her characteristics are... unparalleled beauty and dominance?" #match what's on the site better
-
+    
     show mc normalside
     m "I mean, I guess she was pretty attractive..."
     show mc normalsquint
     m "...only has 3 days to live..."
-    # Is that really all he has to say about this? Isn't this like really shocking?
+    # Is that really all he has to say about this? Isn't this like really shocking? 
     show mc shocked
     m "...Do not attempt to consume unless prepared by a professional??"
     show mc worried
@@ -355,7 +375,7 @@ label ad1Morning:
     show mc surprised
     m "Eat?"
     # m "Make sure to prepare adaquetely before consumption due to "
-    # MC needs to find a part talking about her toxicity and
+    # MC needs to find a part talking about her toxicity and 
 
 
 
@@ -364,7 +384,7 @@ label ad1Morning:
         zoom 0.9
 
     show mc stressed with easeinbottom
-
+    
     window show
 
     "So?\n Are you any closer to figuring out what is going on?"
@@ -396,7 +416,7 @@ label ad1Morning:
     jump dischord_chat
 
     label dischord_chat:
-        # define romBestGrill = rb
+        # define romBestGrill = rb 
         scene discord with fade
         rb "sup i was wondering if you wanted to hop in vc"
         "This is one of your few online friends..."
@@ -455,30 +475,30 @@ label ad1Morning:
     m "Am I the weird one?"
     show mc worried
     m "Like... Is that how normal guy would react to this??"
-
-
+    
+    
     show mc stressed
 
-    # This part goes on too long#
+    # This part goes on too long# 
     "Anyone you meet is going to be repulsed when they actually get to know you anyway."
     "That's how it always has been."
     "And always will be..."
     "You're unloveable."
-    "Even if you tried- you honestly think you could be intimate with someone?"
+    "Even if you tried- you honestly think you could be intimate with someone?" 
     "Nobody would even want to be SEEN with you!"
     show mc awed
     "..."
     show mc shocked
     m "OH FUCK!"
     m "What if someone saw her leaving my dorm?!"
-
-
+    
+    
     show mc at right with move
 
     menu:
         "What should I do?"
         "Give up (N/A)":
-
+            
             #example
             window hide
             show mc stressed at center with move
@@ -532,8 +552,8 @@ label ad1Morning:
             show mc surprised at bounce
             m "Alice!"
             window hide
-
-
+    
+        
         #Choice: Where go???
 
     #go out to the enterance
@@ -544,10 +564,10 @@ label ad1Morning:
     #She closing in about to try to get closer to him
     #You grab her in the nick of time
     #pull her back to your room
-
+    
 
     scene bathroom with fade
-    show showerguy scream at right
+    show showerguy scream at right 
     show showerguy scream at quiver
     show alice pout at left
     with dissolve
@@ -558,7 +578,7 @@ label ad1Morning:
         xpos 0.1
     with move
     ali "Don't you want to get closer to me?"
-
+    
     keshad "{sc=3}{size=+20}{color=#000000}AAAAHHGH!!!"
 
     play sound "door.wav"
@@ -574,7 +594,7 @@ label ad1Morning:
     show mc at right
     show alice at right
     with move
-
+    
     hide mc
     hide alice
     with easeoutbottom
@@ -605,7 +625,7 @@ label ad1Morning:
     show alice annoyed
     ali "degenegerate things are you going to-"
     play music "fight.mp3"
-    show mc vshout
+    show mc vshout 
     m "{size=+20}What the fuck were you \n{sc=2}{size=+20}{color=#000000}doing{/sc} down there?!" with sshake
     show alice pout
     ali "It-"
@@ -627,7 +647,7 @@ label ad1Morning:
     show alice angry tears
     ali "The only reason I went looking for someone else is because you humiliated me."
     show mc shout
-    m "Hold on a sec... how did {i}I{/i} humiliate {i}you{/i}?"
+    m "Hold on a sec... how did {i}I{/i} humiliate {i}you{/i}?" 
     show mc normalsquint
     ali "You bought me, and picked me out for one reason."
     show alice vangry tears
@@ -668,7 +688,7 @@ label ad1Morning:
     show mc confused
     ali "Maybe it's my face or..."
     window hide
-    #Choice: It's okay ; I think you're valueble ; step on me mommy;
+    #Choice: It's okay ; I think you're valueble ; step on me mommy; 
     #You're valueble
     menu:
         "But you ARE pretty! (N/A)":
@@ -691,7 +711,7 @@ label ad1Morning:
             window show
             show mc awed
 
-            # Change this argument! Too sage like.
+            # Change this argument! Too sage like. 
             show mc confused
             m "You're incredibly pretty."
             m "So much that anyone would be jealous."
@@ -739,7 +759,7 @@ label ad1Morning:
     ali "As well as every possible way to tie you up." #you already made this joke in d2 cafe scene
     show mc blushside
     m "..."
-
+    
     show alice confused
     ali "But all I could think when I first woke up was that..."
     show alice normal
@@ -776,16 +796,16 @@ label ad1Morning:
     show alice surprised
     ali "You're going to sleep already?"
     # ali "But night's when all the fun stuff happens..."
-    # Btw I feel alice would find a club interesting - full of hot women like her, all dancing to attract guys etc... Maybe a potential scene?
+    # Btw I feel alice would find a club interesting - full of hot women like her, all dancing to attract guys etc... Maybe a potential scene? 
     m "Yeah, I didn't quiet get my full 8 hours..."
 
     #needs something here
-
+    
     show mc normalside
-
+    
     m "Good night."
     window hide
-    hide mc
+    hide mc 
     hide alice
     with easeoutbottom
     window show
@@ -833,7 +853,7 @@ label ad1Morning:
     stop music fadeout(3)
     show chibi_sleep at truecenter with dissolve
     show top_text "You fall asleep to the faint humming of the laptop fan..."
-    with dissolve
+    with dissolve 
     pause 3
 
     jump day2Morning
@@ -848,7 +868,7 @@ label ad1Morning:
 # mc checks website. shocked that she  only lives for 3 days.
 # she’s like “I know, and I have to spend it with YOU.”
 
-# He also sees that she’s poisonous and freaks out. Alice is annoyed by his reaction and hints at this hatred/fear towards her being unjustified and unfair.
+# He also sees that she’s poisonous and freaks out. Alice is annoyed by his reaction and hints at this hatred/fear towards her being unjustified and unfair. 
 # “You think they’re going to kill their customer base? They thrive on repeat customers.”
 
 # She’s a bit sad/angry. “Relax. i won’t do anything anyway. I can tell I’m not wanted.”
@@ -892,9 +912,9 @@ label ad1Morning:
 #as a mushroom, she doesn't have memories or a sense of personal identity
 
 
-
-
-
+ 
+   
+    
 #as a mushroom, she doesn't have memories or a sense of personal identity
 #She does have instinct and the information in her DNA
 #In that DNA there's a clear purpose, be desireable, be pretty
@@ -911,3 +931,4 @@ label ad1Morning:
 #As sentient things, we need to learn to overcome our 'nature' sometimes, in order for us to be happy
 #Obviously it's not that simple
 #but mc wants alice to find what makes her happy outside of her assigned purpose
+
