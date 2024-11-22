@@ -175,7 +175,7 @@ init python:
         
             
 label gd1Morningsai:
-    default sai_rp = 0
+
     image sai_affection = ConditionSwitch(
     "sai_rp >= 50", "sprites/affection/affection max.png",
     "sai_rp >= 40", "sprites/affection/affection almost_max.png",
@@ -423,15 +423,18 @@ label saistart:
     show mc sad
     m "Did it die?"
     show mc stressed
-    "You probably messed up somewhere. Even when trying your best, you still failed."
+    m "I probably messed up somewhere."
+    "You tried your best, but still failed."
     show mc annoyed
-    m "No. Gotta be patient. Gotta be positive. *inhale, exhale*."
+    m "Gotta be patient. Gotta be positive. *inhale, exhale*."
     show mc normal
+    m "You're just building up reserve energy, right? So I'm not just watering bare soil."
     m "You're just relatably slow on progress."
     m "We'll get through this together. Don't give up, and I won't either."
     "What desperate optimism."
     show mc stressed
-    "And IF it grows? What? That'll solve all the problems you're ignoring?"
+    m "(It's going to grow! I'm going to MAKE it grow!)"
+    "And then? That'll solve all the problems you're ignoring?"
     "When are you going to class? When are you going to attend events and make friends?"
     show mc normal
     m "I'm sure you'll sprout any day now..."
@@ -489,19 +492,15 @@ label saistart:
     m "{size=+30}THERE'S SOMETHING {sc=2}{color=#000000}{size=+20}GROWING!!"
     m "Ohmygodohmygodohmygod!"
     m "{size=+30}{sc=2}{i}{color=#000000}I DID IT! FINALLY! \nI GREW MUSHROOMS!"
-    "THAT got you out of bed? What about all the other stuff-"
+    "THAT got you out of bed? This literally doesn't matter! You should be worried about-"
     show mc stressed
     m "Shut up and let me have my excitement!"
     "Fine. I'm surprised you didn't screw this up like everything else that you do."
     "Genuinely, I am impressed that you didn't fail miserably!"
     show mc normalside
     m "(Ignoring that.)"
-    show mc normal
-    m "Now let's see..."
-    show mc happy
-    m "There are ten sprouts! Hell yeah!"
     show mc confused
-    m "They look kinda weird though. These are edible, right?"
+    m "Now let's see... hmm... there are ten mushrooms and they're weirdly... finger-like?"
 
 
 
@@ -599,7 +598,7 @@ label saistart:
     # m "Oh my god, I did it. I grew little mushrooms."
     # "I'm surprised you didn't screw this up like everything else that you do."
     # "Genuinely, I am impressed that you didn't fail miserably!"
-    na "{size=-8}Greetings!" # later you can have a scene where she clarifies she didnt want you to eat her because she wants to be present and able to guide you through a trip if you did eat her
+    na "{size=-8}Greetings?" # later you can have a scene where she clarifies she didnt want you to eat her because she wants to be present and able to guide you through a trip if you did eat her
     window hide
     show mc normalside
     m "(Sounds like a mosquito got in. It's buzzing around somewhere.)"
@@ -678,17 +677,14 @@ label saistart:
     na "{size=-8}Technically, I have more than just arms."
     show mc shocked
     m "{sc=4}{i}{color=#000000}{size=+50}THERE ARE MORE ARMS!?{/i}{/sc}" 
-    na "{size=-8}Ah, n-no, that's not what I meant...."
-    na "{size=-8}I'll show you! Kindly grab my hands and harvest me, if you don't mind."
-    m "Harvest you!? But... you're..."
-    na "{size=-8}Worry not, for I have no pain receptors! The process will not hurt me."
+    na "{size=-8}Ah, n-no, that's not what I meant. It'll be easier to show you."
+    na "{size=-8}Kindly grab my hands and harvest me, if you don't mind."
     show mc worried
     m "(This can't be happening! It's impossible! This is INSANE!)"
-    m "(I'm TALKING to my mushrooms! And they have arms!)"
-    "QUICK! PANIC!"
-    # window hide
-    # show mc vstressed at right with move
-    # window show
+    "Get that terrifying thing OUT of here before you start crying!"
+    window hide
+    show mc stressed at right with move
+    window show
     menu:
         "What do I do!?"
         "{sc=4}{i}{color=#000000}{size=+40}ROUNDHOUSE KICK!":
@@ -704,13 +700,13 @@ label saistart:
             m "..."
             show mc awed
             m "Whoa. That was pretty cool!"
-            "You literally just kicked out the thing you've been growing for nearly 2 months!"
+            "You literally just kicked out Mushy! The thing you've been growing for nearly 2 months!"
             "What was the point of doing all that if you were going to just throw it away?"
             
-            show mc stressed
-            m "Maybe... that {i}didn't{/i} happen. Maybe I just hallucinated from stress."
+            show mc worried
+            m "Did that really happen? Maybe I just hallucinated?"
             "You'll never know now. Now, it's the groundkeeper's problem. Hopefully it died on impact, whatever it was."
-            show mc normal
+            show mc stressed
             m "*Sigh* It's all over. Let's just close the curtains, forget it ever happened, and feel safe again."
             window hide
             play sound "curtain.ogg"
@@ -720,6 +716,7 @@ label saistart:
             show dirty2
             show dirty3
             show bottle
+            show mc stressed at right
             with dissolve
             window show
             show mc sad
@@ -743,9 +740,10 @@ label gt_pull:
     m "(Calm down! Repress your inner caveman! Panic isn't helpful, so just compartmentalise it and process it all later!)"
     "Wow, you actually learned something from all of those self-help Youtube videos."
     show mc worried
-    m "Uh, okay. I-I'm calm! W-What do I do?"
+    m "*E-hem* Uh, okay. I-I'm calm! W-What do I do?"
     na "{size=-8}I would appreciate it if you could hold my hand and pull me out of this cell."
-    m "Okay. I'm sorry if my hands are sweaty."
+    show mc stressed
+    m "Okay... sorry if my hands are sweaty."
 
     hide mc with easeoutbottom
     "Ignoring your social anxiety and terror, you put the box on the floor, grab both of the suprisingly soft hands, and put your game face on."
@@ -791,7 +789,8 @@ label gt_pull:
     with easeinbottom
     window show
     na "Oh my! I'm so tall! And so are you! Wow..."
-    na "So this is life? How spacious it is! I can even stretch my arms out without touching anything."
+    show sai vshy
+    na "Well, this is life? How spacious it is. I can even stretch my arms out without touching anything."
     
     show sai shy
     na "It's nice to finally... talk... with you."
@@ -811,7 +810,7 @@ label gt_pull:
     m "(She LIKES that my room is a mess!?)"
     show sai vvhappy
     na "Oh, you even have another little friend here..." 
-    "She walks, stumbling a little, over to the spider that's built a web between your backpack and the wall over the past month."
+    "She{i}{/i} walks over to the spider that's built a web between your backpack and the wall over the past month."
     show sai happy
     na "Greetings creature. It is a pleasure to make your acquaintance."
     
@@ -822,6 +821,8 @@ label gt_pull:
     show mc stressed
     pause 1.0
     show mc normal
+    pause 0.5
+    show mc vannoyed
     pause 0.5
     show mc worried
     window show
@@ -851,7 +852,7 @@ label gt_pull:
     s "Greetings. I am your Psilocybe cubensis mushroom. Sai for short."
     show mc surprised
     m "S-Sai? Like, a sigh? Breathing out?"
-    s "Correct. Assosciations with respiration are an honour."
+    s "Just so. Assosciations with respiration are an honour."
     show sai normal
     s "And how should I refer to you?"
     show mc worried
@@ -915,7 +916,7 @@ label gt_pull:
     
     
     show mc stressed
-    m "Am I still asleep? Maybe this is all a dream..."
+    m "This can't be reality!"
     show sai happysigh
     s "Ah, don't dwell too much on that. Even if everything is a facade, what matters is that it is perceived."
     show mc confused
@@ -925,13 +926,14 @@ label gt_pull:
     show mc stressed
     m "What are you talking about!?"
     show sai surprised
-    s "E-eh? I was... trying to console you on your existentialism..."
+    s "E-eh? I was... trying to console you..."
     show sai pout
     s "I must have misunderstood."
+    show mc normalsquint
+    m "Look, instead of that, can you explain how this happened? How you got so... humanoid?"
+    show mc confused
+    m "Because I'm pretty sure mushrooms aren't supposed to get like this!"
     show mc worried
-    m "Instead of that, can you please explain why... you're so... humanoid?"
-    "Because I'm pretty sure mushrooms aren't supposed to get like this!"
-    show mc stressed
     m "And I'm kind of freaking out right now!"
     
     show sai think
@@ -943,7 +945,7 @@ label gt_pull:
     s "Rather than seek control, I recommend that you embrace change."
 
     show mc worried
-    "Her nonsense makes you suddenly realise-"
+    "Her nonsense makes you realise it suddenly-"
     "This situation is {i}ABNORMAL{/i}!"
     "You're talking to a {i}mushroom{/i}! Are you non-ironically insane?"
     
@@ -984,15 +986,19 @@ label gt_pull:
         scene site_error with dissolve
         pause
 
-    show mc shocked at right with easeinbottom 
+    show mc surprised at right with easeinbottom 
     window show
+    m "The site's down!"
+    show mc stressed
     m "NOOOOO! Why is the universe is ALWAYS against me?"
-    "Looks like you'll have to get information the old-fashioned way-"
+    show mc worried
+    m "Maybe I should search \"What to do when my produce gains sentience\"."
+    "That's stupid."
+    show mc normal
+    m "Yeah. *Sigh*"
+    m "I'll have to get information the old-fashioned way-"
     show mc sad
     m "Talking. Ugh."
-    "You'll probably just embarrass yourself. What's the point?"
-    "Just give up and let her do what she needs to, while you huddle into a ball in your bed."
-    m "(Maybe if I fail, I'll do that.)"
     
     window hide
     
@@ -1013,20 +1019,17 @@ label gt_pull:
     with Dissolve(2)
 
     show sai confused at left with dissolve
-    show mc awed at right with easeinbottom
+    show mc normal at right with easeinbottom
     window show
     s "...so I think the answer is: Yes, I CAN wait five minutes."
     show sai annoyed
     s "Any other questions? That one was more difficult than I expected."
-    m "Yeah... is there any... do you..."
-    show mc stressed
-    m "L-let me try that again."
-    show sai normal
+    m "Yeah... is there any... general information you have for me?"
     s "..."
-    m "..."
-    show mc worried
-    m "Can you tell me... something? Um, anything about yourself? I'm just so confused..."
+    show mc normalside
+    m "Like... random, weird, anything? Just stuff?"
     show sai worried
+    s "Actually nevermind..."
     s "I guess answering \"questions\" is harder than I first thought."
     show mc stressed
     "You're so bad at talking that you've made her lose her excitement."
@@ -1046,6 +1049,8 @@ label gt_pull:
     m "(Shit.)"
     show sai normal
     s "Your facial expression suggests that you are stressed."
+    s "Perhaps you have something to get off your chest?"
+    m ""
     show sai shy
     s "Perhaps I may lighten the burden of your woes, through your verbal communication of them?"
     show mc normal
@@ -1153,185 +1158,130 @@ label gt_pull:
 
 
     show sai surprised
-    s "Ah... the sun is changing position. Mother Nature calls my name."
-    s "Come. Let's go."
-    "She wants to leave? Great! Maybe she'll get lost and everything will return to normal."
-    m "You go ahead. I'm not interested in anything there."
-    s "You don't burn with curiosity? To explore, to interact? Not even the trees?"
-    m "Uh... no. Not even the trees. Though honestly, I'm not interested in anything these days, so maybe you can go by-"
-    s "Why? Are you depressed?"
-    "Wow! No one's ever called you out that quickly before!"
-    m "(How do I respond? Do I just say yes? Do I change topic? Lie?)"
-    m "..."
-    s "It's just that a lack of interest in life is one of the symptoms of depression. And you seem reclusive, and inexperienced with social interaction, and keeping poor personal hygiene, and-"
-    m "(She's got even less social tact that me.)"
-    m "You can stop there. I know all the reasons why I suck already. No need to remind me."
-    s "Ah, low self-esteem. That's another one."
-    m "Okay! Let's drop this conversation please?"
-    s "I recommend coming outside with me to practise stepping outside your comfort zone."
-    m "You're not my therapist. Don't care so much about me and just focus on yourself."
-    s "I respectfully decline. Unfortunately for you, I care about your wellbeing."
-    m "WHY!? We literally JUST met!"
-    s "Perhaps in a literal sense, yes. But we have known each other for eons. As particles, there is no inherent individual in this universe. We are all one."
-    m "No."
-    s "It seems I must progress to brute force."
-    m "What are you going to do? Beat me up?"
-    s "No, I shall simply kidnap you. My apologies, but due to time constraints, I must resort to this."
-    show mc vannoyed
-    m "Hah! I'd like to see you try. You're short. You can't even pick me up."
-    show sai happy
-    s "Understood. I shall show you my physical prowess."
+    s "Ah... the sun is changing position. The scent of the outdoors, mother nature..."
+    s "I can hear her... calling my name... I need to see her..."
+    hide sai with dissolve
+    show mc confused
+    m "Gonna look at the sunset?"
     show mc surprised
-    m "(Wait, her confidence... I'm starting to doubt myself.)"
-    
-    menu:
-        "FINE! I'll come!":
-            $ sai_rp += 10
-            m "FINE! I give up, I'll come! Just don't pick me up."
-            s "That was the mature response. I'm proud of you for joining the expedition on your own terms."
-            m "Just a walk around the block, okay? We're not going into a jungle."
-            show sai vvhappy
-            s "The block, the sphere, the rhombus, whatever it is, we will walk around it."
-      
-        "Call her bluff.":
-            show mc normal
-            m "Nope. You're bluffing."
-            show sai determined
-            s "I do not lie."
-            "Sai approaches you, determination glinting in her eyes. Something about her almost predatory advance activates the neurons of an ancient, primitive response: fight or flight."
-            show mc surprised
-            m "Hey! Hey, don't come any closer! I'll defend myself if I have to!"
-            s "You are entitled to do that. But are you prepared to hurt someone, simply for caring for you?"
-            show mc worried
-            m "..."
-            "That's not fair. She's guilt-tripping you into allowing her to kidnap you!"
-            show mc stressed
-            m "Urgh, just leave me alone. I don't want to do this..."
-            s "Then confront your discomfort - Do not succumb to it!"
-            m "No, I'm not doing this! You're a stranger! I don't trust you!"
-            "Sai leaps towards you."
-            show sai determinedclosed
-            s "HNNNNG!"
-            show sai sad
-            show mc normal
-            m "Ah... So you were lying after all..."
-            s "I never lied. I simply stated I would demonstrate my phsycial prowess. As you can see, it is nearly non-existant."
-            show sai happy
-            s "Ah! But now that you see that I am not a threat, you are inclined to become my friend, right?"
-            m "No."
-            s "Ah..."
-            return
-    
+    m "Er, be careful, it's dangerous."
+    show mc shocked
+    m "Hey!"
+    m "W-WHAT ARE YOU DOING!? DON'T JUMP!"
 
-    # hide sai with dissolve
-    # show mc surprised
-    # m "To the window?"
-    # show mc shocked
-    # m "Hey! W-WHAT ARE YOU DOING!? DON'T JUMP!"
-
-    # window hide
-    
-    # show sai surprised at left with easeinbottom
-    # window show
-    # s "I have your permission. What's wrong?"
-    # show mc shout
-    # m "What's WRONG!? I just saved you from falling to your death! You would have died!"
-    # show mc vstressed
-    # m "Oh my God. Please don't do that again!"
-    # show sai pout
-    # s "Hmm? B-but I was just going outside..."
-    # show mc vshout
-    # m "Then use the STAIRS!"
-    # show sai shy
-    # s "I apologise for causing you excess stress... but what are stairs?"
-    # show mc stressed
-    # m "...I'll show you."
-    
-    # scene hallway with fade
-    # show mc normal at right
-    # show sai sad at left
-    # with easeinbottom
-    # m "There. Go down them until you reach a door-"
-    # show mc normalsquint
-    # m "You DO know how to open doors, don't you?"
-    # show sai apologetic
-    # s "I-I think so. I first knock, and someone opens it right?"
-    # show mc stressed
-    # m "..."
-    # "You're slowly realising how little Sai knows. Is it too dangerous to let her roam the streets alone?"
-    # show mc worried
-    # m "(But I don't want to go out... I don't want to be in public. I look horrible.)"
-    # m "(And I've got so much work to do! I don't have time to just have fun!)"
-    # menu:
-    #     "Should I stay, or should I go?"
-    #     "I'm not going outside!":
-    #         show mc confused
-    #         m "Be careful."
-    #         show sai shy
-    #         s "Y-yes! I shall exert full caution."
-    #         hide sai with easeoutbottom
-    #         "With those words, Sai turns and takes her first step down the stairs-"
-    #         play sound "thud.wav"
-    #         show mc shocked
-            
-    #         "Down which she immediately falls!"
-    #         m "Sai! Are you okay!?"
-    #         s "Worry not! Such a fall won't injure me. I just need practice!"
-    #         window hide
-    #         menu:
-                
-    #             "WHAT YOU NEED IS ASSISTANCE!":
-    #                 show mc stressed
-    #                 m "(Like hell! I change my mind! She's a danger to herself and everyone around!)"
-    #                 m "(And if she dies, I'm gonna feel guilty!)"
-    #                 show mc shout
-    #                 m "Don't move a muscle! I'm coming down before you can hurt yourself."
-    #                 window hide
-    #                 hide mc
-    #                 with easeoutbottom
-    #                 hide day_1
-    #                 hide sai_affection
-    #                 with dissolve
-    #                 play sound "door.wav"
-    #                 stop music fadeout(3)
-    #                 scene black with Fade(0.5, 1.0, 0.5)
-    #                 jump garden
-
-
-    #             "You got this!":
-                    
-    #                 show mc worried
-    #                 m "O-okay... good luck..."
-    #                 play sound "thud.wav"
-    #                 "You watch with growing concern as Sai proceeds to stumble down the rest of the flight of stairs..."
-    #                 show mc stressed
-    #                 m "She'll be okay... right?"
-    #                 scene black with fade
-    #                 "Yeah no, spoiler alert: she didn't come back."
-    #                 "End 4: Last Sai-ted."
-    #                 return
-    #     "Damn it! I'm coming with!":
-    #         show mc stressed
-    #         m "As much as I'd love to stay... I think you need parental guidance."
-    #         show sai sad
-    #         s "I'm sorry for causing you trouble. You seem to prefer staying indoors, so I didn't want to disturb you."
-    #         show mc normalside
-    #         m "Don't worry, it's probably good for me to taste some fresh air anyway."
-    #         show sai normal
-    #         s "So you will escort me?"
-    #         m "If it's just a walk around the block, I think I'll manage."
-    #         show sai vvhappy
-    #         s "The block, the sphere, the rhombus, whatever it is, we will walk around it. Thank you, %(player_name)s."
     window hide
-    hide mc
-    with easeoutbottom
-    hide day_1
-    hide sai_affection
-    with dissolve
-    play sound "door.wav"
-    stop music fadeout(3)
-    scene black with Fade(0.5, 1.0, 0.5)
-    jump garden
+    
+
+
+
+
+
+
+
+
+
+
+    show sai surprised at left with easeinbottom
+    window show
+    s "I have your permission. What's wrong?"
+    show mc shout
+    m "What's WRONG!? I just saved you from falling to your death! You would have died!"
+    show mc vstressed
+    m "Oh my God. Please don't do that again!"
+    show sai pout
+    s "Hmm? B-but I was just going outside..."
+    show mc vshout
+    m "Then use the STAIRS!"
+    show sai shy
+    s "I apologise for causing you excess stress... but what are stairs?"
+    show mc stressed
+    m "...I'll show you."
+    
+    scene hallway with fade
+    show mc normal at right
+    show sai sad at left
+    with easeinbottom
+    m "There. Go down them until you reach a door-"
+    show mc normalsquint
+    m "You DO know how to open doors, don't you?"
+    show sai apologetic
+    s "I-I think so. I first knock, and someone opens it right?"
+    show mc stressed
+    m "..."
+    "You're slowly realising how little Sai knows. Is it too dangerous to let her roam the streets alone?"
+    show mc worried
+    m "(But I don't want to go out... I don't want to be in public. I look horrible.)"
+    m "(And I've got so much work to do! I don't have time to just have fun!)"
+    menu:
+        "Should I stay, or should I go?"
+        "I'm not going outside!":
+            show mc confused
+            m "Be careful."
+            show sai shy
+            s "Y-yes! I shall exert full caution."
+            hide sai with easeoutbottom
+            "With those words, Sai turns and takes her first step down the stairs-"
+            play sound "thud.wav"
+            show mc shocked
+            
+            "Down which she immediately falls!"
+            m "Sai! Are you okay!?"
+            s "Worry not! Such a fall won't injure me. I just need practice!"
+            window hide
+            menu:
+                
+                "WHAT YOU NEED IS ASSISTANCE!":
+                    show mc stressed
+                    m "(Like hell! I change my mind! She's a danger to herself and everyone around!)"
+                    m "(And if she dies, I'm gonna feel guilty!)"
+                    show mc shout
+                    m "Don't move a muscle! I'm coming down before you can hurt yourself."
+                    window hide
+                    hide mc
+                    with easeoutbottom
+                    hide day_1
+                    hide sai_affection
+                    with dissolve
+                    play sound "door.wav"
+                    stop music fadeout(3)
+                    scene black with Fade(0.5, 1.0, 0.5)
+                    jump garden
+
+
+                "You got this!":
+                    
+                    show mc worried
+                    m "O-okay... good luck..."
+                    play sound "thud.wav"
+                    "You watch with growing concern as Sai proceeds to stumble down the rest of the flight of stairs..."
+                    show mc stressed
+                    m "She'll be okay... right?"
+                    scene black with fade
+                    "Yeah no, spoiler alert: she didn't come back."
+                    "End 4: Last Sai-ted."
+                    return
+        "Damn it! I'm coming with!":
+            show mc stressed
+            m "As much as I'd love to stay... I think you need parental guidance."
+            show sai sad
+            s "I'm sorry for causing you trouble. You seem to prefer staying indoors, so I didn't want to disturb you."
+            show mc normalside
+            m "Don't worry, it's probably good for me to taste some fresh air anyway."
+            show sai normal
+            s "So you will escort me?"
+            m "If it's just a walk around the block, I think I'll manage."
+            show sai vvhappy
+            s "The block, the sphere, the rhombus, whatever it is, we will walk around it. Thank you, %(player_name)s."
+            window hide
+            hide mc
+            with easeoutbottom
+            hide day_1
+            hide sai_affection
+            with dissolve
+            play sound "door.wav"
+            stop music fadeout(3)
+            scene black with Fade(0.5, 1.0, 0.5)
+            jump garden
 
 
 
@@ -1431,10 +1381,11 @@ label sai_stay_home:
 
 label sai_go_outside:
     show mc normal
-    m "Fine, fine! You're right. It's good for me, and all that."
-    m "We're just walking for a few minutes around the block, and then come straight back."
+    m "Fine."
+    m "We'll just walk for a few minutes around the block, and then come straight back."
+    m "Is that okay?"
     show sai surprised
-    s "I succeeded?"
+    s "I succeeded...?"
     show sai vvhappy
     s "Yes, more than okay! The block, the sphere, the rhombus, whatever it is, we can walk around it!"
     show sai happy
@@ -1731,7 +1682,6 @@ label garden:
                     
 
                 "Politely decline.":
-                    $ has_finger = True
                     show mc stressed
                     m "(How do I navigate this conversation!???)"
                     show mc awkwardsmile
@@ -1760,7 +1710,7 @@ label garden:
             m "(Making friends with mushrooms is hard.)"
             show mc normal
             m "Okay, now that we're done, can we-"
-            jump eat_dirt
+            
             # m "If I'd stayed at home, I'd probably just be on my phone right now-"
             
             
@@ -1870,9 +1820,8 @@ label sai_go_home_day1:
     scene black with Fade(0.5, 1, 0.5)
     "You and Sai finally walk back home as the evening rolls in."
     "She gleams, at ease despite the whole severing-her-finger escapade."
-    if has_finger:
-        "You keep subconsciously patting the distended pocket where the finger lies."
-        "Horrifying."
+    "You keep subconsciously patting the distended pocket where the finger lies."
+    "Horrifying."
     window hide
     stop music fadeout(3)
     play sound "door.wav"
@@ -1905,237 +1854,103 @@ label sai_go_home_day1:
     s "Ahh, what a fulfilling experience."
     show mc normalside
     m "Not a traumatic one?"
-    s "Is it strange to you that I'm not bothered by the fact that my finger has been amputated?"
-    show mc normal
-    m "And what about the fact that you are a mass-produced object? Doesn't THAT bother you?"
-    s "No. Everyone is, to a degree."
-    show mc confused
-    m "Does ANYTHING phase you?"
-    s "Hmm... I feel solid currently. No changes in phase."
-    m "(Talking with her is tiring...)"
-    m "*Sigh* I'm hungry..."
+    show sai think
+    s "*sniff sniff* After being in the fresh air, I've noticed a certain... \"pungeance\" in your bedroom."
+    show mc normalside
+    m "Sorry."
+    show sai sigh
+    s "It's a big affront on my nose. It seems to emenate from the pile of clothes."
+    show mc stressed
+    m "I know I should've cleaned it long ago. It's on my bucket list."
     show sai surprised
-    s "Ah! I'm afraid I can't allow you to do that."
-    show mc normal
-    m "You can't allow me... to eat?"
-    show sai determinedclosed
-    s "Not for the sake of satiating your hunger, no."
-    m "What other reason is there to eat? Can't I just grab a bite somewhere?"
-    s "A BITE? A full mouthful!? Certainly not! A full bite of me would easily kill you."
-    m "..."
-    m "Look, I know you're a mushroom and all, but I don't intend to eat you. I just want normal, human food. So relax."
-    s "Why not? I would provide so many benefits to you."
-    m "(First she was trying to stop me, now she's encouraging it? Pick a side!)"
-    m "Benefits such as dying? Gee thanks, but maybe later..."
-    s "In small amounts I am perfectly safe, and can help with your depression."
-    show mc shocked
-    m "(That again?)"
-    show mc worried
-    m "I don't have {i}that{/i}! I'm just lazy and procrastinate too much."
-    show mc stressed
-    m "My situation is my own fault, not because of any condition like that."
-    s "Hmm... Regardless, you as an individual would benefit from a small nibble."
-    s "I can assure you that I am a beginner-friendly psychoactive mushroom that can grant clarity to stressed individuals. And you are certainly stressed."
-    show mc surprised
-    m "Wait. What?"
-    s "I can-"
-    show mc stressed
-    m "No, no, I heard you!"
-    m "Jesus... You're a magic mushroom? Okay, I'm just telling you straight up - no matter what you say, I am NOT-"
+    s "Washing your clothes is on your bucket list? As in, things to do before you die?"
+    show mc normalside
+    m "Doing laundry isn't as easy as it looks."
+    show sai normal
+    s "..."
+    show sai happy
+    s "I'll help you."
     show mc normalsquint
-    m "NOT eating a single piece of you."
-    show sai normal
-    s "..."
-    show sai sad
-    s "Understood."
-    show mc surprised
-    m "Oh. Well... good."
-    s "..."
-    m "..."
-    show mc normalside
-    m "Uh. Sorry. No offense."
-    s "I'm not offended, just sad and disappointed."
-    s "I expected this reaction. I am well aware of the stigma that surrounds me, so I don't blame you for distrusting me."
-    m "I never said THAT. Sure I trust you! You're nice."
-    s "Mm... nice, am I? I suppose that will have to do."
-    m "..."
-    s "..."
-    m "Are you okay?"
-    s "I'm busy processing my melancholy."
-    "And it's all your fault."
-    m "Um, want to... hang out?"
-    s "That depends. Do you offer out of pity, or genuine desire?"
-    m "I genuinely think watching a movie together would be better than this."
-    show sai normal
-    s "A... movie?"
-    m "Oh, piqued your interest? Then come over. I'll put something on."
-    hide mc
-    hide sai
-    with easeoutbottom
-    "You open up your laptop, angle it to face the bed, and find a movie."
-    "Sai solemnly sits on the bed next to you, but as soon as the movie starts..."
-
-    show sai vsad at left
-    show mc happy at right
-    with easeinbottom
-    m "So, what did you think?"
-    s "*sniff* I feel devastated, yet inspired. Miserable, yet appreciative. In my opinion, the movie was beautiful work of art."
+    m "No, it's my mess. I have to sort it out. I don't want you going through my rubbish because I was too lazy to sort it out."
+    show mc stressed
+    m "I'll try deal with the smell. There's a air freshener in here somewhere..."
+    window hide
+    hide mc with dissolve
+    show sai normalside
+    window show
+    s "I thought it could be fun..."
+    window hide
+    show mc normal at right with dissolve
+    m "Alright, I found some bodyspray. I hope you like the smell of masculinity."
+    "You aim the nozzle at the steaming pile of body odour, and spray away the foul scent."
+    play sound "spray.wav"
     show mc annoyed
-    m "Heh."
-    show mc happy
-    m "(I'm glad she's cheered up.)"
-    "Because it helps you feel less guilty?"
-    m "What was your favourite part?"
-    show sai determinedclosed
-    s "Hmm..."
+    m "The beast is slain."
+    show mc vstressed
+    m "*cough* God, it like a locker room in here."
+    show sai apologetic
+    show mc normal
+    s "Um, %(player_name)s? I would like to discuss somethings with you."
+    show mc confused
+    m "O...kay..."
     show sai shy
-    s "When he described himself as an onion, it resonated with me."
-    menu:
-        "Why did she resonate with that line?"
-        "Because Sai is also a vegetable!":
-            jump onionwrong
-        "Because everyone hates onions?":
-            jump onionright
-
-    label onionright:
-        $ sai_rp += 10
-        show mc awkwardsmile
-        m "Is it... uh, no offense again, but because everyone hates onions?"
-        show sai worried
-        s "Mm..."
-        s "Yes. I sympathised with his pain. As well as in a literal sense."
-        show sai vshy
-        "I taste bad, not like the nice, normal mushrooms humans enjoy."
-        show mc normal
-        m "Why does that matter? You don't WANT to get eaten, do you?"
-        show sai sad
-        s "It's the only thing I'm good at. If you had one special quality that could help others, wouldn't you want to use it?"
-        m "Not if it meant losing a part of myself!"
-        s "Not lost. Nothing is ever physically lost. Only transformed."
-        m "(I'm getting flashback to my old physics classes. \"Matter cannot be created or destroyed\", and all that...)"
-
-
-    label onionwrong:
-        $ sai_rp -= 10
-        show mc confused
-        m "Because you are also a vegetable?"
-        show sai sad
-        s "What? No..."
-        show sai worried
-        s "Just ignore me. This doesn't matter."
-        "Way to mess it up, dumbass."
-        show mc stressed
-        m "(That was not the vibe.)"
-
-    show mc normalside
-    "You glance at your phone again. It's past midnight."
-    "You should go to bed soon. But can you do it without going on your phone for hours until you're so exhausted you bonk out into sleep?"
-    "You have a feeling Sai won't approve of that particular routine."
-    
-
-
-
-
-
-
-
-    #laundry scene below:
-    # show sai think
-    # s "*sniff sniff* After being in the fresh air, I've noticed a certain... \"pungeance\" in your bedroom."
-    # show mc normalside
-    # m "Sorry."
-    # show sai sigh
-    # s "It's a big affront on my nose. It seems to emenate from the pile of clothes."
-    # show mc stressed
-    # m "I know I should've cleaned it long ago. It's on my bucket list."
-    # show sai surprised
-    # s "Washing your clothes is on your bucket list? As in, things to do before you die?"
-    # show mc normalside
-    # m "Doing laundry isn't as easy as it looks."
-    # show sai normal
-    # s "..."
-    # show sai happy
-    # s "I'll help you."
-    # show mc normalsquint
-    # m "No, it's my mess. I have to sort it out. I don't want you going through my rubbish because I was too lazy to sort it out."
-    # show mc stressed
-    # m "I'll try deal with the smell. There's a air freshener in here somewhere..."
-    # window hide
-    # hide mc with dissolve
-    # show sai normalside
-    # window show
-    # s "I thought it could be fun..."
-    # window hide
-    # show mc normal at right with dissolve
-    # m "Alright, I found some bodyspray. I hope you like the smell of masculinity."
-    # "You aim the nozzle at the steaming pile of body odour, and spray away the foul scent."
-    # play sound "spray.wav"
-    # show mc annoyed
-    # m "The beast is slain."
-    # show mc vstressed
-    # m "*cough* God, it like a locker room in here."
-    # show sai apologetic
-    # show mc normal
-    # s "Um, %(player_name)s? I would like to discuss somethings with you."
-    # show mc confused
-    # m "O...kay..."
-    # show sai shy
-    # s "Then... um..."
+    s "Then... um..."
 
     
-    # stop music fadeout 1
-    # play music "trip.mp3"
-    # show mc confused
-    # show sai worried
-    # s "There are things I know, and things I do not."
-    # s "I know many words, yet sometimes, there are things you say that make my mind go blank."
-    # s "It is the same for concepts and actions. These instances just remind me that..."
-    # show sai apologetic
-    # s "I'm so different to everyone else. I don't know who I am."
-    # s "Me being a mushroom can cause awkward miscommunication problems."
-    # show sai sigh
-    # s "So I apologise in advance for all the mistakes I will continue to make."
-    # show mc awed
-    # m "No, it's okay. I get it."
-    # show mc normal
-    # m "Everyone starts not knowing everything. You've got you're whole life to learn words and concepts and all that."
-    # m "You already learned new things today, so just keep it up."
-    # show sai shy
-    # s "I do like learning. But also caused you trouble today, like jumping out the window, forcing you to garden with me..."
-    # show sai vworried
-    # s "And you seemed taken aback by my arrival in the first place... Maybe I should just go."
-    # show mc surprised
-    # m "What? Sai, you're overthinking!"
-    # show sai worried
-    # s "Are you sure?"
-    # show mc stressed
-    # m "Yes!"
-    # show mc normal
-    # m "You're NOT a bother. It was good for me to get out. It helped me relax and... get out my head for a bit."
-    # m "I liked gardening with you. The window thing is already solved - we'll use the stairs next time."
-    # show sai happy
-    # s "That is a relief. So I may continue to stay here in your wonderful residence?"
-    # "\"Wonderful\"? You definitely can't understand that part..."
-    # show mc annoyed
-    # m "Uh, yeah."
-    # show mc normal
-    # m "Do you feel better now?"
-    # show sai shy
-    # s "Indeed. Thank you for communicating with me."
-    # stop music fadeout 2
-    # show mc annoyed
-    # m "No problem. Sometimes, all you need is to hear a fresh persepctive."
+    stop music fadeout 1
+    play music "trip.mp3"
+    show mc confused
+    show sai worried
+    s "There are things I know, and things I do not."
+    s "I know many words, yet sometimes, there are things you say that make my mind go blank."
+    s "It is the same for concepts and actions. These instances just remind me that..."
+    show sai apologetic
+    s "I'm so different to everyone else. I don't know who I am."
+    s "Me being a mushroom can cause awkward miscommunication problems."
+    show sai sigh
+    s "So I apologise in advance for all the mistakes I will continue to make."
+    show mc awed
+    m "No, it's okay. I get it."
+    show mc normal
+    m "Everyone starts not knowing everything. You've got you're whole life to learn words and concepts and all that."
+    m "You already learned new things today, so just keep it up."
+    show sai shy
+    s "I do like learning. But also caused you trouble today, like jumping out the window, forcing you to garden with me..."
+    show sai vworried
+    s "And you seemed taken aback by my arrival in the first place... Maybe I should just go."
+    show mc surprised
+    m "What? Sai, you're overthinking!"
+    show sai worried
+    s "Are you sure?"
+    show mc stressed
+    m "Yes!"
+    show mc normal
+    m "You're NOT a bother. It was good for me to get out. It helped me relax and... get out my head for a bit."
+    m "I liked gardening with you. The window thing is already solved - we'll use the stairs next time."
+    show sai happy
+    s "That is a relief. So I may continue to stay here in your wonderful residence?"
+    "\"Wonderful\"? You definitely can't understand that part..."
+    show mc annoyed
+    m "Uh, yeah."
+    show mc normal
+    m "Do you feel better now?"
+    show sai shy
+    s "Indeed. Thank you for communicating with me."
+    stop music fadeout 2
+    show mc annoyed
+    m "No problem. Sometimes, all you need is to hear a fresh persepctive."
     
-    # play music "night.mp3"
+    play music "night.mp3"
 
+    show mc surprised
+    m "Huh. It's getting late."
+    "And you didn't do any work. You wasted today again."
     show mc sad
     m "(I keep wasting time...)"
     show mc stressed
     m "(No, I went outside today. I touched grass, er, dirt. That's progress. Every little thing helps.)"
     m "(Yeah! Maybe tomorrow, I can even go to the lecture without having a panic attack...)"
     m "(Maybe I can ask all the questions I need, and get help from a classmate, and...)"
-    show mc normal
-    m "It's getting late. I think I should sleep soon."
     show sai happy
     s "\"Late\"? Ah yes, humans like to time their activities to the position of the sun."
     show mc normal
@@ -2145,9 +1960,9 @@ label sai_go_home_day1:
     show mc stressed
     m "No existential discussions right before bed, please."
     show sai surprised
-    s "Oh, my apologies!"
+    s "Oh, m-my apologies!"
     show mc normal
-    m "It's okay. Anyway, I need to get to sleep. Will you be okay by yourself?"
+    m "It's okay. Anyway, I need to get to sleep. Will you be okay by yourself? What are you going to do?"
     show sai normalside
     s "I shall be \"okay\". I shall meditate."
     show mc surprised
@@ -2156,12 +1971,12 @@ label sai_go_home_day1:
     s "You make it sound as if it is strange, but that's all I did while until I was harvested today."
     m "And you like that?"
     s "Yes. It's like removing myself, and simply feeling the state of being alive."
-    show mc confused
-    m "Uh... Okay. I don't judge. Do what you want. Good night."
+    show mc normal
+    m "Weird, but okay, I won't judge. Do what you want. Good night."
     show sai confused
     s "\"Good night\"?"
-    show sai happy
-    s "Oh, I bid you a restful stasis. And thank you for the movie."
+    show sai shy
+    s "Oh, I bid you a restful stasis."
     jump cantsleep
 
     # m "Why are you asking such a thing in the first place?"
@@ -2375,7 +2190,67 @@ label sai_go_home_day1:
     # show sai vvhappy
     # s "Yes yes! Certainly!"
     # show black with fade
+    # "You open up your laptop, angle it to face the bed, and find a movie."
+    # "Or rather, it finds you: a childhood movie, recommended on the front page."
+    # "Sai sits on the bed next to you, fidgety and seeming very awkward."
+    # "But as soon as the movie starts..."
+   
+    # show sai vsad
+    # show mc happy
+    # hide black with fade
+    # "As the credits roll, you let out a big, content sigh..."
+    # m "Ahh, that felt good. Did you like it too?"
+    # s "*sniff* I feel devastated, yet inspired. Miserable, yet appreciative."
+    # s "I think it was beautiful work of art."
+    # show mc annoyed
+    # m "Heh!"
+    # show mc normal
+    # m "Ok then. What was your favourite part?"
+    # show sai determinedclosed
+    # s "Hmm..."
+    # show sai shy
+    # s "When he described himself as an onion, it resonated with me."
+    # menu:
+    #     "Why did she resonate with that line?"
+    #     "Onion = vegetable. Sai is also a vegetable!":
+    #         jump onionwrong
+    #     "Onion = layers":
+    #         jump onionright
+
+    # label onionright:
+    #     $ sai_rp += 10
+    #     show mc confused
+    #     m "It's a metaphor for hiding yourself, I think?"
+    #     show mc normal
+    #     m "But you don't do that. You're honest from what I can tell."
+    #     show sai worried
+    #     s "Mm..."
+    #     s "And also, the part where he said that people don't like onions."
+    #     s "That I could relate to more literally..."
+    #     show sai vshy
+    #     "I taste bad, hehe... not like the nice mushrooms people cook with."
+    #     show mc confused
+    #     m "You wouldn't be eaten if you tasted good or not, because you're alive."
+    #     show sai sad
+    #     s "I suppose that's true."
+
+    # label onionwrong:
+    #     $ sai_rp -= 10
+    #     show mc confused
+    #     m "Because you are also a vegetable?"
+    #     show sai sad
+    #     s "What? No..."
+    #     show sai worried
+    #     s "Just ignore me. This doesn't matter."
+    #     "Way to mess it up, dumbass."
+    #     show mc stressed
+    #     m "(That was not the vibe.)"
     
+    # show mc normalside
+    # "You glance at your phone again. It's past midnight."
+    # "You should go to sleep soon. You should attend your lecture tomorrow."
+    # "But can you?"
+    # m "(Probably not... but who knows? I did some walking today. Maybe falling asleep will be easier than I think!)"
     # "Don't get too excited, remember: High hopes-"
     # m "Low expectations. Yeah..."
     # s "Excuse me?"
@@ -3502,7 +3377,7 @@ label cafedate:
     s "I'm sorry... I didn't mean to offend you."
     m "..."
     show sai shy
-    s "I shall do as you say, and ignore you while focusing on enjoying my meal."
+    s "I shall do as you say, and ignore you while focusing on enjoying my meal!"
     show mc shocked
     "Sai digs into her meal! Literally! With... her hands..."
     show mc sad
@@ -3568,7 +3443,7 @@ label cafedate:
         show mc normalsquint
         m "Sai... You didn't."
         show sai sigh
-        s "I was just so curious! And I'd already lost a finger, so I just cleaned up the wound a little and made it all nice and straight."
+        s "I was just so curious! And I'd already lost a finger, so I just cleaned it up a little."
         show mc vstressed
         m "..."
         show sai worried
@@ -3685,7 +3560,7 @@ label cafedate:
         m "Welcome to masochism."
     
     
-    
+
     scene black with fade
     stop music fadeout 3
     "You and Sai finish up!"
@@ -5567,7 +5442,7 @@ label sai_d3:
     s "...that no matter your state..."
     s "...you can be as you are, and I will not judge."
     s "Sadness is a part of life. It is inevitable."
-    s "In a way... I am glad you are suffering."
+    s "In a way... I am glad you are suffering, ."
     s "Because I suspect that I have now seen more of you than you let even humans see."
     s "And, to end my insensitive speech, that is an honour. Thank you."
     s "I shall now disengage from the hug-"
@@ -6943,19 +6818,7 @@ label everything_in_order:
 
 
 
-        # Therapy talk:
-        m "I just need to get over it."
-        s "Are you planning to ignore it?"
-        m "Yeah. I'm just wrong for feeling it. No one else ever talks about it, so... It's just me, right?"
-        s "No. Not everyone thinks about it. Only one in ten. Everyone else doesn't mind."
-        
-        s "One day, you're going to have to actually die. How are you going to be prepared for that, unless you process and accept this feeling?"
-        s "You need to cry it out. It's not just a simple thing that's going to happent to us. It's really unfair."
-        s "We get one life, and then we die. We lose consciousness forever."
-        s "You and I will disappear, like clouds dispearsing into nothing. It's scary."
 
-        #Everyone loves a change story.
-        #Have Sai start as 
 
 
 
@@ -7241,11 +7104,11 @@ label sai_day_3_worms:
     show mc surprised
     show sai worm at left with easeinbottom
     m "..."
-    show mc vshocked
+    show mc shocked
     m "Wait, are those... {i}worms{/i}?"
     s "I think they are the larvae of some kind of fly."
     s "So, maggots."
-    show mc shocked
+    show mc shout
     m "Oh my god oh my god oh my god! WHYYYYYY!?"
     show sai shy
     s "Don't worry! It doesn't hurt."
@@ -7477,220 +7340,3 @@ label sai_day_3_worms:
 #Angsty writing 3
 
 
-
-
-
-# Well scene:
-s "Hmm... it looks dark."
-m "Yeah. Getting stuck down there would be a nightmare to escape. There's basically no way unless you call for help."
-m "Honestly, I'd rather die, haha..."
-show sai surprised
-s "You'd choose death, over rescue? That's a rather severe preference!"
-show mc annoyed
-m "Just imagining calling out, waiting for someone to hear me, being a problem... yeah, I think I'd die from embarrassment."
-"You'd hate the sound of your own voice. You'd probably sound so stupid, screaming out loud for help."
-show sai normal
-s "I doubt anyone would mind helping a fellow human in trouble."
-m "No, no. I'd rather die."
-show sai sad
-s "..."
-show sai determinedclosed
-s "Forgive me, player. Please do not consider this a betrayal, but an opportunity!"
-s "*shove*"
-show mc shocked
-hide mc with dissolve
-m "AAAAAAAaaaaahhh!"
-scene black with dissolve
-scene well with dissolve
-""
-show mc stressed
-m "Ow..."
-show mc shocked
-m "You... you pushed me into the WELL!?"
-m "How could you!? Why!?"
-"You frantically search for a ladder, a rope, an outcropping of some bricks or SOME MEANS OF ESCAPE."
-show mc vshocked
-m "Smooth concrete. Oh my God. I'm stuck!"
-m "Why the hell did you push me down here!? I trusted you!"
-s "Worry not! I shan't abandon you. Here I cooooooooooooome!"
-show mc shocked
-m "Wait! No! Don't jump!-"
-show sai happy at left with easeinbottom
-show mc at right with move
-m "Now we're BOTH stuck! How the hell am I getting out of here? We're trapped! Oh my God, this is a nightmare!"
-s "Thankfully, there is a solution. Simply call for help and we will be saved."
-show mc normal
-m "..."
-show mc normalsquint
-m "Was it because of what I said? That was your point? This is so stupid... I'm not doing this. You can't just force me to do something like that."
-show sai normal
-s "Then stay here and die."
-m "No. YOU got us into this mess, so you have to call for help, not me."
-show sai determined
-s "I'm afraid you must overcome this trial by your own merit. I refuse to help you."
-show mc confused
-m "But why did YOU come down here!? You're stuck too now!"
-show sai normal
-s "In the case you choose to perish, I shall join you. I believe I should only do to others what I am willing to have done upon myself."
-show mc stressed
-m "(This is so stupid!)"
-show mc normalside
-m "No. I'm not screaming."
-show sai happy
-s "Then we will die together. That is quite a romantic notion."
-show mc confused
-"You'd expect her to be annoyed at you for not being good enough, for wasting her time, for being weak..."
-"But in the dim light, Sai smiles at you brightly, as if there's not a trouble in her mind. She seems resolved to simply wait patiently..."
-"Resisting the desire to throttle that annoyingly sweet grin off her face, you groan frustratedly out loud."
-show mc sigh
-m "This is so stupid! What a waste of time! Your OWN time! And do you have to stare at me?"
-s "No."
-show mc normalside
-m "(I've gotta be more literal.)"
-show mc normal
-m "..."
-show mc slightsad
-m "Please... stop staring at me. I can't calm down otherwise."
-s "Understood."
-show sai at flip
-"She turns around and faces the blank, in stimulating wall. Now you feel guilty, but at least that you know how to live with."
-hide sai
-hide mc with dissolve
-"Time passes. You hope someone will walk past and spot you. You stand, leaning tiredly from one hip to the other, ready to wave if someone looks in. Your neck hurts from looking up."
-na "(small size) mumble mumble."
-m "(Someone's here!)"
-"But you hesitate. You're scared to call out loud and hear your own, wimpy voice echo around you, drawing attention."
-show mc embarrassed at right with dissolve
-m "H-hello?"
-show sai normal at left with dissolve
-s "You'll have to be louder than that, player."
-m "..."
-show mc sad
-m "Please, can you do it?"
-s "Why?"
-show mc slghtsad
-m "I'm... scared... to ask for help."
-show sai determinedclosed
-s "Illogically so. You are weak by choice, player. You can do it, if you choose, or not, if you prefer."
-show mc confused
-m "It's not a preference. I want to do it. But..."
-show mc stressed
-"But you feel ashamed."
-m "..."
-hide sai
-hide mc
-with dissolve
-"The voices disappear. You hang your head and sigh tiredly. Your body hurts, you're hungry, you're annoyed and uncomfortable."
-"You sit down so that your pants get wet and you can feel even worse."
-"Everything is horrible. It isn't fair. Poor you. Give up and die and everyone will feel bad for you."
-"Sai joins you. You're too dispirited to shrug her off when she puts her hand on your arm."
-"You expect her to follow up the action with some kind of optimistic, reassuring pep-talk. Instead, you both sit in the echoing, dark silence, with a small heat radiating between your bodies."
-show mc slightsad at right
-with dissolve
-m "I'm sorry I'm wasting your time when you don't have much."
-show sai normal at left
-with dissolve
-s "Have you decided to die then?"
-m "..."
-"Maybe you {i}should{/i}just die."
-show mc stressed
-m "(I can't. I'm not ready.)"
-"Right now, more than the fear of annoying someone to help you, you feel an intense, annoyed yearning..."
-"...to get out this God damn well!"
-show mc vstressed
-m "(But I really don't want to burden someone with helping me. All the attention...)"
-show mc stressed
-m "(No. I know I have to do it. And if that's the case, the sooner, the better! I'm done pitying myself!)"
-m "Fuck this! Okay okay okay! I'M DOING THIS!"
-"You jump to your feet, and start screaming before you have a chance to back out:"
-show mc shout
-m "HEEEEELP! HEEEEEEEEEEELP! I'M STUCK IN THE WELL! PLEASE HELP MEEEEE!"
-m "ANYONE! PLEASE! I NEED HELP! WE'RE TRAAAAPPED!"
-show sai shocked
-s "HEEELP UUUUUUS!"
-show mc surprised
-m "I thought you wouldn't help!"
-show sai vvhappy
-s "You did the part that mattered. Now, we scream for life together!"
-"Beaming, Sai grabs your hand, lifts it up high, and resumes shouting. Unlike your urgent shouting, she sounds like she's enjoying it!"
-show sai excited
-s "SAAAAAVE UUUUUS! WE REQUIRE URGENT ASSISTANCE OR WE SHALL PERIIIIIISH!"
-show mc annoyed
-m "WE'RE STUCK! ANYONE PLEASE HEEELP!"
-na "Whoa! Are you guys actually stuck down there?"
-show mc shocked
-m "YES! We fell down! Can you please help us?"
-na "I'll get a ladder or something, so just hang tight!"
-
-scene garden
-show kellin shadow at left
-show mc embarrassed at right
-with easeinbottom
-m "C-can I give you some money? You really helped us out."
-na "I appreciate the offer, but keep your cash, get home safe and order yourself some takeout or something."
-show mc cute
-m "Thank you so much."
-hide mc 
-show sai happy at right
-show sai at flip
-with dissolve
-s "Thank you for saving us, fellow human."
-na "Haha, it was kinda fun. How'd you guys end up down there anyway?"
-s "I pushed him."
-na "Whoa... I'm clumsy so, so I get it, but try to be more careful next time."
-na "Anyway, I'm late for dinner. Stay safe."
-hide kellin shadow
-hide sai
-with dissolve
-"He walks away. Now, you turn to Sai."
-show mc sigh at right
-show sai happy at left
-with dissolve 
-m "That was crazy... I still can't believe you did something so reckless."
-m "(In retrospect, it was a tiny bit fun. Though I'll never admit that.)"
-show sai worried
-s "Player..."
-show mc normalside
-m "What? Going to finally apologise?"
-show sai vblush
-s "You're... so... beautiful!"
-show mc vshocked
-m "!?"
-show sai vshy
-s "I thought you were a recluse who saw no hope for the future. Like a dead log with no hope of growing again. Like a piece of trash on your room only hoping for decay."
-show mc stressed
-m "(Ouch.)"
-show sai surprised
-s "You look pained, even though I complimented you."
-show mc surprised
-m "(That was a compliment?)"
-show sai shy
-s "I would have gladly died with you. It would have been quite romantic. Enshrouded in a column of darkness, our forms degrading together into a pool of organic sludge-"
-show sai vvhappy
-s "But this is far better! Your desire to live has quite inspired me, player."
-s "I'm quite curious! What will you do now?"
-show mc confused
-m "Er... why should I do anything?"
-show sai happy
-s "You wished to live for a reason, didn't you? Else, you would not have overcome your intense discomfort of social interaction."
-s "Surely some sense of unfulfillment was driving you. So, what did you want to do so badly that you didn't want to die?"
-show mc normalside
-"Was there a reason like that through your mind?"
-show mc normal
-m "I just didn't want to die. Is that so hard to understand?"
-show sai sigh
-s "What a disappointing answer."
-show sai normal
-s "Please think about it for a minute, player. Recall your passion for survival you felt. What do you want to do?"
-show mc 
-m "I just want to live. Do more things. See stuff."
-show sai excited
-s "Oh! Wonderful!"
-show mc normalside
-m "Calling for help wasn't as bad as I thought it would be. It was kinda easy actually. Starting was the hardest part."
-show sai happy
-s "Very good! I'm happy to have been able to teach you that leaning on your peers is a beautiful thing that deserves no shame."
-show mc normalsquint
-m "Just because it worked out this time doesn't mean you should do this again. Your teaching methods are too extreme."
-m "Agh... I'm wet, I'm tired, I feel like a piece of shit. I want to go home already."
-s "Me too. Let us journey back to your habitat."
