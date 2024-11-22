@@ -18,7 +18,9 @@ label alice_d1_Sabrina_ver:
     "alice_rp >= -30", "sprites/affection/affection almost_min.png",
     "alice_rp >= -50", "sprites/affection/affection min.png",    
     "True", "sprites/affection/affection mid.png")   
-
+    m "But everytime I try to do one of my big dreams, something that needs committment, I struggle to finish stuff."
+    m "I just want someone to tell me what to do. I don't want to be responsible for my own life."
+    m "I'm scared that when I start... I'm going to feel the same way."
     stop music fadeout(2)
     scene black with fade
     show text "Four weeks of spraying later..."
